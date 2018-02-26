@@ -7,51 +7,36 @@ from pkg_resources import parse_version
 def compareVersions(version1, version2):
     return parse_version(version1) >= parse_version(version2)
 
-def find_sub_string (m_text, m_subtext, index):
-	for i in range(index,len(m_text)):
-		for j in range(len(m_subtext)):
-			if (m_subtext[j]!=m_text[i+j]):
-				break
-			if j == len(m_subtext)-1:
-				return i+j+1
-	return -1
-      
-def find_sub_string_back (m_text, m_subtext, index):
-	for i in range(index,-1,-1):
-		for j in range(len(m_subtext)-1,-1,-1):
-			if (m_subtext[j]!=m_text[i-((len(m_subtext)-1)-j)]):
-				break
-			if j == 0:
-				return i+1
-	return -1
-
-
-def getPackageData (index, html):
+    
+def getPackageData (index, html, source_length):
     package_name =""
     package_version =""
     severity =""
     
-    index = find_sub_string(html, "<tr>", index)
+    index = html.find("<tr>", index, source_length)
     if (index == -1):
         return package_name, package_version, severity, index
+    index+=len("<tr>")
 
     for i in range(2):
-        index = find_sub_string(html, "<td>", index)
+        index = html.find("<td>", index, source_length)
         if (index == -1):
             print ("Tried to get package name: <td> not found.")
-            return package_name, package_version, severity, index    
+            return package_name, package_version, severity, index
+        index+=len("<td>")
 
-    index = find_sub_string(html, "<td ", index)
+    index = html.find("<td ", index, source_length)
     if (index == -1):
             print ("Tried to get package name: <td> not found.")
             return package_name, package_version, severity, index
+    index+=len("<td ")
         
     #get package name
-    index = find_sub_string(html, "<a", index)
-
+    index = html.find("<a", index, source_length)
     if (index == -1):
             print ("Tried to get package name: <a> hasn't found.")
             return package_name, package_version, severity, index
+    index+=len("<a")
     while (html[index]!='>' and index < len(html)):
         index+=1
     index+=1
@@ -60,19 +45,21 @@ def getPackageData (index, html):
         index+=1
     
     #get version
-    index = find_sub_string(html, "<td>", index)
+    index = html.find("<td>", index, source_length)
     if (index==-1):
             print ("Tried to get the version: <td> hasn't found.")
             return package_name, package_version, severity, index
+    index+=len("<td>")
     while (html[index]!='<' and index<len(html)):
         package_version+=html[index]
         index+=1
     
     #get severity
-    index = find_sub_string(html, "<span", index)
+    index = html.find("<span", index, source_length)
     if (index==-1):
             print ("Tried to get severity:  <span> hasn't found.")
             return package_name, package_version, severity, index
+    index+=len("<span")
     while (html[index]!='>' and index < len(html)):
         index+=1
     index+=1
@@ -88,18 +75,19 @@ def getVulnerablePackagesInfomation():
     response = urlopen('https://security.archlinux.org/')
     html = response.read()
     html = html.decode("utf-8", "strict")
+    source_length = len(html)
     
     index = 0
-    index = find_sub_string(html, "<tbody>", index)
+    index = html.find("<tbody>", index, source_length)
     if (index == -1):
         print ("Cannot find <tbody> tag")
         sys.exit()
+    index+=len("<tbody>")
     
     while (index!=-1 and index<len(html)):
-        package_name, package_version, severity, index = getPackageData(index, html)
+        package_name, package_version, severity, index = getPackageData(index, html, source_length)
         if (index == -1):
             return list_packages
-
         list_package_data = [package_name, package_version, severity]
         list_packages.append(list_package_data)
         
