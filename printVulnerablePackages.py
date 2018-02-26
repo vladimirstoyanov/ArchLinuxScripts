@@ -6,35 +6,13 @@ from pkg_resources import parse_version
 
 def compareVersions(version1, version2):
     return parse_version(version1) >= parse_version(version2)
-    
-def getPackageData (index, html, source_length):
-    package_name =""
-    package_version =""
-    severity =""
-    
-    index = html.find("<tr>", index, source_length)
-    if (index == -1):
-        return package_name, package_version, severity, index
-    index+=len("<tr>")
 
-    for i in range(2):
-        index = html.find("<td>", index, source_length)
-        if (index == -1):
-            print ("Tried to get package name: <td> not found.")
-            return package_name, package_version, severity, index
-        index+=len("<td>")
-
-    index = html.find("<td ", index, source_length)
-    if (index == -1):
-            print ("Tried to get package name: <td> not found.")
-            return package_name, package_version, severity, index
-    index+=len("<td ")
-        
-    #get package name
+def getPackageName(html, index, source_length):
+    package_name = ""
     index = html.find("<a", index, source_length)
     if (index == -1):
             print ("Tried to get package name: <a> hasn't found.")
-            return package_name, package_version, severity, index
+            return package_name, index
     index+=len("<a")
     while (html[index]!='>' and index < len(html)):
         index+=1
@@ -42,31 +20,75 @@ def getPackageData (index, html, source_length):
     while(html[index]!='<' and index <len(html)):
         package_name += html[index]
         index+=1
-    
-    #get version
+        
+    return package_name, index
+
+def getPackageVersion(html, index, source_length):
+    package_version = ""
     index = html.find("<td>", index, source_length)
     if (index==-1):
             print ("Tried to get the version: <td> hasn't found.")
-            return package_name, package_version, severity, index
+            return package_version, index
     index+=len("<td>")
     while (html[index]!='<' and index<len(html)):
         package_version+=html[index]
         index+=1
-    
-    #get severity
+    return package_version, index
+
+def getPackageSeverity(html, index, source_length):
+    package_severity = ""
     index = html.find("<span", index, source_length)
     if (index==-1):
             print ("Tried to get severity:  <span> hasn't found.")
-            return package_name, package_version, severity, index
+            return package_severity, index
     index+=len("<span")
     while (html[index]!='>' and index < len(html)):
         index+=1
     index+=1
     while(html[index]!='<' and index <len(html)):
-        severity += html[index]
+        package_severity += html[index]
         index+=1
+    return package_severity, index
+
+def getPackageData (index, html, source_length):
+    package_name =""
+    package_version =""
+    package_severity =""
     
-    return package_name, package_version, severity, index
+    index = html.find("<tr>", index, source_length)
+    if (index == -1):
+        return package_name, package_version, package_severity, index
+    index+=len("<tr>")
+
+    for i in range(2):
+        index = html.find("<td>", index, source_length)
+        if (index == -1):
+            print ("Tried to get package name: <td> not found.")
+            return package_name, package_version, package_severity, index
+        index+=len("<td>")
+
+    index = html.find("<td ", index, source_length)
+    if (index == -1):
+            print ("Tried to get package name: <td> not found.")
+            return package_name, package_version, package_severity, index
+    index+=len("<td ")
+        
+    #get package name
+    package_name, index = getPackageName(html, index, source_length)
+    if (index == -1):
+        return package_name, package_version, package_severity, index
+    
+    #get version
+    package_version, index = getPackageVersion(html, index, source_length)
+    if (index == -1):
+        return package_name, package_version, package_severity, index
+    
+    #get severity
+    package_severity, index = getPackageSeverity(html, index, source_length)
+    if (index == -1):
+        return package_name, package_version, package_severity, index
+    
+    return package_name, package_version, package_severity, index
     
     
 def getVulnerablePackagesInfomation():
