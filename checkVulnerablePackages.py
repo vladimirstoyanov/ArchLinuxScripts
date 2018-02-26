@@ -6,7 +6,6 @@ from pkg_resources import parse_version
 
 def compareVersions(version1, version2):
     return parse_version(version1) >= parse_version(version2)
-
     
 def getPackageData (index, html, source_length):
     package_name =""
@@ -126,4 +125,3 @@ for i in range (len(list_packages)):
                 f.write(print_string + '\n')
                 print (print_string)
 f.close()
-            
