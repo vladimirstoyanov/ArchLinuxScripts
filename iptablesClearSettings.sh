@@ -1,3 +1,4 @@
+#accept all input, output, forward packages
 iptables --policy INPUT ACCEPT
 iptables --policy OUTPUT ACCEPT
 iptables --policy FORWARD ACCEPT
