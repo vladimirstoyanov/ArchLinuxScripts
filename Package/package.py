@@ -14,6 +14,7 @@ class Package:
     def compareVersions(self, version1, version2):
         return parse_version(version1) >= parse_version(version2)
 
+    #ToDo: make private the below method
     def getPackageName(self):
         package_name = ""
         self.index = self.html.find("<a", self.index, self.source_length)
@@ -29,6 +30,7 @@ class Package:
             self.index+=1
         return package_name
 
+    #ToDo: make private the below method
     def getPackageVersion(self):
         package_version = ""
         self.index = self.html.find("<td>", self.index, self.source_length)
@@ -40,7 +42,8 @@ class Package:
             package_version+=self.html[self.index]
             self.index+=1
         return package_version
-
+    
+    #ToDo: make private the below method
     def getPackageSeverity(self):
         package_severity = ""
         self.index = self.html.find("<span", self.index, self.source_length)
@@ -56,6 +59,7 @@ class Package:
             self.index+=1
         return package_severity
 
+    #ToDo: make private the below method
     def getPackageData (self):
         package_name =""
         package_version =""
