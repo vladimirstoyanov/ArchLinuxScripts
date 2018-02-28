@@ -49,7 +49,7 @@ def getCountryCityOrgName (ip_address):
 
 while(True):
 	#ToDo: sniff current TCP traffic 
-	#ToDo: create sqlite DB with IP address (send/recv packages, netName, city, country, whois information) 
+	#ToDo: create sqlite DB with IP addresses (send/recv packages, netName, city, country, whois information) 
 	list_ip = getConnectedIPAddresses()
 	for i in range (len(list_ip)):
 		netName, city, country = getCountryCityOrgName(list_ip[i][0])
