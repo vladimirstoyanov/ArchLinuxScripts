@@ -97,7 +97,7 @@ class Package:
         return package_name, package_version, package_severity
         
         
-    def getVulnerablePackagesInfomation(self):
+    def getVulnerablePackagesList(self):
         list_packages =[]
         response = urlopen('https://security.archlinux.org/')
         self.html = response.read()
@@ -120,7 +120,7 @@ class Package:
             
         return list_packages
         
-    def getLocalPackagesInformation(self):
+    def getLocalPackagesList(self):
         list_local_packages = []
         os.system("pacman -Q > /tmp/local_packages.txt")
         f = open ("/tmp/local_packages.txt", "r")
