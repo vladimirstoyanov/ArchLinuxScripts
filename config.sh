@@ -8,9 +8,14 @@ sudo systemctl stop dhcpcd@.service
 echo "Enabling wireless..."
 sudo systemctl enable wpa_supplicant.service
 sudo systemctl start wpa_supplicant.service
-#systemctl reboot
 
+#ToDo: resize plasma panel
 echo "Resizing the Plasma panel..."
+
+#ToDo: change default plasma theme
+#ToDo: change default wallpaper
 
 echo "Configuring iptables..."
 sh iptables.sh
+
+systemctl reboot
