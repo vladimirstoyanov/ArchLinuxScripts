@@ -26,11 +26,6 @@ cmdResult = executeRemoteCommand(HOST, "ps -A")
 #get process ID
 pid=""
 for i in range(len(cmdResult)):
-    #print result[i]
-    #for j in range(len(result[i])):
-    #    print str(ord(result[i][j])) + ' :' + result[i][j]
-    #time.sleep(1)
-    
     splitResult = cmdResult[i].split(' ')
     splitResult= filter(None, splitResult) #igonre empy list members
     
