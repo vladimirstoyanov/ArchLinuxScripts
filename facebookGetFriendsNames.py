@@ -2,7 +2,6 @@
 
 import mechanize
 
-
 browser = mechanize.Browser()
 browser.set_handle_robots(False)
 cookies = mechanize.CookieJar()
@@ -24,4 +23,5 @@ browser.open(req)
 f = open("response.html", 'w')
 
 f.write(browser.response().read())
+##ToDo: scrap friends names
 f.close()
