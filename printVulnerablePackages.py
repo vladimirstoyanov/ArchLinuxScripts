@@ -1,8 +1,8 @@
 from Package import package
 
 package_ = package.Package()
-list_packages = package_.getVulnerablePackagesInfomation()
-list_local_packages = package_.getLocalPackagesInformation()
+list_packages = package_.getVulnerablePackagesList()
+list_local_packages = package_.getLocalPackagesList()
 
 f = open('/tmp/vulnerablePackages.txt', 'w')
 print_string = 'vulnerable packages:' 
