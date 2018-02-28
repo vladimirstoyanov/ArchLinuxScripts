@@ -12,7 +12,7 @@ def CheckUrl(url):
 	
 	return -1
 
-##Search for href
+#ToDo: use string.find method
 def find_sub_string (m_text, m_subtext, index):
 	for i in range(index,len(m_text)):
 		for j in range(len(m_subtext)):
@@ -21,7 +21,8 @@ def find_sub_string (m_text, m_subtext, index):
 			if j == len(m_subtext)-1:
 				return i+j+1
 	return -1
-      
+
+#ToDo: use string.find method
 def find_sub_string_back (m_text, m_subtext, index):
 	for i in range(index,-1,-1):
 		for j in range(len(m_subtext)-1,-1,-1):
