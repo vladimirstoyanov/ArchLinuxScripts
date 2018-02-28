@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+#ToDo: make HTTPS session instead HTTP
+
 import mechanize
 
 browser = mechanize.Browser()
