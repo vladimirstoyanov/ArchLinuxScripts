@@ -6,96 +6,92 @@ from pkg_resources import parse_version
 
 class Package:
     def __init__(self):
-        self.index = 0
-        self.html = "" #ToDo: change this name
-        self.source_length = "" #ToDo: change this name
+        self.__index = 0
+        self.__page_source = "" #ToDo: change this name
+        self.__source_length = "" #ToDo: change this name
         
         
     def compareVersions(self, version1, version2):
         return parse_version(version1) >= parse_version(version2)
 
-    #ToDo: make private the below method
-    def getPackageName(self):
+    def __getPackageName(self):
         package_name = ""
-        self.index = self.html.find("<a", self.index, self.source_length)
-        if (self.index == -1):
+        self.__index = self.__page_source.find("<a", self.__index, self.__source_length)
+        if (self.__index == -1):
                 print ("Tried to get package name: <a> hasn't found.")
                 return package_name
-        self.index+=len("<a")
-        while (self.html[self.index]!='>' and self.index < len(self.html)):
-            self.index+=1
-        self.index+=1
-        while(self.html[self.index]!='<' and self.index <len(self.html)):
-            package_name += self.html[self.index]
-            self.index+=1
+        self.__index+=len("<a")
+        while (self.__page_source[self.__index]!='>' and self.__index < len(self.__page_source)):
+            self.__index+=1
+        self.__index+=1
+        while(self.__page_source[self.__index]!='<' and self.__index <len(self.__page_source)):
+            package_name += self.__page_source[self.__index]
+            self.__index+=1
         return package_name
 
-    #ToDo: make private the below method
-    def getPackageVersion(self):
+    def __getPackageVersion(self):
         package_version = ""
-        self.index = self.html.find("<td>", self.index, self.source_length)
-        if (self.index==-1):
+        self.__index = self.__page_source.find("<td>", self.__index, self.__source_length)
+        if (self.__index==-1):
                 print ("Tried to get the version: <td> hasn't found.")
                 return package_version
-        self.index+=len("<td>")
-        while (self.html[self.index]!='<' and self.index<len(self.html)):
-            package_version+=self.html[self.index]
-            self.index+=1
+        self.__index+=len("<td>")
+        while (self.__page_source[self.__index]!='<' and self.__index<len(self.__page_source)):
+            package_version+=self.__page_source[self.__index]
+            self.__index+=1
         return package_version
     
-    #ToDo: make private the below method
-    def getPackageSeverity(self):
+    def __getPackageSeverity(self):
         package_severity = ""
-        self.index = self.html.find("<span", self.index, self.source_length)
-        if (self.index==-1):
+        self.__index = self.__page_source.find("<span", self.__index, self.__source_length)
+        if (self.__index==-1):
                 print ("Tried to get severity:  <span> hasn't found.")
                 return package_severity
-        self.index+=len("<span")
-        while (self.html[self.index]!='>' and self.index < len(self.html)):
-            self.index+=1
-        self.index+=1
-        while(self.html[self.index]!='<' and self.index <len(self.html)):
-            package_severity += self.html[self.index]
-            self.index+=1
+        self.__index+=len("<span")
+        while (self.__page_source[self.__index]!='>' and self.__index < len(self.__page_source)):
+            self.__index+=1
+        self.__index+=1
+        while(self.__page_source[self.__index]!='<' and self.__index <len(self.__page_source)):
+            package_severity += self.__page_source[self.__index]
+            self.__index+=1
         return package_severity
 
-    #ToDo: make private the below method
-    def getPackageData (self):
+    def __getPackageData (self):
         package_name =""
         package_version =""
         package_severity =""
         
-        self.index = self.html.find("<tr>", self.index, self.source_length)
-        if (self.index == -1):
+        self.__index = self.__page_source.find("<tr>", self.__index, self.__source_length)
+        if (self.__index == -1):
             return package_name, package_version, package_severity
-        self.index+=len("<tr>")
+        self.__index+=len("<tr>")
 
         for i in range(2):
-            self.index = self.html.find("<td>", self.index, self.source_length)
-            if (self.index == -1):
+            self.__index = self.__page_source.find("<td>", self.__index, self.__source_length)
+            if (self.__index == -1):
                 print ("Tried to get package name: <td> not found.")
                 return package_name, package_version, package_severity
-            self.index+=len("<td>")
+            self.__index+=len("<td>")
 
-        self.index = self.html.find("<td ", self.index, self.source_length)
-        if (self.index == -1):
+        self.__index = self.__page_source.find("<td ", self.__index, self.__source_length)
+        if (self.__index == -1):
                 print ("Tried to get package name: <td> not found.")
                 return package_name, package_version, package_severity
-        self.index+=len("<td ")
+        self.__index+=len("<td ")
             
         #get package name
-        package_name = self.getPackageName()
-        if (self.index == -1):
+        package_name = self.__getPackageName()
+        if (self.__index == -1):
             return package_name, package_version, package_severity
         
         #get version
-        package_version = self.getPackageVersion()
-        if (self.index == -1):
+        package_version = self.__getPackageVersion()
+        if (self.__index == -1):
             return package_name, package_version, package_severity
         
         #get severity
-        package_severity = self.getPackageSeverity()
-        if (self.index == -1):
+        package_severity = self.__getPackageSeverity()
+        if (self.__index == -1):
             return package_name, package_version, package_severity
         
         return package_name, package_version, package_severity
@@ -104,20 +100,20 @@ class Package:
     def getVulnerablePackagesList(self):
         list_packages =[]
         response = urlopen('https://security.archlinux.org/')
-        self.html = response.read()
-        self.html = self.html.decode("utf-8", "strict")
-        self.source_length = len(self.html)
+        self.__page_source = response.read()
+        self.__page_source = self.__page_source.decode("utf-8", "strict")
+        self.__source_length = len(self.__page_source)
         
-        self.index = 0
-        self.index = self.html.find("<tbody>", self.index, self.source_length)
-        if (self.index == -1):
+        self.__index = 0
+        self.__index = self.__page_source.find("<tbody>", self.__index, self.__source_length)
+        if (self.__index == -1):
             print ("Cannot find <tbody> tag")
             return list_packages
-        self.index+=len("<tbody>")
+        self.__index+=len("<tbody>")
         
-        while (self.index!=-1 and self.index<len(self.html)):
-            package_name, package_version, package_severity = self.getPackageData()
-            if (self.index == -1):
+        while (self.__index!=-1 and self.__index<len(self.__page_source)):
+            package_name, package_version, package_severity = self.__getPackageData()
+            if (self.__index == -1):
                 return list_packages
             list_package_data = [package_name, package_version, package_severity]
             list_packages.append(list_package_data)
