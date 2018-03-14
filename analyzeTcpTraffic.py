@@ -26,6 +26,7 @@ def getConnectedIPAddresses ():
 	return list_ip
 
 def getCountryCityOrgName (ip_address):
+	#ToDo: change whois with something similar or update it
 	p = subprocess.Popen(['whois', ip_address], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	out, err = p.communicate()
 	
@@ -53,8 +54,12 @@ while(True):
 	list_ip = getConnectedIPAddresses()
 	for i in range (len(list_ip)):
 		netName, city, country = getCountryCityOrgName(list_ip[i][0])
-		
-		print strftime("%Y-%m-%d %H:%M:%S", gmtime())+ ": "+  list_ip[i][0] + ":" + list_ip[i][1] + " " + netName + " " + city + " " + country
+		print "========================="
+		print strftime("Time: %Y-%m-%d %H:%M:%S", gmtime())
+		print "IP, port: " + list_ip[i][0] + ":" + list_ip[i][1] 
+		print netName
+		print city
+		print country
 	time.sleep(1)
 
 
