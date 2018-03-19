@@ -18,11 +18,4 @@ tcpdump
 whois
 hexchat
 python-pip
-numpy
-scipy
-scikit-learn
-matplotlib
-selenium
-mechanize
 atom
-tensorflow
