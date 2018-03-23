@@ -25,6 +25,9 @@ def getConnectionData ():
 		data = filter(None, data) #remove empy strings
 		if (len(data)<7):
 			continue
+		#skip TIME_WAIT connectins
+		if (data[5] == 'TIME_WAIT'):
+			continue
 		ip = data[4].split(':')
 		if (ip<2):
 			continue
