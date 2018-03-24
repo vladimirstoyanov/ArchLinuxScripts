@@ -13,7 +13,7 @@ class ConnectionData:
 		self.ip=""
 		self.port =""
 		self.process_name=""
-def getNetstatData():
+def getNetstatCommandOutput():
 		p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		out, err = p.communicate()
 
@@ -27,7 +27,7 @@ def checkNetstatRow(data):
 	return True
 
 def getDataByIp(ip_address):
-	rows = getNetstatData()
+	rows = getNetstatCommandOutput()
 
 	connection_data = ConnectionData()
 	list_ip=[]
@@ -55,7 +55,7 @@ def getDataByIp(ip_address):
 	return connection_data
 
 def getConnectionDataList ():
-	rows = getNetstatData()
+	rows = getNetstatCommandOutput()
 
 	list_ip=[]
 	for i in range(len(rows)):
