@@ -13,12 +13,21 @@ class ConnectionData:
 		self.ip=""
 		self.port =""
 		self.process_name=""
+def getNetstatData():
+		p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+		out, err = p.communicate()
 
-def findIp(ip_address):
-	p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-	out, err = p.communicate()
+		return out.split('\n')
 
-	rows = out.split('\n')
+def checkNetstatRow(data):
+	if (len(data)<7):
+		return False
+	if (data[5] == 'TIME_WAIT'):
+		return False
+	return True
+
+def getDataByIp(ip_address):
+	rows = getNetstatData()
 
 	connection_data = ConnectionData()
 	list_ip=[]
@@ -27,11 +36,10 @@ def findIp(ip_address):
 			continue
 		data=rows[i].split(' ')
 		data = filter(None, data) #remove empy strings
-		if (len(data)<7):
+
+		if (checkNetstatRow(data) == False):
 			continue
-		#skip TIME_WAIT connectins
-		if (data[5] == 'TIME_WAIT'):
-			continue
+
 		ip = data[4].split(':')
 		if (ip<2):
 			continue
@@ -43,15 +51,11 @@ def findIp(ip_address):
 		connection_data.port = ip[1]
 		connection_data.process_name = data[6]
 		return connection_data
-		#list_ip.append(connection_data)
+
 	return connection_data
-	#return list_ip
 
-def getConnectionData ():
-	p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-	out, err = p.communicate()
-
-	rows = out.split('\n')
+def getConnectionDataList ():
+	rows = getNetstatData()
 
 	list_ip=[]
 	for i in range(len(rows)):
@@ -59,11 +63,10 @@ def getConnectionData ():
 			continue
 		data=rows[i].split(' ')
 		data = filter(None, data) #remove empy strings
-		if (len(data)<7):
+
+		if (checkNetstatRow(data) == False):
 			continue
-		#skip TIME_WAIT connectins
-		if (data[5] == 'TIME_WAIT'):
-			continue
+
 		ip = data[4].split(':')
 		if (ip<2):
 			continue
@@ -107,7 +110,7 @@ while(True):
 	#ToDo: handle send packages as well
 	packet = s.recvfrom(65565)
 	tcpPackage = TcpPackage.ParseTCP(packet)
-	connection_data = findIp(tcpPackage.getSourceAddress())
+	connection_data = getDataByIp(tcpPackage.getSourceAddress())
 	if (connection_data.ip==""):
 		continue
 	if (connection_data.ip in ip_addresses):
@@ -121,16 +124,3 @@ while(True):
 	print netName
 	print city
 	print country
-	"""
-	list_ip = getConnectionData()
-	for i in range (len(list_ip)):
-		netName, city, country = getCountryCityOrgName(list_ip[i].ip)
-		print "========================="
-		print strftime("Time: %Y-%m-%d %H:%M:%S", gmtime())
-		print "Process: " + list_ip[i].process_name
-		print "IP, port: " + list_ip[i].ip + ":" + list_ip[i].port
-		print netName
-		print city
-		print country
-	time.sleep(1)
-	"""
