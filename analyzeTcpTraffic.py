@@ -15,37 +15,37 @@ class ConnectionData:
 		self.process_name=""
 
 def findIp(ip_address):
-		p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-		out, err = p.communicate()
+	p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	out, err = p.communicate()
 
-		rows = out.split('\n')
+	rows = out.split('\n')
+
+	connection_data = ConnectionData()
+	list_ip=[]
+	for i in range(len(rows)):
+		if (i<2): #skip some shit rows
+			continue
+		data=rows[i].split(' ')
+		data = filter(None, data) #remove empy strings
+		if (len(data)<7):
+			continue
+		#skip TIME_WAIT connectins
+		if (data[5] == 'TIME_WAIT'):
+			continue
+		ip = data[4].split(':')
+		if (ip<2):
+			continue
+		if (ip[0] != ip_address):
+			continue
 
 		connection_data = ConnectionData()
-		list_ip=[]
-		for i in range(len(rows)):
-			if (i<2): #skip some shit rows
-				continue
-			data=rows[i].split(' ')
-			data = filter(None, data) #remove empy strings
-			if (len(data)<7):
-				continue
-			#skip TIME_WAIT connectins
-			if (data[5] == 'TIME_WAIT'):
-				continue
-			ip = data[4].split(':')
-			if (ip<2):
-				continue
-			if (ip[0] != ip_address):
-				continue
-
-			connection_data = ConnectionData()
-			connection_data.ip = ip[0]
-			connection_data.port = ip[1]
-			connection_data.process_name = data[6]
-			return connection_data
-			#list_ip.append(connection_data)
+		connection_data.ip = ip[0]
+		connection_data.port = ip[1]
+		connection_data.process_name = data[6]
 		return connection_data
-		#return list_ip
+		#list_ip.append(connection_data)
+	return connection_data
+	#return list_ip
 
 def getConnectionData ():
 	p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
