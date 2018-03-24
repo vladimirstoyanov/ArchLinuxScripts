@@ -15,14 +15,14 @@ class ParseTCP:
             self.version = self.version_ihl >> 4
             self.ihl = self.version_ihl & 0xF
 
-            self.iph_length = slef.ihl * 4
+            self.iph_length = self.ihl * 4
 
-            self.ttl = self.iph[5]
-            self.protocol = self.iph[6]
+            self.ttl = iph[5]
+            self.protocol = iph[6]
             self.s_addr = socket.inet_ntoa(iph[8]);
             self.d_addr = socket.inet_ntoa(iph[9]);
 
-            slef.tcp_header = packet[self.iph_length:self.iph_length+20]
+            self.tcp_header = packet[self.iph_length:self.iph_length+20]
 
             tcph = unpack('!HHLLBBHHH' , self.tcp_header)
 
@@ -39,40 +39,40 @@ class ParseTCP:
             self.data = packet[self.h_size:]
 
     def getIpHeader(self):
-        return self.ip_header
+        return str(self.ip_header)
 
     def getVersion(self):
-        return self.version
+        return str(self.version)
 
     def getIhl (self): #ToDo: write the full name of Ihl. Check what is getIhl
-        return self.getIhl
+        return str(self.getIhl)
 
     def getTtl (self):
-        return self.ttl
+        return str(self.ttl)
 
     def getProtocol (self):
-        return self.protocol
+        return str(self.protocol)
 
     def getSourceAddress (self):
-        return self.s_addr)
+        return str(self.s_addr)
 
     def getDestinationAddress (self):
-        return self.d_addr
+        return str(self.d_addr)
 
     def getSourcePort (self):
-        return self.source_port
+        return str(self.source_port)
 
     def getDestinationPort (self):
-        return self.dest_port
+        return str(self.dest_port)
 
     def getSequenceNumber (self):
-        return self.sequence
+        return str(self.sequence)
 
     def getAcknowkedgement (self):
-        return self.acknowledgement
+        return str(self.acknowledgement)
 
     def getTcpHeaderLength (self):
-        return self.tcph_length
+        return str(self.tcph_length)
 
     def getData(self):
-        return self.data
+        return str(self.data)
