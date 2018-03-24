@@ -6,17 +6,17 @@ from sets import Set
 import time
 from time import gmtime, strftime
 
-from Parse import TcpPackage
+from Parse import TcpPacket
 
 class ConnectionData:
 	def __init__(self):
 		self.ip=""
 		self.port =""
 		self.process_name=""
+
 def getNetstatCommandOutput():
 		p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		out, err = p.communicate()
-
 		return out.split('\n')
 
 def checkNetstatRow(data):
@@ -78,11 +78,14 @@ def getConnectionDataList ():
 
 	return list_ip
 
-def getCountryCityOrgName (ip_address):
+def getWhoisCommandOutput(ip_address):
 	p = subprocess.Popen(['whois', ip_address], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	out, err = p.communicate()
 
-	rows = out.split('\n')
+	return out.split('\n')
+
+def getCountryCityOrgName (ip_address):
+	rows = getWhoisCommandOutput(ip_address)
 
 	netName=""
 	city=""
@@ -109,8 +112,8 @@ while(True):
 	#ToDo: create sqlite DB with IP addresses (send/recv packages, netName, city, country, whois information)
 	#ToDo: handle send packages as well
 	packet = s.recvfrom(65565)
-	tcpPackage = TcpPackage.ParseTCP(packet)
-	connection_data = getDataByIp(tcpPackage.getSourceAddress())
+	tcpPacket = TcpPacket.ParseTCP(packet)
+	connection_data = getDataByIp(tcpPacket.getSourceAddress())
 	if (connection_data.ip==""):
 		continue
 	if (connection_data.ip in ip_addresses):
