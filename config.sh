@@ -17,5 +17,5 @@ echo "Resizing the Plasma panel..."
 
 echo "Configuring iptables..."
 sh iptables.sh
-
+systemctl enable iptables.service
 systemctl reboot

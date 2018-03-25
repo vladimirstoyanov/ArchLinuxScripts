@@ -49,4 +49,4 @@ iptables -A OUTPUT -p icmp -j DROP
 echo 'iptables -A INPUT -p icmp -j DROP'
 iptables -A INPUT -p icmp -j DROP 
 
-iptables-save
+iptables-save > /etc/iptables/iptables.rules
