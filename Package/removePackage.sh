@@ -1,0 +1,1 @@
+pacman -Rscn $1
