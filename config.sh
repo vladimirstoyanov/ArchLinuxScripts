@@ -13,7 +13,13 @@ sudo systemctl start wpa_supplicant.service
 echo "Resizing the Plasma panel..."
 
 #ToDo: change default plasma theme
+echo "Changing default plasma theme..."
+
 #ToDo: change default wallpaper
+echo "Changing default wallpaper..."
+
+#ToDo: change default start menu icon
+echo "Changing default start menu icon
 
 echo "Configuring iptables..."
 sh iptables.sh
