@@ -25,7 +25,7 @@ echo "Changing default start menu icon..."
 #cp Resources/logo250x250.svg /usr/share/icons/breeze/apps/22/plasma.svg
 #cp Resources/logo250x250.svg /usr/share/icons/breeze/preferences/32/plasma.svg
 
-echo "Changing keyboard layout..."
+echo "Changing the keyboard layout and global shortcuts..."
 cp Resources/kglobalshortcutsrc /home/scitickart/.config/
 cp Resources/kxkbrc /home/scitickart/.config/
 
