@@ -14,9 +14,10 @@ echo "Resizing the Plasma panel..."
 
 #ToDo: change default plasma theme
 echo "Changing default plasma theme..."
+cp Resources/plasma-org.kde.plasma.desktop-appletsrc /home/scitickart/.config/
+cp Resources/plasmarc  /home/scitickart/.config/
 
-#ToDo: change default wallpaper
-echo "Changing default wallpaper..."
+sleep 2
 
 #ToDo: change default start menu icon
 echo "Changing default start menu icon..."
