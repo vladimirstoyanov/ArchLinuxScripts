@@ -9,15 +9,10 @@ echo "Enabling wireless..."
 sudo systemctl enable wpa_supplicant.service
 sudo systemctl start wpa_supplicant.service
 
-#ToDo: resize plasma panel
-echo "Resizing the Plasma panel..."
-
-#ToDo: change default plasma theme
-echo "Changing default plasma theme..."
+#ToDo: replace the username with some variable
+echo "Changing default plasma theme, wallpaper, etc."
 cp Resources/plasma-org.kde.plasma.desktop-appletsrc /home/scitickart/.config/
 cp Resources/plasmarc  /home/scitickart/.config/
-
-sleep 2
 
 #ToDo: change default start menu icon
 echo "Changing default start menu icon..."
