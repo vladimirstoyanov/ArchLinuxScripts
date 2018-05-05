@@ -9,27 +9,26 @@ echo "Enabling wireless..."
 sudo systemctl enable wpa_supplicant.service
 sudo systemctl start wpa_supplicant.service
 
-#ToDo: replace the username with some variable
 echo "Changing default plasma theme, wallpaper, etc."
-cp /home/scitickart/.config/plasma-org.kde.plasma.desktop-appletsrc /home/scitickart/.config/plasma-org.kde.plasma.desktop-appletsrc_back
-cp /home/scitickart/.config/plasmarc /home/scitickart/.config/plasmarc_back
-cp Resources/plasma-org.kde.plasma.desktop-appletsrc /home/scitickart/.config/
-cp Resources/plasmarc  /home/scitickart/.config/
+sudo cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc_back
+sudo cp ~/.config/plasmarc /home/scitickart/.config/plasmarc_back
+sudo cp Resources/plasma-org.kde.plasma.desktop-appletsrc ~/.config/
+sudo cp Resources/plasmarc  ~/.config/
 
 #ToDo: change default start menu icon
 echo "Changing default start menu icon..."
-#cp Resources/logo250x250.svg /usr/share/icons/breeze-dark/apps/22/plasma.svg
-#cp Resources/logo250x250.svg /usr/share/icons/breeze-dark/preferences/32/plasma.svg
-#cp Resources/logo250x250.svg /usr/share/icons/breeze/apps/22/plasma.svg
-#cp Resources/logo250x250.svg /usr/share/icons/breeze/preferences/32/plasma.svg
+#sudo cp Resources/logo250x250.svg /usr/share/icons/breeze-dark/apps/22/plasma.svg
+#sudo cp Resources/logo250x250.svg /usr/share/icons/breeze-dark/preferences/32/plasma.svg
+#sudo cp Resources/logo250x250.svg /usr/share/icons/breeze/apps/22/plasma.svg
+#sudo cp Resources/logo250x250.svg /usr/share/icons/breeze/preferences/32/plasma.svg
 
 echo "Changing the keyboard layout and global shortcuts..."
-cp /home/scitickart/.config/kglobalshortcutsrc /home/scitickart/.config/kglobalshortcutsrc_back
-cp /home/scitickart/.config/kxkbrc /home/scitickart/.config/kxkbrc_back
-cp Resources/kglobalshortcutsrc /home/scitickart/.config/
-cp Resources/kxkbrc /home/scitickart/.config/
+sudo cp ~/.config/kglobalshortcutsrc ~/.config/kglobalshortcutsrc_back
+sudo cp ~/.config/kxkbrc ~/.config/kxkbrc_back
+sudo cp Resources/kglobalshortcutsrc ~/.config/
+sudo cp Resources/kxkbrc ~/.config/
 
 echo "Configuring iptables..."
-sh iptables.sh
-systemctl enable iptables.service
-systemctl reboot
+sudo sh iptables.sh
+sudo systemctl enable iptables.service
+sudo systemctl reboot
