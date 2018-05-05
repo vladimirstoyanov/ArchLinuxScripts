@@ -10,8 +10,9 @@ sudo systemctl enable wpa_supplicant.service
 sudo systemctl start wpa_supplicant.service
 
 echo "Changing default plasma theme, wallpaper, etc."
+python changeDefaultWallpaper.py
 sudo cp ~/.config/plasma-org.kde.plasma.desktop-appletsrc ~/.config/plasma-org.kde.plasma.desktop-appletsrc_back
-sudo cp ~/.config/plasmarc /home/scitickart/.config/plasmarc_back
+sudo cp ~/.config/plasmarc /home/scitickart/.config/plasmarc_back 
 sudo cp Resources/plasma-org.kde.plasma.desktop-appletsrc ~/.config/
 sudo cp Resources/plasmarc  ~/.config/
 
