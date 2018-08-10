@@ -52,6 +52,9 @@ class SQLiteWrapper:
 			return True
 		return False
 
+	def setTextFactory(self):
+		self.connect.text_factory = str
+
 	def readData (self, table_name):
 		  c = self.connect.cursor()
 		  query_string = "SELECT * FROM "
