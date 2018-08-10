@@ -59,9 +59,8 @@ class SQLiteWrapper:
 		  c.execute(query_string)
 		  rows = c.fetchall()
 
-		  data = ""
+		  data = []
 		  for row in rows:
-			  data += str(row)
-			  data += '\n'
+			  data.append(row)
 
 		  return data
