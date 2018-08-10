@@ -7,6 +7,7 @@ import time
 from time import gmtime, strftime
 
 from Parse import TcpPacket
+from DB import connectionDB
 
 class ConnectionData:
 	def __init__(self):
@@ -108,22 +109,31 @@ except socket.error , msg:
     print 'Socket could not be created. Error Code : ' + str(msg[0]) + ' Message ' + msg[1]
     sys.exit()
 ip_addresses = Set()
+connectionDB_ = connectionDB.ConnectionDB("ipData.sqlite")
+
 while(True):
 	#ToDo: create sqlite DB with IP addresses (send/recv packages, netName, city, country, whois information)
 	#ToDo: handle send packages as well
 	packet = s.recvfrom(65565)
 	tcpPacket = TcpPacket.ParseTCP(packet)
 	connection_data = getDataByIp(tcpPacket.getSourceAddress())
+
 	if (connection_data.ip==""):
 		continue
+
+	time_ = strftime("Time: %Y-%m-%d %H:%M:%S", gmtime())
+
+	connectionDB_.insertNetworkPackageData(time_, connection_data.ip, connection_data.port, connection_data.process_name, tcpPacket.getData())
 	if (connection_data.ip in ip_addresses):
 		continue
 	ip_addresses.add(connection_data.ip)
 	netName, city, country = getCountryCityOrgName(connection_data.ip)
+
 	print "========================="
-	print strftime("Time: %Y-%m-%d %H:%M:%S", gmtime())
+	print time_
 	print "Process: " + connection_data.process_name
 	print "IP, port: " + connection_data.ip + ":" + connection_data.port
 	print netName
 	print city
 	print country
+	connectionDB_.insertIPInfo(connection_data.ip, netName, city, country)
