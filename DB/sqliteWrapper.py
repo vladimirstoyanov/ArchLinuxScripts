@@ -3,10 +3,7 @@ import sqlite3
 class SQLiteWrapper:
 	def __init__(self, db_name):
 		self.db_name = db_name
-		self.connect(db_name)
-
-	def connect (self, db_name):
-		self.connect = sqlite3.connect(db_name)
+		self.openDB(db_name)
 
 	def createTable (self, table_name, data):
 		c = self.connect.cursor()
@@ -37,7 +34,22 @@ class SQLiteWrapper:
 		query_string+=")"
 		#print query_string
 		c.executemany(query_string, data)
+		self.connection.commit()
 
+	def openDB (self, db_name):
+		self.connect = sqlite3.connect(db_name)
+
+	def closeDB (self, db_name):
+		self.connection.close()
+
+	def isTableExist (self, table_name):
+		#SELECT name FROM sqlite_master WHERE name='table_name'
+		c = self.connect.cursor()
+		query_string = "SELECT name FROM sqlite_master WHERE name=\'" + table_name + "\'"
+		print query_string
+		c.execute(query_string)
+		result = c.fetchall()
+		print "is table exist: " + str(result)
 
 	def getTables(self):
 		pass
