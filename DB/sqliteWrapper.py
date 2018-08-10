@@ -34,7 +34,7 @@ class SQLiteWrapper:
 		query_string+=")"
 		#print query_string
 		c.executemany(query_string, data)
-		self.connection.commit()
+		self.connect.commit()
 
 	def openDB (self, db_name):
 		self.connect = sqlite3.connect(db_name)
@@ -43,16 +43,14 @@ class SQLiteWrapper:
 		self.connection.close()
 
 	def isTableExist (self, table_name):
-		#SELECT name FROM sqlite_master WHERE name='table_name'
 		c = self.connect.cursor()
 		query_string = "SELECT name FROM sqlite_master WHERE name=\'" + table_name + "\'"
-		print query_string
+
 		c.execute(query_string)
 		result = c.fetchall()
-		print "is table exist: " + str(result)
-
-	def getTables(self):
-		pass
+		if (len(result)>0):
+			return True
+		return False
 
 	def readData (self, table_name):
 		  c = self.connect.cursor()
