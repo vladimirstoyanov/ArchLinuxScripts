@@ -1,4 +1,4 @@
-from DB import sqliteWrapper
+import sqliteWrapper
 
 sqlite = sqliteWrapper.SQLiteWrapper("test")
 if (sqlite.isTableExist("team")==0):
