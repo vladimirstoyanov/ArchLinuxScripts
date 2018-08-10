@@ -36,7 +36,7 @@ def getDataByIp(ip_address):
 		if (i<2): #skip some shit rows
 			continue
 		data=rows[i].split(' ')
-		data = filter(None, data) #remove empy strings
+		data = filter(None, data) #remove empty strings
 
 		if (checkNetstatRow(data) == False):
 			continue
