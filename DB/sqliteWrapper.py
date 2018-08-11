@@ -52,8 +52,14 @@ class SQLiteWrapper:
 			return True
 		return False
 
-	def setTextFactory(self):
+	def setTextFactory8Bits(self):
 		self.connect.text_factory = str
+
+	def setTextFactoryUnicode(self):
+		self.connect.text_factory = unicode
+
+	def setTextFactoryDefault(self):
+		self.connect.text_factory = sqlite3
 
 	def readData (self, table_name):
 		  c = self.connect.cursor()

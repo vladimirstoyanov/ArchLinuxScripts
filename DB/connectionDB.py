@@ -3,7 +3,7 @@ import sqliteWrapper
 class ConnectionDB:
     def __init__(self, db_name):
         self.sqlite = sqliteWrapper.SQLiteWrapper(db_name)
-        self.sqlite.setTextFactory()
+        self.sqlite.setTextFactory8Bits()
         #create tables if they don't exist
         #tables: ip_info, network_package_data
         if (self.sqlite.isTableExist("ip_info") == False):
