@@ -108,7 +108,8 @@ try:
 except socket.error , msg:
     print 'Socket could not be created. Error Code : ' + str(msg[0]) + ' Message ' + msg[1]
     sys.exit()
-ip_addresses = Set()
+
+ip_addresses = Set()#ToDo: remove IP addresses and use sqlite DB to check the IP
 connectionDB_ = connectionDB.ConnectionDB("ipData.sqlite")
 
 while(True):
