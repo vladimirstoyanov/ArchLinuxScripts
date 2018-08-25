@@ -33,10 +33,12 @@ ToDo: research how to fix the below warning:
 ToDo: research how to fix the below warning:
 [    29.939] (II) LoadModule: "intel"
 [    29.939] (WW) Warning, couldn't open module intel
+pacman -S xf86-video-intel
 """
 
 """
 [    29.943] (II) LoadModule: "fbdev"
 [    29.943] (WW) Warning, couldn't open module fbdev
 [    29.943] (EE) Failed to load module "fbdev" (module does not exist, 0)
+pacman -S xf86-video-fbdev
 """
