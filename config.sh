@@ -1,3 +1,4 @@
+#!/bin/sh
 echo "Enabling Network manager..."
 sudo systemctl enable NetworkManager.service
 sudo systemctl disable dhcpcd.service
