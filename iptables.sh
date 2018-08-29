@@ -1,3 +1,5 @@
+#!/bin/sh
+
 DNS=53
 HTTP=80,443
 IDENT=113
