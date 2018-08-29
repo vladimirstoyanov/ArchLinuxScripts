@@ -1,3 +1,4 @@
+#!/bin/sh
 #accept all input, output, forward packages
 iptables --policy INPUT ACCEPT
 iptables --policy OUTPUT ACCEPT
