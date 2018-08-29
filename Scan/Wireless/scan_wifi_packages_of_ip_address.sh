@@ -1,4 +1,4 @@
-
+#!/bin/sh
 if [ $# -ne 2 ]
 then
   echo "Wrong input! please use the following input: "
