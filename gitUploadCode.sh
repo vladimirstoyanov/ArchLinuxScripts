@@ -1,4 +1,4 @@
-
+#!/bin/sh
 if [ $# -ne 2 ]
 then
 	echo "Put a comment as first argment and a path as second argument."
