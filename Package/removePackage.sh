@@ -1,3 +1,4 @@
+#!/bin/sh
 if [ $# -ne 1 ]
 then
         echo "1 arg - a package"
