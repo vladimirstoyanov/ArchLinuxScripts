@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "Installing packman packages..."
 while IFS='' read -r line || [[ -n "$line" ]]; do
     echo "Installing: $line"
