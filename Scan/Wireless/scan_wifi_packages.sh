@@ -1,3 +1,4 @@
+#!/bin/sh
 if [ $# -ne 3 ]
 then
   echo "Wrong input! please use the following input: "
