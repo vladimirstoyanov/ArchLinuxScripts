@@ -1,0 +1,11 @@
+Machine learning:
+- Linear Regression;
+- Logistic Regression;
+- Linear Discriminant Analysis;
+- Classification and Regression Trees;
+- Naive Bayes;
+- K-Nearest Neighbors;
+- Learning Vector Quantization;
+- Support Vector Machines;
+- Bagging and Random Forest;
+- Boosting and AdaBoost;
