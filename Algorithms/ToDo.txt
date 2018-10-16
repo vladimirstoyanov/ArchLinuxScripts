@@ -9,3 +9,10 @@ Machine learning:
 - Support Vector Machines;
 - Bagging and Random Forest;
 - Boosting and AdaBoost;
+
+Cryptography:
+- CNSA;
+- RSA;
+- SHA-384;
+- X509;
+- ECDSA;
