@@ -1,4 +1,4 @@
-Machine learning:
+1. Machine learning:
 - Linear Regression;
 - Logistic Regression;
 - Linear Discriminant Analysis;
@@ -10,7 +10,7 @@ Machine learning:
 - Bagging and Random Forest;
 - Boosting and AdaBoost;
 
-Cryptography:
+2. Cryptography:
 - CNSA;
 - RSA;
 - SHA-384;
