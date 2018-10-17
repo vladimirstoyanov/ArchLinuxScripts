@@ -10,7 +10,21 @@
 - Bagging and Random Forest;
 - Boosting and AdaBoost;
 
-2. Cryptography:
+2. Deep learning:
+- Backpropagation;
+- Gradient descent;
+- Feedforward networks;
+- Convolutional networks;
+- Recurrent networks;
+- Generative adversarial networks;
+- Segmentation networks;
+- (Variational) Auto Encoders;
+- U-Net;
+- ResNet;
+- Dropout;
+- Weight initialization schemes; 
+
+3. Cryptography:
 - CNSA;
 - RSA;
 - SHA-384;
