@@ -24,7 +24,10 @@
 - Dropout;
 - Weight initialization schemes; 
 
-3. Cryptography:
+3. AI search algorithms
+- https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_popular_search_algorithms.htm
+
+4. Cryptography:
 - CNSA;
 - RSA;
 - SHA-384;
