@@ -1,3 +1,4 @@
+#!/bin/sh
 #$1 - binary
 #$2 - a source file
 
