@@ -21,6 +21,9 @@
 - (Variational) Auto Encoders;
 - U-Net;
 - ResNet;
+- AlexNet;
+- SqueezeNet;
+- DenseNet;
 - Dropout;
 - Weight initialization schemes; 
 
