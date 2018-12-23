@@ -2,8 +2,8 @@
 #$2 - a network interface that shares the internet
 
 #installing dhcp server
-#echo "installing dhcp..."
-#pacman -S dhcp 
+echo "installing dhcp..."
+echo y | pacman -S dhcp 
 
 if [ $# -ne 2 ]
 then
@@ -43,8 +43,8 @@ ip addr add 10.10.10.1/24 dev $2
 echo "coping dhcpd.conf to /etc"
 cp dhcpd.conf /etc/
 
-#restartinf dhcpd 
-echo "restarting dhcpd..."
+#restarting dhcpd serivce
+echo "restarting dhcpd service..."
 systemctl stop dhcpd4.service
 sleep 5
 systemctl start dhcpd4.service
