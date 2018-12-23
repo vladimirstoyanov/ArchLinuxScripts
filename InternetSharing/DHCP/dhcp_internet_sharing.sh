@@ -1,18 +1,17 @@
 #$1 - a newtwork interface with internet access
-#$2 - a network interface that shares the internet
-
-#installing dhcp server
-echo "installing dhcp..."
-echo y | pacman -S dhcp 
+#$2 - a network interface that shares the internet 
 
 if [ $# -ne 2 ]
 then
   echo "Wrong input! please use the following input: "
-        echo "1 arg - a newtwork interface with internet access"
-        echo "2 arg - a network interface that shares the internet"
+        echo "1 arg - a newtwork interface with internet access (wlp3s0)"
+        echo "2 arg - a network interface that shares the internet (enp0s25)"
   exit 1
 fi
 
+#installing dhcp server
+echo "installing dhcp..."
+echo y | pacman -S dhcp
 
 echo "enabling ipv4 package forward..."
 #enabling ipv4 package forward

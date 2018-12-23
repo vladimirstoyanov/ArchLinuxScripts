@@ -6,9 +6,9 @@
 if [ $# -ne 3 ]
 then
   echo "Wrong input! please use the following input: "
-        echo "1 arg - a newtwork interface with internet access"
-        echo "2 arg - a network interface that shares the internet"
-	echo "3 arg - an IP address of the network interface that shares the internet"
+        echo "1 arg - a newtwork interface with internet access (wlp3s0)"
+        echo "2 arg - a network interface that shares the internet (enp0s25)"
+	echo "3 arg - an IP address of the network interface that shares the internet (10.10.10.1)"
   exit 1
 fi
 
