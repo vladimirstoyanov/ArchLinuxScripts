@@ -1,3 +1,4 @@
+#!/bin/sh
 #$1 - a newtwork interface with internet access
 #$2 - a network interface that shares the internet 
 
