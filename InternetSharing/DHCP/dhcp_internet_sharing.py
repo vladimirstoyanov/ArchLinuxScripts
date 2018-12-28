@@ -27,7 +27,6 @@ def help ():
 	print "3 arg - an IP address of dhcp server (10.10.10.1)"
 	sys.exit(0)	
 
-print len(sys.argv)
 if (len(sys.argv)!=4):
 	help()
 
@@ -38,7 +37,6 @@ arg3 = sys.argv[3]
 
 #getting the network address by server address
 splitted_network_address = arg3.split('.')
-print len(splitted_network_address)
 if (len(splitted_network_address)!=4):
 	print "Invalid network address!"
 	sys.exit (0)
@@ -48,8 +46,8 @@ gateway = splitted_network_address[0] + '.' + splitted_network_address[1] + '.' 
 first_three_numbers_of_ip = splitted_network_address[0] + '.' + splitted_network_address[1] + '.' + splitted_network_address[2] + '.'
 
 #installing dhcp server
-#print "installing dhcp..."
-#os.system("echo y | pacman -S dhcp")
+print "installing dhcp..."
+os.system("echo y | pacman -S dhcp")
 
 print "enabling ipv4 package forward..."
 #enabling ipv4 package forward
