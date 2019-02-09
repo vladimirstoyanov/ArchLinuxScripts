@@ -1,9 +1,16 @@
 #!/bin/sh
+
+#$1 - comment
+#$2 - path
+
 if [ $# -ne 2 ]
 then
-	echo "Put a comment as first argment and a path as second argument."
-	exit 1
+  echo "Wrong input! please use the following input: "
+        echo "1 arg - comment"
+        echo "2 arg - path"
+  exit 1
 fi
+
 cd $2
 
 echo "git add --all"
