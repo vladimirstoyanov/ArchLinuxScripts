@@ -10,4 +10,4 @@ sleep 10
 
 echo "The system will restart..."
 sleep 1
-shutdown -r now
+#shutdown -r now
