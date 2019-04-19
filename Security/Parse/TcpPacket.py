@@ -76,3 +76,6 @@ class ParseTCP:
 
     def getData(self):
         return str(self.data)
+
+    def getHexData(self):
+        return str(self.data).encode('hex')

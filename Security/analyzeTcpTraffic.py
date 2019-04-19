@@ -124,7 +124,13 @@ while(True):
 
 	time_ = strftime("Time: %Y-%m-%d %H:%M:%S", gmtime())
 
-	connectionDB_.insertNetworkPackageData(time_, connection_data.ip, connection_data.port, connection_data.process_name, tcpPacket.getData())
+	connectionDB_.insertNetworkPackageData(
+		time_,
+		connection_data.ip,
+		connection_data.port,
+		connection_data.process_name,
+		tcpPacket.getHexData()
+	)
 	if (connection_data.ip in ip_addresses):
 		continue
 	ip_addresses.add(connection_data.ip)
