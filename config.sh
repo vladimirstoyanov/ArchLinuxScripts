@@ -31,6 +31,6 @@ sudo cp Resources/kglobalshortcutsrc ~/.config/
 sudo cp Resources/kxkbrc ~/.config/
 
 echo "Configuring iptables..."
-sudo sh iptables.sh
+sudo sh Firewall/iptables.sh
 sudo systemctl enable iptables.service
 sudo systemctl reboot
