@@ -111,7 +111,7 @@ except socket.error , msg:
     sys.exit()
 
 ip_addresses = Set()#ToDo: remove IP addresses and use sqlite DB to check the IP
-connectionDB_ = connectionDB.ConnectionDB("ipData.sqlite")
+connectionDB_ = connectionDB.ConnectionDB("/root/ipData.sqlite")
 
 while(True):
 	#ToDo: handle send packages as well
