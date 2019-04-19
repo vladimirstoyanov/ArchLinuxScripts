@@ -1,13 +1,14 @@
 import os
 import sys
-import subprocess
-import socket
+
 from sets import Set
+import socket
+import subprocess
 import time
 from time import gmtime, strftime
 
-from Parse import TcpPacket
 from DB import connectionDB
+from Parse import TcpPacket
 
 class ConnectionData:
 	def __init__(self):
