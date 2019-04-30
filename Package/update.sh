@@ -5,9 +5,9 @@ pacman -Suy
 
 #print vulnerable packages
 #echo "Vulnerable packages: "
-python ..Security/printVulnerablePackages.py
+python ../Security/printVulnerablePackages.py
 sleep 10
 
 echo "The system will restart..."
 sleep 1
-#shutdown -r now
+shutdown -r now
