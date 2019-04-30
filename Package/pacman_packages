@@ -25,3 +25,5 @@ meld
 xf86-video-intel
 xf86-video-fbdev
 vim
+valgrind
+qtcreator
