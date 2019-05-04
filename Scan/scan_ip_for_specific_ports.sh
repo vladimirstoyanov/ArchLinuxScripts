@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ $# -ne 1 ]
+if [ $# -ne 2 ]
 then
   echo "Wrong input! please use the following input: "
 	echo "1 arg  - port"
