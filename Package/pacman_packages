@@ -27,3 +27,4 @@ xf86-video-fbdev
 vim
 valgrind
 qtcreator
+sqlite
