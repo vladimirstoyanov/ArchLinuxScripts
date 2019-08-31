@@ -9,5 +9,5 @@ python ../Security/printVulnerablePackages.py
 sleep 10
 
 echo "The system will restart..."
-sleep 1
+sleep 20
 shutdown -r now
