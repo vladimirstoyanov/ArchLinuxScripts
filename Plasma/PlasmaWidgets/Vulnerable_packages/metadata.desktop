@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Vulnerable packages
+Comment=list of vulnerable packages
+
+Type=Service
+X-KDE-ServiceTypes=Plasma/Applet
+X-KDE-PluginInfo-Author=Vladmir Stoyanov
+X-KDE-PluginInfo-Email=vlado_stoyanov@yahoo.com
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL-2.0+
+X-KDE-PluginInfo-Name=org.kde.plasma.vulnerable_packages
+X-KDE-PluginInfo-Version=0.0.1
+X-KDE-PluginInfo-Website=https://www.kde.org/
+X-Plasma-StandAloneApp=true
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+<X-KDE-PluginInfo-Category=Windows and Tasks
