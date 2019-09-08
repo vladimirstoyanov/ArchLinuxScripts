@@ -1,7 +1,7 @@
 #!/bin/sh
 while true
 do
-	cd ../Security/
+	cd /home/scitickart/gitHub/ArchLinuxScripts/Security/
 	python printVulnerablePackages.py
 	sleep 60
 done

@@ -36,5 +36,6 @@ sudo systemctl enable iptables.service
 sudo systemctl reboot
 
 echo "Adding printVulnerablePackages.sh on boot time..."
-cp BootTimeScripts/print_vulnerable_packages.target /usr/lib/systemd/system/
+cp BootTimeScripts/print_vulnerable_packages.service /usr/lib/systemd/system/
 cp BootTimeScripts/printVulnerablePackages.sh /usr/local/bin/
+systemctl enable print_vulnerable_packages.service

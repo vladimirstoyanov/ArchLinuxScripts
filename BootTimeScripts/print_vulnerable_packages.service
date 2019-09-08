@@ -1,0 +1,10 @@
+[Unit]
+Description=It checks for vulnerable packages
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/printVulnerablePackages.sh
+
+[Install]
+WantedBy=multi-user.target
