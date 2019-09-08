@@ -1,14 +1,23 @@
 import QtQuick 2.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
+
 PlasmaComponents.Label {
-    text: {
-        return get_vulnerable_packages();
+    id: lableVulPackages
+    text: "Vulnearable packages: "
+    
+    Timer {
+           id: textTimer
+           interval: 1000
+           repeat: true
+           running: true
+           triggeredOnStart: true
+           onTriggered: lableVulPackages.get_vulnearable_packages()
     }
-    function get_vulnerable_packages()
+    function get_vulnearable_packages()
     {
       var result = readTextFile("file:///tmp/vulnerablePackages.txt");
-      return result;
+      lableVulPackages.text = result;
     }
 
     function readTextFile(file)
@@ -23,7 +32,6 @@ PlasmaComponents.Label {
               if(rawFile.status === 200 || rawFile.status == 0)
               {
                   allText = rawFile.responseText;
-                  alert(allText);
               }
           }
       }
