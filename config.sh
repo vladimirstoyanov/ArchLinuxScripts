@@ -43,3 +43,8 @@ systemctl enable print_vulnearable_packages.service
 echo "Installing vulnearable packages plasma widget"
 sh Plasma/install_widget.sh Plasma/PlasmaWidgets/Vulnerable_packages/
 
+echo "Adding currentConnectedIpAddresses.sh on boot time..."
+sh ../Systemd/make_binary_to_start_on_boot_time.py current_connected_ip_addresses $(pwd)/BootTimeScripts/currentConnectedIpAddresses.sh 'list of connected ip addresses'
+
+echo "Installing current connected ip addresses  plasma widget"
+sh Plasma/install_widget.sh Plasma/PlasmaWidgets/Current_connected_ip_addresses/
