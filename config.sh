@@ -36,9 +36,7 @@ sudo systemctl enable iptables.service
 sudo systemctl reboot
 
 echo "Adding printVulnearablePackages.sh on boot time..."
-cp BootTimeScripts/print_vulnearable_packages.service /usr/lib/systemd/system/
-cp BootTimeScripts/printVulnearablePackages.sh /usr/local/bin/
-systemctl enable print_vulnearable_packages.service
+sh ../Systemd/make_binary_to_start_on_boot_time.py printVulnearablePackages $(pwd)/BootTimeScripts/printVulnearablePackages.sh 'print vulnearable packages'
 
 echo "Installing vulnearable packages plasma widget"
 sh Plasma/install_widget.sh Plasma/PlasmaWidgets/Vulnerable_packages/
