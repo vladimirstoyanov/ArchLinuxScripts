@@ -33,7 +33,8 @@ SOURCES += \
         loginwindow.cpp \
         main.cpp \
         mainwindow.cpp \
-        managedailytasks.cpp
+        managedailytasks.cpp \
+    dailytasksstructure.cpp
 
 HEADERS += \
         adddailytaskwindow.h \
@@ -41,7 +42,8 @@ HEADERS += \
         database.h \
         loginwindow.h \
         mainwindow.h \
-        managedailytasks.h
+        managedailytasks.h \
+    dailytasksstructure.h
 
 FORMS += \
         adddailytaskwindow.ui \

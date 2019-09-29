@@ -59,6 +59,7 @@ void CreateAccountWindow::on_okButton_clicked ()
     mDataBase->insertIntoAccounts(username, passwordHash);
     this->hide();
 }
+
 void CreateAccountWindow::on_cancelButton_clicked()
 {
     qDebug()<<__PRETTY_FUNCTION__;

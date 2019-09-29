@@ -159,7 +159,7 @@ void DataBase::removeTaskFromDailyTasks(const QString &username, const QString &
         openDB();
         QSqlQuery query(q_sql_data_base_);
 
-        query.prepare(QString("delete from daily_tasks where name=\"%1\" and task=\"2\"").arg(username, task));
+        query.prepare(QString("delete from daily_tasks where username=\"%1\" and task=\"%2\"").arg(username, task));
         if (!query.exec())
         {
             qDebug()<<__PRETTY_FUNCTION__<<"Error:"<<query.lastError().text();
@@ -175,7 +175,7 @@ void    DataBase::removeTaskFromYkzaTasks(const QString &username, const QString
         openDB();
         QSqlQuery query(q_sql_data_base_);
 
-        query.prepare(QString("delete from ykza_tasks where name=\"%1\" and task=\"2\"").arg(username, task));
+        query.prepare(QString("delete from ykza_tasks where username=\"%1\" and task=\"%2\"").arg(username, task));
         if (!query.exec())
         {
             qDebug()<<__PRETTY_FUNCTION__<<"Error:"<<query.lastError().text();
@@ -191,7 +191,7 @@ void    DataBase::removeUsernameData(const QString &username)
         openDB();
         QSqlQuery query(q_sql_data_base_);
 
-        query.prepare(QString("delete from username_data where name=\"%1\"").arg(username));
+        query.prepare(QString("delete from username_data where username=\"%1\"").arg(username));
         if (!query.exec())
         {
             qDebug()<<__PRETTY_FUNCTION__<<" Error:"<<query.lastError().text();
@@ -207,7 +207,7 @@ void    DataBase::removeHistory(const QString &username)
         openDB();
         QSqlQuery query(q_sql_data_base_);
 
-        query.prepare(QString("delete from history where name=\"%1\"").arg(username));
+        query.prepare(QString("delete from history where username=\"%1\"").arg(username));
         if (!query.exec())
         {
             qDebug()<<__PRETTY_FUNCTION__<<" Error:"<<query.lastError().text();
@@ -223,7 +223,7 @@ void  DataBase::removeAccount(const QString &username)
         openDB();
         QSqlQuery query(q_sql_data_base_);
 
-        query.prepare(QString("delete from accounts where name=\"%1\"").arg(username));
+        query.prepare(QString("delete from accounts where username=\"%1\"").arg(username));
         if (!query.exec())
         {
             qDebug()<<__PRETTY_FUNCTION__<<" Error:"<<query.lastError().text();
@@ -266,9 +266,9 @@ int DataBase::dropTable(const QString &table_name)
     return result;
 }
 
-QString DataBase::getDailyTasksData (const QString &username)
+DailyTasksStructure DataBase::getDailyTasksData (const QString &username)
 {
-    QString result = "";
+    DailyTasksStructure dailyTasksStructure;
     {
         openDB();
         QSqlQuery query(q_sql_data_base_);
@@ -280,28 +280,29 @@ QString DataBase::getDailyTasksData (const QString &username)
             {
                 qDebug()<<"Fail:" + query.lastError().text();
                 closeDB();
-                return "";
+                return dailyTasksStructure;
             }
             while(query.next())
             {
-                result += "task:";
-                result += query.value( 2 ).toByteArray().data();
-                result +=",";
-                result += "type_entry:";
-                result += query.value( 3 ).toByteArray().data();
-                result +=",";
-                result += "points:";
-                result += query.value( 4 ).toByteArray().data(); //task
-                result +=",";
-                result += "points_for_amount:";
-                result += query.value( 5 ).toByteArray().data(); //task
-                result +="\n";
+                DailyTask dailyTask;
+                QString task = query.value( 2 ).toByteArray().data();
+                QString typeEntry = query.value( 3 ).toByteArray().data();
+                QString points = query.value( 4 ).toByteArray().data();
+                QString amountPoints = query.value( 5 ).toByteArray().data();
+
+                dailyTask.setTask(task);
+                dailyTask.setTypeEntry(typeEntry);
+                dailyTask.setPoints(points);
+                dailyTask.setAmountPoints(amountPoints);
+                dailyTasksStructure.addDailyTask(dailyTask);
             }
         }
     }
     closeDB();
-    return "";
+
+    return dailyTasksStructure;
 }
+
 //-'ykza_tasks' sqlite table should contains - 'username', 'task', 'points'
 QString DataBase::getYkzaTasks (const QString &username)
 {
@@ -465,6 +466,35 @@ bool DataBase::checkUsernameAvailable(const QString &username)
             {
 
                 if (username == query.value( 1 ).toByteArray().data())
+                {
+                    closeDB();
+                    return false;
+                }
+            }
+        }
+    }
+    closeDB();
+    return true;
+}
+
+bool DataBase::checkTaskExistInDailyTasks (const QString &task)
+{
+    {
+        openDB();
+        QSqlQuery query(q_sql_data_base_);
+
+        if (q_sql_data_base_.isOpen())
+        {
+            query.prepare(QString("SELECT * FROM daily_tasks"));
+            if (!query.exec())
+            {
+                qDebug()<<"Fail:" + query.lastError().text();
+                closeDB();
+                return false;
+            }
+            while(query.next())
+            {
+                if (task == query.value( 2 ).toByteArray().data())
                 {
                     closeDB();
                     return false;

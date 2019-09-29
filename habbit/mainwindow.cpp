@@ -3,11 +3,20 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    mUi(std::make_shared<Ui::MainWindow> ()),
-    mManageDailyTasks (std::make_shared<ManageDailyTasks> ())
+    mDatabase (std::make_shared<DataBase> ()),
+    mManageDailyTasks (std::make_shared<ManageDailyTasks> ()),
+    mModel (std::make_shared<QStandardItemModel> ()),
+    mUi(std::make_shared<Ui::MainWindow> ())
 {
     mUi->setupUi(this);
     initActions ();
+    initModelTableView ();
+
+    connect( mManageDailyTasks.get()
+            , SIGNAL(updateTableViewMainWindow())
+            , this
+            , SLOT(onUpdateTableViewMainWindow())
+            , Qt::QueuedConnection);
 }
 
 MainWindow::~MainWindow()
@@ -37,6 +46,8 @@ void MainWindow::changeDailyTasksMenuClicked()
 void MainWindow::notesMenuClicked()
 {
     qDebug () <<__PRETTY_FUNCTION__;
+    QLabel *label = new QLabel(this);
+    label->setText("test");
 }
 
 void MainWindow::backUpMenuClicked()
@@ -77,4 +88,82 @@ void MainWindow::changeDailyTaskMenuClicked()
 void MainWindow::markTaskAsFinishedMenuClicked()
 {
     qDebug () <<__PRETTY_FUNCTION__;
+}
+
+void MainWindow::reloadTableViewData ()
+{
+    qDebug () <<__PRETTY_FUNCTION__;
+    //remove all data from tableView
+    mModel->removeRows(0, mModel->rowCount());
+
+    DailyTasksStructure dailyTaskStructure = mDatabase->getDailyTasksData("vlado");
+    std::vector<DailyTask> listDailyTask = dailyTaskStructure.getDailyTasks();
+    for (unsigned int i = 0; i<listDailyTask.size(); ++i)
+    {
+        addDataInTableView (listDailyTask[i].getTask (),
+                            listDailyTask[i].getPoints (),
+                            listDailyTask[i].getAmountPoints (),
+                            listDailyTask[i].getTypeEntry ());
+    }
+}
+
+void MainWindow::closeEvent (QCloseEvent *)
+{
+    qDebug () <<__PRETTY_FUNCTION__;
+}
+
+void MainWindow::showEvent(QShowEvent *)
+{
+    qDebug () <<__PRETTY_FUNCTION__;
+
+    reloadTableViewData();
+}
+
+
+void MainWindow::initModelTableView()
+{
+    mModel->setHorizontalHeaderItem(0, new QStandardItem(QString("Task")));
+    mModel->setHorizontalHeaderItem(1, new QStandardItem(QString("Earned Points")));
+    mModel->setHorizontalHeaderItem(2, new QStandardItem(QString("Amount")));
+    mUi->tableView->setModel(mModel.get());
+}
+
+void MainWindow::addDataInTableView(const QString &task,
+                                    const QString &points,
+                                    const QString &amount,
+                                    const QString &type)
+{
+
+    mModel->setRowCount(mModel->rowCount()+1);
+
+    mModel->setData(mModel->index(mModel->rowCount()-1,0),task);
+    mModel->setData(mModel->index(mModel->rowCount()-1,1),points);
+    mModel->setData(mModel->index(mModel->rowCount()-1,2),amount);
+    //mModel->setData(mModel->index(mModel->rowCount()-1,3),type);
+
+    //set data to be not editable
+    mModel->item(mModel->rowCount()-1,0)->setEditable(false);
+    //"checkbox", "textbox", "incrementJudgeAfter", "incrementGainAfter";
+    if ("checkbox" == type)
+    {
+        //ToDo: create a check box
+        QStandardItem* item0 = new QStandardItem(true);
+        item0->setCheckable(true);
+        item0->setCheckState(Qt::Unchecked);
+        item0->setText(" Finished");
+        mModel->setItem(mModel->rowCount()-1, 2, item0);
+        mModel->item(mModel->rowCount()-1,2)->setEditable(false);
+    }
+    else
+    {
+        mModel->item(mModel->rowCount()-1,2)->setEditable(true);
+    }
+
+    mModel->item(mModel->rowCount()-1,1)->setEditable(false);
+}
+
+void MainWindow::onUpdateTableViewMainWindow ()
+{
+    qDebug () <<__PRETTY_FUNCTION__;
+    reloadTableViewData();
 }
