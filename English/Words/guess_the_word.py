@@ -1,4 +1,5 @@
-import sys, locale
+import sys
+import locale
 import io
 import codecs
 import time
@@ -43,14 +44,14 @@ l_words = read_file ()
 total = len (l_words)
 print total
 i = 0
-guessed = 0
+correct_answers = 0
 my_randoms = random.sample(xrange(total), total)
 
 
 for i in range (len(my_randoms)):
         word = ""
-        print l_words[my_randoms[i]][0] + ':'
-        
+        print l_words[my_randoms[i]][0]
+        print "Your answer: "
         input_string = input_unicode ()
         
         answered = 0
@@ -58,11 +59,11 @@ for i in range (len(my_randoms)):
                 word = u''.join(l_words[my_randoms[i]][1][j]).encode('utf-8').strip()
                 if (input_string == word):
                         print "=====That's right!"
-                        guessed+=1
+                        correct_answers+=1
                         answered = 1
                         break
         if (answered == 0):
-                print "=====Wrong answer!"
+                print "=====Wrong answer! The correct one is: " + word
 
 
 
@@ -71,19 +72,19 @@ for i in range (len(my_randoms)):
         for j in range (len(l_words[my_randoms[i]][1])):
                 word = u''.join(l_words[my_randoms[i]][1][j]).encode('utf-8').strip()
                 print word
-        print ':'
-        
+        print "Your answer: "
         input_string = input_unicode ()
         #compare 
         if (input_string == l_words[my_randoms[i]][0]):
             print "=====That's right!"
-            guessed+=1
+            correct_answers+=1
         else:
-            print "=====Wrong answer!"
+            print "=====Wrong answer! The correct one is: " + l_words[my_randoms[i]][0]
+            
 
 print "====Test finsihsed. Result:"
 total*=2
-percentage = (guessed/(total*1.0)) * 100
+percentage = (correct_answers/(total*1.0)) * 100
 print str(percentage) + '%'
 if(percentage < 95 ):
     print "Didn't pass"
