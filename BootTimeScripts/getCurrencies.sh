@@ -2,6 +2,6 @@
 while true
 do
 	cd /home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates/
-	python currencies_rates.py
+	python2.7 currencies_rates.py
 	sleep 300
 done
