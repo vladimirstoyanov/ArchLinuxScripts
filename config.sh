@@ -36,13 +36,19 @@ sudo systemctl enable iptables.service
 sudo systemctl reboot
 
 echo "Adding printVulnearablePackages.sh on boot time..."
-sh ../Systemd/make_binary_to_start_on_boot_time.py printVulnearablePackages $(pwd)/BootTimeScripts/printVulnearablePackages.sh 'print vulnearable packages'
+python2.7 ../Systemd/make_binary_to_start_on_boot_time.py printVulnearablePackages $(pwd)/BootTimeScripts/printVulnearablePackages.sh 'print vulnearable packages'
 
 echo "Installing vulnearable packages plasma widget"
 sh Plasma/install_widget.sh Plasma/PlasmaWidgets/Vulnerable_packages/
 
 echo "Adding currentConnectedIpAddresses.sh on boot time..."
-sh ../Systemd/make_binary_to_start_on_boot_time.py current_connected_ip_addresses $(pwd)/BootTimeScripts/currentConnectedIpAddresses.sh 'list of connected ip addresses'
+python2.7 ../Systemd/make_binary_to_start_on_boot_time.py current_connected_ip_addresses $(pwd)/BootTimeScripts/currentConnectedIpAddresses.sh 'list of connected ip addresses'
 
 echo "Installing current connected ip addresses  plasma widget"
 sh Plasma/install_widget.sh Plasma/PlasmaWidgets/Current_connected_ip_addresses/
+
+echo "Adding getCurrencies.sh on boot time..."
+python2.7 ../Systemd/make_binary_to_start_on_boot_time.py get_currencies $(pwd)/BootTimeScripts/getCurrencies.sh 'Currencies rates'
+
+echo "Installing currencies plasma widget"
+sh Plasma/install_widget.sh Plasma/PlasmaWidgets/curriences_rates/
