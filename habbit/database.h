@@ -6,7 +6,7 @@
 
 #include <QtSql/QtSql>
 
-#include "dailytasksstructure.h"
+#include "daily_tasks_structure.h"
 
 class DataBase
 {
@@ -24,7 +24,10 @@ public:
                                   const QString &task,
                                   const QString &type_entry,
                                   const QString &points,
-                                  const QString &points_for_amount);
+                                  const QString &amount_earn_lose,
+                                  const QString &time,
+                                  const QString &current_amount);
+
     //-'ykza_tasks' sqlite table should contains - 'username', 'task', 'points'
     void    insertIntoYkzaTasks (const QString &username,
                                   const QString &task,
@@ -43,6 +46,9 @@ public:
                                   const QString &password);
 
     DailyTasksStructure getDailyTasksData (const QString &username);
+    QString getPointsByDailyTask (const QString &username, const QString &dailyTask);
+    QString getTypeByDailyTask (const QString &username, const QString &dailyTask);
+
     //-'ykza_tasks' sqlite table should contains - 'username', 'task', 'points'
     QString getYkzaTasks (const QString &username);
     //-'username_data' sqlite table should contains - 'username', 'budget', 'level', 'points'
@@ -62,6 +68,7 @@ public:
     void    removeAccount(const QString &username);
 
     void    updatePointsByTaksName (const QString &username, const QString &task, const QString &points);
+    void    updateCurrentAmount (const QString &username, const QString &task, const QString &currentAmount);
 private:
     void closeDB();
     void createDailyTasksTable ();

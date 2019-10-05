@@ -1,4 +1,4 @@
-#include "managedailytasks.h"
+#include "manage_daily_tasks_window.h"
 #include "ui_managedailytasks.h"
 
 ManageDailyTasks::ManageDailyTasks(QWidget *parent) :
@@ -80,7 +80,7 @@ void ManageDailyTasks::reloadDailyTasks ()
     {
         addDataInTableView(dailyTasks[i].getTask(),
                            dailyTasks[i].getPoints(),
-                           dailyTasks[i].getAmountPoints(),
+                           dailyTasks[i].getAmountEarnLosePoints(),
                            dailyTasks[i].getTypeEntry());
     }
 }
@@ -100,13 +100,13 @@ void ManageDailyTasks::initModelTableView()
     mUi->tableView->setModel(mModel.get());
 }
 
-void ManageDailyTasks::addDataInTableView(const QString &task, const QString &points, const QString &amount, const QString &type)
+void ManageDailyTasks::addDataInTableView(const QString &task, const QString &points, const QString &amountEarnLose, const QString &type)
 {
     mModel->setRowCount(mModel->rowCount()+1);
 
     mModel->setData(mModel->index(mModel->rowCount()-1,0),task);
     mModel->setData(mModel->index(mModel->rowCount()-1,1),points);
-    mModel->setData(mModel->index(mModel->rowCount()-1,2),amount);
+    mModel->setData(mModel->index(mModel->rowCount()-1,2),amountEarnLose);
     mModel->setData(mModel->index(mModel->rowCount()-1,3),type);
 
     //set data to be not editable

@@ -1,4 +1,4 @@
-#include "dailytasksstructure.h"
+#include "daily_tasks_structure.h"
 
 DailyTasksStructure::DailyTasksStructure()
 {

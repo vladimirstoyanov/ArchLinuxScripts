@@ -6,9 +6,9 @@
 #include <QWidget>
 #include <memory>
 
-#include "createaccountwindow.h"
+#include "create_account_window.h"
 #include "database.h"
-#include "mainwindow.h"
+#include "main_window.h"
 
 namespace Ui {
 class LoginWindow;

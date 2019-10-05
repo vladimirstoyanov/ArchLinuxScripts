@@ -6,9 +6,9 @@
 
 #include <memory>
 
-#include "dailytasksstructure.h"
+#include "daily_tasks_structure.h"
 #include "database.h"
-#include "managedailytasks.h"
+#include "manage_daily_tasks_window.h"
 
 
 namespace Ui {
@@ -36,15 +36,27 @@ public slots:
     void changeDailyTaskMenuClicked();
     void markTaskAsFinishedMenuClicked();
     void onUpdateTableViewMainWindow ();
+    void itemChanged (QStandardItem*);
 
 private:
     void closeEvent (QCloseEvent *);
     void showEvent(QShowEvent *);
 
 private:
-    void addDataInTableView(const QString &task, const QString &points, const QString &amount, const QString &type);
+    void addDataInTableView(const QString &task,
+                            const QString &points,
+                            const QString &currentAmount,
+                            const QString &amountToEarnLose,
+                            const QString &type);
+
+    QString calculateEarnedPoints (const QString &points,
+                               const QString &amountToEarnLose,
+                               const QString &currentAmount,
+                               const QString &type,
+                               Qt::CheckState checkState);
     void initActions ();
     void initModelTableView();
+    QString getDataFromModelByIndex (const int &index, const int &column);
     void reloadTableViewData ();
 
 

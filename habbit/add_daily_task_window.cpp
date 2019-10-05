@@ -1,4 +1,4 @@
-#include "adddailytaskwindow.h"
+#include "add_daily_task_window.h"
 #include "ui_adddailytaskwindow.h"
 
 AddDailyTaskWindow::AddDailyTaskWindow(QWidget *parent) :
@@ -9,9 +9,11 @@ AddDailyTaskWindow::AddDailyTaskWindow(QWidget *parent) :
     mUi->setupUi(this);
 
     mUi->comboBox->addItem(tr("checkbox"));
-    mUi->comboBox->addItem(tr("textbox"));
     mUi->comboBox->addItem(tr("incrementJudgeAfter"));
     mUi->comboBox->addItem(tr("incrementGainAfter"));
+
+    mUi->timeComboBox->addItem(tr("daily"));
+    mUi->timeComboBox->addItem(tr("weekly"));
 }
 
 AddDailyTaskWindow::~AddDailyTaskWindow()
@@ -35,17 +37,28 @@ void AddDailyTaskWindow::on_cancelButton_clicked ()
     this->hide();
 }
 
-QString AddDailyTaskWindow::getItemText (const int &index)
+QString AddDailyTaskWindow::getItemTextByTimeCombobox(const int &index)
+{
+    switch (index)
+    {
+        case 0:
+            return "daily";
+        case 1:
+            return "weekly";
+        default:
+            return "";
+    }
+}
+
+QString AddDailyTaskWindow::getItemTextByTypeCombobox (const int &index)
 {
     switch (index)
     {
         case 0:
             return "checkbox";
         case 1:
-            return "textbox";
-        case 2:
             return "incrementJudgeAfter";
-        case 3:
+        case 2:
             return "incrementGainAfter";
         default:
             return "";
@@ -83,9 +96,11 @@ void AddDailyTaskWindow::on_addButton_clicked ()
     //ToDo: change this hardcoded username with someone getted from the database
     mDataBase->insertIntoDailyTasks("vlado",
                                     mUi->taskEdit->text(),
-                                    getItemText(mUi->comboBox->currentIndex()),
+                                    getItemTextByTypeCombobox(mUi->comboBox->currentIndex()),
                                     mUi->pointsEdit->text(),
-                                    mUi->amountEdit->text());
+                                    mUi->amountEdit->text(),
+                                    getItemTextByTimeCombobox(mUi->timeComboBox->currentIndex()),
+                                    "0"); //current_amount is 0 when add a daily task
 
     emit (updateTableView());
     this->hide();

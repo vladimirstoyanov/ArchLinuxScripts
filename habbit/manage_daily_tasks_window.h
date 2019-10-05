@@ -11,8 +11,8 @@
 #include <memory>
 #include <vector>
 
-#include "adddailytaskwindow.h"
-#include "dailytasksstructure.h"
+#include "add_daily_task_window.h"
+#include "daily_tasks_structure.h"
 #include "database.h"
 
 namespace Ui {

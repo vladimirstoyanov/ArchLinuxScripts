@@ -53,7 +53,9 @@ public:
         mTask (""),
         mTypeEntry (""),
         mPoints (""),
-        mAmountPoints ("")
+        mCurrentAmount (""),
+        mAmountEarnLosePoints (""),
+        mTime ("")
     {
     }
     virtual ~DailyTask () {}
@@ -61,19 +63,24 @@ public:
     void setTask (const QString & task) { this->mTask = task; }
     void setTypeEntry (const QString &typeEntry) { this->mTypeEntry = typeEntry; }
     void setPoints (const QString &points) { this->mPoints = points; }
-    void setAmountPoints (const QString &amountPoints) { this->mAmountPoints = amountPoints; }
+    void setAmountEarnLosePoints (const QString &amountEarnLosePoints) { this->mAmountEarnLosePoints = amountEarnLosePoints; }
+    void setTime (const QString &time) { this->mTime = time; }
+    void setCurrentAmount (const QString &currentAmount) { this->mCurrentAmount = currentAmount; }
 
     QString getTask () { return this->mTask; }
     QString getTypeEntry () { return this->mTypeEntry; }
     QString getPoints () { return this->mPoints; }
-    QString getAmountPoints () { return this->mAmountPoints; }
+    QString getCurrentAmount () { return this->mCurrentAmount; }
+    QString getAmountEarnLosePoints () { return this->mAmountEarnLosePoints; }
+    QString getTime () { return this->mTime; }
 
 private:
     QString mTask;
     QString mTypeEntry;
     QString mPoints;
-    QString mAmountPoints;
-
+    QString mCurrentAmount;
+    QString mAmountEarnLosePoints;
+    QString mTime;
 };
 
 class DailyTasksStructure

@@ -49,17 +49,22 @@ void DataBase::insertIntoDailyTasks (const QString &username,
                               const QString &task,
                               const QString &type_entry,
                               const QString &points,
-                              const QString &points_for_amount)
+                              const QString &amount_earn_lose,
+                              const QString &time,
+                              const QString &current_amount)
 {
     {
         openDB();
         QSqlQuery query(q_sql_data_base_);
-        query.prepare("insert into daily_tasks (username, task, type_entry, points, points_for_amount) values (?,?,?,?,?)");
+        query.prepare("insert into daily_tasks (username, task, type_entry, points, amount_earn_lose, time, current_amount)"
+                      " values (?,?,?,?,?,?,?)");
         query.addBindValue(username);
         query.addBindValue(task);
         query.addBindValue(type_entry);
         query.addBindValue(points);
-        query.addBindValue(points_for_amount);
+        query.addBindValue(amount_earn_lose);
+        query.addBindValue(time);
+        query.addBindValue(current_amount);
 
         if (!query.exec())
         {
@@ -248,6 +253,22 @@ void DataBase::updatePointsByTaksName (const QString &username, const QString &t
     closeDB();
 }
 
+void DataBase::updateCurrentAmount (const QString &username, const QString &task, const QString &currentAmount)
+{
+    {
+        openDB();
+        QSqlQuery query(q_sql_data_base_);
+
+        query.prepare(QString("update daily_tasks set current_amount=\"%1\" where username=\"%2\" and task=\"%3\"").arg(
+                          currentAmount, username, task));
+        if (!query.exec())
+        {
+            qDebug()<<__PRETTY_FUNCTION__<<"Error:"<<query.lastError().text();
+        }
+    }
+    closeDB();
+}
+
 int DataBase::dropTable(const QString &table_name)
 {
     int result = 0;
@@ -264,6 +285,60 @@ int DataBase::dropTable(const QString &table_name)
     closeDB();
 
     return result;
+}
+
+QString DataBase::getPointsByDailyTask (const QString &username, const QString &task)
+{
+    {
+        openDB();
+        QSqlQuery query(q_sql_data_base_);
+
+        if (q_sql_data_base_.isOpen())
+        {
+            query.prepare(QString("SELECT * FROM daily_tasks WHERE username=\"%1\" and task=\"%2\"").arg(username, task));
+            if (!query.exec())
+            {
+                qDebug()<<"Fail:" + query.lastError().text();
+                closeDB();
+                return "0";
+            }
+            while(query.next())
+            {
+                QString points = query.value( 4 ).toByteArray().data();
+                closeDB();
+                return points;
+            }
+        }
+    }
+    closeDB();
+    return "0";
+}
+
+QString DataBase::getTypeByDailyTask (const QString &username, const QString &task)
+{
+    {
+        openDB();
+        QSqlQuery query(q_sql_data_base_);
+
+        if (q_sql_data_base_.isOpen())
+        {
+            query.prepare(QString("SELECT * FROM daily_tasks WHERE username=\"%1\" and task=\"%2\"").arg(username, task));
+            if (!query.exec())
+            {
+                qDebug()<<"Fail:" + query.lastError().text();
+                closeDB();
+                return "0";
+            }
+            while(query.next())
+            {
+                QString typeEntry = query.value( 3 ).toByteArray().data();
+                closeDB();
+                return typeEntry;
+            }
+        }
+    }
+    closeDB();
+    return "0";
 }
 
 DailyTasksStructure DataBase::getDailyTasksData (const QString &username)
@@ -288,13 +363,18 @@ DailyTasksStructure DataBase::getDailyTasksData (const QString &username)
                 QString task = query.value( 2 ).toByteArray().data();
                 QString typeEntry = query.value( 3 ).toByteArray().data();
                 QString points = query.value( 4 ).toByteArray().data();
-                QString amountPoints = query.value( 5 ).toByteArray().data();
+                QString amountEarnLosePoints = query.value( 5 ).toByteArray().data();
+                QString time = query.value( 6 ).toByteArray().data();
+                QString currentAmount = query.value( 7 ).toByteArray().data();
 
                 dailyTask.setTask(task);
                 dailyTask.setTypeEntry(typeEntry);
                 dailyTask.setPoints(points);
-                dailyTask.setAmountPoints(amountPoints);
+                dailyTask.setAmountEarnLosePoints(amountEarnLosePoints);
+                dailyTask.setTime (time);
+                dailyTask.setCurrentAmount (currentAmount);
                 dailyTasksStructure.addDailyTask(dailyTask);
+
             }
         }
     }
@@ -515,7 +595,9 @@ void DataBase::createDailyTasksTable ()
                  "task varchar, "
                  "type_entry varchar, " //textbox, checkbox
                  "points varchar, "
-                 "points_for_amount varchar)");
+                 "amount_earn_lose varchar,"
+                 "time varchar,"
+                 "current_amount varchar)");
 }
 
 void DataBase::createYkzaTasksTable ()

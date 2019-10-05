@@ -27,23 +27,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-        adddailytaskwindow.cpp \
-        createaccountwindow.cpp \
+    add_daily_task_window.cpp \
+    create_account_window.cpp \
+    daily_tasks_structure.cpp \
         database.cpp \
-        loginwindow.cpp \
+    login_window.cpp \
         main.cpp \
-        mainwindow.cpp \
-        managedailytasks.cpp \
-    dailytasksstructure.cpp
+    main_window.cpp \
+    manage_daily_tasks_window.cpp
 
 HEADERS += \
-        adddailytaskwindow.h \
-        createaccountwindow.h \
+    add_daily_task_window.h \
+    create_account_window.h \
+    daily_tasks_structure.h \
         database.h \
-        loginwindow.h \
-        mainwindow.h \
-        managedailytasks.h \
-    dailytasksstructure.h
+    login_window.h \
+    main_window.h \
+    manage_daily_tasks_window.h
 
 FORMS += \
         adddailytaskwindow.ui \

@@ -1,7 +1,7 @@
 #include <QApplication>
 
-#include "loginwindow.h"
-#include "mainwindow.h"
+#include "login_window.h"
+#include "main_window.h"
 #include "database.h"
 /*
     - 'main window' it will contains:

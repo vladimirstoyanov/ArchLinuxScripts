@@ -28,7 +28,8 @@ private slots:
         void on_addButton_clicked ();
         void on_cancelButton_clicked ();
 private:
-        QString getItemText (const int &index);
+        QString getItemTextByTypeCombobox (const int &index);
+        QString getItemTextByTimeCombobox(const int &index);
 private:
          void closeEvent (QCloseEvent *);
          void showEvent(QShowEvent *);
