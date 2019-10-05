@@ -1,4 +1,3 @@
-  GNU nano 4.4                                     static_internet_sharing.sh                                                
 #!/bin/sh
 #$1 - source code 
 
