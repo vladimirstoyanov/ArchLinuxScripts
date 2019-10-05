@@ -37,10 +37,18 @@ public:
                                   const QString &budget,
                                   const QString &level,
                                   const QString &points);
-    //    -'hostory' slite database should contains - 'username', 'date', 'points'
+
     void    insertIntoHistory (const QString &username,
                                   const QString &date,
-                                  const QString &points);
+                                  const QString &points,
+                                  const QString &notes,
+                                  const QString &task,
+                                  const QString &typeEntry,
+                                  const QString &taskPoints,
+                                  const QString &amountEarnlose,
+                                  const QString &time,
+                                  const QString &currentAmount);
+
     //-'accounts' sqlite database should contains - 'username', 'password' (sha265 hash)
     void    insertIntoAccounts (const QString &username,
                                   const QString &password);

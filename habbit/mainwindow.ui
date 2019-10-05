@@ -24,12 +24,12 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="totalLablel">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>200</y>
-      <width>54</width>
+      <width>151</width>
       <height>17</height>
      </rect>
     </property>
@@ -37,7 +37,7 @@
      <string>Total:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="submitButton">
     <property name="geometry">
      <rect>
       <x>310</x>

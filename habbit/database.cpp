@@ -118,18 +118,41 @@ void DataBase::insertIntoUsernameData (const QString &username,
     closeDB();
 }
 
-//    -'hostory' slite database should contains - 'username', 'date', 'points'
 void DataBase::insertIntoHistory (const QString &username,
                               const QString &date,
-                              const QString &points)
+                              const QString &points,
+                              const QString &notes,
+                              const QString &task,
+                              const QString &typeEntry,
+                              const QString &taskPoints,
+                              const QString &amountEarnlose,
+                              const QString &time,
+                              const QString &currentAmount)
 {
     {
         openDB();
         QSqlQuery query(q_sql_data_base_);
-        query.prepare("insert into history (username, date, points) values (?,?,?)");
+        query.prepare("insert into history (username,"
+                      " date,"
+                      " points,"
+                      " notes,"
+                      " task,"
+                      " type_entry,"
+                      " task_points,"
+                      " amount_earn_lose,"
+                      " time,"
+                      " current_amount"
+                      ") values (?,?,?)");
         query.addBindValue(username);
         query.addBindValue(date);
         query.addBindValue(points);
+        query.addBindValue(notes);
+        query.addBindValue(task);
+        query.addBindValue(typeEntry);
+        query.addBindValue(taskPoints);
+        query.addBindValue(amountEarnlose);
+        query.addBindValue(time);
+        query.addBindValue(currentAmount);
 
         if (!query.exec())
         {
@@ -489,6 +512,24 @@ QString DataBase::getHistory (const QString &username)
                 result +=",";
                 result += "notes:";
                 result += query.value( 5 ).toByteArray().data();
+                result +=",";
+                result += "task:";
+                result += query.value( 6 ).toByteArray().data();
+                result +=",";
+                result += "type_entry:";
+                result += query.value( 7 ).toByteArray().data();
+                result +=",";
+                result += "task_points:";
+                result += query.value( 8 ).toByteArray().data();
+                result +=",";
+                result += "amount_earn_lose:";
+                result += query.value( 9 ).toByteArray().data();
+                result +=",";
+                result += "time:";
+                result += query.value( 10 ).toByteArray().data();
+                result +=",";
+                result += "current_amount:";
+                result += query.value( 11 ).toByteArray().data();
                 result +="\n";
             }
         }
@@ -631,7 +672,21 @@ void DataBase::createHistoryTable ()
                  "username varchar, "
                  "date varchar, "
                  "points varchar,"
-                 "notes varchar)");
+                 "notes varchar,"
+                 "task varchar, "
+                 "type_entry varchar, "
+                 "task_points varchar, "
+                 "amount_earn_lose varchar, "
+                 "time varchar, " //daily, mouthly
+                 "current_amount varchar)");
+    /*
+     * "task varchar, "
+                 "type_entry varchar, " //textbox, checkbox
+                 "points varchar, "
+                 "amount_earn_lose varchar,"
+                 "time varchar,"
+                 "current_amount varchar
+                 */
 }
 void DataBase::createAccountsTable ()
 {

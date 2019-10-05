@@ -272,4 +272,11 @@ void MainWindow::onUpdateTableViewMainWindow ()
 void MainWindow::on_submitButton_clicked ()
 {
     qDebug () <<__PRETTY_FUNCTION__;
+    /*
+     *         - create a submit button; -in progress
+            - when click it it will add the points and daily tasks data in 'history' with current date.
+                If there is a hole between current and previous day, then it will set them to 0;
+            - if you click 'Submit' button several times it should override the data in 'history' table.
+            */
+    
 }

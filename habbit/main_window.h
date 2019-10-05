@@ -38,6 +38,9 @@ public slots:
     void onUpdateTableViewMainWindow ();
     void itemChanged (QStandardItem*);
 
+private slots:
+    void on_submitButton_clicked();
+
 private:
     void closeEvent (QCloseEvent *);
     void showEvent(QShowEvent *);
@@ -52,8 +55,7 @@ private:
     QString calculateEarnedPoints (const QString &points,
                                const QString &amountToEarnLose,
                                const QString &currentAmount,
-                               const QString &type,
-                               Qt::CheckState checkState);
+                               const QString &type);
     void initActions ();
     void initModelTableView();
     QString getDataFromModelByIndex (const int &index, const int &column);
@@ -64,6 +66,7 @@ private:
     std::shared_ptr<DataBase> mDatabase;
     std::shared_ptr<ManageDailyTasks> mManageDailyTasks;
     std::shared_ptr<QStandardItemModel> mModel;
+    int mTotalPoints;
     std::shared_ptr<Ui::MainWindow> mUi;
 
 };
