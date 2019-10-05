@@ -272,4 +272,33 @@ void MainWindow::onUpdateTableViewMainWindow ()
 void MainWindow::on_submitButton_clicked ()
 {
     qDebug () <<__PRETTY_FUNCTION__;
+
+    //get current date
+    QString date = QDate::currentDate().toString();
+
+    //get notes by date
+    QString notes = mDatabase->getNotesByDate("vlado", date);
+
+    //remove the history data by date
+    mDatabase->removeHistoryByDate("vlado", date);
+
+    //add the new data
+    DailyTasksStructure dailyTaskStructure;
+    dailyTaskStructure = mDatabase->getDailyTasksData("vlado");
+    QString points = QString::number(mTotalPoints);
+    //FIXME
+    std::vector<DailyTask> dailyTasks = dailyTaskStructure.getDailyTasks();
+    for (unsigned int i=0; i<dailyTasks.size(); ++i)
+    {
+        mDatabase->insertIntoHistory("vlado",
+                                     date,
+                                     points,
+                                     notes,
+                                     dailyTasks[i].getTask(),
+                                     dailyTasks[i].getTypeEntry(),
+                                     dailyTasks[i].getPoints(),
+                                     dailyTasks[i].getAmountEarnLosePoints(),
+                                     dailyTasks[i].getTime(),
+                                     dailyTasks[i].getCurrentAmount());
+    }
 }

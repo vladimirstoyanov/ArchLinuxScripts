@@ -7,6 +7,7 @@
 #include <QtSql/QtSql>
 
 #include "daily_tasks_structure.h"
+#include "history_structure.h"
 
 class DataBase
 {
@@ -62,7 +63,8 @@ public:
     //-'username_data' sqlite table should contains - 'username', 'budget', 'level', 'points'
     QString getUsernameData (const QString &username);
     //    -'hostory' slite database should contains - 'username', 'date', 'points'
-    QString getHistory (const QString &username);
+    HistoryStructure getHistory (const QString &username);
+    QString          getNotesByDate (const QString &username, const QString &date);
     bool getPasswordByUsername (const QString &username, QString &password);
 
     void    removeTaskFromDailyTasks(const QString &username, const QString &task);
@@ -72,6 +74,7 @@ public:
     void    removeUsernameData(const QString &username);
     //    -'hostory' slite database should contains - 'username', 'date', 'points'
     void    removeHistory(const QString &username);
+    void    removeHistoryByDate(const QString &username, const QString &date);
     //-'accounts' sqlite database should contains - 'username', 'password' (sha265 hash)
     void    removeAccount(const QString &username);
 

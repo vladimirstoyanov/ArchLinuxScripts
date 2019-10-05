@@ -30,6 +30,7 @@ SOURCES += \
     add_daily_task_window.cpp \
     create_account_window.cpp \
     daily_tasks_structure.cpp \
+    history_structure.cpp \
         database.cpp \
     login_window.cpp \
         main.cpp \
@@ -40,6 +41,7 @@ HEADERS += \
     add_daily_task_window.h \
     create_account_window.h \
     daily_tasks_structure.h \
+    history_structure.h \
         database.h \
     login_window.h \
     main_window.h \

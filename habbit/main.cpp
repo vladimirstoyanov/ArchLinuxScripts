@@ -7,10 +7,7 @@
     - 'main window' it will contains:
         - make the widget to resize correctly;
         - make totalLabel to resize dynamicly;
-        - create a submit button; -in progress
-            - when click it it will add the points and daily tasks data in 'history' with current date.
-                If there is a hole between current and previous day, then it will set them to 0;
-            - if you click 'Submit' button several times it should override the data in 'history' table.
+        - current amount should be updated with amount data from sunday to this day for weekly tasks;
 
     - a gui window that can be added weekly tasks
         - when resize the window, then resize the widget and positioning them;

@@ -142,7 +142,7 @@ void DataBase::insertIntoHistory (const QString &username,
                       " amount_earn_lose,"
                       " time,"
                       " current_amount"
-                      ") values (?,?,?)");
+                      ") values (?,?,?,?,?,?,?,?,?,?)");
         query.addBindValue(username);
         query.addBindValue(date);
         query.addBindValue(points);
@@ -220,6 +220,21 @@ void    DataBase::removeUsernameData(const QString &username)
         QSqlQuery query(q_sql_data_base_);
 
         query.prepare(QString("delete from username_data where username=\"%1\"").arg(username));
+        if (!query.exec())
+        {
+            qDebug()<<__PRETTY_FUNCTION__<<" Error:"<<query.lastError().text();
+        }
+    }
+    closeDB();
+}
+
+void DataBase::removeHistoryByDate(const QString &username, const QString &date)
+{
+    {
+        openDB();
+        QSqlQuery query(q_sql_data_base_);
+
+        query.prepare(QString("delete from history where username=\"%1\" and date=\"%2\"").arg(username, date));
         if (!query.exec())
         {
             qDebug()<<__PRETTY_FUNCTION__<<" Error:"<<query.lastError().text();
@@ -481,9 +496,38 @@ QString DataBase::getUsernameData (const QString &username)
     return "";
 }
 
-//    -'hostory' slite database should contains - 'username', 'date', 'points'
-QString DataBase::getHistory (const QString &username)
+QString DataBase::getNotesByDate (const QString &username, const QString &date)
 {
+    QString result = "";
+    {
+        openDB();
+        QSqlQuery query(q_sql_data_base_);
+
+        if (q_sql_data_base_.isOpen())
+        {
+            query.prepare(QString("SELECT * FROM history WHERE username=\"%1\" and date=\"%2\"").arg(username, date));
+            if (!query.exec())
+            {
+                qDebug()<<"Fail:" + query.lastError().text();
+                closeDB();
+                return "";
+            }
+            while(query.next())
+            {
+                QString notes = query.value( 4 ).toByteArray().data();
+                closeDB();
+                return notes;
+            }
+        }
+    }
+    closeDB();
+    return "";
+}
+
+//    -'hostory' slite database should contains - 'username', 'date', 'points'
+HistoryStructure DataBase::getHistory (const QString &username)
+{
+    HistoryStructure historyStructure;
     QString result = "";
     {
         openDB();
@@ -496,46 +540,28 @@ QString DataBase::getHistory (const QString &username)
             {
                 qDebug()<<"Fail:" + query.lastError().text();
                 closeDB();
-                return "";
+                return historyStructure;
             }
             while(query.next())
             {
-                //    -'hostory' slite database should contains - 'username', 'date', 'points', 'notes'
-                result += "username:";
-                result += query.value( 2 ).toByteArray().data();
-                result +=",";
-                result += "date:";
-                result += query.value( 3 ).toByteArray().data();
-                result +=",";
-                result += "points:";
-                result += query.value( 4 ).toByteArray().data();
-                result +=",";
-                result += "notes:";
-                result += query.value( 5 ).toByteArray().data();
-                result +=",";
-                result += "task:";
-                result += query.value( 6 ).toByteArray().data();
-                result +=",";
-                result += "type_entry:";
-                result += query.value( 7 ).toByteArray().data();
-                result +=",";
-                result += "task_points:";
-                result += query.value( 8 ).toByteArray().data();
-                result +=",";
-                result += "amount_earn_lose:";
-                result += query.value( 9 ).toByteArray().data();
-                result +=",";
-                result += "time:";
-                result += query.value( 10 ).toByteArray().data();
-                result +=",";
-                result += "current_amount:";
-                result += query.value( 11 ).toByteArray().data();
-                result +="\n";
+                History history;
+
+                history.setDate(query.value( 3 ).toByteArray().data());
+                history.setPoints(query.value( 4 ).toByteArray().data());
+                history.setNotes(query.value( 5 ).toByteArray().data());
+                history.setTask(query.value( 6 ).toByteArray().data());
+                history.setTypeEntry(query.value( 7 ).toByteArray().data());
+                history.setTaskPoints(query.value( 8 ).toByteArray().data());
+                history.setAmountEarnLosePoints(query.value( 9 ).toByteArray().data());
+                history.setTime(query.value( 10 ).toByteArray().data());
+                history.setCurrentAmount(query.value( 11 ).toByteArray().data());
+
+                historyStructure.addHistoryItem(history);
             }
         }
     }
     closeDB();
-    return "";
+    return historyStructure;
 }
 
 bool DataBase::getPasswordByUsername (const QString &username, QString &password)
