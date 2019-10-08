@@ -6,21 +6,6 @@
 #include <memory>
 #include <vector>
 
-/*
- *     createTable ("history",
-                 "create table history "
-                 "(id integer PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, "
-                 "username varchar, "
-                 "date varchar, "
-                 "points varchar,"
-                 "notes varchar,"
-                 "task varchar, "
-                 "type_entry varchar, "
-                 "task_points varchar, "
-                 "amount_earn_lose varchar, "
-                 "time varchar, " //daily, mouthly
-                 "current_amount varchar)");
-                 */
 class History
 {
 public:
@@ -31,7 +16,10 @@ public:
         mCurrentAmount (""),
         mAmountEarnLosePoints (""),
         mTime (""),
-        mDate (""),
+        mDay (""),
+        mMonth (""),
+        mYear (""),
+        mDayOfWeek (""),
         mPoints (""),
         mNotes ("")
     {
@@ -44,7 +32,10 @@ public:
     void setAmountEarnLosePoints (const QString &amountEarnLosePoints) { this->mAmountEarnLosePoints = amountEarnLosePoints; }
     void setTime (const QString &time) { this->mTime = time; }
     void setCurrentAmount (const QString &currentAmount) { this->mCurrentAmount = currentAmount; }
-    void setDate (const QString &date) { this->mDate = date; }
+    void setDay (const QString &day) { this->mDay = day; }
+    void setMonth (const QString &month) { this->mMonth = month; }
+    void setYear (const QString &year) { this->mYear = year; }
+    void setDayOfWeek (const QString &dayOfWeek) { this->mDayOfWeek = dayOfWeek; }
     void setPoints (const QString &points) { this->mPoints = points; }
     void setNotes (const QString &notes) { this->mNotes = notes; }
 
@@ -54,7 +45,10 @@ public:
     QString getCurrentAmount () { return this->mCurrentAmount; }
     QString getAmountEarnLosePoints () { return this->mAmountEarnLosePoints; }
     QString getTime () { return this->mTime; }
-    QString getDate () { return this->mDate; }
+    QString getDay () { return this->mDay; }
+    QString getMonth () { return this->mMonth; }
+    QString getYear () { return this->mYear; }
+    QString getDayOfWeek () { return this->mDayOfWeek; }
     QString getPoints () { return this->mPoints; }
     QString getNotes () { return this->mNotes; }
 
@@ -65,7 +59,10 @@ private:
     QString mCurrentAmount;
     QString mAmountEarnLosePoints;
     QString mTime;
-    QString mDate;
+    QString mDay;
+    QString mMonth;
+    QString mYear;
+    QString mDayOfWeek;
     QString mPoints;
     QString mNotes;
 };

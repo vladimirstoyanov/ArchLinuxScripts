@@ -1,4 +1,3 @@
-#include <QLayout>
 #include "main_window.h"
 #include "ui_mainwindow.h"
 
@@ -41,6 +40,7 @@ void MainWindow::itemChanged (QStandardItem*item)
         QString amountToEarnLose = getDataFromModelByIndex (i, 3); //ToDo: get it from the database
         QString currentAmount = getDataFromModelByIndex(i, 2);
         QString type = mDatabase->getTypeByDailyTask("vlado", task);
+        QString time = mDatabase->getTimeByDailyTask("vlado", task);
 
         if (type == "checkbox")
         {
@@ -58,15 +58,13 @@ void MainWindow::itemChanged (QStandardItem*item)
         QString earnedPoints = calculateEarnedPoints(points,
                                                      amountToEarnLose,
                                                      currentAmount,
-                                                     type);
+                                                     type,
+                                                     time);
         mTotalPoints+=earnedPoints.toInt();
-        //update earned points
         mModel->setData(mModel->index(i,1),earnedPoints);
         mDatabase->updateCurrentAmount("vlado", getDataFromModelByIndex (i, 0), currentAmount);
     }
     mUi->totalLablel->setText("Total: " + QString::number(mTotalPoints));
-    //mUi->totalLablel->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Minimum);
-    //mUi->totalLablel->setWordWrap(true);
 }
 
 QString MainWindow::getDataFromModelByIndex (const int &index, const int &column)
@@ -160,13 +158,15 @@ void MainWindow::reloadTableViewData ()
                             listDailyTask[i].getPoints (),
                             listDailyTask[i].getCurrentAmount(),
                             listDailyTask[i].getAmountEarnLosePoints (),
-                            listDailyTask[i].getTypeEntry ());
+                            listDailyTask[i].getTypeEntry (),
+                            listDailyTask[i].getTime());
     }
 }
 
 void MainWindow::closeEvent (QCloseEvent *)
 {
     qDebug () <<__PRETTY_FUNCTION__;
+    this->close();
 }
 
 void MainWindow::showEvent(QShowEvent *)
@@ -189,18 +189,26 @@ void MainWindow::initModelTableView()
 QString MainWindow::calculateEarnedPoints (const QString &points,
                                        const QString &amountToEarnLose,
                                        const QString &currentAmount,
-                                       const QString &type)
+                                       const QString &type,
+                                       const QString &time)
 {
     int resultInt = 0;
     int pointsInt = points.toInt();
     int amountToEarnLoseInt = amountToEarnLose.toInt();
     int currentAmountInt = currentAmount.toInt();
 
+    int day=0, month =0, year = 0, dayOfWeek=0;
+    getCurrentDate(day, month, year, dayOfWeek);
+
     if (type == "checkbox")
     {
         if (currentAmountInt == 1)
         {
             resultInt = pointsInt;
+        }
+        else
+        {
+            resultInt = -pointsInt;
         }
     }
     else if (type == "incrementJudgeAfter")
@@ -209,10 +217,42 @@ QString MainWindow::calculateEarnedPoints (const QString &points,
         {
             resultInt = (pointsInt * (currentAmountInt/amountToEarnLoseInt)) * -1;
         }
+        if (time == "weekly" && dayOfWeek == 7 && (currentAmountInt/double(amountToEarnLoseInt)) > 1.0)
+        {
+            resultInt = (pointsInt * (currentAmountInt/amountToEarnLoseInt)) * -1;
+        }
+        else if (time == "weekly" && dayOfWeek == 7 && (currentAmountInt/double(amountToEarnLoseInt)) <= 1.0)
+        {
+            resultInt = pointsInt;
+        }
+        else if (time == "weekly" && dayOfWeek !=7)
+        {
+            resultInt = 0;
+        }
     }
     else if (type == "incrementGainAfter" || type =="textbox")
     {
-        resultInt = currentAmountInt/amountToEarnLoseInt * pointsInt;
+        //ToDo if a weekly task and it's a sunday
+        if (currentAmountInt/amountToEarnLoseInt < 1)
+        {
+            resultInt = - pointsInt;
+        }
+        else
+        {
+            resultInt = currentAmountInt/amountToEarnLoseInt * pointsInt;
+        }
+        if (time == "weekly" && dayOfWeek == 7 && currentAmountInt/amountToEarnLoseInt < 1)
+        {
+            resultInt = -pointsInt;
+        }
+        else if (time == "weekly" && dayOfWeek == 7 && currentAmountInt/amountToEarnLoseInt >= 1)
+        {
+            resultInt = currentAmountInt/amountToEarnLoseInt * pointsInt;
+        }
+        else if (time == "weekly" && dayOfWeek != 7)
+        {
+            resultInt = 0;
+        }
     }
     QString result = QString::number(resultInt);
     return result;
@@ -222,12 +262,13 @@ void MainWindow::addDataInTableView(const QString &task,
                                     const QString &points,
                                     const QString &currentAmount,
                                     const QString &amountToEarnLose,
-                                    const QString &type)
+                                    const QString &type,
+                                    const QString &time)
 {
 
     mModel->setRowCount(mModel->rowCount()+1);
 
-    QString earnedPoints = calculateEarnedPoints(points, amountToEarnLose,currentAmount,type);
+    QString earnedPoints = calculateEarnedPoints(points, amountToEarnLose,currentAmount,type, time);
     mModel->setData(mModel->index(mModel->rowCount()-1,0),task);
     mModel->setData(mModel->index(mModel->rowCount()-1,1),earnedPoints);
     mModel->setData(mModel->index(mModel->rowCount()-1,3),amountToEarnLose);
@@ -240,7 +281,6 @@ void MainWindow::addDataInTableView(const QString &task,
     //"checkbox", "textbox", "incrementJudgeAfter", "incrementGainAfter";
     if ("checkbox" == type)
     {
-        //ToDo: create a check box
         QStandardItem* item0 = new QStandardItem(true);
         item0->setCheckable(true);
         if (currentAmount == "0")
@@ -257,7 +297,16 @@ void MainWindow::addDataInTableView(const QString &task,
     }
     else
     {
-        mModel->setData(mModel->index(mModel->rowCount()-1,2),currentAmount);
+        QString time = mDatabase->getTimeByDailyTask ("vlado", task);
+        if (currentAmount=="0" && time == "weekly")
+        {
+            QString previousAmount = getPreviousAmountOfTheCurrentWeek(task);
+            mModel->setData(mModel->index(mModel->rowCount()-1,2),previousAmount);
+        }
+        else
+        {
+            mModel->setData(mModel->index(mModel->rowCount()-1,2),currentAmount);
+        }
         mModel->item(mModel->rowCount()-1,2)->setEditable(true);
     }
 
@@ -269,6 +318,84 @@ void MainWindow::onUpdateTableViewMainWindow ()
     reloadTableViewData();
 }
 
+void MainWindow::resetCurrentAmount ()
+{
+    for (int i=0; i<mModel->rowCount(); ++i)
+    {
+        QString task = getDataFromModelByIndex (i, 0);
+        QString type = mDatabase->getTypeByDailyTask("vlado", task);
+        if (type == "checkbox")
+        {
+            QStandardItem *standardItem = mModel->item(i, 2);
+            if (standardItem!=nullptr && standardItem->checkState() == Qt::Checked)
+            {
+                standardItem->setCheckState(Qt::Unchecked);
+            }
+
+        }
+        else
+        {
+            QString time = mDatabase->getTimeByDailyTask("vlado", task);
+            int day=0, month=0, year=0, dayOfWeek = 0;
+            getCurrentDate(day,month,year, dayOfWeek);
+            if (time == "weekly" && dayOfWeek!=7)
+            {
+                qDebug ()<<__PRETTY_FUNCTION__<<": do nothing for task: "<<task;
+            }
+            else
+            {
+                mModel->setData(mModel->index(mModel->rowCount()-1,2),"0");
+            }
+
+        }
+        mDatabase->updateCurrentAmount("vlado", task, "0");
+    }
+}
+
+QString MainWindow::getPreviousAmountOfTheCurrentWeek (const QString &task)
+{
+    int day=0, month = 0, year = 0, dayOfWeek = 0, dayBeforeCurrent = -1;
+    getCurrentDate(day, month, year, dayOfWeek);
+
+    //until found a day of the week with currentAmount value
+    while (dayOfWeek==1)
+    {
+        QString amount = mDatabase->getAmountFromHistory("vlado",
+                                    task,
+                                    QString::number(day),
+                                    QString::number(month),
+                                    QString::number(year));
+
+        if (amount != "0")
+        {
+            return amount;
+        }
+        --dayBeforeCurrent;
+        getDateBeforeCurrent(dayBeforeCurrent, day, month, year, dayOfWeek);
+    }
+
+    return "0";
+}
+
+void MainWindow::getDateBeforeCurrent (const int &dayBeforeCurrent, int &day, int&month, int &year, int &dayOfTheWeek)
+{
+    QDate date(QDate::currentDate());
+    QDate yesterday = date.addDays(dayBeforeCurrent);
+    day = yesterday.day();
+    month = yesterday.month();
+    year = yesterday.year();
+    dayOfTheWeek = yesterday.dayOfWeek();
+}
+
+void MainWindow::getCurrentDate (int &day, int &month, int &year, int &dayOfTheWeek)
+{
+    QDate date(QDate::currentDate());
+    day = date.day();
+    month = date.month();
+    year = date.year();
+    dayOfTheWeek = date.dayOfWeek();
+}
+
 void MainWindow::on_submitButton_clicked ()
 {
     qDebug () <<__PRETTY_FUNCTION__;
@@ -276,11 +403,19 @@ void MainWindow::on_submitButton_clicked ()
     //get current date
     QString date = QDate::currentDate().toString();
 
+    int day, month, year, dayOfWeek = 0;
+    getCurrentDate(day, month, year, dayOfWeek);
     //get notes by date
-    QString notes = mDatabase->getNotesByDate("vlado", date);
+    QString notes = mDatabase->getNotesByDate("vlado",
+                                              QString::number(day),
+                                              QString::number(month),
+                                              QString::number(year));
 
     //remove the history data by date
-    mDatabase->removeHistoryByDate("vlado", date);
+    mDatabase->removeHistoryByDate("vlado",
+                                   QString::number(day),
+                                   QString::number(month),
+                                   QString::number(year));
 
     //add the new data
     DailyTasksStructure dailyTaskStructure;
@@ -291,7 +426,10 @@ void MainWindow::on_submitButton_clicked ()
     for (unsigned int i=0; i<dailyTasks.size(); ++i)
     {
         mDatabase->insertIntoHistory("vlado",
-                                     date,
+                                     QString::number(day),
+                                     QString::number(month),
+                                     QString::number(year),
+                                     QString::number(dayOfWeek),
                                      points,
                                      notes,
                                      dailyTasks[i].getTask(),
@@ -301,4 +439,6 @@ void MainWindow::on_submitButton_clicked ()
                                      dailyTasks[i].getTime(),
                                      dailyTasks[i].getCurrentAmount());
     }
+
+    resetCurrentAmount();
 }

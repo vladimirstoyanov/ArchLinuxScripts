@@ -119,7 +119,10 @@ void DataBase::insertIntoUsernameData (const QString &username,
 }
 
 void DataBase::insertIntoHistory (const QString &username,
-                              const QString &date,
+                              const QString &day,
+                              const QString &month,
+                              const QString &year,
+                              const QString &dayOfWeek,
                               const QString &points,
                               const QString &notes,
                               const QString &task,
@@ -133,7 +136,10 @@ void DataBase::insertIntoHistory (const QString &username,
         openDB();
         QSqlQuery query(q_sql_data_base_);
         query.prepare("insert into history (username,"
-                      " date,"
+                      " day,"
+                      " month,"
+                      " year,"
+                      " dayOfWeek,"
                       " points,"
                       " notes,"
                       " task,"
@@ -142,9 +148,12 @@ void DataBase::insertIntoHistory (const QString &username,
                       " amount_earn_lose,"
                       " time,"
                       " current_amount"
-                      ") values (?,?,?,?,?,?,?,?,?,?)");
+                      ") values (?,?,?,?,?,?,?,?,?,?,?,?,?)");
         query.addBindValue(username);
-        query.addBindValue(date);
+        query.addBindValue(day);
+        query.addBindValue(month);
+        query.addBindValue(year);
+        query.addBindValue(dayOfWeek);
         query.addBindValue(points);
         query.addBindValue(notes);
         query.addBindValue(task);
@@ -228,13 +237,20 @@ void    DataBase::removeUsernameData(const QString &username)
     closeDB();
 }
 
-void DataBase::removeHistoryByDate(const QString &username, const QString &date)
+
+
+void DataBase::removeHistoryByDate(const QString &username,
+                                   const QString &day,
+                                   const QString &month,
+                                   const QString &year)
 {
     {
         openDB();
         QSqlQuery query(q_sql_data_base_);
 
-        query.prepare(QString("delete from history where username=\"%1\" and date=\"%2\"").arg(username, date));
+        query.prepare(QString("delete from history where username=\"%1\" and day=\"%2\""
+                              " and month=\"%3\""
+                              " and year=\"%4\"").arg(username, day, month, year));
         if (!query.exec())
         {
             qDebug()<<__PRETTY_FUNCTION__<<" Error:"<<query.lastError().text();
@@ -345,6 +361,33 @@ QString DataBase::getPointsByDailyTask (const QString &username, const QString &
                 QString points = query.value( 4 ).toByteArray().data();
                 closeDB();
                 return points;
+            }
+        }
+    }
+    closeDB();
+    return "0";
+}
+
+QString DataBase::getTimeByDailyTask (const QString &username, const QString &task)
+{
+    {
+        openDB();
+        QSqlQuery query(q_sql_data_base_);
+
+        if (q_sql_data_base_.isOpen())
+        {
+            query.prepare(QString("SELECT * FROM daily_tasks WHERE username=\"%1\" and task=\"%2\"").arg(username, task));
+            if (!query.exec())
+            {
+                qDebug()<<"Fail:" + query.lastError().text();
+                closeDB();
+                return "0";
+            }
+            while(query.next())
+            {
+                QString time = query.value( 6 ).toByteArray().data();
+                closeDB();
+                return time;
             }
         }
     }
@@ -496,7 +539,11 @@ QString DataBase::getUsernameData (const QString &username)
     return "";
 }
 
-QString DataBase::getNotesByDate (const QString &username, const QString &date)
+QString DataBase::getAmountFromHistory (const QString &username,
+                                      const QString &task,
+                                      const QString &day,
+                                      const QString &month,
+                                      const QString &year)
 {
     QString result = "";
     {
@@ -505,7 +552,11 @@ QString DataBase::getNotesByDate (const QString &username, const QString &date)
 
         if (q_sql_data_base_.isOpen())
         {
-            query.prepare(QString("SELECT * FROM history WHERE username=\"%1\" and date=\"%2\"").arg(username, date));
+            query.prepare(QString("SELECT * FROM history WHERE username=\"%1\""
+                                  " and task=\"%2\""
+                                  " and day=\"%3\""
+                                  " and month=\"%4\""
+                                  " and yaer=\"%5\"").arg(username, task, day, month, year));
             if (!query.exec())
             {
                 qDebug()<<"Fail:" + query.lastError().text();
@@ -514,7 +565,41 @@ QString DataBase::getNotesByDate (const QString &username, const QString &date)
             }
             while(query.next())
             {
-                QString notes = query.value( 4 ).toByteArray().data();
+                QString currentAmount = query.value( 14 ).toByteArray().data();
+                closeDB();
+                return currentAmount;
+            }
+        }
+    }
+    closeDB();
+    return "";
+}
+
+QString DataBase::getNotesByDate (const QString &username,
+                                  const QString &day,
+                                  const QString &month,
+                                  const QString &year)
+{
+    QString result = "";
+    {
+        openDB();
+        QSqlQuery query(q_sql_data_base_);
+
+        if (q_sql_data_base_.isOpen())
+        {
+            query.prepare(QString("SELECT * FROM history WHERE username=\"%1\""
+                                  " and day=\"%2\""
+                                  " and month=\"%3\""
+                                  " and yaer=\"%4\"").arg(username, day, month, year));
+            if (!query.exec())
+            {
+                qDebug()<<"Fail:" + query.lastError().text();
+                closeDB();
+                return "";
+            }
+            while(query.next())
+            {
+                QString notes = query.value( 8 ).toByteArray().data();
                 closeDB();
                 return notes;
             }
@@ -524,7 +609,6 @@ QString DataBase::getNotesByDate (const QString &username, const QString &date)
     return "";
 }
 
-//    -'hostory' slite database should contains - 'username', 'date', 'points'
 HistoryStructure DataBase::getHistory (const QString &username)
 {
     HistoryStructure historyStructure;
@@ -546,15 +630,18 @@ HistoryStructure DataBase::getHistory (const QString &username)
             {
                 History history;
 
-                history.setDate(query.value( 3 ).toByteArray().data());
-                history.setPoints(query.value( 4 ).toByteArray().data());
-                history.setNotes(query.value( 5 ).toByteArray().data());
-                history.setTask(query.value( 6 ).toByteArray().data());
-                history.setTypeEntry(query.value( 7 ).toByteArray().data());
-                history.setTaskPoints(query.value( 8 ).toByteArray().data());
-                history.setAmountEarnLosePoints(query.value( 9 ).toByteArray().data());
-                history.setTime(query.value( 10 ).toByteArray().data());
-                history.setCurrentAmount(query.value( 11 ).toByteArray().data());
+                history.setDay(query.value( 3 ).toByteArray().data());
+                history.setMonth(query.value( 4 ).toByteArray().data());
+                history.setYear(query.value( 5 ).toByteArray().data());
+                history.setDayOfWeek(query.value( 6 ).toByteArray().data());
+                history.setPoints(query.value( 7 ).toByteArray().data());
+                history.setNotes(query.value( 8 ).toByteArray().data());
+                history.setTask(query.value( 9 ).toByteArray().data());
+                history.setTypeEntry(query.value( 10 ).toByteArray().data());
+                history.setTaskPoints(query.value( 11 ).toByteArray().data());
+                history.setAmountEarnLosePoints(query.value( 12 ).toByteArray().data());
+                history.setTime(query.value( 13 ).toByteArray().data());
+                history.setCurrentAmount(query.value( 14 ).toByteArray().data());
 
                 historyStructure.addHistoryItem(history);
             }
@@ -696,7 +783,10 @@ void DataBase::createHistoryTable ()
                  "create table history "
                  "(id integer PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, "
                  "username varchar, "
-                 "date varchar, "
+                 "day varchar, "
+                 "month varchar, "
+                 "year varchar, "
+                 "dayOfWeek varchar, "
                  "points varchar,"
                  "notes varchar,"
                  "task varchar, "
@@ -705,14 +795,6 @@ void DataBase::createHistoryTable ()
                  "amount_earn_lose varchar, "
                  "time varchar, " //daily, mouthly
                  "current_amount varchar)");
-    /*
-     * "task varchar, "
-                 "type_entry varchar, " //textbox, checkbox
-                 "points varchar, "
-                 "amount_earn_lose varchar,"
-                 "time varchar,"
-                 "current_amount varchar
-                 */
 }
 void DataBase::createAccountsTable ()
 {

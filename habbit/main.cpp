@@ -8,6 +8,7 @@
         - make the widget to resize correctly;
         - make totalLabel to resize dynamicly;
         - current amount should be updated with amount data from sunday to this day for weekly tasks;
+            - it will get the current amount from previous day, if the privous day is not sunday and current day is equal to zero;
 
     - a gui window that can be added weekly tasks
         - when resize the window, then resize the widget and positioning them;

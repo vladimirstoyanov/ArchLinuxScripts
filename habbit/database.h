@@ -40,7 +40,10 @@ public:
                                   const QString &points);
 
     void    insertIntoHistory (const QString &username,
-                                  const QString &date,
+                                  const QString &day,
+                                  const QString &month,
+                                  const QString &year,
+                                  const QString &dayOfWeek,
                                   const QString &points,
                                   const QString &notes,
                                   const QString &task,
@@ -57,6 +60,7 @@ public:
     DailyTasksStructure getDailyTasksData (const QString &username);
     QString getPointsByDailyTask (const QString &username, const QString &dailyTask);
     QString getTypeByDailyTask (const QString &username, const QString &dailyTask);
+    QString getTimeByDailyTask (const QString &username, const QString &dailyTask);
 
     //-'ykza_tasks' sqlite table should contains - 'username', 'task', 'points'
     QString getYkzaTasks (const QString &username);
@@ -64,7 +68,23 @@ public:
     QString getUsernameData (const QString &username);
     //    -'hostory' slite database should contains - 'username', 'date', 'points'
     HistoryStructure getHistory (const QString &username);
-    QString          getNotesByDate (const QString &username, const QString &date);
+
+    History          getHistoryByDate (const QString &username,
+                                       const QString &day,
+                                       const QString &month,
+                                       const QString &year);
+
+    QString          getNotesByDate (const QString &username,
+                                     const QString &day,
+                                     const QString &month,
+                                     const QString &year);
+
+    QString         getAmountFromHistory (const QString &username,
+                                          const QString &task,
+                                          const QString &day,
+                                          const QString &month,
+                                          const QString &year);
+
     bool getPasswordByUsername (const QString &username, QString &password);
 
     void    removeTaskFromDailyTasks(const QString &username, const QString &task);
@@ -74,7 +94,10 @@ public:
     void    removeUsernameData(const QString &username);
     //    -'hostory' slite database should contains - 'username', 'date', 'points'
     void    removeHistory(const QString &username);
-    void    removeHistoryByDate(const QString &username, const QString &date);
+    void    removeHistoryByDate(const QString &username,
+                                const QString &day,
+                                const QString &month,
+                                const QString &year);
     //-'accounts' sqlite database should contains - 'username', 'password' (sha265 hash)
     void    removeAccount(const QString &username);
 

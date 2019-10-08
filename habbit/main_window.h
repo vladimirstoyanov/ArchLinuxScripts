@@ -3,6 +3,7 @@
 
 #include <QDate>
 #include <QDebug>
+#include <QLayout>
 #include <QMainWindow>
 
 #include <memory>
@@ -51,16 +52,25 @@ private:
                             const QString &points,
                             const QString &currentAmount,
                             const QString &amountToEarnLose,
-                            const QString &type);
+                            const QString &type,
+                            const QString &time);
 
     QString calculateEarnedPoints (const QString &points,
                                const QString &amountToEarnLose,
                                const QString &currentAmount,
-                               const QString &type);
+                               const QString &type,
+                               const QString &time);
+
+    QString getPreviousAmountOfTheCurrentWeek (const QString &task);
+    void getCurrentDate (int &day, int&month, int &year, int &dayOfTheWeek);
+    void getDateBeforeCurrent (const int &dayBeforeCurrent, int &day, int&month, int &year, int &dayOfTheWeek);
     void initActions ();
     void initModelTableView();
     QString getDataFromModelByIndex (const int &index, const int &column);
     void reloadTableViewData ();
+    void resetCurrentAmount ();
+    void splitDate (QString &day, QString &month, QString &year, QString &dayOfTheWeek);
+
 
 
 private:
