@@ -9,15 +9,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.webdriver import FirefoxProfile
 
-def loadCookies():
-    cookies = pickle.load(open("cookies1.pkl", "rb"))
-    for cookie in cookies:
-      driver.add_cookie(cookie)
-
-def saveCookies():
-    pickle.dump( driver.get_cookies() , open("cookies1.pkl","wb"))
-
-
 def getLoginDetails ():
     loginInfoFile = open('/home/scitickart/eToro/login_info', 'r')
     username = loginInfoFile.readline()
@@ -29,7 +20,7 @@ def getLoginDetails ():
     
     return username, password
 
-def monitorEtoro():
+def monitor():
     while True:
         sellButton = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[5]/et-instrument-row/et-instrument-trading-row/div/et-buy-sell-buttons/et-buy-sell-button[1]/div/div[2]')
         print("Sell price: " + sellButton.text)
@@ -37,7 +28,7 @@ def monitorEtoro():
         print ("Buy price: " + buyButton.text)
         time.sleep(1)
     
-def logInEToro():
+def login():
     mainWindow = driver.window_handles[0]
     print ("Getting gateway URL...")
     driver.get("https://www.etoro.com/login")
@@ -66,11 +57,8 @@ def logInEToro():
         
         print('Please confirm login credential by your phone and press any key to continue...')
         x = input()
-        saveCookies()
     except:
-        loadCookies()
-    
-    monitorEtoro()
+        pass
     
 print ("Loading Firefox...")
 profile = FirefoxProfile("/home/scitickart/.mozilla/firefox/w05kja2g.default")
@@ -81,4 +69,5 @@ driver.maximize_window()
 
 wait = WebDriverWait(driver, 10)
 
-logInEToro()
+login()
+monitor()
