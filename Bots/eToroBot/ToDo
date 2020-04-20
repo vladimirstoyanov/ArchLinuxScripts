@@ -1,6 +1,7 @@
 [- Install selenium]
 [- login to etoro]
 [- get a price for a stock]
-- configure to follow a stock
+- monitor stocks
+    - find a stock
 - configure to buy/sell stocks if price is x 
 - buy/sell stocks
