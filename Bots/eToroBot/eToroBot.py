@@ -35,7 +35,7 @@ def LogInEToro():
 
   time.sleep(10)
   print("trying to find a login button");
-  button = driver.find_elements_by_xpath('/html/body/ui-layout/div/div/div[1]/login/login-sts/div/div/div/form/div/div[7]/div/button[1]')
+  button = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[1]/login/login-sts/div/div/div/form/div/div[7]/div/button[1]')
   button.click()
 
 print ("Loading Firefox...")
