@@ -142,3 +142,163 @@ IPDL protocol error: Handler returned error code!
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 1587673954055	Marionette	INFO	Stopped listening on port 41475
+1587678266403	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevzP9wR"
+1587678268625	Marionette	INFO	Listening on port 46097
+1587678268764	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1912844444, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1912844444, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1912844444, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1912844444 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1912844444 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1135102888, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1135102888, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1135102888, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1135102888 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1135102888 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: resource://gre/actors/BrowserElementParent.jsm, line 314: TypeError: state is undefined
+JavaScript error: resource://gre/actors/BrowserElementParent.jsm, line 314: TypeError: state is undefined
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1587678297966	Marionette	INFO	Stopped listening on port 46097
+1587678320999	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile298tj9"
+1587678323138	Marionette	INFO	Listening on port 38119
+1587678323208	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1071949756, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1071949756, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1071949756, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1071949756 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1071949756 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1202921111, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1202921111, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1202921111, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1202921111 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1202921111 line 1 > eval, line 1: unreachable code after return statement
+1587678466722	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEbW1pl"
+1587678468895	Marionette	INFO	Listening on port 33427
+1587678468930	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=255585041, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=255585041, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=255585041, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=255585041 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=255585041 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=420306412, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=420306412, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=420306412, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=420306412 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=420306412 line 1 > eval, line 1: unreachable code after return statement
+1587678623330	Marionette	INFO	Stopped listening on port 33427
+1587678631611	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilec8xRWZ"
+1587678633796	Marionette	INFO	Listening on port 45993
+1587678633830	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1151055710, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1151055710, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1151055710, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1151055710 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1151055710 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=1066025305, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=1066025305, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=1066025305, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=1066025305 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=1066025305 line 1 > eval, line 1: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.etoro.com"
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/shared/fronts/walker.js:411:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2243))
+1587678754009	Marionette	INFO	Stopped listening on port 45993
+1587678761524	Marionette	INFO	Stopped listening on port 38119
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1587678778298	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5xs4AF"
+1587678780492	Marionette	INFO	Listening on port 44115
+1587678780510	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1002778881, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1002778881, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1002778881 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1002778881 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=559546688, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1587678946701	Marionette	INFO	Stopped listening on port 44115
+1587678962585	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelqrGs5"
+1587678964687	Marionette	INFO	Listening on port 38815
+1587678964704	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1419445551, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1419445551, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1419445551, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1419445551 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1419445551 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=1805158049, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=1805158049, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=1805158049, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=1805158049 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=1805158049 line 1 > eval, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1587679079543	Marionette	INFO	Stopped listening on port 38815
+1587679140765	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAhkHdb"
+1587679142859	Marionette	INFO	Listening on port 37201
+1587679142891	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1519878825, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1519878825, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1519878825, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1519878825 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1519878825 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=653577343, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=653577343, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=5&cb=653577343 line 1 > eval, line 1: unreachable code after return statement
+1587679190869	Marionette	INFO	Stopped listening on port 37201
+1587679221835	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqQwtxo"
+1587679223981	Marionette	INFO	Listening on port 43749
+1587679224080	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=266874473, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=266874473, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=266874473 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=266874473 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=779768403, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=779768403, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=779768403, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=779768403 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=779768403 line 1 > eval, line 1: unreachable code after return statement
+1587679259259	Marionette	INFO	Stopped listening on port 43749
+1587679332315	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoIfVvC"
+1587679334500	Marionette	INFO	Listening on port 41093
+1587679334534	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1330442974, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1330442974, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1330442974, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1330442974 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1330442974 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1675075063, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1675075063, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1675075063, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1675075063 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1675075063 line 1 > eval, line 1: unreachable code after return statement
+1587679405033	Marionette	INFO	Stopped listening on port 41093
+1587679420946	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2hC5HJ"
+1587679423133	Marionette	INFO	Listening on port 32933
+1587679423165	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2080357289, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2080357289, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2080357289, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2080357289 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2080357289 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=581016355, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=581016355, line 1: unreachable code after return statement
+JavaScript warning: https://www.etoro.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=581016355 line 1 > eval, line 1: unreachable code after return statement
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.

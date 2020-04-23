@@ -35,61 +35,74 @@ def getLoginDetails ():
     username.replace('\n','')
     password.replace('\r','')
     password.replace('\n','')
-    
     return username, password
 
-def sellStock (index):
-    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]')
+def setElement(xpath, value):
+    stockElement = driver.find_element_by_xpath(xpath)
+    stockElement.send_keys(Keys.CONTROL + "a");
+    stockElement.send_keys(Keys.DELETE);
+    stockElement.send_keys(value)
+    
+def clickElementByXpath (xpath, timeout):
+    stockElement = driver.find_element_by_xpath(xpath)
     stockElement.click()
+    time.sleep(timeout)
+
+def buyStock (index, price):
+    clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]', 6)
     print("stock clicked...")
     
-    time.sleep(6)
+    clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/et-market-header/div/div[2]/trade-button/div/span', 4)
+    print("Trade button clicked...")
     
-    #chart button: /html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[2]/a[3]/span[2]
-    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[2]/a[3]/span[2]')
-    stockElement.click()
+    #/html/body/div[2]/div[2]/div/div/div[2]/div/div[2]/div[2]/div[1]/div[2]/input
+    setElement('/html/body/div[2]/div[2]/div/div/div[2]/div/div[2]/div[2]/div[1]/div[2]/input', price)
+    print("Price set...")
     time.sleep(4)
     
-    #stock button: /html/body/ui-layout/div/div/div[2]/et-market/div/div/div/et-my-investments-tooltip/a/span[2]
-    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/et-my-investments-tooltip/a/span[2]')
-    stockElement.click()
-    time.sleep(4)
+    #x button clicked
+    clickElementByXpath('/html/body/div[2]/div[2]/div/div/div[1]/div[2]/a', 3)
+    print("x button clicked...")
+    #return back to main list
+    clickElementByXpath('/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a', 7)
+    print("back to main list")
     
-    #setting button: /html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/span
-    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/span')
-    stockElement.click()
-    time.sleep(4)
+def sellStock (index):
+    clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]', 6)
+    print("stock clicked...")
     
-    #close button /html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/div/div/div[1]
-    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/div/div/div[1]')
-    stockElement.click()
-    time.sleep(4)
-    print("close button clicked.")
+    #"chart" button: 
+    clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[2]/a[3]/span[2]', 4)
+    print("chart button clicked")
     
-    #I want to close all check: /html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[3]/div/div/label
-    stockElement = driver.find_element_by_xpath('/html/body/div[2]/div[2]/close-all-positions/div/div[3]/div[3]/div[1]/div/label')
-    stockElement.click()
-    time.sleep(2)
+    #"stock" button: /html/body/ui-layout/div/div/div[2]/et-market/div/div/div/et-my-investments-tooltip/a/span[2]
+    clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/et-my-investments-tooltip/a/span[2]', 4)
+    print("stock button clicked...")
+    
+    #"settings" button: /html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/span
+    clickElementByXpath('/html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/span', 4)
+    print("settings button clicked...")
+    
+    #"close" button /html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/div/div/div[1]
+    clickElementByXpath('/html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/div/div/div[1]', 4)
+    print("close button clicked...")
+    
+    #"I want to close all" checkbox: /html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[3]/div/div/label
+    clickElementByXpath('/html/body/div[2]/div[2]/close-all-positions/div/div[3]/div[3]/div[1]/div/label', 2)
     print("I want to close all trades check clicked.")
     
     
-    #close all button clicked
-    #/html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[4]/button
-    #stockElement = driver.find_element_by_xpath('/html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[4]/button')
-    #stockElement.click()
-    #time.sleep(5)
+    #"close all" button clicked
+    clickElementByXpath('/html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[4]/button', 5)
+    print("close all button clicked")
     
-    #x button clicked: 
-    stockElement = driver.find_element_by_xpath('/html/body/div[2]/div[2]/close-all-positions/div/div[2]')
-    stockElement.click()
-    time.sleep(3)
-    print("x button clicked.")
+    #"x" button clicked:
+    #clickElementByXpath('/html/body/div[2]/div[2]/close-all-positions/div/div[2]', 3)
+    #print("x button clicked...")
     
-    #return back to main list
-    #/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a
-    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a')
-    stockElement.click()
-    time.sleep(7)
+    #back to main list
+    clickElementByXpath('/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a', 7)
+    print("back to main list...")
     
 def monitor():
     config = Config()
@@ -123,16 +136,14 @@ def monitor():
             print ("Stock: " + lResult[i][0] + ", sell price: " + lResult[i][5] + ", buy price: " + lResult[i][7])
             if (configData[i][1] == 'sell'):
                 if (sellPrice >= configData[i][2]):
-                    print("Selling " + configData[i][0])
+                    print("Selling " + configData[i][0] + "==============")
                     configData.pop(i)
-                    #/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[2]/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]
-                    #/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[4]/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]
-                    #/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[1]/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]/div[1]
                     sellStock(lResult[i][10])
                     break
             elif(configData[i][1] == 'buy'):
                 if (buyPrice <= configData[i][2]):
                     print("Buying " + configData[i][0])
+                    buyStock(lResult[i][10], configData[i][2])
                     configData.pop(i)
                     break
             else:
