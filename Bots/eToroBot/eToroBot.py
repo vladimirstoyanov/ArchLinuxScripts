@@ -133,22 +133,28 @@ def monitor():
             sellPrice = lResult[i][5]
             buyPrice = lResult[i][7]
             stockCode = lResult[i][0]
-            print ("Stock: " + lResult[i][0] + ", sell price: " + lResult[i][5] + ", buy price: " + lResult[i][7])
-            if (configData[i][1] == 'sell'):
-                if (sellPrice >= configData[i][2]):
-                    print("Selling " + configData[i][0] + "==============")
-                    configData.pop(i)
-                    sellStock(lResult[i][10])
-                    break
-            elif(configData[i][1] == 'buy'):
-                if (buyPrice <= configData[i][2]):
-                    print("Buying " + configData[i][0])
-                    buyStock(lResult[i][10], configData[i][2])
-                    configData.pop(i)
-                    break
-            else:
-                pass
-    
+            for j in range(len(configData)):
+                if (configData[j][0] == stockCode):
+                    if (configData[j][1] == 'sell'):
+                        if (sellPrice >= configData[j][2]):
+                            print("config data: " + configData[j][0] + ", sell price: " + configData[j][2])
+                            print ("Stock: " + stockCode + ", sell price: " + sellPrice + ", buy price: " + buyPrice)
+                            print("Selling " + configData[j][0] + "==============")
+                            configData.pop(j)
+                            sellStock(lResult[i][10])
+                            break
+                    elif(configData[j][1] == 'buy'):
+                        if (buyPrice <= configData[j][2]):
+                            print("Buying " + configData[j][0])
+                            buyStock(lResult[i][10], configData[j][2])
+                            configData.pop(i)
+                            break
+                    else:
+                        pass
+                    continue
+        
+        time.sleep(1)
+        
 def login():
     mainWindow = driver.window_handles[0]
     print ("Getting gateway URL...")
