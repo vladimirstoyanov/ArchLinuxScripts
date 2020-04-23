@@ -6,5 +6,6 @@
 [- configure to buy/sell stocks if price is x ]
    [ - create a config file]
    [ - load the config file]
+- get a xkey by a stock;
 - buy stocks
 - sell stocks

@@ -38,22 +38,78 @@ def getLoginDetails ():
     
     return username, password
 
+def sellStock (index):
+    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]')
+    stockElement.click()
+    print("stock clicked...")
+    
+    time.sleep(6)
+    
+    #chart button: /html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[2]/a[3]/span[2]
+    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[2]/a[3]/span[2]')
+    stockElement.click()
+    time.sleep(4)
+    
+    #stock button: /html/body/ui-layout/div/div/div[2]/et-market/div/div/div/et-my-investments-tooltip/a/span[2]
+    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/et-my-investments-tooltip/a/span[2]')
+    stockElement.click()
+    time.sleep(4)
+    
+    #setting button: /html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/span
+    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/span')
+    stockElement.click()
+    time.sleep(4)
+    
+    #close button /html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/div/div/div[1]
+    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/div/div/div[1]')
+    stockElement.click()
+    time.sleep(4)
+    print("close button clicked.")
+    
+    #I want to close all check: /html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[3]/div/div/label
+    stockElement = driver.find_element_by_xpath('/html/body/div[2]/div[2]/close-all-positions/div/div[3]/div[3]/div[1]/div/label')
+    stockElement.click()
+    time.sleep(2)
+    print("I want to close all trades check clicked.")
+    
+    
+    #close all button clicked
+    #/html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[4]/button
+    #stockElement = driver.find_element_by_xpath('/html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[4]/button')
+    #stockElement.click()
+    #time.sleep(5)
+    
+    #x button clicked: 
+    stockElement = driver.find_element_by_xpath('/html/body/div[2]/div[2]/close-all-positions/div/div[2]')
+    stockElement.click()
+    time.sleep(3)
+    print("x button clicked.")
+    
+    #return back to main list
+    #/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a
+    stockElement = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a')
+    stockElement.click()
+    time.sleep(7)
+    
 def monitor():
     config = Config()
     configData = config.configData
     while True:
-        stockName = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
+        stocksInfo = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
       
-        listResult = stockName.text.split('\n')
+        listResult = stocksInfo.text.split('\n')
         lPart = []
         lResult = []
+        index = 0
         for i in range(0,len(listResult)):
             if (listResult[i] == 'BUYING' or listResult[i] == 'SELLING'):
+                index+=1
                 lPart.append(listResult[i])
                 if (len(lPart) == 9):
                     lPart.insert(1,' ')
                 for j in range (len(configData)):
                     if (lPart[0] == configData[j][0]):
+                        lPart.append(str(index))
                         lResult.append(lPart)
                         break
                 lPart = []
@@ -69,6 +125,10 @@ def monitor():
                 if (sellPrice >= configData[i][2]):
                     print("Selling " + configData[i][0])
                     configData.pop(i)
+                    #/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[2]/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]
+                    #/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[4]/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]
+                    #/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[1]/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]/div[1]
+                    sellStock(lResult[i][10])
                     break
             elif(configData[i][1] == 'buy'):
                 if (buyPrice <= configData[i][2]):
