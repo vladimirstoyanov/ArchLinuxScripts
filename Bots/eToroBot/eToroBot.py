@@ -8,14 +8,25 @@ from selenium.webdriver.support import expected_conditions as EC ##wait function
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.webdriver import FirefoxProfile
+from datetime import datetime
 
+class Log ():
+    def __init__(self):
+        pass
+    def write(self, message):
+        logFile = open('eToro.log', 'a')
+        dateTimeObj = datetime.now()
+        timestampStr = dateTimeObj.strftime("%d-%b-%Y (%H:%M:%S.%f)")
+        print("Time: " + timestampStr + ": " + message)
+        logFile.write("Time: " + timestampStr + ": " + message + '\n')
+        logFile.close()
 
 class Config ():
     
     def __init__ (self):
         self.configData = []
         self.readConfig()
-        print (self.configData)
+        log.write(str(self.configData))
 
     def readConfig (self):
         f = open ('config', 'r')
@@ -50,51 +61,51 @@ def clickElementByXpath (xpath, timeout):
 
 def buyStock (index, price):
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]', 6)
-    print("stock clicked...")
+    log.write("stock clicked...")
     
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/et-market-header/div/div[2]/trade-button/div/span', 4)
-    print("Trade button clicked...")
+    log.write("Trade button clicked...")
     
     #/html/body/div[2]/div[2]/div/div/div[2]/div/div[2]/div[2]/div[1]/div[2]/input
     setElement('/html/body/div[2]/div[2]/div/div/div[2]/div/div[2]/div[2]/div[1]/div[2]/input', price)
-    print("Price set...")
+    log.write("Price set...")
     time.sleep(4)
     
     #x button clicked
     clickElementByXpath('/html/body/div[2]/div[2]/div/div/div[1]/div[2]/a', 3)
-    print("x button clicked...")
+    log.write("x button clicked...")
     #return back to main list
     clickElementByXpath('/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a', 7)
-    print("back to main list")
+    log.write("back to main list")
     
 def sellStock (index):
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]', 6)
-    print("stock clicked...")
+    log.write("stock clicked...")
     
     #"chart" button: 
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[2]/a[3]/span[2]', 4)
-    print("chart button clicked")
+    log.write("chart button clicked")
     
     #"stock" button: /html/body/ui-layout/div/div/div[2]/et-market/div/div/div/et-my-investments-tooltip/a/span[2]
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/et-my-investments-tooltip/a/span[2]', 4)
-    print("stock button clicked...")
+    log.write("stock button clicked...")
     
     #"settings" button: /html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/span
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/span', 4)
-    print("settings button clicked...")
+    log.write("settings button clicked...")
     
     #"close" button /html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/div/div/div[1]
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/div/div[2]/div/div/div[5]/div/div/div[1]', 4)
-    print("close button clicked...")
+    log.write("close button clicked...")
     
     #"I want to close all" checkbox: /html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[3]/div/div/label
     clickElementByXpath('/html/body/div[2]/div[2]/close-all-positions/div/div[3]/div[3]/div[1]/div/label', 2)
-    print("I want to close all trades check clicked.")
+    log.write("I want to close all trades check clicked.")
     
     
     #"close all" button clicked
     clickElementByXpath('/html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[4]/button', 5)
-    print("close all button clicked")
+    log.write("close all button clicked")
     
     #"x" button clicked:
     #clickElementByXpath('/html/body/div[2]/div[2]/close-all-positions/div/div[2]', 3)
@@ -102,7 +113,7 @@ def sellStock (index):
     
     #back to main list
     clickElementByXpath('/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a', 7)
-    print("back to main list...")
+    log.write("back to main list...")
     
 def monitor():
     config = Config()
@@ -135,17 +146,17 @@ def monitor():
             stockCode = lResult[i][0]
             for j in range(len(configData)):
                 if (configData[j][0] == stockCode):
+                    log.write("Stock: " + stockCode + "\t\t sell price: " + sellPrice + "\t\t buy price: " + buyPrice)
                     if (configData[j][1] == 'sell'):
                         if (sellPrice >= configData[j][2]):
-                            print("config data: " + configData[j][0] + ", sell price: " + configData[j][2])
-                            print ("Stock: " + stockCode + ", sell price: " + sellPrice + ", buy price: " + buyPrice)
-                            print("Selling " + configData[j][0] + "==============")
+                            log.write("Stock: " + stockCode + ", sell price: " + sellPrice + ", buy price: " + buyPrice)
+                            log.write("Selling " + configData[j][0] + "==============")
                             configData.pop(j)
                             sellStock(lResult[i][10])
                             break
                     elif(configData[j][1] == 'buy'):
                         if (buyPrice <= configData[j][2]):
-                            print("Buying " + configData[j][0])
+                            log.write("Buying " + configData[j][0])
                             buyStock(lResult[i][10], configData[j][2])
                             configData.pop(i)
                             break
@@ -157,18 +168,18 @@ def monitor():
         
 def login():
     mainWindow = driver.window_handles[0]
-    print ("Getting gateway URL...")
+    log.write("Getting gateway URL...")
     driver.get("https://www.etoro.com/login")
 
     time.sleep(6)
     try:
-        print("Trying to find a login button...");
+        log.write("Trying to find a login button...")
         button = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[1]/login/login-sts/div/div/div/form/div/div[7]/div/button[1]')
         button.click()
         
         time.sleep(5)
-        print("Window handlers: " + str(driver.window_handles))
-        print("Trying to login...")
+        log.write("Window handlers: " + str(driver.window_handles))
+        log.write("Trying to login...")
         facebookLoginWindow = driver.window_handles[1]
         driver.switch_to_window(facebookLoginWindow)
         usernameStr, passwordStr = getLoginDetails()
@@ -182,16 +193,18 @@ def login():
         
         driver.switch_to_window(mainWindow)
         
-        print('Please confirm login credential by your phone and press any key to continue...')
+        log.write('Please confirm login credential by your phone and press any key to continue...')
         x = input()
     except:
         pass
     
-print ("Loading Firefox...")
+log = Log()
+
+log.write("Loading Firefox...")
 profile = FirefoxProfile("/home/scitickart/.mozilla/firefox/w05kja2g.default")
 driver = webdriver.Firefox(profile)
 
-print ("Maximizing firefox...")
+log.write("Maximizing firefox...")
 driver.maximize_window()
 
 wait = WebDriverWait(driver, 10)
