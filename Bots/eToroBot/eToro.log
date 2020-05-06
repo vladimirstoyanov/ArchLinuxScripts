@@ -1,0 +1,66 @@
+Time: 06-May-2020 (14:57:48.812729): Loading Firefox...
+Time: 06-May-2020 (15:01:33.850307): Loading Firefox...
+Time: 06-May-2020 (15:01:49.611818): Maximizing firefox...
+Time: 06-May-2020 (15:01:49.715149): Getting gateway URL...
+Time: 06-May-2020 (15:02:38.694353): Loading Firefox...
+Time: 06-May-2020 (15:02:55.863449): Maximizing firefox...
+Time: 06-May-2020 (15:02:55.926870): Getting gateway URL...
+Time: 06-May-2020 (15:03:05.197658): Trying to find a login button...
+Time: 06-May-2020 (15:03:05.211315): [['T', 'sell', '38'], ['PAH3.DE', 'sell', '55'], ['AF.PA', 'sell', '9']]
+Time: 06-May-2020 (15:03:08.563800): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.90
+Time: 06-May-2020 (15:03:08.563974): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.299
+Time: 06-May-2020 (15:03:08.564076): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:12.917997): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.90
+Time: 06-May-2020 (15:03:12.918252): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.299
+Time: 06-May-2020 (15:03:12.918421): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:17.149481): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.90
+Time: 06-May-2020 (15:03:17.149666): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.299
+Time: 06-May-2020 (15:03:17.149781): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:21.340737): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.90
+Time: 06-May-2020 (15:03:21.340925): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.299
+Time: 06-May-2020 (15:03:21.341031): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:25.610295): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.91
+Time: 06-May-2020 (15:03:25.610454): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.299
+Time: 06-May-2020 (15:03:25.610559): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:29.813283): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.91
+Time: 06-May-2020 (15:03:29.813455): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.299
+Time: 06-May-2020 (15:03:29.813748): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:34.011935): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.91
+Time: 06-May-2020 (15:03:34.012100): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.299
+Time: 06-May-2020 (15:03:34.012202): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:38.373749): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.90
+Time: 06-May-2020 (15:03:38.373934): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.299
+Time: 06-May-2020 (15:03:38.374041): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:42.388860): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.90
+Time: 06-May-2020 (15:03:42.389039): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.299
+Time: 06-May-2020 (15:03:42.389142): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:46.804485): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.91
+Time: 06-May-2020 (15:03:46.804698): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.299
+Time: 06-May-2020 (15:03:46.804834): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:51.125444): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.90
+Time: 06-May-2020 (15:03:51.125605): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.295
+Time: 06-May-2020 (15:03:51.125702): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:03:55.519807): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.90
+Time: 06-May-2020 (15:03:55.519965): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.295
+Time: 06-May-2020 (15:03:55.520070): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:04:00.011506): Stock: PAH3.DE		 sell price: 45.79/55		 buy price: 45.88
+Time: 06-May-2020 (15:04:00.011669): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.295
+Time: 06-May-2020 (15:04:00.013018): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:04:04.323675): Stock: PAH3.DE		 sell price: 45.75/55		 buy price: 45.88
+Time: 06-May-2020 (15:04:04.323822): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.295
+Time: 06-May-2020 (15:04:04.323917): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:04:08.431446): Stock: PAH3.DE		 sell price: 45.75/55		 buy price: 45.88
+Time: 06-May-2020 (15:04:08.431602): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.295
+Time: 06-May-2020 (15:04:08.431705): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:04:12.805663): Stock: PAH3.DE		 sell price: 45.75/55		 buy price: 45.88
+Time: 06-May-2020 (15:04:12.805829): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.295
+Time: 06-May-2020 (15:04:12.805923): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:04:17.210330): Stock: PAH3.DE		 sell price: 45.75/55		 buy price: 45.88
+Time: 06-May-2020 (15:04:17.210548): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.295
+Time: 06-May-2020 (15:04:17.210665): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:04:21.524915): Stock: PAH3.DE		 sell price: 45.75/55		 buy price: 45.88
+Time: 06-May-2020 (15:04:21.525086): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.292
+Time: 06-May-2020 (15:04:21.525192): Stock: T		 sell price: 29.72/38		 buy price: 29.79
+Time: 06-May-2020 (15:04:25.811550): Stock: PAH3.DE		 sell price: 45.75/55		 buy price: 45.88
+Time: 06-May-2020 (15:04:25.812512): Stock: AF.PA		 sell price: 4.275/9		 buy price: 4.292
+Time: 06-May-2020 (15:04:25.812659): Stock: T		 sell price: 29.72/38		 buy price: 29.79

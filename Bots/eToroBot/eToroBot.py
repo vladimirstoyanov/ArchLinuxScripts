@@ -146,7 +146,7 @@ def monitor():
             stockCode = lResult[i][0]
             for j in range(len(configData)):
                 if (configData[j][0] == stockCode):
-                    log.write("Stock: " + stockCode + "\t\t sell price: " + sellPrice + "\t\t buy price: " + buyPrice)
+                    log.write("Stock: " + stockCode + "\t\t sell price: " + sellPrice + "/" +configData[j][2] +"\t\t buy price: " + buyPrice)
                     if (configData[j][1] == 'sell'):
                         if (sellPrice >= configData[j][2]):
                             log.write("Stock: " + stockCode + ", sell price: " + sellPrice + ", buy price: " + buyPrice)
