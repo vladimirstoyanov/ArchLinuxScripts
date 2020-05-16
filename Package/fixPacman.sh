@@ -1,3 +1,4 @@
+sudo rm /var/lib/pacman/db.lck
 sudo rm -r /etc/pacman.d/gnupg
 sudo pacman -Sy gnupg archlinux-keyring 
 sudo pacman-key --init
