@@ -99,16 +99,19 @@ def sellStock (index):
     log.write("close button clicked...")
     
     #"I want to close all" checkbox: /html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[3]/div/div/label
-    clickElementByXpath('/html/body/div[2]/div[2]/close-all-positions/div/div[3]/div[3]/div[1]/div/label', 2)
+    #'//label[@for="Rooms"]/parent::td/following-sibling::td')
+    #clickElementByXpath('/html/body/div[2]/div[2]/close-all-positons/div/div[3]/div[3]/div[1]/div/label', 2)
+    clickElementByXpath(".//*[contains(text(), 'I want to close')]",2)
     log.write("I want to close all trades check clicked.")
     
     
     #"close all" button clicked
-    clickElementByXpath('/html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[4]/button', 5)
+    #clickElementByXpath('/html/body/div[3]/div[2]/close-all-positions/div/div[3]/div[4]/button', 5)
     log.write("close all button clicked")
     
     #"x" button clicked:
     #clickElementByXpath('/html/body/div[2]/div[2]/close-all-positions/div/div[2]', 3)
+    clickElementByXpath(".//*[contains(text(), 'Close All')]",3)
     #print("x button clicked...")
     
     #back to main list
