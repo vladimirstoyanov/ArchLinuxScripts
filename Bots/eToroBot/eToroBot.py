@@ -22,7 +22,6 @@ class Log ():
         logFile.close()
 
 class Config ():
-    
     def __init__ (self):
         self.configData = []
         self.readConfig()
@@ -72,8 +71,9 @@ def buyStock (index, price):
     time.sleep(4)
     
     #x button clicked
-    clickElementByXpath('/html/body/div[2]/div[2]/div/div/div[1]/div[2]/a', 3)
-    log.write("x button clicked...")
+    clickElementByXpath('/html/body/div[4]/div[2]/div/div/div[2]/div/div[4]/div/button', 3)
+    log.write("open trade button clicked...")
+    
     #return back to main list
     clickElementByXpath('/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a', 7)
     log.write("back to main list")
@@ -117,7 +117,17 @@ def sellStock (index):
     #back to main list
     clickElementByXpath('/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a', 7)
     log.write("back to main list...")
-    
+
+def shouldWait (configData, stockCode, index):
+        if (len(configData[index])!=4):
+                return 0
+        if (configData[4] !='Wait'):
+                return 0
+        for i in range(len(configData)):
+            if (configData[i] == stockCode and i!=index):
+                return 1
+        return 0
+        
 def monitor():
     config = Config()
     configData = config.configData
@@ -143,30 +153,33 @@ def monitor():
             else:
                 lPart.append(listResult[i])
         
+        
         for i in range (len(lResult)):
             sellPrice = lResult[i][5]
             buyPrice = lResult[i][7]
             stockCode = lResult[i][0]
             for j in range(len(configData)):
                 if (configData[j][0] == stockCode):
-                    log.write("Stock: " + stockCode + "\t\t sell price: " + sellPrice + "/" +configData[j][2] +"\t\t buy price: " + buyPrice)
                     if (configData[j][1] == 'sell'):
-                        if (sellPrice >= configData[j][2]):
+                        log.write("Stock: " + stockCode + "\t\t sell price: " + sellPrice + "/" +configData[j][2] +"\t\t buy price: " + buyPrice)
+                        if (sellPrice >= configData[j][2] and shouldWait(configData, stockCode, j) == 0):
                             log.write("Stock: " + stockCode + ", sell price: " + sellPrice + ", buy price: " + buyPrice)
                             log.write("Selling " + configData[j][0] + "==============")
                             configData.pop(j)
                             sellStock(lResult[i][10])
                             break
                     elif(configData[j][1] == 'buy'):
+                        log.write("Stock: " + stockCode + "\t\t sell price: " + sellPrice  +"\t\t buy price: " + buyPrice + "/" + configData[j][2])
                         if (buyPrice <= configData[j][2]):
-                            log.write("Buying " + configData[j][0])
-                            buyStock(lResult[i][10], configData[j][2])
+                            log.write("Buying " + configData[j][0] + "================")
+                            buyStock(lResult[i][10], configData[j][3])
                             configData.pop(i)
                             break
                     else:
                         pass
                     continue
         
+        log.write("==============")
         time.sleep(1)
         
 def login():
@@ -174,7 +187,7 @@ def login():
     log.write("Getting gateway URL...")
     driver.get("https://www.etoro.com/login")
 
-    time.sleep(6)
+    time.sleep(15)
     try:
         log.write("Trying to find a login button...")
         button = driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[1]/login/login-sts/div/div/div/form/div/div[7]/div/button[1]')
