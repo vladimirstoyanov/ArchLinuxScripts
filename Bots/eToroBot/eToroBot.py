@@ -124,7 +124,7 @@ def shouldWait (configData, stockCode, index):
         if (configData[index][3] !='Wait' and configData[index][3] !='wait'):
                 return 0
         for i in range(len(configData)):
-            if (configData[i] == stockCode and i!=index):
+            if (configData[i][0] == stockCode and i!=index):
                 return 1
         return 0
         
