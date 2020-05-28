@@ -121,7 +121,7 @@ def sellStock (index):
 def shouldWait (configData, stockCode, index):
         if (len(configData[index])!=4):
                 return 0
-        if (configData[4] !='Wait'):
+        if (configData[index][3] !='Wait' and configData[index][3] !='wait'):
                 return 0
         for i in range(len(configData)):
             if (configData[i] == stockCode and i!=index):
@@ -163,7 +163,6 @@ def monitor():
                     if (configData[j][1] == 'sell'):
                         log.write("Stock: " + stockCode + "\t\t sell price: " + sellPrice + "/" +configData[j][2] +"\t\t buy price: " + buyPrice)
                         if (sellPrice >= configData[j][2] and shouldWait(configData, stockCode, j) == 0):
-                            log.write("Stock: " + stockCode + ", sell price: " + sellPrice + ", buy price: " + buyPrice)
                             log.write("Selling " + configData[j][0] + "==============")
                             configData.pop(j)
                             sellStock(lResult[i][10])
