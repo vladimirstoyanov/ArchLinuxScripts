@@ -59,19 +59,23 @@ def clickElementByXpath (xpath, timeout):
     time.sleep(timeout)
 
 def buyStock (index, price):
+    #clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]/div[1]', 6)
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]', 6)
     log.write("stock clicked...")
     
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/et-market-header/div/div[2]/trade-button/div/span', 4)
     log.write("Trade button clicked...")
     
+    #ToDo: change xpath with id of the widget
     #/html/body/div[2]/div[2]/div/div/div[2]/div/div[2]/div[2]/div[1]/div[2]/input
-    setElement('/html/body/div[2]/div[2]/div/div/div[2]/div/div[2]/div[2]/div[1]/div[2]/input', price)
+    setElement('/html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/div[2]/div[1]/div[2]/input', price)
     log.write("Price set...")
     time.sleep(4)
     
-    #x button clicked
-    clickElementByXpath('/html/body/div[4]/div[2]/div/div/div[2]/div/div[4]/div/button', 3)
+    #open trade button clicked...
+    #/html/body/div[3]/div[2]/div/div/div[2]/div/div[4]/div/button
+    #clickElementByXpath('/html/body/div[4]/div[2]/div/div/div[2]/div/div[4]/div/button', 3)
+    clickElementByXpath(".//*[contains(text(), 'Open Trade')]",2)
     log.write("open trade button clicked...")
     
     #return back to main list
@@ -153,6 +157,7 @@ def monitor():
             else:
                 lPart.append(listResult[i])
         
+        print (lResult)
         
         for i in range (len(lResult)):
             sellPrice = lResult[i][5]
@@ -165,13 +170,14 @@ def monitor():
                         if (sellPrice >= configData[j][2] and shouldWait(configData, stockCode, j) == 0):
                             log.write("Selling " + configData[j][0] + "==============")
                             configData.pop(j)
-                            sellStock(lResult[i][10])
+                            sellStock(lResult[i][12])
                             break
                     elif(configData[j][1] == 'buy'):
                         log.write("Stock: " + stockCode + "\t\t sell price: " + sellPrice  +"\t\t buy price: " + buyPrice + "/" + configData[j][2])
                         if (buyPrice <= configData[j][2]):
                             log.write("Buying " + configData[j][0] + "================")
-                            buyStock(lResult[i][10], configData[j][3])
+                            
+                            buyStock(lResult[i][12], configData[j][3])
                             configData.pop(i)
                             break
                     else:
