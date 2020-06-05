@@ -58,6 +58,13 @@ def clickElementByXpath (xpath, timeout):
     stockElement.click()
     time.sleep(timeout)
 
+def clickOpenTrade():
+    #open trade button clicked...
+    #/html/body/div[3]/div[2]/div/div/div[2]/div/div[4]/div/button
+    #clickElementByXpath('/html/body/div[4]/div[2]/div/div/div[2]/div/div[4]/div/button', 3)
+    clickElementByXpath(".//*[contains(text(), 'Open Trade')]",2)
+    log.write("open trade button clicked...")
+    
 def buyStock (index, price):
     #clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]/div[1]', 6)
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]', 6)
@@ -72,16 +79,17 @@ def buyStock (index, price):
     log.write("Price set...")
     time.sleep(4)
     
-    #open trade button clicked...
-    #/html/body/div[3]/div[2]/div/div/div[2]/div/div[4]/div/button
-    #clickElementByXpath('/html/body/div[4]/div[2]/div/div/div[2]/div/div[4]/div/button', 3)
-    clickElementByXpath(".//*[contains(text(), 'Open Trade')]",2)
-    log.write("open trade button clicked...")
+    clickOpenTrade ()
     
-    #return back to main list
-    clickElementByXpath('/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a', 7)
-    log.write("back to main list")
-    
+    while True:
+        try:
+            #return back to main list
+            clickElementByXpath('/html/body/ui-layout/div/div/div[1]/div/div/div[1]/a', 7)
+            log.write("back to main list")
+            break
+        except:
+            clickOpenTrade()
+        
 def sellStock (index):
     clickElementByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]/section[' + index +']/et-instrument-row/et-instrument-trading-row/div/et-card-avatar/a/div[2]', 6)
     log.write("stock clicked...")
