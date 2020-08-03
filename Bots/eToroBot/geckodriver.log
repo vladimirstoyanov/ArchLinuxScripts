@@ -1,0 +1,33 @@
+1595176283991	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJJT5GG"
+Extension error: Error while loading 'jar:file:///usr/lib/firefox/browser/omni.ja!/chrome/browser/search-extensions/twitter/manifest.json' (NS_ERROR_FILE_NOT_FOUND) resource://gre/modules/Extension.jsm:570 :: readJSON/</<@resource://gre/modules/Extension.jsm:570:20
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 567: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+1595176287624	Marionette	INFO	Listening on port 45893
+1595176287773	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://a.fsdn.com/sd/all-minified.js?41df8099025e5377, line 368: unreachable code after return statement
+JavaScript warning: https://www.takeaway.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1357527466, line 1: unreachable code after return statement
+JavaScript warning: https://www.takeaway.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1357527466, line 1: unreachable code after return statement
+JavaScript warning: https://www.takeaway.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1357527466, line 1: unreachable code after return statement
+JavaScript warning: https://www.takeaway.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1357527466 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.takeaway.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1357527466 line 1 > eval, line 1: unreachable code after return statement
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390133,name=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900C0,name=PContent::Msg_SetGeolocationHigherAccuracy) Closed channel: cannot send/recv
+
+1595176315964	Marionette	INFO	Stopped listening on port 45893
+1595176407403	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWDYA9J"
+Extension error: Error while loading 'jar:file:///usr/lib/firefox/browser/omni.ja!/chrome/browser/search-extensions/twitter/manifest.json' (NS_ERROR_FILE_NOT_FOUND) resource://gre/modules/Extension.jsm:570 :: readJSON/</<@resource://gre/modules/Extension.jsm:570:20
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 567: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+1595176410913	Marionette	INFO	Listening on port 46017
+1595176411068	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://a.fsdn.com/sd/all-minified.js?41df8099025e5377, line 368: unreachable code after return statement
+JavaScript warning: https://www.takeaway.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1357527466, line 1: unreachable code after return statement
+JavaScript warning: https://www.takeaway.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1357527466, line 1: unreachable code after return statement
+JavaScript warning: https://www.takeaway.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1357527466, line 1: unreachable code after return statement
+JavaScript warning: https://www.takeaway.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1357527466 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.takeaway.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1357527466 line 1 > eval, line 1: unreachable code after return statement
