@@ -1,0 +1,7 @@
+    0x1119 <main()>                 push   %rbp                                                                                                                       
+│   0x111a <main()+1>               mov    %rsp,%rbp                                                                                                                  
+│   
+    #return 0
+    0x111d <main()+4>               mov    $0x0,%eax                                                                                                                  
+│   0x1122 <main()+9>               pop    %rbp                                                                                                                       
+│   0x1123 <main()+10>              retq    

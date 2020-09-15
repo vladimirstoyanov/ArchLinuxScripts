@@ -1,0 +1,16 @@
+│   0x555555555169 <main()>                                                 push   %rbp                                                                               
+│   0x55555555516a <main()+1>                                               mov    %rsp,%rbp          
+
+│  >0x55555555516d <main()+4>                                               lea    0xe91(%rip),%rsi        # 0x555555556005                                           
+│   0x555555555174 <main()+11>                                              lea    0x2f05(%rip),%rdi        # 0x555555558080 <_ZSt4cout@@GLIBCXX_3.4>                 
+│   0x55555555517b <main()+18>                                              callq  0x555555555040 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>       
+│   0x555555555180 <main()+23>                                              mov    %rax,%rdx                                                                          
+│   0x555555555183 <main()+26>                                              mov    0x2e46(%rip),%rax        # 0x555555557fd0                                          
+│   0x55555555518a <main()+33>                                              mov    %rax,%rsi                                                                          
+│   0x55555555518d <main()+36>                                              mov    %rdx,%rdi                                                                          
+│   0x555555555190 <main()+39>                                              callq  0x555555555050 <_ZNSolsEPFRSoS_E@plt>
+
+    #return 0
+│   0x555555555195 <main()+44>                                              mov    $0x0,%eax                                                                          
+│   0x55555555519a <main()+49>                                              pop    %rbp                                                                               
+│   0x55555555519b <main()+50>                                              retq    

@@ -1,0 +1,12 @@
+g++ -o <binary_name> <source_name> -ggdb #compile it with debug symbols
+
+gdb <binary_name> #start gdb with a binary
+
+tui enable #
+
+start #start debugging
+
+layout asm #you can see asm code
+
+layout src #tou can see the source code (for example c++ source code)
+
