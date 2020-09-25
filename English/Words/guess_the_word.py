@@ -43,6 +43,7 @@ l_words = read_file ()
 
 total = len (l_words)
 print (total)
+all_questions = total * 2
 i = 0
 correct_answers = 0
 my_randoms = random.sample(xrange(total), total)
@@ -64,6 +65,9 @@ for i in range (len(my_randoms)):
                         break
         if (answered == 0):
                 print ("=====Wrong answer! The correct one is: " + word)
+        
+        current_percentage = (correct_answers/((i+1)*1.0)) *100
+        print ("Question " + str (i+1) + "/" + str(all_questions) + ", current score: " + str(round(current_percentage,2)) + "%") 
 
 
 
@@ -80,7 +84,9 @@ for i in range (len(my_randoms)):
             correct_answers+=1
         else:
             print ("=====Wrong answer! The correct one is: " + l_words[my_randoms[i]][0])
-            
+        
+        current_percentage = (correct_answers/((total + i+1)*1.0)) *100
+        print ("Question " + str (total + i+1) + "/" + str(all_questions) + ", current score: " + str(round(current_percentage,2)) + "%")
 
 print ("====Test finsihsed. Result:")
 total*=2

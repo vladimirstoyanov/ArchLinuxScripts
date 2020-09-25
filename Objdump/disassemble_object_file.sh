@@ -8,4 +8,4 @@ then
   exit 1
 fi
 
-objdump -d $1
+objdump -D $1
