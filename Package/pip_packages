@@ -8,3 +8,5 @@ tensorflow
 opencv-python
 plotly
 selenium
+SpeechRecognition
+pyaudio
