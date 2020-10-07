@@ -2,3 +2,5 @@
     - python: src/hostapi/alsa/pa_linux_alsa.c:3636: PaAlsaStreamComponent_BeginPolling: Assertion `ret == self->nfds' failed.
     Aborted (core dumped)
 
+- install pocketsphinx
+

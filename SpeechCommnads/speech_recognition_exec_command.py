@@ -5,10 +5,17 @@
 import speech_recognition as sr
 
 # obtain audio from the microphone
+
+print ("Make sure that you haven't executed the script as root! It lead to crash when the script is executed as root.")
+print ("")
+
 r = sr.Recognizer()
+
 with sr.Microphone() as source:
     print("Say something!")
     audio = r.listen(source)
+
+print ("here")
 
 # recognize speech using Sphinx
 try:
