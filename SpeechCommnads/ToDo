@@ -1,6 +1,16 @@
-- listen voice and execute a command;
-    - python: src/hostapi/alsa/pa_linux_alsa.c:3636: PaAlsaStreamComponent_BeginPolling: Assertion `ret == self->nfds' failed.
-    Aborted (core dumped)
+- listen voice and convert it to text;
+    - fix:
+        ALSA lib pcm_dsnoop.c:605:(snd_pcm_dsnoop_open) unable to create IPC semaphore
+        ALSA lib pcm.c:2660:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+        ALSA lib pcm.c:2660:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+        ALSA lib pcm.c:2660:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+        ALSA lib pcm_route.c:877:(find_matching_chmap) Found no matching channel map
+        ALSA lib pcm_route.c:877:(find_matching_chmap) Found no matching channel map
+        ALSA lib pcm_route.c:877:(find_matching_chmap) Found no matching channel map
+        ALSA lib pcm_route.c:877:(find_matching_chmap) Found no matching channel map
+        ALSA lib pcm_dsnoop.c:605:(snd_pcm_dsnoop_open) unable to create IPC semaphore
+        connect(2) call to /dev/shm/jack-1001/default/jack_0 failed (err=No such file or directory)
+        attempt to connect to server failed
 
 - install pocketsphinx
 
