@@ -11,4 +11,4 @@ sleep 10
 echo "The system will restart..."
 sleep 20
 
-sudo shutdown -r now
+#sudo shutdown -r now
