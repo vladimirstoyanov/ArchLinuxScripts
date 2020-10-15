@@ -8,4 +8,5 @@ then
   exit 1
 fi
 
-file $1
+
+strings $1
