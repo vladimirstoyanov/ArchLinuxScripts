@@ -37,6 +37,6 @@ class StorageData:
 
 
 storageData = StorageData ()
-spider = Spider ("https://vladimirstoyanov.eu", "(\w+)\@(\w+)\.(\w+)")
+spider = Spider ("https://github.com", "(\w+)\@(\w+)\.(\w+)")
 spider.subscribe(storageData)
 spider.runSpider()
