@@ -18,32 +18,6 @@ class Web:
             
         return mystr
 
-class StorageData:
-    def __init__ (self, outputFilename):
-        self.outputFilename = outputFilename
-        self.data = set()
-        self.loadData()
-        
-    def loadData (self):
-        if (path.exists(self.outputFilename) == 0):
-            return
-        
-        f = open (self.outputFilename, 'r')
-        
-        for string in f.readlines():
-            string = string.replace('\n', '')
-            string = string.replace('\r', '')
-            self.data.add (string)
-        
-        
-    def add (self, data):
-        f = open (self.outputFilename, 'a')
-        for i in range (len (data)):
-            if data[i] in self.data:
-                continue
-            f.write(data[i] + '\n')
-            self.data.add(data[i])
-        f.close()
         
 class StorageURLs:
     def __init__ (self):
@@ -93,12 +67,14 @@ class StorageURLs:
         
 class Storage:
     def __init__ (self):
-        self.outputFilename = "output"
         self.storageURLsObj = StorageURLs ()
-        self.storageData = StorageData (self.outputFilename)
         self.ramURLs = self.storageURLsObj.loadUsedURLs()
         self.ramQueue = self.storageURLsObj.loadUnusedURLs ()
-    
+        self.subscribedClass = None
+        
+    def subscribe (self, storageClass):
+        self.subscribedClass = storageClass
+        
     def addList (self, listElements):
         for i in range (len(listElements)):
             self.add(listElements[i])
@@ -124,8 +100,8 @@ class Storage:
         return len(self.ramQueue) == 0
     
     def saveData (self, data):
-        self.storageData.add (data)
-
+        self.subscribedClass.saveData(data)
+        
 class Parser:
     def __init__ (self, pattern):
         self.pattern = pattern
@@ -155,8 +131,10 @@ class Spider:
         self.storage.add (url)
         self.web = Web()
         self.parser = Parser (pattern)
-        #self.runSpider()
-    
+        
+    def subscribe (self, someClass):
+            self.storage.subscribe(someClass)
+            
     def runSpider (self):
         while (self.storage.isEmpty() == False):
             url = self.storage.nextURL ()
