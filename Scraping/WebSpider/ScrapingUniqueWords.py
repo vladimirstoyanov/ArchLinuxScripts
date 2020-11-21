@@ -1,11 +1,11 @@
 from os import path
 from Spider import Spider
-from StorageData import Data
+from StorageUniqueData import UniqueData
 
 class StorageData:
     def __init__ (self):
-        self.name = "Words"
-        self.uniqueData = Data(self.name)
+        self.name = "UniqueWords"
+        self.uniqueData = UniqueData(self.name)
 
     def saveData (self, data):
         self.uniqueData.saveData(data)
