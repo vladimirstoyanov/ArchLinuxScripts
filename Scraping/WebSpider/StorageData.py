@@ -2,7 +2,7 @@ from os import path
 
 class Data:
     def __init__ (self, outputFilename):
-        self.outputFilename = outputFilename
+        self.outputFilename = "output" + outputFilename
         self.data = []
         self.loadData()
 

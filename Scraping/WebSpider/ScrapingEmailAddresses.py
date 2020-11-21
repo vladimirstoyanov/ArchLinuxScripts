@@ -5,7 +5,7 @@ from StorageUniqueData import UniqueData
 class StorageData:
     def __init__ (self):
         self.name = "EmailAddresses"
-        self.uniqueData = UniqueData("output" + self.name)
+        self.uniqueData = UniqueData(self.name)
         self.lengthOfEmailData = 3
 
     def __toupleToEmailAddress (self, data):
@@ -22,8 +22,6 @@ class StorageData:
     def saveData (self, data):
         resultList = self.__convertToupleToList (data)
         self.uniqueData.saveData(resultList)
-
-
 
 storageData = StorageData ()
 spider = Spider ("https://github.com", "(\w+)\@(\w+)\.(\w+)", storageData)

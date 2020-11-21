@@ -2,7 +2,7 @@ from os import path
 
 class UniqueData:
     def __init__ (self, outputFilename):
-        self.outputFilename = outputFilename
+        self.outputFilename = "output" + outputFilename
         self.data = set()
         self.loadData()
 
