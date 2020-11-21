@@ -1,9 +1,9 @@
 from os import path
 
-class UniqueData:
+class Data:
     def __init__ (self, outputFilename):
         self.outputFilename = outputFilename
-        self.data = set()
+        self.data = []
         self.loadData()
 
     def loadData (self):
@@ -15,17 +15,15 @@ class UniqueData:
         for string in f.readlines():
             string = string.replace('\n', '')
             string = string.replace('\r', '')
-            self.data.add (string)
+            self.data.append (string)
 
 
     def saveData (self, data):
             f = open (self.outputFilename, 'a')
 
             for i in range (len (data)):
-                if data[i] in self.data:
-                    continue
                 f.write(data[i] + '\n')
-                self.data.add(data[i])
+                self.data.append(data[i])
             f.close()
 
     def getData (self):
