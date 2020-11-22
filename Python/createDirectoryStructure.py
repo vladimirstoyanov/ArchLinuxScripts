@@ -32,8 +32,24 @@ class FileManager:
     def isFileExist (self, fileName):
         return os.path.isfile(fileName)
 
-    def getChildDirectoryByParentOne (self, parentDirectory):
-        pass
+    def splitPath (self, path):
+        return path.split('/')
+
+    def returnPathAfterDirectory (self, path, directoryName):
+        splitedPath = self.splitPath(path)
+        index = -1
+        pathAfterDirectory = ""
+        for i in range (splitedPath):
+            if (splitedPath == directoryName):
+                index = i
+        if (index == -1):
+            return []
+
+        return splitedPath[index+1:len(splitedPath)]
+
+    def getParentDirectory (self, path):
+        splitedPath = self.splitPath()
+        return splitedPath[len(splitedPath)-1]
 
     def getAllFiles (self, dir, extension ):
         result = []
@@ -51,8 +67,13 @@ class PythonDirectoryStructure:
         self.directory = directory
         self.fileManager = FileManager()
         self.files = fileManager.getAllFiles ()
+        self.directoryStructure = []
     def generate (self):
         f = open (self.directory + '__init__.py', 'w')
+        parentDirectory = self.fileManager.getParentDirectory(self.directory)
+        f.write(parentDirectory + '/')
+        for i in range (len(self.files)):
+            directoriesAfterParent = self.fileManager.returnPathAfterDirectory(self.files[i].directory, parentDirectory)
         f.close ()
 
 
@@ -62,3 +83,5 @@ commandLineInput.checkInput()
 directoryName = sys.argv[1]
 fileManager = FileManager ()
 files = fileManager.getAllFiles(directoryName, "py")
+pythonDirectoryStructure = PythonDirectoryStructure (directoryName)
+pythonDirectoryStructure.generate()
