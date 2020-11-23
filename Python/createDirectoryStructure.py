@@ -62,16 +62,43 @@ class FileManager:
                 result.append(file)
         return result
 
+class TreeNode:
+    def __init__ (self, name, type):
+        self.childs=[]
+        self.name = name
+        self.type = type #file or directory
+    def insertChild (self, child):
+        self.childs.append(child)
+    def find (self, child):
+        for i in range (len(self.childs)):
+            if (child.name == self.childs[i].name)
+                return self.child[i]
+        return None
+
+class Tree:
+    def __init__ (self):
+        self.root = None
+    def insert(self, path, filename):
+            if (self.root == None)
+                self.root = TreeNode (item.name, item.type)
+                return
+            if (len(item.child) >= index):
+                return
+            item = item.child[index]
+            insert (item,index+1, name, type)
+
 class PythonDirectoryStructure:
     def __init__ (self, directory):
         self.directory = directory
         self.fileManager = FileManager()
         self.files = fileManager.getAllFiles ()
         self.directoryStructure = []
+
     def generate (self):
         f = open (self.directory + '__init__.py', 'w')
         parentDirectory = self.fileManager.getParentDirectory(self.directory)
         f.write(parentDirectory + '/')
+        self.directoryStructure.append(parentDirectory)
         for i in range (len(self.files)):
             directoriesAfterParent = self.fileManager.returnPathAfterDirectory(self.files[i].directory, parentDirectory)
         f.close ()
