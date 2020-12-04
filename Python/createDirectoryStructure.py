@@ -64,7 +64,8 @@ class FileManager:
 
 class TreeNode:
     def __init__ (self, name, type):
-        self.childs=[]
+        self.fileChilds=[]
+        self.directoryChilds[]
         self.name = name
         self.type = type #file or directory
     def insertChild (self, child):
@@ -78,14 +79,15 @@ class TreeNode:
 class Tree:
     def __init__ (self):
         self.root = None
-    def insert(self, path, filename):
+    def insert(self, treeNode, path, filename):
             if (self.root == None)
                 self.root = TreeNode (item.name, item.type)
                 return
-            if (len(item.child) >= index):
+            if (len(threeNode.child) >= index):
                 return
-            item = item.child[index]
-            insert (item,index+1, name, type)
+            threeNode = threeNode.child[index]
+            insert (threeNode,index+1, name, type)
+
 
 class PythonDirectoryStructure:
     def __init__ (self, directory):
