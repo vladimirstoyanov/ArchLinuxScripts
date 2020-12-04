@@ -50,8 +50,7 @@ class LearnEnglishWords:
             print ("Congratulations!")
 
     def calculatePercentage (self, total):
-            percentage = (self.correctAnswers/((total)*1.0)) *100
-            return percentage
+            return ((self.correctAnswers/((total)*1.0)) *100)
 
     def ask(self, words):
         for i in range (len(words)):
