@@ -67,9 +67,7 @@ class LearnEnglishWords:
                 if (answer == word):
                             print ("=====That's right!")
                             self.correctAnswers+=1
-                            return 1
         print ("=====Wrong answer! The correct one is: " + word)
-        return 0
 
     def guessWords (self, indexAsk, indexAnswer):
         for i in range (len(self.listRandomIndexes)):
