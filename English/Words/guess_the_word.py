@@ -5,11 +5,31 @@ import random
 import sys
 import time
 
+class WordsFile:
+    def __init__ (self, filename):
+        self.filename = filename
+    def readWords(self):
+            f = codecs.open(self.filename, encoding ='utf-8', mode = 'r')
+            listWords = []
+            for line in f.readlines ():
+                englishBulgarianWords = line.split (' - ')
+                if (len(englishBulgarianWords) < 2):
+                        continue
+                bulgarianWords = englishBulgarianWords[1].split (', ')
+                englishBulgarianWords[0] = u''.join(englishBulgarianWords[0]).encode('utf-8').strip()
+                listBulgarianWords = []
+                for i in range (len(bulgarianWords)):
+                    bulgarianWords[i] = bulgarianWords[i].replace('\n','')
+                    bulgarianWords[i] = bulgarianWords[i].replace('\r','')
+                listWords.append([[englishBulgarianWords[0]], bulgarianWords])
+            f.close()
+            return listWords
+
 class LearnEnglishWords:
     def __init__ (self, filename):
         self.correctAnswers = 0
-        self.listwords = []
-        self.readWords(filename)
+        file = WordsFile (filename)
+        self.listWords = file.readWords()
         self.total = len (self.listWords)
         self.allQuestions = self.total * 2
         self.listRandomIndexes = random.sample(xrange(self.total), self.total)
@@ -19,26 +39,6 @@ class LearnEnglishWords:
         self.guessWords(self.indexEnglishWords, self.indexBulgarianWords)
         self.guessWords(self.indexBulgarianWords, self.indexEnglishWords)
         self.finalResult ()
-
-    def readWords(self, filename):
-        f = codecs.open(filename, encoding ='utf-8', mode = 'r')
-
-        self.listWords = []
-        for line in f.readlines ():
-            englishBulgarianWords = line.split (' - ')
-            if (len(englishBulgarianWords) <2):
-                    continue
-
-            bulgarianWords = englishBulgarianWords[1].split (', ')
-            englishBulgarianWords[0] = u''.join(englishBulgarianWords[0]).encode('utf-8').strip()
-            listBulgarianWords = []
-            for i in range (len(bulgarianWords)):
-                bulgarianWords[i] = bulgarianWords[i].replace('\n','')
-                bulgarianWords[i] = bulgarianWords[i].replace('\r','')
-
-            self.listWords.append([[englishBulgarianWords[0]], bulgarianWords])
-
-        f.close()
 
     def finalResult (self):
         percentage = self.calculatePercentage(self.allQuestions)
@@ -69,7 +69,6 @@ class LearnEnglishWords:
                             print ("=====That's right!")
                             self.correctAnswers+=1
                             return 1
-                            
         print ("=====Wrong answer! The correct one is: " + word)
         return 0
 
@@ -77,10 +76,8 @@ class LearnEnglishWords:
         for i in range (len(self.listRandomIndexes)):
             userAnswer = self.ask(self.listWords[self.listRandomIndexes[i]][indexAsk])
             self.isMatch(userAnswer, self.listWords[self.listRandomIndexes[i]][indexAnswer])
-
             self.currentWord+=1
             print ("Question " + str (self.currentWord) + "/" + str(self.allQuestions) +
                 ", current score: " + str(round(self.calculatePercentage(self.currentWord),2)) + "%")
-
 
 learnEnglishWords = LearnEnglishWords ('words')
