@@ -26,19 +26,15 @@ class WordsFile:
             return listWords
 
 class LearnEnglishWords:
-    def __init__ (self, filename):
+    def __init__ (self, filename, listWords):
         self.correctAnswers = 0
-        file = WordsFile (filename)
-        self.listWords = file.readWords()
+        self.listWords = listWords
         self.total = len (self.listWords)
         self.allQuestions = self.total * 2
         self.listRandomIndexes = random.sample(xrange(self.total), self.total)
         self.indexEnglishWords = 0
         self.indexBulgarianWords = 1
         self.currentWord = 0
-        self.guessWords(self.indexEnglishWords, self.indexBulgarianWords)
-        self.guessWords(self.indexBulgarianWords, self.indexEnglishWords)
-        self.finalResult ()
 
     def finalResult (self):
         percentage = self.calculatePercentage(self.allQuestions)
@@ -77,4 +73,10 @@ class LearnEnglishWords:
             print ("Question " + str (self.currentWord) + "/" + str(self.allQuestions) +
                 ", current score: " + str(round(self.calculatePercentage(self.currentWord),2)) + "%")
 
-learnEnglishWords = LearnEnglishWords ('words')
+filename = 'words'
+file = WordsFile (filename)
+listWords = file.readWords ()
+learnEnglishWords = LearnEnglishWords (filename, listWords)
+learnEnglishWords.guessWords(learnEnglishWords.indexEnglishWords, learnEnglishWords.indexBulgarianWords)
+learnEnglishWords.guessWords(learnEnglishWords.indexBulgarianWords, learnEnglishWords.indexEnglishWords)
+learnEnglishWords.finalResult ()
