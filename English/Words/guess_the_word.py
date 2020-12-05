@@ -36,6 +36,35 @@ class LearnEnglishWords:
         self.indexBulgarianWords = 1
         self.currentWord = 0
 
+    def __ask(self, words):
+        for i in range (len(words)):
+                word = u''.join(words[i]).encode('utf-8').strip()
+                print (word)
+        print ("Your answer: ")
+        userAnswer = raw_input()
+        return userAnswer
+
+    def __calculatePercentage (self, total):
+            return ((self.correctAnswers/((total)*1.0)) *100)
+
+    def __checkAnswer (self, answer, words):
+        word = ""
+        for i in range (len(words)):
+                word = u''.join(words[i]).encode('utf-8').strip()
+                if (answer == word):
+                            print ("=====That's right!")
+                            self.correctAnswers+=1
+                            return
+        print ("=====Wrong answer! The correct one is: " + word)
+
+    def guessWords (self, indexAsk, indexAnswer):
+        for i in range (len(self.listRandomIndexes)):
+            userAnswer = self.__ask(self.listWords[self.listRandomIndexes[i]][indexAsk])
+            self.__checkAnswer(userAnswer, self.listWords[self.listRandomIndexes[i]][indexAnswer])
+            self.currentWord+=1
+            print ("Question " + str (self.currentWord) + "/" + str(self.allQuestions) +
+                ", current score: " + str(round(self.__calculatePercentage(self.currentWord),2)) + "%")
+
     def finalResult (self):
         percentage = self.calculatePercentage(self.allQuestions)
         print ("====The test has finsihsed. Result:")
@@ -45,33 +74,7 @@ class LearnEnglishWords:
         else:
             print ("Congratulations!")
 
-    def calculatePercentage (self, total):
-            return ((self.correctAnswers/((total)*1.0)) *100)
 
-    def ask(self, words):
-        for i in range (len(words)):
-                word = u''.join(words[i]).encode('utf-8').strip()
-                print (word)
-        print ("Your answer: ")
-        userAnswer = raw_input()
-        return userAnswer
-
-    def isMatch (self, answer, words):
-        word = ""
-        for i in range (len(words)):
-                word = u''.join(words[i]).encode('utf-8').strip()
-                if (answer == word):
-                            print ("=====That's right!")
-                            self.correctAnswers+=1
-        print ("=====Wrong answer! The correct one is: " + word)
-
-    def guessWords (self, indexAsk, indexAnswer):
-        for i in range (len(self.listRandomIndexes)):
-            userAnswer = self.ask(self.listWords[self.listRandomIndexes[i]][indexAsk])
-            self.isMatch(userAnswer, self.listWords[self.listRandomIndexes[i]][indexAnswer])
-            self.currentWord+=1
-            print ("Question " + str (self.currentWord) + "/" + str(self.allQuestions) +
-                ", current score: " + str(round(self.calculatePercentage(self.currentWord),2)) + "%")
 
 filename = 'words'
 file = WordsFile (filename)
