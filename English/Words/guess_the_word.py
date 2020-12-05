@@ -66,7 +66,7 @@ class LearnEnglishWords:
                 ", current score: " + str(round(self.__calculatePercentage(self.currentWord),2)) + "%")
 
     def finalResult (self):
-        percentage = self.calculatePercentage(self.allQuestions)
+        percentage = self.__calculatePercentage(self.allQuestions)
         print ("====The test has finsihsed. Result:")
         print (str(percentage) + '%')
         if(percentage < 95 ):
