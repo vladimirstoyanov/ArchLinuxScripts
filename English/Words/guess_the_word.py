@@ -8,6 +8,7 @@ import time
 class WordsFile:
     def __init__ (self, filename):
         self.filename = filename
+
     def readWords(self):
             f = codecs.open(self.filename, encoding ='utf-8', mode = 'r')
             listWords = []
@@ -74,12 +75,11 @@ class LearnEnglishWords:
         else:
             print ("Congratulations!")
 
-
-
-filename = 'words'
-file = WordsFile (filename)
-listWords = file.readWords ()
-learnEnglishWords = LearnEnglishWords (filename, listWords)
-learnEnglishWords.guessWords(learnEnglishWords.indexEnglishWords, learnEnglishWords.indexBulgarianWords)
-learnEnglishWords.guessWords(learnEnglishWords.indexBulgarianWords, learnEnglishWords.indexEnglishWords)
-learnEnglishWords.finalResult ()
+if __name__ == "__main__":
+    filename = 'words'
+    file = WordsFile (filename)
+    listWords = file.readWords ()
+    learnEnglishWords = LearnEnglishWords (filename, listWords)
+    learnEnglishWords.guessWords(learnEnglishWords.indexEnglishWords, learnEnglishWords.indexBulgarianWords)
+    learnEnglishWords.guessWords(learnEnglishWords.indexBulgarianWords, learnEnglishWords.indexEnglishWords)
+    learnEnglishWords.finalResult ()
