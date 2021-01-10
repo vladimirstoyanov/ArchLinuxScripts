@@ -4,7 +4,6 @@ import fnmatch
 import time
 from pathlib import Path
 
-
 class CommandLineInput:
     def __init__ (self):
         pass
@@ -20,12 +19,14 @@ class File:
         self.filename = ""
         self.fullpath = ""
         self.directory = ""
-    def __repr__(self):
-        return str(self.filename + '\n' + self.fullpath + '\n' + self.directory  + '\n')
+        self.shotDirectoryName = ""
+    def __repr__(self): #string representation when print it
+        return str(self.filename + '\n' + self.fullpath + '\n' + self.directory  + '\n' + self.shotDirectoryName +'\n')
 
 class FileManager:
     def __init__ (self):
         pass
+
     def isDirectoryExist (self, directoryName):
         return os.path.isdir(directoryName)
 
@@ -36,19 +37,11 @@ class FileManager:
         return path.split('/')
 
     def returnPathAfterDirectory (self, path, directoryName):
-        splitedPath = self.splitPath(path)
-        index = -1
-        pathAfterDirectory = ""
-        for i in range (splitedPath):
-            if (splitedPath == directoryName):
-                index = i
-        if (index == -1):
-            return []
-
-        return splitedPath[index+1:len(splitedPath)]
+        return path[len(directoryName):len(path)]
 
     def getParentDirectory (self, path):
-        splitedPath = self.splitPath()
+        splitedPath = self.splitPath(path)
+        splitedPath = list(filter(None, splitedPath))
         return splitedPath[len(splitedPath)-1]
 
     def getAllFiles (self, dir, extension ):
@@ -62,55 +55,50 @@ class FileManager:
                 result.append(file)
         return result
 
-class TreeNode:
-    def __init__ (self, name, type):
-        self.fileChilds=[]
-        self.directoryChilds[]
-        self.name = name
-        self.type = type #file or directory
-    def insertChild (self, child):
-        self.childs.append(child)
-    def find (self, child):
-        for i in range (len(self.childs)):
-            if (child.name == self.childs[i].name)
-                return self.child[i]
-        return None
-
-class Tree:
-    def __init__ (self):
-        self.root = None
-    def insert(self, treeNode, path, filename):
-            if (self.root == None)
-                self.root = TreeNode (item.name, item.type)
-                return
-            if (len(threeNode.child) >= index):
-                return
-            threeNode = threeNode.child[index]
-            insert (threeNode,index+1, name, type)
 
 
 class PythonDirectoryStructure:
     def __init__ (self, directory):
         self.directory = directory
         self.fileManager = FileManager()
-        self.files = fileManager.getAllFiles ()
-        self.directoryStructure = []
+        self.files = self.fileManager.getAllFiles (directory, 'py')
+        self.files.sort(key=lambda x: x.directory, reverse=False)
+        self.parentDirectory = self.fileManager.getParentDirectory(self.directory)
+
+    def prepare (self):
+        for i in range (len(self.files)):
+            self.files[i].shotDirectoryName = self.fileManager.returnPathAfterDirectory(
+                self.files[i].directory,
+                self.directory)
+            if (self.files[i].shotDirectoryName!=""):
+                self.files[i].shotDirectoryName += '/'
 
     def generate (self):
         f = open (self.directory + '__init__.py', 'w')
-        parentDirectory = self.fileManager.getParentDirectory(self.directory)
-        f.write(parentDirectory + '/')
-        self.directoryStructure.append(parentDirectory)
-        for i in range (len(self.files)):
-            directoriesAfterParent = self.fileManager.returnPathAfterDirectory(self.files[i].directory, parentDirectory)
-        f.close ()
+        self.prepare()
+        directories = []
+        f.write(self.parentDirectory + '/' + '\n')
+        spaces = "     "
+        currentDirectory=self.directory
 
+        for i in range (len (self.files)):
+            if (((self.files[i].shotDirectoryName in directories) == False) and self.files[i].shotDirectoryName!=''):
+                if (currentDirectory!=self.directory):
+                    f.write(spaces + '...\n')
+                spaces = spaces[0:5]
+                directories.append(self.files[i].shotDirectoryName)
+                currentDirectory = self.files[i].directory
+                f.write(spaces+self.files[i].shotDirectoryName + '\n')
+                spaces+="     "
+            f.write(spaces + self.files[i].filename + '\n')
+
+        if (currentDirectory!=self.directory):
+            f.write(spaces + '...\n')
+        f.close()
 
 commandLineInput = CommandLineInput ()
 commandLineInput.checkInput()
 
 directoryName = sys.argv[1]
-fileManager = FileManager ()
-files = fileManager.getAllFiles(directoryName, "py")
 pythonDirectoryStructure = PythonDirectoryStructure (directoryName)
 pythonDirectoryStructure.generate()
