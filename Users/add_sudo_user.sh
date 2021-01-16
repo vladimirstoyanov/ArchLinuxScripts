@@ -1,8 +1,19 @@
-#$1 - username
+#!/bin/sh
+
+if [ $# -ne 1 ]
+then
+  echo "Wrong input! please use the following input: "
+        echo "1 arg - username"
+  exit 1
+fi
+
 useradd -m /home/$1
 passwd $1
 
+#ToDo check if sudo package is installed
 pacman -S sudo
 
-echo 'Add the following row in /etc/sudoers'
+echo 'Adding $1 ALL=(ALL) ALL in /etc/sudoers'
+sed '/root ALL=(ALL) ALL/a $1 ALL=(ALL) ALL' /etc/sudoers 
+
 echo '$1 ALL=(ALL) ALL'

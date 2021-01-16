@@ -1,4 +1,8 @@
 #!/bin/sh
+
+echo "Installing KDE..."
+sh KDE/installKDE.sh
+
 echo "Installing packman packages..."
 while IFS='' read -r line || [[ -n "$line" ]]; do
     echo "Installing: $line"

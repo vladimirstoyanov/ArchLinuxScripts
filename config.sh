@@ -38,23 +38,30 @@ sleep 1
 echo "Configuring iptables..."
 sudo sh Firewall/iptables.sh
 sudo systemctl enable iptables.service
-sudo systemctl reboot
 sleep 1
 
 echo "Adding printVulnearablePackages.sh on boot time..."
 python2.7 ../Systemd/make_binary_to_start_on_boot_time.py printVulnearablePackages $(pwd)/BootTimeScripts/printVulnearablePackages.sh 'print vulnearable packages'
+sleep 1
 
 echo "Installing vulnearable packages plasma widget"
 sh Plasma/install_widget.sh Plasma/PlasmaWidgets/Vulnerable_packages/
+sleep 1
 
 echo "Adding currentConnectedIpAddresses.sh on boot time..."
 python2.7 ../Systemd/make_binary_to_start_on_boot_time.py current_connected_ip_addresses $(pwd)/BootTimeScripts/currentConnectedIpAddresses.sh 'list of connected ip addresses'
+sleep 1
 
 echo "Installing current connected ip addresses  plasma widget"
 sh Plasma/install_widget.sh Plasma/PlasmaWidgets/Current_connected_ip_addresses/
+sleep 1
 
 echo "Adding getCurrencies.sh on boot time..."
 python2.7 ../Systemd/make_binary_to_start_on_boot_time.py get_currencies $(pwd)/BootTimeScripts/getCurrencies.sh 'Currencies rates'
+sleep 1
 
 echo "Installing currencies plasma widget"
 sh Plasma/install_widget.sh Plasma/PlasmaWidgets/curriences_rates/
+sleep 1
+
+sudo systemctl reboot
