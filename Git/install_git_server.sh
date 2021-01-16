@@ -1,4 +1,12 @@
-#arg 1 - username
+#!/bin/sh
+#$1 - username
+
+if [ $# -ne 1 ]
+then
+  echo "Wrong input! please use the following input: "
+        echo "1 arg - username"
+  exit 1
+fi
 
 echo 'Update the package repository cache...'
 sudo pacman -Sy
