@@ -85,42 +85,44 @@ class DirectoryStructure:
             splitedPath = self.fileManager.splitPath(self.listFiles[i].shortDirectoryName)
             self.__buildStructure(splitedPath, 0, self.directoryStructure)
 
-    def __buildStructure(self, listFullpath, indexFullPath, currentDirectory):
-        #print("===listFullPath: " + str(listFullpath))
-        #print ("index: " + str(indexFullPath))
+    def __getFullPath (self, listFullPath, index):
+        fullPath = self.directoryName
+        for i  in range (1,index+1, 1):
+            fullPath += listFullPath[i]
+            fullPath += '/'
+        return fullPath
+
+    def __buildStructure(self, listFullPath, indexFullPath, currentDirectory):
         if (self.directoryStructure == ""):
-            #print ("if (self.directoryStructure == ""):")
             self.directoryStructure = Directory()
-            self.directoryStructure.dirname = listFullpath[indexFullPath]
-            #print ("Adding " +  listFullpath[indexFullPath] + " as root")
-            self.__buildStructure(listFullpath, indexFullPath+1, self.directoryStructure)
+            self.directoryStructure.dirname = listFullPath[indexFullPath]
+            self.directoryStructure.fullpath = self.__getFullPath(listFullPath, indexFullPath)
+
+            self.__buildStructure(listFullPath, indexFullPath+1, self.directoryStructure)
             return
 
         if (indexFullPath == 0):
-            self.__buildStructure(listFullpath, indexFullPath+1, self.directoryStructure)
+            self.__buildStructure(listFullPath, indexFullPath+1, self.directoryStructure)
             return
 
-        if (indexFullPath == (len(listFullpath) - 1)):
-            #print ("Appending file: " + str(listFullpath[indexFullPath]) + " to directory: " + currentDirectory.dirname )
-            currentDirectory.listFiles.append(listFullpath[indexFullPath])
+        if (indexFullPath == (len(listFullPath) - 1)):
+            currentDirectory.listFiles.append(listFullPath[indexFullPath])
             return
 
         found = 0
         for i in range(len(currentDirectory.listDirectories)):
-            #print ("Comparing: " + listFullpath[indexFullPath] + " and " + currentDirectory.listDirectories[i].dirname)
-            if (listFullpath[indexFullPath] == currentDirectory.listDirectories[i].dirname):
-                #print ("Direcotry exist.")
-                self.__buildStructure(listFullpath,
+            if (listFullPath[indexFullPath] == currentDirectory.listDirectories[i].dirname):
+                self.__buildStructure(listFullPath,
                     indexFullPath+1,
                     currentDirectory.listDirectories[i])
                 found =1
 
         if (found == 0):
-            #print("Directory doesn't exist. Adding " +listFullpath[indexFullPath])
             newDirectory = Directory()
-            newDirectory.dirname = listFullpath[indexFullPath]
+            newDirectory.dirname = listFullPath[indexFullPath]
+            newDirectory.fullpath = self.__getFullPath(listFullPath, indexFullPath)
             currentDirectory.listDirectories.append (newDirectory)
-            self.__buildStructure(listFullpath, indexFullPath+1, newDirectory)
+            self.__buildStructure(listFullPath, indexFullPath+1, newDirectory)
 
     def __generateStructureFile (self, currentDirectory, offsetLevel, f):
         spaceOffset = (' ' * offsetLevel)
@@ -142,11 +144,35 @@ class DirectoryStructure:
         self.__generateStructureFile(self.directoryStructure, 0, f)
         f.close()
 
+    def __createInitFiles (self, currentDirectory):
+        found = 0
+        initFileName = "__init__.py"
+        for i in range (len(currentDirectory.listFiles)):
+            if (initFileName == currentDirectory.listFiles[i]):
+                found = 1
+                break
+
+        #create an empty __init__.py
+        if (found==0):
+            f=open(currentDirectory.fullpath + initFileName, 'w')
+            f.close()
+            currentDirectory.listFiles.append(initFileName)
+
+        for i in range (len(currentDirectory.listDirectories)):
+            self.__createInitFiles(currentDirectory.listDirectories[i])
+
+
+    def createInitFiles (self):
+        self.__createInitFiles(self.directoryStructure)
+
+    def generate (self):
+        self.buildStrucure()
+        self.createInitFiles ()
+        self.generateStructureFile()
 
 commandLineInput = CommandLineInput ()
 commandLineInput.checkInput()
 
 directoryName = sys.argv[1]
 directoryStructure = DirectoryStructure(directoryName)
-directoryStructure.buildStrucure()
-directoryStructure.generateStructureFile()
+directoryStructure.generate()

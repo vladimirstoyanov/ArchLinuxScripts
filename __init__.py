@@ -2,18 +2,25 @@ ArchLinuxScripts/
      __init__.py
      changeDefaultWallpaper.py
      InternetSharing/
+          __init__.py
           DHCP/
                     dhcp_internet_sharing.py
+                    __init__.py
                     ...
           ...
      English/
+          __init__.py
           Words/
+                    __init__.py
                     guess_the_word.py
                     ...
           ...
      Plasma/
+          __init__.py
           PlasmaWidgets/
+                    __init__.py
                curriences_rates/
+                              __init__.py
                               currencies_rates.py
                               ...
                     ...
@@ -21,6 +28,7 @@ ArchLinuxScripts/
      Security/
           analyzeTcpTraffic.py
           printVulnerablePackages.py
+          __init__.py
           Parse/
                     TcpPacket.py
                     __init__.py
@@ -37,82 +45,105 @@ ArchLinuxScripts/
                     ...
           SSH/
                     killRemoteProcessOverSSH.py
+                    __init__.py
                     ...
           ...
      Hardware/
           disableTrackPoint.py
+          __init__.py
           enableTrackPoint.py
           ...
      SpeechCommnads/
           speech_recognition_exec_command.py
           test_mic.py
+          __init__.py
           speech_recognition_background.py
           ...
      Python/
           createDirectoryStructure.py
+          __init__.py
           ...
      Package/
           package.py
           __init__.py
           ...
      Network/
+          __init__.py
           change_mac_address_permanently_2_doesnt_work.py
           change_mac_address_permanently_doesnt_work.py
           NetworkActivityOfProcess/
                     NetworkActivityOfProcess.py
+                    __init__.py
                     ...
           ...
      Facebook/
           facebookGetFriendsNames.py
+          __init__.py
           facebookLogin.py
           ...
      Systemd/
           make_binary_to_start_on_boot_time.py
+          __init__.py
           ...
      ClientServer/
+          __init__.py
           FileTransfer/
                     server.py
+                    __init__.py
                     client.py
                     ...
           ...
      Find/
+          __init__.py
           FindFileByMD5Sum/
                     findFileByMD5Sum.py
+                    __init__.py
                     ...
           FindFileBySHA256Sum/
                     findFileBySHA256Sum.py
+                    __init__.py
                     ...
           ...
      Logs/
+          __init__.py
           Xorg/
                     analyzeXorg.py
+                    __init__.py
                     ...
           SDDM/
                     analyzeSDDM.py
+                    __init__.py
                     ...
           ...
      Scraping/
           scrapingUserCommentsDnesBg.py
+          __init__.py
           WebSpider/
                     ScrapingUniqueWords.py
                     Spider.py
                     StorageUniqueData.py
                     StorageData.py
                     ScrapingWords.py
+                    __init__.py
                     ScrapingEmailAddresses.py
                     ...
           ...
      Bots/
+          __init__.py
           eKingdomFarmingGold/
                     EKingdomFarmingGold.py
+                    __init__.py
                     ...
           eToroBot/
                     eToroBot.py
+                    __init__.py
                     ...
           Nearby_social_network_prop_bot/
                     NearbyPropBot.py
+                    __init__.py
                     ...
           NeverwinterProfessionCraft/
+                    __init__.py
                     NeverwinterProfessionCrafting.py
                     ...
           ...
