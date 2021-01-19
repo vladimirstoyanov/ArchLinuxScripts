@@ -72,18 +72,12 @@ class DirectoryStructure:
         self.fileManager = FileManager()
         self.listFiles = self.fileManager.getAllFiles(directoryName, 'py')
         self.rootDirectory = self.fileManager.getParentDirectory(self.directoryName)
-        self.prepare()
 
-    def prepare (self):
+    def __prepare (self):
         for i in range (len(self.listFiles)):
                 self.listFiles[i].shortDirectoryName = self.rootDirectory + self.fileManager.returnPathAfterDirectory(
                             self.listFiles[i].fullpath,
                             self.directoryName)
-
-    def buildStrucure (self):
-        for i in range (len(self.listFiles)):
-            splitedPath = self.fileManager.splitPath(self.listFiles[i].shortDirectoryName)
-            self.__buildStructure(splitedPath, 0, self.directoryStructure)
 
     def __getFullPath (self, listFullPath, index):
         fullPath = self.directoryName
@@ -139,10 +133,6 @@ class DirectoryStructure:
         if (offsetLevel!=0):
             f.write(spaceOffset + '...\n')
 
-    def generateStructureFile (self):
-        f = open(self.directoryName + '__init__.py', 'w')
-        self.__generateStructureFile(self.directoryStructure, 0, f)
-        f.close()
 
     def __createInitFiles (self, currentDirectory):
         found = 0
@@ -162,13 +152,17 @@ class DirectoryStructure:
             self.__createInitFiles(currentDirectory.listDirectories[i])
 
 
-    def createInitFiles (self):
+    def generate (self):
+        self.__prepare()
+        for i in range (len(self.listFiles)):
+                splitedPath = self.fileManager.splitPath(self.listFiles[i].shortDirectoryName)
+                self.__buildStructure(splitedPath, 0, self.directoryStructure)
+
         self.__createInitFiles(self.directoryStructure)
 
-    def generate (self):
-        self.buildStrucure()
-        self.createInitFiles ()
-        self.generateStructureFile()
+        f = open(self.directoryName + '__init__.py', 'w')
+        self.__generateStructureFile(self.directoryStructure, 0, f)
+        f.close()
 
 commandLineInput = CommandLineInput ()
 commandLineInput.checkInput()
