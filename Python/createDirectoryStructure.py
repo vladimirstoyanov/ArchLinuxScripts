@@ -14,14 +14,21 @@ class CommandLineInput:
             print ("1 arg: directory name")
             sys.exit()
 
+class Directory:
+    def __init__ (self):
+        self.dirname = ""
+        self.fullpath = ""
+        self.listFiles = []
+        self.listDirectories = []
+
 class File:
     def __init__ (self):
         self.filename = ""
         self.fullpath = ""
         self.directory = ""
-        self.shotDirectoryName = ""
+        self.shortDirectoryName = ""
     def __repr__(self): #string representation when print it
-        return str(self.filename + '\n' + self.fullpath + '\n' + self.directory  + '\n' + self.shotDirectoryName +'\n')
+        return str(self.filename + '\n' + self.fullpath + '\n' + self.directory  + '\n' + self.shortDirectoryName +'\n')
 
 class FileManager:
     def __init__ (self):
@@ -34,10 +41,12 @@ class FileManager:
         return os.path.isfile(fileName)
 
     def splitPath (self, path):
-        return path.split('/')
+        result = path.split('/')
+        result = list(filter(None, result))
+        return result
 
     def returnPathAfterDirectory (self, path, directoryName):
-        return path[len(directoryName):len(path)]
+        return path[len(directoryName)-1:len(path)]
 
     def getParentDirectory (self, path):
         splitedPath = self.splitPath(path)
@@ -55,50 +64,89 @@ class FileManager:
                 result.append(file)
         return result
 
-
-
-class PythonDirectoryStructure:
-    def __init__ (self, directory):
-        self.directory = directory
+class DirectoryStructure:
+    def __init__ (self, direcotryName):
+        self.spaceOffset = 5
+        self.directoryName = direcotryName
+        self.directoryStructure = ""
         self.fileManager = FileManager()
-        self.files = self.fileManager.getAllFiles (directory, 'py')
-        self.files.sort(key=lambda x: x.directory, reverse=False)
-        self.parentDirectory = self.fileManager.getParentDirectory(self.directory)
+        self.listFiles = self.fileManager.getAllFiles(directoryName, 'py')
+        self.rootDirectory = self.fileManager.getParentDirectory(self.directoryName)
+        self.prepare()
 
     def prepare (self):
-        for i in range (len(self.files)):
-            self.files[i].shotDirectoryName = self.fileManager.returnPathAfterDirectory(
-                self.files[i].directory,
-                self.directory)
-            if (self.files[i].shotDirectoryName!=""):
-                self.files[i].shotDirectoryName += '/'
+        for i in range (len(self.listFiles)):
+                self.listFiles[i].shortDirectoryName = self.rootDirectory + self.fileManager.returnPathAfterDirectory(
+                            self.listFiles[i].fullpath,
+                            self.directoryName)
 
-    def generate (self):
-        f = open (self.directory + '__init__.py', 'w')
-        self.prepare()
-        directories = []
-        f.write(self.parentDirectory + '/' + '\n')
-        spaces = "     "
-        currentDirectory=self.directory
+    def buildStrucure (self):
+        for i in range (len(self.listFiles)):
+            splitedPath = self.fileManager.splitPath(self.listFiles[i].shortDirectoryName)
+            self.__buildStructure(splitedPath, 0, self.directoryStructure)
 
-        for i in range (len (self.files)):
-            if (((self.files[i].shotDirectoryName in directories) == False) and self.files[i].shotDirectoryName!=''):
-                if (currentDirectory!=self.directory):
-                    f.write(spaces + '...\n')
-                spaces = spaces[0:5]
-                directories.append(self.files[i].shotDirectoryName)
-                currentDirectory = self.files[i].directory
-                f.write(spaces+self.files[i].shotDirectoryName + '\n')
-                spaces+="     "
-            f.write(spaces + self.files[i].filename + '\n')
+    def __buildStructure(self, listFullpath, indexFullPath, currentDirectory):
+        #print("===listFullPath: " + str(listFullpath))
+        #print ("index: " + str(indexFullPath))
+        if (self.directoryStructure == ""):
+            #print ("if (self.directoryStructure == ""):")
+            self.directoryStructure = Directory()
+            self.directoryStructure.dirname = listFullpath[indexFullPath]
+            #print ("Adding " +  listFullpath[indexFullPath] + " as root")
+            self.__buildStructure(listFullpath, indexFullPath+1, self.directoryStructure)
+            return
 
-        if (currentDirectory!=self.directory):
-            f.write(spaces + '...\n')
+        if (indexFullPath == 0):
+            self.__buildStructure(listFullpath, indexFullPath+1, self.directoryStructure)
+            return
+
+        if (indexFullPath == (len(listFullpath) - 1)):
+            #print ("Appending file: " + str(listFullpath[indexFullPath]) + " to directory: " + currentDirectory.dirname )
+            currentDirectory.listFiles.append(listFullpath[indexFullPath])
+            return
+
+        found = 0
+        for i in range(len(currentDirectory.listDirectories)):
+            #print ("Comparing: " + listFullpath[indexFullPath] + " and " + currentDirectory.listDirectories[i].dirname)
+            if (listFullpath[indexFullPath] == currentDirectory.listDirectories[i].dirname):
+                #print ("Direcotry exist.")
+                self.__buildStructure(listFullpath,
+                    indexFullPath+1,
+                    currentDirectory.listDirectories[i])
+                found =1
+
+        if (found == 0):
+            #print("Directory doesn't exist. Adding " +listFullpath[indexFullPath])
+            newDirectory = Directory()
+            newDirectory.dirname = listFullpath[indexFullPath]
+            currentDirectory.listDirectories.append (newDirectory)
+            self.__buildStructure(listFullpath, indexFullPath+1, newDirectory)
+
+    def __generateStructureFile (self, currentDirectory, offsetLevel, f):
+        spaceOffset = (' ' * offsetLevel)
+        f.write(spaceOffset + currentDirectory.dirname + '/\n')
+        spaceOffset += (' ' * offsetLevel)
+        if (spaceOffset == ''):
+            spaceOffset = ' ' * self.spaceOffset
+        for i in range (len(currentDirectory.listFiles)):
+            f.write(spaceOffset + currentDirectory.listFiles[i] + '\n')
+
+        for i in range (len(currentDirectory.listDirectories)):
+            self.__generateStructureFile(currentDirectory.listDirectories[i], offsetLevel+self.spaceOffset, f)
+
+        if (offsetLevel!=0):
+            f.write(spaceOffset + '...\n')
+
+    def generateStructureFile (self):
+        f = open(self.directoryName + '__init__.py', 'w')
+        self.__generateStructureFile(self.directoryStructure, 0, f)
         f.close()
+
 
 commandLineInput = CommandLineInput ()
 commandLineInput.checkInput()
 
 directoryName = sys.argv[1]
-pythonDirectoryStructure = PythonDirectoryStructure (directoryName)
-pythonDirectoryStructure.generate()
+directoryStructure = DirectoryStructure(directoryName)
+directoryStructure.buildStrucure()
+directoryStructure.generateStructureFile()
