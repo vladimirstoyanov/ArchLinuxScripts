@@ -1,4 +1,5 @@
 ArchLinuxScripts/
+     test.py
      __init__.py
      changeDefaultWallpaper.py
      InternetSharing/
@@ -136,10 +137,6 @@ ArchLinuxScripts/
                     ...
           eToroBot/
                     eToroBot.py
-                    __init__.py
-                    ...
-          Nearby_social_network_prop_bot/
-                    NearbyPropBot.py
                     __init__.py
                     ...
           NeverwinterProfessionCraft/

@@ -1,7 +1,6 @@
 import os
 import sys
 import time
-
 #$1 - a newtwork interface with internet access
 #$2 - a network interface that shares the internet
 #$3 - an IP address of the dhcp server
@@ -25,7 +24,7 @@ def help ():
 	print ("1 arg - a newtwork interface with internet access (wlp3s0)")
 	print ("2 arg - a network interface that shares the internet (enp0s25)")
 	print ("3 arg - an IP address of dhcp server (10.10.10.1)")
-	sys.exit(0)	
+	sys.exit(0)
 
 if (len(sys.argv)!=4):
 	help()
@@ -72,9 +71,9 @@ os.system("systemctl enable dhcpd4.service")
 #setting up the network interface
 print ("setting up the network interface...")
 os.system("ip link set up dev " + arg2)
-os.system("ip addr add " + gateway + "/24 dev " + arg2) 
+os.system("ip addr add " + gateway + "/24 dev " + arg2)
 
-generateDhcpdConfFile('8.8.8.8', '8.8.4.4', gateway, network_address, first_three_numbers_of_ip) 
+generateDhcpdConfFile('8.8.8.8', '8.8.4.4', gateway, network_address, first_three_numbers_of_ip)
 
 #coping dhcpd.conf to /etc
 print ("coping dhcpd.conf to /etc")
