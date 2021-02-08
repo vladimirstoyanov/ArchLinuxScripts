@@ -2,6 +2,8 @@ import os
 import sys
 import fnmatch
 import time
+import FileManager
+import Directory
 from pathlib import Path
 
 class CommandLineInput:
@@ -14,62 +16,13 @@ class CommandLineInput:
             print ("1 arg: directory name")
             sys.exit()
 
-class Directory:
-    def __init__ (self):
-        self.dirname = ""
-        self.fullpath = ""
-        self.listFiles = []
-        self.listDirectories = []
-
-class File:
-    def __init__ (self):
-        self.filename = ""
-        self.fullpath = ""
-        self.directory = ""
-        self.shortDirectoryName = ""
-    def __repr__(self): #string representation when print it
-        return str(self.filename + '\n' + self.fullpath + '\n' + self.directory  + '\n' + self.shortDirectoryName +'\n')
-
-class FileManager:
-    def __init__ (self):
-        pass
-
-    def isDirectoryExist (self, directoryName):
-        return os.path.isdir(directoryName)
-
-    def isFileExist (self, fileName):
-        return os.path.isfile(fileName)
-
-    def splitPath (self, path):
-        result = path.split('/')
-        result = list(filter(None, result))
-        return result
-
-    def returnPathAfterDirectory (self, path, directoryName):
-        return path[len(directoryName)-1:len(path)]
-
-    def getParentDirectory (self, path):
-        splitedPath = self.splitPath(path)
-        splitedPath = list(filter(None, splitedPath))
-        return splitedPath[len(splitedPath)-1]
-
-    def getAllFiles (self, dir, extension ):
-        result = []
-        for root, dirnames, filenames in os.walk(dir):
-            for filename in fnmatch.filter(filenames, '*.' + extension):
-                file = File ()
-                file.filename = filename
-                file.directory = root
-                file.fullpath = os.path.join(root, filename)
-                result.append(file)
-        return result
 
 class DirectoryStructure:
     def __init__ (self, direcotryName):
         self.spaceOffset = 5
         self.directoryName = direcotryName
         self.directoryStructure = ""
-        self.fileManager = FileManager()
+        self.fileManager = FileManager.FileManager()
         self.listFiles = self.fileManager.getAllFiles(directoryName, 'py')
         self.rootDirectory = self.fileManager.getParentDirectory(self.directoryName)
 
@@ -88,7 +41,7 @@ class DirectoryStructure:
 
     def __buildStructure(self, listFullPath, indexFullPath, currentDirectory):
         if (self.directoryStructure == ""):
-            self.directoryStructure = Directory()
+            self.directoryStructure = Directory.Directory()
             self.directoryStructure.dirname = listFullPath[indexFullPath]
             self.directoryStructure.fullpath = self.__getFullPath(listFullPath, indexFullPath)
 
@@ -112,7 +65,7 @@ class DirectoryStructure:
                 found =1
 
         if (found == 0):
-            newDirectory = Directory()
+            newDirectory = Directory.Directory()
             newDirectory.dirname = listFullPath[indexFullPath]
             newDirectory.fullpath = self.__getFullPath(listFullPath, indexFullPath)
             currentDirectory.listDirectories.append (newDirectory)
@@ -163,10 +116,11 @@ class DirectoryStructure:
         f = open(self.directoryName + '__init__.py', 'w')
         self.__generateStructureFile(self.directoryStructure, 0, f)
         f.close()
+        
+if __name__ == "__main__":
+    commandLineInput = CommandLineInput ()
+    commandLineInput.checkInput()
 
-commandLineInput = CommandLineInput ()
-commandLineInput.checkInput()
-
-directoryName = sys.argv[1]
-directoryStructure = DirectoryStructure(directoryName)
-directoryStructure.generate()
+    directoryName = sys.argv[1]
+    directoryStructure = DirectoryStructure(directoryName)
+    directoryStructure.generate()

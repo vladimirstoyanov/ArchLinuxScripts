@@ -1,1 +1,0 @@
-from Bots.Nearby_social_network_prop_bot.NearbyPropBot import NearbyPropBot

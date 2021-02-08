@@ -61,8 +61,14 @@ ArchLinuxScripts/
           speech_recognition_background.py
           ...
      Python/
-          createDirectoryStructure.py
           __init__.py
+          DirectoryStructure/
+                    FileManager.py
+                    File.py
+                    CreateDirectoryStructure.py
+                    Directory.py
+                    __init__.py
+                    ...
           ...
      Package/
           package.py
