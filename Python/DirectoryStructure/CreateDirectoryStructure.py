@@ -77,6 +77,8 @@ class DirectoryStructure:
         spaceOffset += (' ' * offsetLevel)
         if (spaceOffset == ''):
             spaceOffset = ' ' * self.spaceOffset
+
+        currentDirectory.listFiles.sort()
         for i in range (len(currentDirectory.listFiles)):
             f.write(spaceOffset + currentDirectory.listFiles[i] + '\n')
 
@@ -116,7 +118,7 @@ class DirectoryStructure:
         f = open(self.directoryName + '__init__.py', 'w')
         self.__generateStructureFile(self.directoryStructure, 0, f)
         f.close()
-        
+
 if __name__ == "__main__":
     commandLineInput = CommandLineInput ()
     commandLineInput.checkInput()

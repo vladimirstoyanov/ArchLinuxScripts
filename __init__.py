@@ -1,12 +1,11 @@
 ArchLinuxScripts/
-     test.py
      __init__.py
      changeDefaultWallpaper.py
      InternetSharing/
           __init__.py
           DHCP/
-                    dhcp_internet_sharing.py
                     __init__.py
+                    dhcp_internet_sharing.py
                     ...
           ...
      English/
@@ -27,52 +26,52 @@ ArchLinuxScripts/
                     ...
           ...
      Security/
+          __init__.py
           analyzeTcpTraffic.py
           printVulnerablePackages.py
-          __init__.py
           Parse/
                     TcpPacket.py
                     __init__.py
                     ...
           Package/
-                    package.py
                     __init__.py
+                    package.py
                     ...
           DB/
+                    __init__.py
                     connectionDB.py
                     sqliteWrapper.py
                     sqlite_test.py
-                    __init__.py
                     ...
           SSH/
-                    killRemoteProcessOverSSH.py
                     __init__.py
+                    killRemoteProcessOverSSH.py
                     ...
           ...
      Hardware/
-          disableTrackPoint.py
           __init__.py
+          disableTrackPoint.py
           enableTrackPoint.py
           ...
      SpeechCommnads/
-          speech_recognition_exec_command.py
-          test_mic.py
           __init__.py
           speech_recognition_background.py
+          speech_recognition_exec_command.py
+          test_mic.py
           ...
      Python/
           __init__.py
           DirectoryStructure/
-                    FileManager.py
-                    File.py
                     CreateDirectoryStructure.py
                     Directory.py
+                    File.py
+                    FileManager.py
                     __init__.py
                     ...
           ...
      Package/
-          package.py
           __init__.py
+          package.py
           ...
      Network/
           __init__.py
@@ -84,55 +83,55 @@ ArchLinuxScripts/
                     ...
           ...
      Facebook/
-          facebookGetFriendsNames.py
           __init__.py
+          facebookGetFriendsNames.py
           facebookLogin.py
           ...
      Systemd/
-          make_binary_to_start_on_boot_time.py
           __init__.py
+          make_binary_to_start_on_boot_time.py
           ...
      ClientServer/
           __init__.py
           FileTransfer/
-                    server.py
                     __init__.py
                     client.py
+                    server.py
                     ...
           ...
      Find/
           __init__.py
           FindFileByMD5Sum/
-                    findFileByMD5Sum.py
                     __init__.py
+                    findFileByMD5Sum.py
                     ...
           FindFileBySHA256Sum/
-                    findFileBySHA256Sum.py
                     __init__.py
+                    findFileBySHA256Sum.py
                     ...
           ...
      Logs/
           __init__.py
           Xorg/
-                    analyzeXorg.py
                     __init__.py
+                    analyzeXorg.py
                     ...
           SDDM/
-                    analyzeSDDM.py
                     __init__.py
+                    analyzeSDDM.py
                     ...
           ...
      Scraping/
-          scrapingUserCommentsDnesBg.py
           __init__.py
+          scrapingUserCommentsDnesBg.py
           WebSpider/
-                    ScrapingUniqueWords.py
-                    Spider.py
-                    StorageUniqueData.py
-                    StorageData.py
-                    ScrapingWords.py
-                    __init__.py
                     ScrapingEmailAddresses.py
+                    ScrapingUniqueWords.py
+                    ScrapingWords.py
+                    Spider.py
+                    StorageData.py
+                    StorageUniqueData.py
+                    __init__.py
                     ...
           ...
      Bots/
@@ -142,11 +141,11 @@ ArchLinuxScripts/
                     __init__.py
                     ...
           eToroBot/
-                    eToroBot.py
                     __init__.py
+                    eToroBot.py
                     ...
           NeverwinterProfessionCraft/
-                    __init__.py
                     NeverwinterProfessionCrafting.py
+                    __init__.py
                     ...
           ...
