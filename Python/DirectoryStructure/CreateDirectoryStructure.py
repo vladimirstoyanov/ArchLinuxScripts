@@ -106,7 +106,11 @@ class DirectoryStructure:
         for i in range (len(currentDirectory.listDirectories)):
             self.__createInitFiles(currentDirectory.listDirectories[i])
 
-
+    def __createDirectoryStructure (self):
+        f = open(self.directoryName + '__init__.py', 'w')
+        self.__generateStructureFile(self.directoryStructure, 0, f)
+        f.close()
+        
     def generate (self):
         self.__prepare()
         for i in range (len(self.listFiles)):
@@ -114,10 +118,8 @@ class DirectoryStructure:
                 self.__buildStructure(splitedPath, 0, self.directoryStructure)
 
         self.__createInitFiles(self.directoryStructure)
+        self.__createDirectoryStructure ()
 
-        f = open(self.directoryName + '__init__.py', 'w')
-        self.__generateStructureFile(self.directoryStructure, 0, f)
-        f.close()
 
 if __name__ == "__main__":
     commandLineInput = CommandLineInput ()
