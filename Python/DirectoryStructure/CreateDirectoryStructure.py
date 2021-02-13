@@ -99,8 +99,7 @@ class DirectoryStructure:
 
         #create an empty __init__.py
         if (found==0):
-            f=open(currentDirectory.fullpath + initFileName, 'w')
-            f.close()
+            self.fileManager.createEmptyFile(currentDirectory.fullpath + initFileName)
             currentDirectory.listFiles.append(initFileName)
 
         for i in range (len(currentDirectory.listDirectories)):
@@ -110,7 +109,7 @@ class DirectoryStructure:
         f = open(self.directoryName + '__init__.py', 'w')
         self.__generateStructureFile(self.directoryStructure, 0, f)
         f.close()
-        
+
     def generate (self):
         self.__prepare()
         for i in range (len(self.listFiles)):

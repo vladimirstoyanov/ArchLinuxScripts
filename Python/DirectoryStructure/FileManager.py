@@ -28,6 +28,10 @@ class FileManager:
         splitedPath = list(filter(None, splitedPath))
         return splitedPath[len(splitedPath)-1]
 
+    def createEmptyFile (self, filename):
+        f=open(filename, 'w')
+        f.close()
+        
     def getAllFiles (self, dir, extension ):
         result = []
         for root, dirnames, filenames in os.walk(dir):
