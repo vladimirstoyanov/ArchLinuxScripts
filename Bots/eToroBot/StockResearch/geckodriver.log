@@ -1,0 +1,2026 @@
+1615553492586	geckodriver	INFO	Listening on 127.0.0.1:39573
+1615554021704	geckodriver	INFO	Listening on 127.0.0.1:47745
+1615554050047	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZ3sKHH"
+1615554054878	Marionette	INFO	Listening on port 38377
+1615554054916	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 10ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+1615554138881	geckodriver	INFO	Listening on 127.0.0.1:44723
+1615554140587	Marionette	INFO	Stopped listening on port 38377
+1615554166466	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuJVZOL"
+1615554171070	Marionette	INFO	Listening on port 43875
+1615554171157	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 216: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1615554206464	Marionette	INFO	Stopped listening on port 43875
+1615554209592	geckodriver	INFO	Listening on 127.0.0.1:44261
+1615554237067	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQeov8D"
+1615554241977	Marionette	INFO	Listening on port 36629
+1615554242053	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 216: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 216: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+webRequest.onHeadersReceived event fired after context unloaded.
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+1615554314521	Marionette	INFO	Stopped listening on port 36629
+1615554321878	geckodriver	INFO	Listening on 127.0.0.1:58707
+1615554364912	geckodriver	INFO	Listening on 127.0.0.1:41019
+1615554834065	geckodriver	INFO	Listening on 127.0.0.1:42005
+1615554866236	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezYQuKj"
+1615554871342	Marionette	INFO	Listening on port 37227
+1615554871411	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 216: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1615554892650	Marionette	INFO	Stopped listening on port 37227
+1615554957936	geckodriver	INFO	Listening on 127.0.0.1:34469
+1615554985024	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletdf9nX"
+1615554989369	Marionette	INFO	Listening on port 41817
+1615554989436	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+webRequest.onHeadersReceived event fired after context unloaded.
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 476: TypeError: this._captureQueue is undefined
+1615555032076	Marionette	INFO	Stopped listening on port 41817
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1615555038691	geckodriver	INFO	Listening on 127.0.0.1:48931
+1615555065978	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilej0YIS6"
+1615555070771	Marionette	INFO	Listening on port 34889
+1615555071029	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 6ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1615556001953	geckodriver	INFO	Listening on 127.0.0.1:43339
+1615556194553	geckodriver	INFO	Listening on 127.0.0.1:57585
+1615556222560	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXB6Bph"
+1615556228355	Marionette	INFO	Listening on port 45969
+1615556228448	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+webRequest.onHeadersReceived event fired after context unloaded.
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+1615556335738	geckodriver	INFO	Listening on 127.0.0.1:39551
+1615556338399	Marionette	INFO	Stopped listening on port 45969
+1615556363208	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejsiE10"
+1615556367763	Marionette	INFO	Listening on port 44303
+1615556367802	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 8ms)
+webRequest.onHeadersReceived event fired after context unloaded.
+webRequest.onHeadersReceived event fired after context unloaded.
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+1615556716522	Marionette	INFO	Stopped listening on port 44303
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1615556723220	geckodriver	INFO	Listening on 127.0.0.1:58723
+1615556750777	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePQPQZs"
+1615556755752	Marionette	INFO	Listening on port 44071
+1615556756050	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2344: Error: listener not re-registered
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1615557629928	geckodriver	INFO	Listening on 127.0.0.1:59957
+1615557778681	geckodriver	INFO	Listening on 127.0.0.1:48611
+1615557810390	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3n8jDX"
+1615557815097	Marionette	INFO	Listening on port 46071
+1615557815329	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1615558423909	geckodriver	INFO	Listening on 127.0.0.1:51183
+1615558428281	geckodriver	INFO	Listening on 127.0.0.1:36695
+1615558456247	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuOpXPr"
+1615558460844	Marionette	INFO	Listening on port 46325
+1615558460933	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+1615558520583	Marionette	INFO	Stopped listening on port 46325
+1615558529967	geckodriver	INFO	Listening on 127.0.0.1:47719
+1615558679029	geckodriver	INFO	Listening on 127.0.0.1:59147
+1615558706732	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFSlbqL"
+1615558711652	Marionette	INFO	Listening on port 39687
+1615558711711	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 8ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1615560313955	geckodriver	INFO	Listening on 127.0.0.1:35111
+1615560342022	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6ztu1q"
+1615560346561	Marionette	INFO	Listening on port 46033
+1615560346614	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1615560380360	Marionette	INFO	Stopped listening on port 46033
+1615562577786	geckodriver	INFO	Listening on 127.0.0.1:46969
+1615562634609	geckodriver	INFO	Listening on 127.0.0.1:56131
+1615562869832	geckodriver	INFO	Listening on 127.0.0.1:60317
+1615562896609	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezrrxJM"
+1615562901385	Marionette	INFO	Listening on port 37503
+1615562901486	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+1615563089975	geckodriver	INFO	Listening on 127.0.0.1:33413
+1615563116409	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXVEptY"
+1615563120623	Marionette	INFO	Listening on port 44313
+1615563120679	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+JavaScript warning: https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js, line 2: Script terminated by timeout at:
+zUnb/Rj</n.prototype.tns@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:2391857
+tcn/<@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:4927519
+updateRenderer@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:978872
+ur@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:960150
+Cr@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966970
+_r@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966635
+ur@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:960048
+Cr@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966970
+_r@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966635
+ur@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:960048
+Cr@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966970
+_r@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966635
+ur@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:960048
+Cr@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966970
+_r@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966635
+ur@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:960048
+Cr@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966970
+br@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966368
+ur@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:960170
+Cr@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966970
+_r@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966635
+ur@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:960048
+Cr@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966970
+br@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:966368
+ur@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:960170
+zUnb/Uo</n.prototype.detectChanges@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:916431
+zUnb/wl</n.prototype.tick@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:943547
+next/<@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:941824
+0TWp/</</u</t.prototype.invoke@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/polyfills-es5.3dcf741336f331f30806.js:2:8615
+onInvoke@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:933167
+0TWp/</</u</t.prototype.invoke@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/polyfills-es5.3dcf741336f331f30806.js:2:8555
+0TWp/</</a</e.prototype.run@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/polyfills-es5.3dcf741336f331f30806.js:2:3818
+zUnb/ol</n.prototype.run@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:933886
+next@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:941806
+zUnb/Si</t.prototype.subscribe/i<@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:928686
+zUnb/m</t.prototype.__tryOrUnsub@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:857996
+zUnb/m</t.prototype.next@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:857165
+zUnb/h</t.prototype._next@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:856259
+zUnb/h</t.prototype.next@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:855930
+zUnb/v</t.prototype.next@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:861533
+zUnb/Si</t.prototype.emit@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:928465
+rl@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:934342
+cl@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:934601
+onInvokeTask@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/main.f20b9817d801dd37faea.js:2:933109
+0TWp/</</u</t.prototype.invokeTask@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/polyfills-es5.3dcf741336f331f30806.js:2:9220
+0TWp/</</a</e.prototype.runTask@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/polyfills-es5.3dcf741336f331f30806.js:2:4481
+0TWp/</</s</e.invokeTask@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/polyfills-es5.3dcf741336f331f30806.js:2:10382
+l@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/polyfills-es5.3dcf741336f331f30806.js:2:22970
+p@https://cdn.etorostatic.com/312.0.3/sem-etoro-ng/polyfills-es5.3dcf741336f331f30806.js:2:23308
+
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+1615563575673	geckodriver	INFO	Listening on 127.0.0.1:48041
+1615563603876	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuyShr1"
+1615563608829	Marionette	INFO	Listening on port 42347
+1615563608909	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+JavaScript error: https://www.gstatic.com/_/mss/boq-one-google/_/js/k=boq-one-google.OneGoogleWidgetUi.en.l8SSlfPOlAU.es5.O/am=WAAC/d=1/excm=_b,_tp,appwidgetauthview/ed=1/dg=0/wt=2/ct=zgms/rs=AM-SdHsIn5UyGomiEgtHzRLoudGD_AJeBg/m=_b,_tp, line 428: NS_ERROR_NOT_INITIALIZED: 
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:130:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:957:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:710:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 130, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 130))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:130:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:456:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 130, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 130))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:130:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:456:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 130, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 130))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:130:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:456:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 130, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 130))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:130:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:957:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:710:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 130, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 130))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:130:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:456:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 130, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 130))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:130:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:957:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:710:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 130, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 130))
+Handler function threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:130:9
+_onRequestHeader@resource://devtools/server/actors/network-monitor/network-observer.js:957:10
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:710:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 130, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 130))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:130:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:456:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 130, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 130))
+Handler function _httpResponseExaminer threw an exception: TypeError: topFrame.browsingContext is null
+Stack: matchRequest@resource://devtools/server/actors/network-monitor/network-observer.js:130:9
+_httpResponseExaminer@resource://devtools/server/actors/network-monitor/network-observer.js:456:10
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 130, column: 9
+console.error: (new TypeError("topFrame.browsingContext is null", "resource://devtools/server/actors/network-monitor/network-observer.js", 130))
+1615564460486	geckodriver	INFO	Listening on 127.0.0.1:37855
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1615564618303	geckodriver	INFO	Listening on 127.0.0.1:37987
+1615564645066	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKc8E9M"
+1615564649942	Marionette	INFO	Listening on port 33395
+1615564650048	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1615564963039	geckodriver	INFO	Listening on 127.0.0.1:51153
+1615564990329	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePx3G2v"
+1615564995383	Marionette	INFO	Listening on port 37417
+1615564995424	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1615565007550	Marionette	INFO	Stopped listening on port 37417
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1615565016145	geckodriver	INFO	Listening on 127.0.0.1:34591
+1615565042568	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOjqP2v"
+1615565047456	Marionette	INFO	Listening on port 44553
+1615565047575	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+webRequest.onHeadersReceived event fired after context unloaded.
+webRequest.onHeadersReceived event fired after context unloaded.
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1615565496052	geckodriver	INFO	Listening on 127.0.0.1:33137
+1615565631865	geckodriver	INFO	Listening on 127.0.0.1:38035
+1615565663904	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebjxHOS"
+1615565668597	Marionette	INFO	Listening on port 34717
+1615565668702	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+1615565748105	Marionette	INFO	Stopped listening on port 34717
+1615565752525	geckodriver	INFO	Listening on 127.0.0.1:47989
+1615565778904	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejUjZFO"
+1615565783097	Marionette	INFO	Listening on port 43421
+1615565783217	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 7ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1615565969319	Marionette	INFO	Stopped listening on port 43421
+1615565972181	geckodriver	INFO	Listening on 127.0.0.1:45697
+1615565998908	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiMquzp"
+1615566003226	Marionette	INFO	Listening on port 39369
+1615566003316	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1615566029059	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1615566717057	geckodriver	INFO	Listening on 127.0.0.1:59945
+1615566848255	geckodriver	INFO	Listening on 127.0.0.1:39621
+1615566879360	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7GcGM5"
+1615566884161	Marionette	INFO	Listening on port 43767
+1615566884234	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 6ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1615566911979	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1615567000309	geckodriver	INFO	Listening on 127.0.0.1:57571
+1615567029716	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesBwCWt"
+1615567034485	Marionette	INFO	Listening on port 34847
+1615567034649	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+webRequest.onHeadersReceived event fired after context unloaded.
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript error: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/include.preload.js, line 275: TypeError: document.documentElement is null
+JavaScript error: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/polyfill.js, line 1: SyntaxError: redeclaration of let getUILanguage
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1615567063609	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1615567261468	geckodriver	INFO	Listening on 127.0.0.1:46287
+1615567290997	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSyxQVT"
+1615567296450	Marionette	INFO	Listening on port 45067
+1615567296507	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 10ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1615567322938	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+1615567387115	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567399742	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567449337	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567461872	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567474303	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567486908	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567499547	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567512250	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567605023	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567617743	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567630833	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567643758	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567656354	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567669218	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615567682006	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1615567715371	geckodriver	INFO	Listening on 127.0.0.1:41855
+1615567826118	geckodriver	INFO	Listening on 127.0.0.1:49027
+1615568243250	geckodriver	INFO	Listening on 127.0.0.1:48341
+1615568546366	geckodriver	INFO	Listening on 127.0.0.1:47005
+1615568573648	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6ZSD2S"
+1615568759045	geckodriver	INFO	Listening on 127.0.0.1:59905
+1615568786133	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVqXcvX"
+1615568790612	Marionette	INFO	Listening on port 44435
+1615568790751	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2344: Error: listener not re-registered
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2344: Error: listener not re-registered
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 8ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1615568816945	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+1615568874173	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615568883583	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615568929345	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615568939224	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615568948824	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615568958164	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615568967835	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615568977276	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569060801	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569071350	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569081767	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569092916	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569103431	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569115531	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569125188	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569135570	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569146202	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569156450	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569190346	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569200519	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569210470	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569220439	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569229911	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569239753	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569249454	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569259414	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569269218	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569279159	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569289288	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569299123	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569308948	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569318753	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569328598	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569338544	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569395224	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569848160	geckodriver	INFO	Listening on 127.0.0.1:33461
+1615569852302	Marionette	INFO	Stopped listening on port 44435
+1615569876039	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileODw1QB"
+1615569880949	Marionette	INFO	Listening on port 46437
+1615569881026	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+webRequest.onHeadersReceived event fired after context unloaded.
+webRequest.onHeadersReceived event fired after context unloaded.
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2344: Error: listener not re-registered
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2344: Error: listener not re-registered
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1615569906108	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+1615569961141	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615569970773	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570016981	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570026124	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570035252	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570044629	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570053913	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570063434	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570147892	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570157401	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570167157	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570176518	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570186825	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570196281	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570205781	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570215317	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570224836	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570234308	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570264662	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570274369	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570283765	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570292967	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570302375	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570311992	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570321564	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570331331	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570340956	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570350659	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570360222	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570370422	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570380254	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570389603	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570399077	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570408384	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1615570462732	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
