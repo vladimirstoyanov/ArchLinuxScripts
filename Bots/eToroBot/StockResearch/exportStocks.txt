@@ -4,20 +4,20 @@ Buy price: 40.85
 Min price: 39.31
 Max price: 54.17
 P/E ration: 17.18
-=========================
+========================= +
 Stock: TRYG.CO
 Buy price: 143.73
 Min price: 132.28
 Max price: 208.41
 P/E ration: 20.09
-=========================
+========================= +
 Stock: GLJ.DE
 Buy price: 33.99
 Min price: 24.08
 Max price: 81.58
 P/E ration: 18.09
-=========================
-Stock: WDI.DE
+========================= //no, almost bankrupt
+Stock: WDI.DE 
 Buy price: 0.3853
 Min price: 0.30
 Max price: 139.99

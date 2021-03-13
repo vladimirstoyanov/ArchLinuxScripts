@@ -13,6 +13,16 @@ class Stock:
         self.driver = driver
         self.seleniumWrapper  = SeleniumWrapper(self.driver)
 
+    def dividendPercentage (self, dividendString):
+        #0 (0%)
+        index = dividendString.find ('(')
+        index+=1
+        percentageString = ""
+        while(dividendString[index]!='%'):
+            percentageString += dividendString[index]
+            index+=1
+        return percentageString
+
     def __makeDictionaryByStockStatsRaw (self, stockStatsRaw):
         stockStatsSplited = stockStatsRaw.split('\n')
         stockStatsSplited = list(filter(None, stockStatsSplited))
@@ -46,6 +56,8 @@ class Stock:
                 data[key] = stockStatsSplited[index]
                 index+=1
 
+        data['Dividend (Yield)'] = self.dividendPercentage (data['Dividend (Yield)'])
+
         return data
 
     #return a dictionay: stat -> value
@@ -55,12 +67,12 @@ class Stock:
         url += '/stats'
         print ("Trying to download " + url)
         self.driver.get(url)
-        time.sleep(15)
+        time.sleep(10)
         stockStatsRaw = ""
         try:
             stockStatsRaw = self.seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[3]/et-market-stats/et-market-stats-overview/et-card/section/et-card-content/div[1]')
         except:
-            log.write("Can get stats of " + url)
+            self.log.write("Can get stats of " + url)
         return self.__makeDictionaryByStockStatsRaw(stockStatsRaw)
 
 """
