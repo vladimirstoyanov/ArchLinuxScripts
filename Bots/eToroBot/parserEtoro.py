@@ -36,10 +36,10 @@ class Parser:
 
         return newList1, newList2
 
-    def parseStocksInfo (self, text):
+    def parseStocksInfo (self, text, exchangeName):
         print (text)
         print ("==========================")
-        lengthStock = 11
+        lengthStock = 12
         splited = text.split('BUYING')
         stocks = []
         for i in range (len(splited)):
@@ -61,6 +61,7 @@ class Parser:
                     del stocks[0][0]
 
         for i in range (len(stocks)):
+            stocks[i].append(exchangeName)
             print ("Len=" + str(len(stocks[i])) + ", " + str(stocks[i]))
 
         finalStockList = []
@@ -68,6 +69,7 @@ class Parser:
             if (len(stocks[i])>lengthStock):
                 print ("Trying to split: " + str(stocks[i]))
                 newList1, newList2 = self.splitStocks (stocks[i])
+                newList1.append(exchangeName)
                 print ("Split 1: " + str(newList1))
                 print ("Split 2: " + str(newList2))
                 if (len(newList1)==lengthStock):

@@ -28,9 +28,7 @@ class StockResearch:
         self.markets = Markets(self.driver)
         self.stock = Stock (self.driver)
         self.allStocks = self.markets.getAllMarketsInfo()
-        #self.allStocks = [['NNDM', 'KPN', '0.013', '(0.43%)', 'S', '1.7', 'B', '1.7', '1.69', '2.97', '100%']]
         #stocks = self.getDipStocksWithLowPE()
-        #self.exportDipStocksWithLowPE(stocks)
 
         self.indexBuyPrice = 7
         self.indexMinPrice = 8
@@ -43,10 +41,7 @@ class StockResearch:
         f.close()
 
         data=self.getDipStocks()
-        self.exportDipStocks(data)
-
         dividends = self.getStocksWithDividends ()
-        self.exportDividendStocks(dividends)
 
     def calculatePercentage (self, buyPrice, minPrice, maxPrice):
         tolMaxMin = maxPrice - minPrice
@@ -88,25 +83,9 @@ class StockResearch:
             stats = self.stock.getStockStats (dipStocks[i][0])
             if (self.isStockWithLowPE(stats)):
                 result.append([dipStocks[i], stats])
+                self.exportStockPlusStats([dipStocks[i], stats], 'exportDipStocksWithLowPE.txt')
 
         return result
-
-    def exportDipStocksWithLowPE (self, data):
-        f = open('exportDipStocksWithLowPE.txt','w')
-        for i in range (len(data)):
-            print ("=========================")
-            print ("Stock: " + data[i][0][0])
-            print ("Buy price: " + data[i][0][self.indexBuyPrice])
-            print ("Min price: " + data[i][0][self.indexMinPrice])
-            print ("Max price: " + data[i][0][self.indexMaxPrice])
-            print ("P/E ration: " + data[i][1]['P/E Ratio'])
-            f.write("=========================\n")
-            f.write("Stock: " + data[i][0][0] + '\n')
-            f.write("Buy price: " + data[i][0][self.indexBuyPrice] + '\n')
-            f.write("Min price: " + data[i][0][self.indexMinPrice] + '\n')
-            f.write("Max price: " + data[i][0][self.indexMaxPrice] + '\n')
-            f.write("P/E ration: " + data[i][1]['P/E Ratio'] + '\n')
-        f.close()
 
     def getDipStocks (self):
         dipStocks = []
@@ -120,24 +99,29 @@ class StockResearch:
             percentage = self.calculatePercentage(buyPrice, minPrice, maxPrice)
             if (percentage < 5.5):
                 dipStocks.append (self.allStocks[i])
+                self.exportStock (self.allStocks[i], 'dipStocksLowerThan5Percent.txt')
 
         return dipStocks
 
-    def exportDipStocks (self, data):
-        f = open('dipStocksLowerThan5Percent.txt', 'w')
 
-        for i in range (len(data)):
-            #[['NNDM', 'KPN', '0.013', '(0.43%)', 'S', '1.7', 'B', '1.7', '1.69', '2.97', '100%']]
-            print ("Stock: " + data[i][0])
-            print ("Buy price: " + data[i][self.indexBuyPrice])
-            print ("Min price: " + data[i][self.indexMinPrice])
-            print ("Max price: " + data[i][self.indexMaxPrice])
-        f.close()
+    def exportStock (self, data, filename):
+            f = open (filename, 'a')
+            f.write("=========================\n")
+            f.write("Stock index: " + data[0] + '\n')
+            f.write("Stock name: " + data[1] + '\n')
+            f.write("Stock exchange: " + data[11] + '\n')
+            f.write("Sell price: " + data[5] + '\n')
+            f.write("Buy price: " + data[self.indexBuyPrice] + '\n')
+            f.write("Min price: " + data[self.indexMinPrice] + '\n')
+            f.write("Max price: " + data[self.indexMaxPrice] + '\n')
+            f.close()
 
-    def exportStockPlusStats (self, data, f):
+    def exportStockPlusStats (self, data, filename):
+            f = open (filename, 'a')
             f.write("=========================\n")
             f.write("Stock index: " + data[0][0] + '\n')
             f.write("Stock name: " + data[0][1] + '\n')
+            f.write("Stock exchange: " + data[0][11] + '\n')
             f.write("Sell price: " + data[0][5] + '\n')
             f.write("Buy price: " + data[0][self.indexBuyPrice] + '\n')
             f.write("Min price: " + data[0][self.indexMinPrice] + '\n')
@@ -153,27 +137,18 @@ class StockResearch:
             f.write('Revenue: '+ data[1]['Revenue'] + '\n')
             f.write('EPS: '+ data[1]['EPS'] + '\n')
             f.write('Dividend (Yield): '+ data[1]['Dividend (Yield)'] + '\n')
+            f.close()
 
     def getStocksWithDividends (self):
         dividendStocks = []
-        f = open ('allStocksAndStats.txt', 'w')
         for i in range (len(self.allStocks)):
             stats = self.stock.getStockStats (self.allStocks[i][0])
-            self.exportStockPlusStats([self.allStocks[i], stats], f)
+            self.exportStockPlusStats([self.allStocks[i], stats], 'allStocksAndStats.txt')
             print ("Dividend: " + stats['Dividend (Yield)'])
             if (stats['Dividend (Yield)']!='0'):
                 print ("Added.")
                 dividendStocks.append([self.allStocks[i], stats])
-        f.close()
+                self.exportStockPlusStats([self.allStocks[i], stats], 'dividendStocks.txt')
         return dividendStocks
-
-    def exportDividendStocks (self, data):
-        f = open('dividendStocks.txt', 'w')
-        for i in range (len(data)):
-            self.exportStockPlusStats(data[i],f)
-        f.close()
-
-
-
 
 stockResearch = StockResearch()

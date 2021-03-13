@@ -67,9 +67,10 @@ class Stock:
         url += '/stats'
         print ("Trying to download " + url)
         self.driver.get(url)
-        time.sleep(10)
+        time.sleep(9)
         stockStatsRaw = ""
         try:
+            #ToDo: change to get text by class name or id
             stockStatsRaw = self.seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[3]/et-market-stats/et-market-stats-overview/et-card/section/et-card-content/div[1]')
         except:
             self.log.write("Can get stats of " + url)

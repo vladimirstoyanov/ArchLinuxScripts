@@ -41,7 +41,7 @@ class Markets:
         while (True):
             stocksInfo = self.driver.find_element_by_xpath("/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/div")
             parser = Parser ()
-            currentStocks = parser.parseStocksInfo(stocksInfo.text)
+            currentStocks = parser.parseStocksInfo(stocksInfo.text, marketName)
             for i in range (len(currentStocks)):
                 stocks.append(currentStocks[i])
             try:

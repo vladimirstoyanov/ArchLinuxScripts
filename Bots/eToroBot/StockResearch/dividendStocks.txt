@@ -56,25 +56,6 @@ Revenue: 74.74B
 EPS: 1.2991
 Dividend (Yield): 3.92
 =========================
-Stock index: ADYEN.NV
-Stock name: Adyen NV
-Stock exchange: Amsterdam exchange
-Sell price: 1930.76
-Buy price: 1935.24
-Min price: 657.81
-Max price: 2218.00
-Prev Close: 1932.50
-Day's Range: 1916.27 - 1982.21
-52 Week Range: 657.81 - 2218.00
-Average Volume (3m): 81.16K
-1-Year Return: 160.73%
-Beta: 0.0807
-Market Cap: 58.72B
-P/E Ratio: 242.3
-Revenue: 3.64B
-EPS: 7.9861
-Dividend (Yield): 0
-=========================
 Stock index: AGN.NV
 Stock name: Aegon NV
 Stock exchange: Amsterdam exchange
@@ -283,25 +264,6 @@ P/E Ratio: 3.46
 Revenue: 1.09B
 EPS: 10.2454
 Dividend (Yield): 18.34
-=========================
-Stock index: GLPG.NV
-Stock name: Galapagos
-Stock exchange: Amsterdam exchange
-Sell price: 68.52
-Buy price: 68.68
-Min price: 64.48
-Max price: 215.81
-Prev Close: 68.63
-Day's Range: 68.16 - 70.36
-52 Week Range: 64.48 - 215.81
-Average Volume (3m): 579.53K
-1-Year Return: -52.64%
-Beta: 0.1025
-Market Cap: 4.49B
-P/E Ratio: 52.53
-Revenue: 478.05M
-EPS: -4.7056
-Dividend (Yield): 0
 =========================
 Stock index: GVNV.NV
 Stock name: GrandVision NV
