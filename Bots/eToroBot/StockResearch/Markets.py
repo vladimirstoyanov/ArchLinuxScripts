@@ -10,9 +10,9 @@ class Markets:
     def __init__(self, driver):
         self.seleniumWrapper = SeleniumWrapper(driver)
         self.stockMarkets = {
-            #'Amsterdam exchange' : 'https://www.etoro.com/discover/markets/stocks/exchange/amsterdam',
-            #'Brussles exchange' : 'https://www.etoro.com/discover/markets/stocks/exchange/brussels',
-            #'Copenhagen exchange' :'https://www.etoro.com/discover/markets/stocks/exchange/copenhagen',
+            'Amsterdam exchange' : 'https://www.etoro.com/discover/markets/stocks/exchange/amsterdam',
+            'Brussles exchange' : 'https://www.etoro.com/discover/markets/stocks/exchange/brussels',
+            'Copenhagen exchange' :'https://www.etoro.com/discover/markets/stocks/exchange/copenhagen',
             'Frankfurt exchage':'https://www.etoro.com/discover/markets/stocks/exchange/frankfurt',
             'Helsinki exchage':'https://www.etoro.com/discover/markets/stocks/exchange/helsinki',
             'Hongkong exchange':'https://www.etoro.com/discover/markets/stocks/exchange/hongkong',
@@ -47,23 +47,28 @@ class Markets:
             try:
                 currentStockCount = self.seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/et-discovery-markets-results-header/div/div[2]/div/div[1]/span[2]/span[1]')
                 maxStockCount = self.seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/et-discovery-markets-results-header/div/div[2]/div/div[1]/span[2]/span[3]')
+                #check if it is the last page
                 splited = currentStockCount.split('-')
                 if (splited[1] == maxStockCount):
-                    print ("It reaches max count of the stocks")
+                    print ("It is the last page.")
                     break
             except:
                 print ("End text")
                 break
 
             try:
-                #    #<span _ngcontent-woq-c21="" class="nav-button-right sprite"></span>
+                #click on the next page button
                 self.seleniumWrapper.clickElementByCssSelector('.nav-button-right', 4)
             except:
                 print ("End")
                 break
 
-
+        return stocks
 
     def getAllMarketsInfo (self):
+        stocks = []
         for key,vlaue in  self.stockMarkets.items():
-            self.getMarketInfo(key)
+            currentStocks = self.getMarketInfo(key)
+            for j in range(len(currentStocks)):
+                stocks.append(currentStocks[j])
+        return stocks
