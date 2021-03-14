@@ -14,13 +14,13 @@ class Stock:
         self.seleniumWrapper  = SeleniumWrapper(self.driver)
 
     def dividendPercentage (self, dividendString):
-        #0 (0%)
-        index = dividendString.find ('(')
-        index+=1
+        fromIndex = dividendString.find ('(')
+        fromIndex+=1
+        toIndex = dividendString.find ('%')
         percentageString = ""
-        while(dividendString[index]!='%'):
-            percentageString += dividendString[index]
-            index+=1
+        for i in range (fromIndex, toIndex, 1):
+            percentageString += dividendString[i]
+
         return percentageString
 
     def __makeDictionaryByStockStatsRaw (self, stockStatsRaw):

@@ -66,6 +66,8 @@ class StockResearch:
         return 0
 
     def getDipStocksWithLowPE(self):
+        dipStocksWithLowerPE = "dipStocksWithLowerPE.txt"
+        self.cleanFile(dipStocksWithLowerPE)
         dipStocks = []
         for i in range (len(self.allStocks)):
             buyPrice = float(self.allStocks[i][self.indexBuyPrice])
@@ -83,11 +85,13 @@ class StockResearch:
             stats = self.stock.getStockStats (dipStocks[i][0])
             if (self.isStockWithLowPE(stats)):
                 result.append([dipStocks[i], stats])
-                self.exportStockPlusStats([dipStocks[i], stats], 'exportDipStocksWithLowPE.txt')
+                self.exportStockPlusStats([dipStocks[i], stats], dipStocksWithLowerPE)
 
         return result
 
     def getDipStocks (self):
+        dipStocksFile = 'dipStocks.txt'
+        self.cleanFile(dipStocksFile)
         dipStocks = []
         for i in range (len(self.allStocks)):
             buyPrice = float(self.allStocks[i][self.indexBuyPrice])
@@ -99,10 +103,13 @@ class StockResearch:
             percentage = self.calculatePercentage(buyPrice, minPrice, maxPrice)
             if (percentage < 5.5):
                 dipStocks.append (self.allStocks[i])
-                self.exportStock (self.allStocks[i], 'dipStocksLowerThan5Percent.txt')
+                self.exportStock (self.allStocks[i], dipStocksFile)
 
         return dipStocks
 
+    def cleanFile (self, filename):
+        f = open(filename, 'w')
+        f.close()
 
     def exportStock (self, data, filename):
             f = open (filename, 'a')
@@ -140,15 +147,19 @@ class StockResearch:
             f.close()
 
     def getStocksWithDividends (self):
+        dividendsFile = 'dividendStocks.txt'
+        allStocksFile = 'allStocksAndStats.txt'
+        self.cleanFile(dividendsFile)
+        self.cleanFile(allStocksFile)
         dividendStocks = []
         for i in range (len(self.allStocks)):
             stats = self.stock.getStockStats (self.allStocks[i][0])
-            self.exportStockPlusStats([self.allStocks[i], stats], 'allStocksAndStats.txt')
+            self.exportStockPlusStats([self.allStocks[i], stats], allStocksFile)
             print ("Dividend: " + stats['Dividend (Yield)'])
-            if (stats['Dividend (Yield)']!='0'):
+            if (stats['Dividend (Yield)']!='0' and stats['Dividend (Yield)']!=''):
                 print ("Added.")
                 dividendStocks.append([self.allStocks[i], stats])
-                self.exportStockPlusStats([self.allStocks[i], stats], 'dividendStocks.txt')
+                self.exportStockPlusStats([self.allStocks[i], stats], dividendsFile)
         return dividendStocks
 
 stockResearch = StockResearch()

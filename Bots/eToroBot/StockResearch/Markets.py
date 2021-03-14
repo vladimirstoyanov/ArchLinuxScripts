@@ -39,9 +39,11 @@ class Markets:
         time.sleep(15)
         stocks = []
         while (True):
-            stocksInfo = self.driver.find_element_by_xpath("/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/div")
+            #.market-list
+            stocksInfo = self.seleniumWrapper.getTextByCSSSelector('.market-list')
+            #stocksInfo = self.driver.find_element_by_xpath("/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/div")
             parser = Parser ()
-            currentStocks = parser.parseStocksInfo(stocksInfo.text, marketName)
+            currentStocks = parser.parseStocksInfo(stocksInfo, marketName)
             for i in range (len(currentStocks)):
                 stocks.append(currentStocks[i])
             try:

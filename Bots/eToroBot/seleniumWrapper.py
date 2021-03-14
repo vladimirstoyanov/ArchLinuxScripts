@@ -42,3 +42,7 @@ class SeleniumWrapper:
     def getTextByXpath (self, xpath):
         element = self.driver.find_element_by_xpath(xpath)
         return element.text
+
+    def getTextByCSSSelector (self, cssSelector):
+        element = self.driver.find_element_by_css_selector(cssSelector)
+        return element.text
