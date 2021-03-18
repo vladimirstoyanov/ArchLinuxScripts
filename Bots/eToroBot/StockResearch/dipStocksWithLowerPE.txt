@@ -1,0 +1,285 @@
+=========================
+Stock index: VOPA.NV
+Stock name: Koninklijke Vopak NV
+Stock exchange: Amsterdam exchange
+Sell price: 41.16
+Buy price: 41.25
+Min price: 39.31
+Max price: 54.17
+Prev Close: 41.36
+Day's Range: 41.02 - 41.36
+52 Week Range: 39.31 - 54.17
+Average Volume (3m): 326.32K
+1-Year Return: -6.35%
+Beta: 0.0478
+Market Cap: 5.19B
+P/E Ratio: 17.41
+Revenue: 1.19B
+EPS: 2.3774
+Dividend (Yield): 2.90
+=========================
+Stock index: WDI.DE
+Stock name: Wirecard
+Stock exchange: Frankfurt exchage
+Sell price: 0.3807
+Buy price: 0.3871
+Min price: 0.30
+Max price: 139.99
+Prev Close: 0.3802
+Day's Range: 0.3719 - 0.3807
+52 Week Range: 0.3007 - 139.9900
+Average Volume (3m): 5.61M
+1-Year Return: -99.56%
+Beta: 0.0346
+Market Cap: 436.56M
+P/E Ratio: 0.9
+Revenue: 2.8B
+EPS: 3.9016
+Dividend (Yield): 5.66
+=========================
+Stock index: NELES.HE
+Stock name: Neles Oyj
+Stock exchange: Helsinki exchage
+Sell price: 10.22
+Buy price: 10.24
+Min price: 8.59
+Max price: 32.60
+Prev Close: 10.54
+Day's Range: 10.19 - 10.54
+52 Week Range: 8.59 - 32.60
+Average Volume (3m): 278.87K
+1-Year Return: -51.51%
+Beta: 0.6929
+Market Cap: 1.58B
+P/E Ratio: 0.72
+Revenue: 577M
+EPS: 14.6409
+Dividend (Yield): 1.71
+=========================
+Stock index: 1958.HK
+Stock name: BAIC Motor Corp Ltd
+Stock exchange: Hongkong exchange
+Sell price: 2.777
+Buy price: 2.793
+Min price: 2.58
+Max price: 4.17
+Prev Close: 2.777
+Day's Range: 2.708 - 2.787
+52 Week Range: 2.578 - 4.166
+Average Volume (3m): 22.5M
+1-Year Return: -19.20%
+Beta: 0.0304
+Market Cap: 21.96B
+P/E Ratio: 6.76
+Revenue: 182.62B
+EPS: 0.4055
+Dividend (Yield): 7.67
+=========================
+Stock index: CEY.L
+Stock name: Centamin PLC
+Stock exchange: London exchange
+Sell price: 102.81
+Buy price: 103.14
+Min price: 88.04
+Max price: 232.39
+Prev Close: 104.36
+Day's Range: 102.31 - 104.86
+52 Week Range: 88.04 - 232.39
+Average Volume (3m): 7.54M
+1-Year Return: -8.53%
+Beta: 0.1929
+Market Cap: 1.21B
+P/E Ratio: 10.7
+Revenue: 645.69M
+EPS: 0.098
+Dividend (Yield): 8.90
+=========================
+Stock index: HMSO.L
+Stock name: Hammerson
+Stock exchange: London exchange
+Sell price: 38.00
+Buy price: 38.10
+Min price: 14.02
+Max price: 706.35
+Prev Close: 41.79
+Day's Range: 37.49 - 41.82
+52 Week Range: 14.02 - 706.35
+Average Volume (3m): 21.87M
+1-Year Return: -93.95%
+Beta: -0.9149
+Market Cap: 1.69B
+P/E Ratio: 19.19
+Revenue: 182.9M
+EPS: -0.8084
+Dividend (Yield): 62.11
+=========================
+Stock index: PFC.L
+Stock name: Petrofac
+Stock exchange: London exchange
+Sell price: 93.98
+Buy price: 94.36
+Min price: 93.62
+Max price: 240.08
+Prev Close: 98.65
+Day's Range: 93.62 - 98.53
+52 Week Range: 93.62 - 240.08
+Average Volume (3m): 4.35M
+1-Year Return: -48.38%
+Beta: 0.1887
+Market Cap: 335.34M
+P/E Ratio: 11.13
+Revenue: 3.82B
+EPS: -0.3399
+Dividend (Yield): 29.36
+=========================
+Stock index: TSCO.L
+Stock name: Tesco
+Stock exchange: London exchange
+Sell price: 226.20
+Buy price: 226.70
+Min price: 216.90
+Max price: 317.14
+Prev Close: 225.60
+Day's Range: 225.30 - 228.09
+52 Week Range: 216.90 - 317.14
+Average Volume (3m): 17.27M
+1-Year Return: -20.60%
+Beta: 0.0824
+Market Cap: 17.37B
+P/E Ratio: 15.69
+Revenue: 61.57B
+EPS: 0.1442
+Dividend (Yield): 5.43
+=========================
+Stock index: BMRN
+Stock name: BioMarin Pharmaceutical Inc
+Stock exchange: NASDAQ
+Sell price: 77.28
+Buy price: 77.49
+Min price: 68.02
+Max price: 131.68
+Prev Close: 77.21
+Day's Range: 76.26 - 77.43
+52 Week Range: 68.02 - 131.68
+Average Volume (3m): 1.47M
+1-Year Return: -0.36%
+Beta: 0.972
+Market Cap: 14.04B
+P/E Ratio: 17.75
+Revenue: 1.84B
+EPS: 4.3498
+Dividend (Yield): 0
+=========================
+Stock index: JFU
+Stock name: 9F Inc
+Stock exchange: NASDAQ
+Sell price: 1.9183
+Buy price: 1.9317
+Min price: 0.72
+Max price: 9.55
+Prev Close: 2.0100
+Day's Range: 1.8983 - 1.9782
+52 Week Range: 0.7200 - 9.5500
+Average Volume (3m): 5.2M
+1-Year Return: -79.08%
+Beta: 0
+Market Cap: 257.74M
+P/E Ratio: 3.02
+Revenue: 674.39M
+EPS: -1.6004
+Dividend (Yield): 0
+=========================
+Stock index: HTZGQ
+Stock name: Hertz Global Holdings Inc
+Stock exchange: NYSE
+Sell price: 1.0890
+Buy price: 1.1010
+Min price: 0.42
+Max price: 8.98
+Prev Close: 0.9891
+Day's Range: 1.0091 - 1.1090
+52 Week Range: 0.4216 - 8.9800
+Average Volume (3m): 5.42M
+1-Year Return: -80.13%
+Beta: 1.6997
+Market Cap: 156.19M
+P/E Ratio: 3.39
+Revenue: 5.26B
+EPS: -11.6646
+Dividend (Yield): 0
+=========================
+Stock index: TEO
+Stock name: Telecom Argentina SA
+Stock exchange: NYSE
+Sell price: 5.72
+Buy price: 5.76
+Min price: 5.29
+Max price: 11.38
+Prev Close: 5.74
+Day's Range: 5.65 - 5.74
+52 Week Range: 5.29 - 11.38
+Average Volume (3m): 360.43K
+1-Year Return: -35.40%
+Beta: 0.5084
+Market Cap: 721.01M
+P/E Ratio: 16.47
+Revenue: 3.82B
+EPS: 0.3486
+Dividend (Yield): 16.96
+=========================
+Stock index: WLL
+Stock name: Whiting Petroleum Corp
+Stock exchange: NYSE
+Sell price: 34.62
+Buy price: 34.90
+Min price: 13.55
+Max price: 260.77
+Prev Close: 34.61
+Day's Range: 33.99 - 35.44
+52 Week Range: 13.55 - 260.77
+Average Volume (3m): 656.71K
+1-Year Return: -57.10%
+Beta: 1.6986
+Market Cap: 1.35B
+P/E Ratio: 1.89
+Revenue: 732.36M
+EPS: -38.7193
+Dividend (Yield): 0
+=========================
+Stock index: NAS.OL
+Stock name: Norwegian Air Shuttle
+Stock exchange: Oslo exchage
+Sell price: 51.51
+Buy price: 53.93
+Min price: 29.97
+Max price: 1373.00
+Prev Close: 52.86
+Day's Range: 51.33 - 53.25
+52 Week Range: 29.97 - 1373.00
+Average Volume (3m): 1.69M
+1-Year Return: -93.87%
+Beta: 0.368
+Market Cap: 2.14B
+P/E Ratio: 12.54
+Revenue: 7.99B
+EPS: -1641.666
+Dividend (Yield): 0
+=========================
+Stock index: GALE.ZU
+Stock name: Galenica AG
+Stock exchange: Zurich exchange
+Sell price: 58.85
+Buy price: 59.10
+Min price: 57.10
+Max price: 71.94
+Prev Close: 58.50
+Day's Range: 58.10 - 59.05
+52 Week Range: 57.10 - 71.94
+Average Volume (3m): 187.94K
+1-Year Return: -8.60%
+Beta: 0.0176
+Market Cap: 2.9B
+P/E Ratio: 16.79
+Revenue: 3.48B
+EPS: 3.4841
+Dividend (Yield): 3.08

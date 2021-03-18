@@ -22,17 +22,18 @@ from driver import Driver
 #click > (next) button
 class StockResearch:
     def __init__(self):
+        self.indexBuyPrice = 7
+        self.indexMinPrice = 8
+        self.indexMaxPrice = 9
+
         self.log = Log('stock_research.log')
         driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default")
         self.driver = driverObj.getDriver()
         self.markets = Markets(self.driver)
         self.stock = Stock (self.driver)
         self.allStocks = self.markets.getAllMarketsInfo()
-        #stocks = self.getDipStocksWithLowPE()
+        stocks = self.getDipStocksWithLowPE()
 
-        self.indexBuyPrice = 7
-        self.indexMinPrice = 8
-        self.indexMaxPrice = 9
 
         #for test cases
         f = open('allStocks.txt','w')
@@ -41,7 +42,7 @@ class StockResearch:
         f.close()
 
         data=self.getDipStocks()
-        dividends = self.getStocksWithDividends ()
+        #dividends = self.getStocksWithDividends ()
 
     def calculatePercentage (self, buyPrice, minPrice, maxPrice):
         tolMaxMin = maxPrice - minPrice
@@ -51,8 +52,8 @@ class StockResearch:
 
     #get dip stocks with low p/e ratio
     def isStockWithDipPrice (self, buyPrice, minPrice, maxPrice):
-        percentage = self.calculatePercentage ()
-        if (percentage<20):
+        percentage = self.calculatePercentage (buyPrice, minPrice, maxPrice)
+        if (percentage<15):
             return 1
         return 0
 

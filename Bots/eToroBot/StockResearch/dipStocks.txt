@@ -2,55 +2,71 @@
 Stock index: GLPG.NV
 Stock name: Galapagos
 Stock exchange: Amsterdam exchange
-Sell price: 68.52
-Buy price: 68.68
+Sell price: 67.00
+Buy price: 67.16
 Min price: 64.48
 Max price: 215.81
 =========================
 Stock index: WDI.DE
 Stock name: Wirecard
 Stock exchange: Frankfurt exchage
-Sell price: 0.3797
-Buy price: 0.3853
+Sell price: 0.3807
+Buy price: 0.3871
 Min price: 0.30
 Max price: 139.99
-=========================
-Stock index: 1797.HK
-Stock name: Koolearn Technology Holding Ltd
-Stock exchange: Hongkong exchange
-Sell price: 18.70
-Buy price: 18.76
-Min price: 18.18
-Max price: 31.62
 =========================
 Stock index: HMSO.L
 Stock name: Hammerson
 Stock exchange: London exchange
-Sell price: 34.96
-Buy price: 35.10
+Sell price: 38.00
+Buy price: 38.10
 Min price: 14.02
-Max price: 827.75
+Max price: 706.35
+=========================
+Stock index: PFC.L
+Stock name: Petrofac
+Stock exchange: London exchange
+Sell price: 93.98
+Buy price: 94.36
+Min price: 93.62
+Max price: 240.08
 =========================
 Stock index: ACAD
 Stock name: ACADIA Pharmaceuticals Inc
 Stock exchange: NASDAQ
-Sell price: 27.03
-Buy price: 27.09
+Sell price: 27.12
+Buy price: 27.18
 Min price: 25.53
 Max price: 58.52
 =========================
-Stock index: ALVR
-Stock name: Allovir Inc
+Stock index: ADVM
+Stock name: Adverum Biotechnologies Inc
 Stock exchange: NASDAQ
-Sell price: 29.96
-Buy price: 30.12
-Min price: 29.39
-Max price: 48.51
+Sell price: 10.32
+Buy price: 10.40
+Min price: 10.24
+Max price: 14.72
+=========================
+Stock index: AGEN
+Stock name: Agenus Inc
+Stock exchange: NASDAQ
+Sell price: 3.137
+Buy price: 3.153
+Min price: 3.07
+Max price: 5.93
+=========================
+Stock index: AGRX
+Stock name: Agile Therapeutics Inc
+Stock exchange: NASDAQ
+Sell price: 2.018
+Buy price: 2.032
+Min price: 2.00
+Max price: 3.75
 =========================
 Stock index: CEMI
 Stock name: Chembio Diagnostics Inc
 Stock exchange: NASDAQ
-Sell price: 4.37
+Sell price: 4.38
 Buy price: 4.40
 Min price: 4.20
 Max price: 8.32
@@ -58,63 +74,55 @@ Max price: 8.32
 Stock index: FOLD
 Stock name: Amicus Therapeutics Inc
 Stock exchange: NASDAQ
-Sell price: 10.78
-Buy price: 10.81
+Sell price: 10.46
+Buy price: 10.49
 Min price: 10.04
 Max price: 25.33
 =========================
 Stock index: ICPT
 Stock name: Intercept Pharma
 Stock exchange: NASDAQ
-Sell price: 21.01
-Buy price: 21.07
+Sell price: 22.95
+Buy price: 23.02
 Min price: 19.12
 Max price: 95.77
-=========================
-Stock index: PLTK
-Stock name: Playtika Holding Corp.
-Stock exchange: NASDAQ
-Sell price: 26.04
-Buy price: 26.13
-Min price: 25.79
-Max price: 35.02
 =========================
 Stock index: POSH
 Stock name: Poshmark Inc Class A
 Stock exchange: NASDAQ
-Sell price: 47.51
-Buy price: 47.74
-Min price: 46.36
+Sell price: 44.55
+Buy price: 44.73
+Min price: 44.21
 Max price: 83.00
 =========================
-Stock index: HTZGQ
-Stock name: Hertz Global Holdings Inc
+Stock index: CWEN
+Stock name: Clearway Energy Inc
 Stock exchange: NYSE
-Sell price: 0.7765
-Buy price: 0.7807
-Min price: 0.42
-Max price: 8.98
+Sell price: 27.05
+Buy price: 27.13
+Min price: 26.60
+Max price: 37.17
 =========================
 Stock index: NAS.OL
 Stock name: Norwegian Air Shuttle
 Stock exchange: Oslo exchage
-Sell price: 52.61
-Buy price: 52.97
+Sell price: 51.51
+Buy price: 53.93
 Min price: 29.97
 Max price: 1373.00
 =========================
 Stock index: TCH.PA
 Stock name: Technicolor SA
 Stock exchange: Paris exchage
-Sell price: 2.3799
-Buy price: 2.4002
+Sell price: 2.4928
+Buy price: 2.5118
 Min price: 1.10
 Max price: 154.40
 =========================
 Stock index: VK.PA
 Stock name: Vallourec SA
 Stock exchange: Paris exchage
-Sell price: 32.53
-Buy price: 32.64
+Sell price: 30.87
+Buy price: 30.95
 Min price: 11.09
 Max price: 1707.20
