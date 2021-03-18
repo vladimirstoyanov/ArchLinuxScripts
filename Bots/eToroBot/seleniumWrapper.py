@@ -8,36 +8,45 @@ from selenium.webdriver.support import expected_conditions as EC ##wait function
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.webdriver import FirefoxProfile
-
+from log import Log
 class SeleniumWrapper:
     def __init__(self, driver):
         self.driver = driver
-
-    def setElement(self,xpath, value):
-        stockElement = self.driver.find_element_by_xpath(xpath)
-        stockElement.send_keys(Keys.CONTROL + "a");
-        stockElement.send_keys(Keys.DELETE);
-        stockElement.send_keys(value)
+        self.log = Log("filed_selenum_requests.txt")
 
     def clickElementByXpath (self,xpath, timeout):
-        stockElement = self.driver.find_element_by_xpath(xpath)
-        stockElement.click()
-        time.sleep(timeout)
+        try:
+            stockElement = self.driver.find_element_by_xpath(xpath)
+            stockElement.click()
+            time.sleep(timeout)
+        except:
+            self.log.write("Failed to execute find_element_by_xpath(" + xpath + ")")
 
     def clickElementById (self, id, timeout):
-        element = self.driver.find_element_by_id(id)
-        element.click()
-        time.sleep(timeout)
+        try:
+            element = self.driver.find_element_by_id(id)
+            element.click()
+            time.sleep(timeout)
+        except:
+            self.log.write("Failed to execute find_element_by_id(" + id + ")")
 
     def clickElementByCssSelector (self, cssSelector, timeout):
-        element = self.driver.find_element_by_css_selector(cssSelector)
-        element.click()
-        time.sleep(timeout)
+        try:
+            element = self.driver.find_element_by_css_selector(cssSelector)
+            element.click()
+            time.sleep(timeout)
+        except:
+            self.log.write("Failed to execute find_element_by_css_selector(" + cssSelector + ")")
+
 
     def clickElementByClassName (self, className, timeout):
-        element = self.driver.find_element_by_class_name(className)
-        element.click()
-        time.sleep(timeout)
+        try:
+            element = self.driver.find_element_by_class_name(className)
+            element.click()
+            time.sleep(timeout)
+        except:
+            self.log.write("Failed to execute find_element_by_class_name(" + className + ")")
+
 
     def getTextByXpath (self, xpath):
         element = self.driver.find_element_by_xpath(xpath)
@@ -46,3 +55,21 @@ class SeleniumWrapper:
     def getTextByCSSSelector (self, cssSelector):
         element = self.driver.find_element_by_css_selector(cssSelector)
         return element.text
+
+    def setTextFieldByXpath(self, xpath, value):
+        try:
+            stockElement = self.driver.find_element_by_xpath(xpath)
+            stockElement.send_keys(Keys.CONTROL + "a");
+            stockElement.send_keys(Keys.DELETE);
+            stockElement.send_keys(value)
+        except:
+            self.log.write("Failed to execute find_element_by_xpath(" + xpath + ")")
+
+    def setTextFieldByCSSSelector(self, cssSelector, value):
+        try:
+            stockElement = self.driver.find_element_by_css_selector(cssSelector)
+            stockElement.send_keys(Keys.CONTROL + "a");
+            stockElement.send_keys(Keys.DELETE);
+            stockElement.send_keys(value)
+        except:
+            self.log.write("Failed to execute find_element_by_css_selector(" + cssSelector + ")")
