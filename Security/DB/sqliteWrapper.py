@@ -15,7 +15,6 @@ class SQLiteWrapper:
 			if (i<(len(data)-1)):
 				query_string += ','
 		query_string += ')'
-		#print query_string
 		c.execute(query_string)
 
 	def insertData (self, table_name, data):
@@ -32,7 +31,7 @@ class SQLiteWrapper:
 			if (i<(length-1)):
 				query_string += ","
 		query_string+=")"
-		#print query_string
+		print("Query string: " + query_string)
 		c.executemany(query_string, data)
 		self.connect.commit()
 
@@ -61,6 +60,36 @@ class SQLiteWrapper:
 	def setTextFactoryDefault(self):
 		self.connect.text_factory = sqlite3
 
+	def updateData (self,table_name, data, condition):
+		c = self.connect.cursor()
+		query_string="UPDATE "
+		query_string+=table_name
+		query_string+=" SET "
+		query_string+=data
+		query_string+=" WHERE "
+		query_string+=condition
+
+		print ("query: " + query_string)
+		c.execute(query_string)
+		self.connect.commit()
+
+
+	def isDataExist (self, table_name, column_name, data):
+		c = self.connect.cursor()
+		#select count (1) from stock_description where stock_id='NNDM';
+		query_string = "SELECT COUNT(1) FROM "
+		query_string += table_name
+		query_string += " WHERE "
+		query_string += column_name
+		query_string += " = '"
+		query_string += data
+		query_string += "'"
+		c.execute(query_string)
+		rows = c.fetchall()
+		print ("rows: " + str(rows[0][0]))
+		if (rows[0][0] == 0):
+			return False
+		return True
 	def readData (self, table_name):
 		  c = self.connect.cursor()
 		  query_string = "SELECT * FROM "
