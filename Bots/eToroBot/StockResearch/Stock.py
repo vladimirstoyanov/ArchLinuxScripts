@@ -76,6 +76,25 @@ class Stock:
             self.log.write("Can get stats of " + url)
         return self.__makeDictionaryByStockStatsRaw(stockStatsRaw)
 
+    def getStockPriceHistory (self, stockId):
+        data = []
+        #data[
+        #[stockPrice, date]
+        #]
+        return data
+
+    def getStockResearchData (self, stockId):
+        data = []
+        #data[0] - low estimate
+        #data[1] - average estimate
+        #data[2] - high estimate
+        return data
+    def getStockDescription (self, stockId)
+        data = []
+        #data[0] - exchage
+        #data[1] - description
+        return data
+
 """
 stock = Stock ()
 testStr =

@@ -36,7 +36,7 @@ class EToroBot:
         self.monitorStocks()
 
     def loadEToro(self):
-        self.driver.get('https://www.etoro.com/watchlists/27bfbd86-a39f-452e-b917-c7cea5a069b3')
+        self.driver.get('https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b')
         time.sleep(15)
 
     def loadStockPage (self, stockIndex):
@@ -60,7 +60,7 @@ class EToroBot:
                     self.log.write('Clicking on Open Trade button')
                 except:
                     pass
-                    
+
         self.loadEToro()
 
 

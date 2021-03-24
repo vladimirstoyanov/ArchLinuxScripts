@@ -6,7 +6,7 @@ sys.path.insert(1, '../../Security/DB/')
 from sqliteWrapper import SQLiteWrapper
 
 
-class sqliteDataEtoro:
+class SqliteDataEtoro:
     def __init__ (self):
         self.sqliteWrapper = SQLiteWrapper ('eToro.db')
         self.log = Log ('sliqte.log')
@@ -171,7 +171,7 @@ class sqliteDataEtoro:
             self.sqliteWrapper.insertData (tableName, [(stock_id, stock_name, sell_price, buy_price, min_price, max_price)])
 
 """
-sqliteDataEtoro = sqliteDataEtoro ()
+sqliteDataEtoro = SqliteDataEtoro ()
 sqliteDataEtoro.insertDataIntoStockDescription('NNDM', 'nasdaq', 'stupid company')
 sqliteDataEtoro.insertDataIntoStockDescription('NNDM', 'nasdaq', 'not so stupid company')
 sqliteDataEtoro.insertDataIntoStockStats ('NNDM', '1','2','3','4','5','6','7','8','9','10','11')

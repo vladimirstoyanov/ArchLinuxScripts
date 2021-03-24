@@ -14,6 +14,7 @@ from Stock import Stock
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from log import Log
 from driver import Driver
+from sqiteData import SqliteDataEtoro
 
 
 #open link - https://www.etoro.com/discover/markets/stocks/exchange/nasdaq
@@ -22,27 +23,63 @@ from driver import Driver
 #click > (next) button
 class StockResearch:
     def __init__(self):
+        self.indexStockId = 0
+        self.indexStockName = 1
+        self.indexSellPrice = 6
         self.indexBuyPrice = 7
         self.indexMinPrice = 8
         self.indexMaxPrice = 9
-
+        self.sqliteData = SqliteDataEtoro ()
         self.log = Log('stock_research.log')
         driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default")
         self.driver = driverObj.getDriver()
         self.markets = Markets(self.driver)
         self.stock = Stock (self.driver)
+
         self.allStocks = self.markets.getAllMarketsInfo()
-        stocks = self.getDipStocksWithLowPE()
+        self.recordDataDB()
+        
+        #stocks = self.getDipStocksWithLowPE()
 
 
-        #for test cases
-        f = open('allStocks.txt','w')
-        for i in range(len(self.allStocks)):
-            f.write(str(self.allStocks[i]) + '\n')
-        f.close()
-
-        data=self.getDipStocks()
+        #data=self.getDipStocks()
         #dividends = self.getStocksWithDividends ()
+
+    def insertDataIntoStockDescription (self, stockId, descriptionData):
+        self.sqliteData.insertDataIntoStockDescription (stockId, descriptionData[0], descriptionData[1])
+
+    def insertDataIntoStockPriceHistory (self, stockId, historyData):
+        for i in range (len (historyData)):
+            self.sqliteData.insertDataIntoStockPriceHistory (stockId, historyData[i][0], historyData[i][1])
+
+    def insertDataIntoStockResearch (self,stockId,researchData):
+        self.sqliteData.insertDataIntoStockResearch (stock_id,
+         researchData[0],
+         researchData[1],
+         researchData[2])
+
+    def insertDataIntoStockStats (self,stockId, stockStats):
+        self.sqliteData.insertDataIntoStockStats (stockId,
+             stockStats['Prev Close'],
+             stockStats['Market Cap'],
+             stockStats['Day\'s Range'],
+             stockStats['52 Week Range'],
+             stockStats['Average Volume (3m)'],
+             stockStats['1-Year Return'],
+             stockStats['Beta'],
+             stockStats['P/E Ratio'],
+             stockStats['Revenue'],
+             stockStats['EPS'],
+             stockStats['Dividend (Yield)'])
+
+    def insertDataIntoAllStocks (self, allStocksData):
+        for i in range(len(allStocksData)):
+            self.sqliteData.insertDataIntoAllStocks (allStocksData[i][self.indexStockId],
+            allStocksData[i][self.indexStockName],
+            allStocksData[i][self.indexSellPrice],
+            allStocksData[i][self.indexBuyPrice],
+            allStocksData[i][self.indexMinPrice],
+            allStocksData[i][self.indexMaxPrice])
 
     def calculatePercentage (self, buyPrice, minPrice, maxPrice):
         tolMaxMin = maxPrice - minPrice
@@ -147,6 +184,21 @@ class StockResearch:
             f.write('Dividend (Yield): '+ data[1]['Dividend (Yield)'] + '\n')
             f.close()
 
+    def recordDataDB (self):
+        self.insertDataIntoAllStocks (self.allStocks)
+        for i in range (len(self.allStocks)):
+            data = self.stock.getStockStats (self.allStocks[i][self.indexStockId])
+            self.insertDataIntoStockStats(self.allStocks[i][self.indexStockId], data)
+
+            data = self.stock.getStockPriceHistory (self.allStocks[i][self.indexStockId])
+            self.insertDataIntoStockPriceHistory(self.allStocks[i][self.indexStockId], data)
+
+            data = self.stock.getStockResearchData (self.allStocks[i][self.indexStockId])
+            self.insertDataIntoStockResearch(self.allStocks[i][self.indexStockId], data)
+
+            data = self.stock.getStockDescription (self.allStocks[i][self.indexStockId])
+            self.insertDataIntoStockDescription(self.allStocks[i][self.indexStockId], data)
+
     def getStocksWithDividends (self):
         dividendsFile = 'dividendStocks.txt'
         allStocksFile = 'allStocksAndStats.txt'
@@ -154,7 +206,8 @@ class StockResearch:
         self.cleanFile(allStocksFile)
         dividendStocks = []
         for i in range (len(self.allStocks)):
-            stats = self.stock.getStockStats (self.allStocks[i][0])
+            stats = self.stock.getStockStats (self.allStocks[i][self.indexStockId])
+            self.insertDataIntoStockStats(self.allStocks[i][self.indexStockId], stats)
             self.exportStockPlusStats([self.allStocks[i], stats], allStocksFile)
             print ("Dividend: " + stats['Dividend (Yield)'])
             if (stats['Dividend (Yield)']!='0' and stats['Dividend (Yield)']!=''):
