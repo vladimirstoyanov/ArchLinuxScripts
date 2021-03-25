@@ -77,6 +77,15 @@ class Stock:
         return self.__makeDictionaryByStockStatsRaw(stockStatsRaw)
 
     def getStockPriceHistory (self, stockId):
+        print ("getStockPriceHistory")
+        self.driver.get("https://www.etoro.com/markets/" + stockId + '/stats')
+        time.sleep(10)
+        #span.ng-star-inserted:nth-child(8)
+        self.seleniumWrapper.clickElementByCssSelector('span.ng-star-inserted:nth-child(8)',4)
+        ##highcharts-3 > svg:nth-child(1)
+        text = self.seleniumWrapper.getTextByCSSSelector('div.chart')
+        print (text)
+
         data = []
         #data[
         #[stockPrice, date]
@@ -84,15 +93,37 @@ class Stock:
         return data
 
     def getStockResearchData (self, stockId):
+        print ("getStockResearchData")
+        self.driver.get("https://www.etoro.com/markets/" + stockId + '/research')
+        time.sleep(15)
+        ##apt-graph-box > div:nth-child(2)
+        #"//form[input/@name ='search']"
+        #"//*[div/@class='search']"
+        lowEstimate = self.seleniumWrapper.getTextByCSSSelector('.ew-content')
+        #middleEstimate = self.seleniumWrapper.getTextByClassName('fb-price mb5')
+        #highEstimate = self.seleniumWrapper.getTextByClassName('fb-price mb5 green')
+        print (lowEstimate)
         data = []
-        #data[0] - low estimate
-        #data[1] - average estimate
-        #data[2] - high estimate
+        #data.append(lowEstimate)
+        #data.append(middleEstimate)
+        #data.append(highEstimate)
+        print (data)
         return data
-    def getStockDescription (self, stockId)
+
+    def getStockDescription (self, stockId):
+        print ("getStockDescription")
+        self.driver.get("https://www.etoro.com/markets/" + stockId)
+        time.sleep(10)
+
+        self.seleniumWrapper.clickElementByCssSelector('et-showhide.ng-star-inserted:nth-child(2) > span:nth-child(1) > span:nth-child(3)',4)
+        description = self.seleniumWrapper.getTextByCSSSelector('et-showhide.ng-star-inserted:nth-child(2) > span:nth-child(1) > span:nth-child(1)')
+        print (description)
+        print ("=============")
+        exchange = self.seleniumWrapper.getTextByCSSSelector('a.widget-tag:nth-child(1)')
+        print (exchange)
         data = []
-        #data[0] - exchage
-        #data[1] - description
+        data.append(exchange)
+        data.append (description)
         return data
 
 """

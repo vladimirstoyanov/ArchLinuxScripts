@@ -2,7 +2,7 @@ import os
 import sys
 from log import Log
 
-sys.path.insert(1, '../../Security/DB/')
+sys.path.insert(1, '../../../Security/DB/')
 from sqliteWrapper import SQLiteWrapper
 
 

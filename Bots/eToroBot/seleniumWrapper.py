@@ -9,6 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.webdriver import FirefoxProfile
 from log import Log
+
 class SeleniumWrapper:
     def __init__(self, driver):
         self.driver = driver
@@ -55,6 +56,10 @@ class SeleniumWrapper:
     def getTextByCSSSelector (self, cssSelector):
         element = self.driver.find_element_by_css_selector(cssSelector)
         return element.text
+
+    def getTextByClassName (self, className):
+            element = self.driver.find_element_by_class_name(className)
+            return element.text
 
     def setTextFieldByXpath(self, xpath, value):
         try:

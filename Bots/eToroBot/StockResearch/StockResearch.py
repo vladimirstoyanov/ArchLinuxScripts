@@ -14,7 +14,7 @@ from Stock import Stock
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from log import Log
 from driver import Driver
-from sqiteData import SqliteDataEtoro
+from sqliteData import SqliteDataEtoro
 
 
 #open link - https://www.etoro.com/discover/markets/stocks/exchange/nasdaq
@@ -36,9 +36,12 @@ class StockResearch:
         self.markets = Markets(self.driver)
         self.stock = Stock (self.driver)
 
-        self.allStocks = self.markets.getAllMarketsInfo()
-        self.recordDataDB()
-        
+        self.stock.getStockDescription('CRSP')
+        self.stock.getStockPriceHistory('CRSP')
+        self.stock.getStockResearchData('CRSP')
+        #self.allStocks = self.markets.getAllMarketsInfo()
+        #self.recordDataDB()
+
         #stocks = self.getDipStocksWithLowPE()
 
 
