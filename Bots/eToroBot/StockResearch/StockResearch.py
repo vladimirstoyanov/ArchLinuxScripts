@@ -37,8 +37,9 @@ class StockResearch:
         self.stock = Stock (self.driver)
 
         self.stock.getStockDescription('CRSP')
-        self.stock.getStockPriceHistory('CRSP')
-        self.stock.getStockResearchData('CRSP')
+        self.stock.getStockPriceHistory('CRSP') #this one is not working
+        #self.stock.getStockResearchData('CRSP') #this one is not working
+
         #self.allStocks = self.markets.getAllMarketsInfo()
         #self.recordDataDB()
 

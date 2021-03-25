@@ -6,7 +6,6 @@ from driver import Driver
 from parserEtoro import Parser
 from seleniumWrapper import SeleniumWrapper
 
-#/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[3]/et-market-stats/et-market-stats-overview/et-card/section/et-card-content/div[1]
 class Stock:
     def __init__(self, driver):
         self.log = Log('Stocks.log')
@@ -78,12 +77,11 @@ class Stock:
 
     def getStockPriceHistory (self, stockId):
         print ("getStockPriceHistory")
-        self.driver.get("https://www.etoro.com/markets/" + stockId + '/stats')
+        self.driver.get('https://www.google.bg/search?q=' + stockId + '+stock')
         time.sleep(10)
-        #span.ng-star-inserted:nth-child(8)
-        self.seleniumWrapper.clickElementByCssSelector('span.ng-star-inserted:nth-child(8)',4)
-        ##highcharts-3 > svg:nth-child(1)
-        text = self.seleniumWrapper.getTextByCSSSelector('div.chart')
+        self.seleniumWrapper.clickElementByCssSelector('div.dQlDUb:nth-child(8) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)',4)
+        
+        text = self.seleniumWrapper.getTextByCSSSelector('.uch-psvg')
         print (text)
 
         data = []

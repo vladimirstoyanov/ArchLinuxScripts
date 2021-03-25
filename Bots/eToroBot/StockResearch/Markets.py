@@ -28,14 +28,21 @@ class Markets:
             'Stockholm exchage':'https://www.etoro.com/discover/markets/stocks/exchange/stockholm',
             'Zurich exchange':'https://www.etoro.com/discover/markets/stocks/exchange/zurich'
         }
+        self.etfMarkets = {
+            'ETF': 'https://www.etoro.com/discover/markets/etf'
+        }
+
         self.driver = driver
+
+    def getETFMarkets (self):
+        return self.etfMarkets
 
     def getStockMarkets (self):
         return self.stockMarkets
 
-    def getMarketInfo (self, marketName):
-        print ("Tyring to load: " + marketName + ": " + self.stockMarkets[marketName])
-        self.driver.get(self.stockMarkets[marketName])
+    def getMarketInfo (self, marketName, dictMarkets):
+        print ("Tyring to load: " + marketName + ": " + dictMarkets[marketName])
+        self.driver.get(dictMarkets[marketName])
         time.sleep(15)
         stocks = []
         while (True):
@@ -70,7 +77,15 @@ class Markets:
     def getAllMarketsInfo (self):
         stocks = []
         for key,vlaue in  self.stockMarkets.items():
-            currentStocks = self.getMarketInfo(key)
+            currentStocks = self.getMarketInfo(key, self.stockMarkets)
             for j in range(len(currentStocks)):
                 stocks.append(currentStocks[j])
         return stocks
+
+    def getAllEtfsInfo (self):
+        etfs = []
+        for key,vlaue in  self.etfMarkets.items():
+            currentEtfs = self.getMarketInfo(key, self.etfMarkets)
+            for j in range(len(currentEtfs)):
+                etfs.append(currentEtfs[j])
+        return etfs

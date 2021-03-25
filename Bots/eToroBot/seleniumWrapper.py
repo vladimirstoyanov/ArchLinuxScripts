@@ -58,8 +58,8 @@ class SeleniumWrapper:
         return element.text
 
     def getTextByClassName (self, className):
-            element = self.driver.find_element_by_class_name(className)
-            return element.text
+        element = self.driver.find_element_by_class_name(className)
+        return element.text
 
     def setTextFieldByXpath(self, xpath, value):
         try:

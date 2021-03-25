@@ -7,9 +7,9 @@ from sqliteWrapper import SQLiteWrapper
 
 
 class SqliteDataEtoro:
-    def __init__ (self):
-        self.sqliteWrapper = SQLiteWrapper ('eToro.db')
-        self.log = Log ('sliqte.log')
+    def __init__ (self, dbName):
+        self.sqliteWrapper = SQLiteWrapper (dbName)
+        self.log = Log ('sqlite.log')
         self.createTables()
 
     def __createTable (self, tableName, data):
@@ -70,55 +70,55 @@ class SqliteDataEtoro:
     def insertDataIntoStockDescription (self, stock_id, exchange, description):
         tableName = 'stock_description'
         if (self.sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
-            data = 'exchange = \'' + exchange
-            data += '\''
-            data +=', description = \''
+            data = 'exchange = "' + exchange
+            data += '"'
+            data +=', description = "'
             data +=description
-            data +='\''
-            condition = 'stock_id = \'' + stock_id
-            condition +='\''
+            data +='"'
+            condition = 'stock_id = "' + stock_id
+            condition +='"'
             self.sqliteWrapper.updateData (tableName, data, condition)
         else:
-            self.sqliteWrapper.insertData (tableName, [(stockId, exchange, description)])
+            self.sqliteWrapper.insertData (tableName, [(stock_id, exchange, description)])
 
     def insertDataIntoStockStats (self, stock_id, prev_close, market_cap, days_range, week_range_52, average_volume, year_return_1, beta, p_e_ratio, revenue, EPS, dividend):
         tableName = 'stock_stats'
         if (self.sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
-                    data = 'prev_close = \''
+                    data = 'prev_close = "'
                     data +=prev_close
-                    data +='\''
-                    data +=', market_cap = \''
+                    data +='"'
+                    data +=', market_cap = "'
                     data +=market_cap
-                    data +='\''
-                    data +=', days_range = \''
+                    data +='"'
+                    data +=', days_range = "'
                     data +=days_range
-                    data +='\''
-                    data +=', week_range_52 = \''
+                    data +='"'
+                    data +=', week_range_52 = "'
                     data +=week_range_52
-                    data +='\''
-                    data +=', average_volume = \''
+                    data +='"'
+                    data +=', average_volume = "'
                     data +=average_volume
-                    data +='\''
-                    data +=', year_return_1 = \''
+                    data +='"'
+                    data +=', year_return_1 = "'
                     data +=year_return_1
-                    data +='\''
-                    data +=', beta = \''
+                    data +='"'
+                    data +=', beta = "'
                     data +=beta
-                    data +='\''
-                    data +=', p_e_ratio = \''
+                    data +='"'
+                    data +=', p_e_ratio = "'
                     data +=p_e_ratio
-                    data +='\''
-                    data +=', revenue = \''
+                    data +='"'
+                    data +=', revenue = "'
                     data +=revenue
-                    data +='\''
-                    data +=', EPS = \''
+                    data +='"'
+                    data +=', EPS = "'
                     data +=EPS
-                    data +='\''
-                    data +=', dividend = \''
+                    data +='"'
+                    data +=', dividend = "'
                     data +=dividend
-                    data +='\''
-                    condition = 'stock_id = \'' + stock_id
-                    condition +='\''
+                    data +='"'
+                    condition = 'stock_id = "' + stock_id
+                    condition +='"'
                     self.sqliteWrapper.updateData (tableName, data, condition)
         else:
                     self.sqliteWrapper.insertData (tableName, [(stock_id, prev_close, market_cap, days_range, week_range_52, average_volume, year_return_1, beta, p_e_ratio, revenue, EPS, dividend)])
@@ -131,17 +131,17 @@ class SqliteDataEtoro:
     def insertDataIntoStockResearch (self, stock_id, low_estimate, average_price_target, high_estimate):
         tableName = 'stock_research'
         if (self.sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
-            data ='low_estimate = \''
+            data ='low_estimate = "'
             data +=low_estimate
-            data +='\''
-            data +=', average_price_target = \''
+            data +='"'
+            data +=', average_price_target = "'
             data +=average_price_target
-            data +='\''
-            data +=', high_estimate = \''
+            data +='"'
+            data +=', high_estimate = "'
             data +=high_estimate
-            data +='\''
-            condition = 'stock_id = \'' + stock_id
-            condition +='\''
+            data +='"'
+            condition = 'stock_id = "' + stock_id
+            condition +='"'
             self.sqliteWrapper.updateData (tableName, data, condition)
         else:
             self.sqliteWrapper.insertData (tableName, [(stock_id, low_estimate, average_price_target, high_estimate)])
@@ -149,23 +149,23 @@ class SqliteDataEtoro:
     def insertDataIntoAllStocks (self, stock_id, stock_name, sell_price, buy_price, min_price, max_price):
         tableName = 'all_stocks'
         if (self.sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
-            data ='stock_name = \''
+            data ='stock_name = "'
             data +=stock_name
-            data +='\''
-            data +=', sell_price = \''
+            data +='"'
+            data +=', sell_price = "'
             data +=sell_price
-            data +='\''
-            data +=', buy_price = \''
+            data +='"'
+            data +=', buy_price = "'
             data +=buy_price
-            data +='\''
-            data +=', min_price = \''
+            data +='"'
+            data +=', min_price = "'
             data +=min_price
-            data +='\''
-            data +=', max_price = \''
+            data +='"'
+            data +=', max_price = "'
             data +=max_price
-            data +='\''
-            condition = 'stock_id = \'' + stock_id
-            condition +='\''
+            data +='"'
+            condition = 'stock_id = "' + stock_id
+            condition +='"'
             self.sqliteWrapper.updateData (tableName, data, condition)
         else:
             self.sqliteWrapper.insertData (tableName, [(stock_id, stock_name, sell_price, buy_price, min_price, max_price)])
