@@ -29,19 +29,19 @@ class StockResearch:
         self.indexBuyPrice = 7
         self.indexMinPrice = 8
         self.indexMaxPrice = 9
-        self.sqliteData = SqliteDataEtoro ()
+        self.sqliteData = SqliteDataEtoro ('stocks.db')
         self.log = Log('stock_research.log')
         driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default")
         self.driver = driverObj.getDriver()
         self.markets = Markets(self.driver)
         self.stock = Stock (self.driver)
 
-        self.stock.getStockDescription('CRSP')
-        self.stock.getStockPriceHistory('CRSP') #this one is not working
+        #self.stock.getStockDescription('CRSP')
+        #self.stock.getStockPriceHistory('CRSP') #this one is not working
         #self.stock.getStockResearchData('CRSP') #this one is not working
 
-        #self.allStocks = self.markets.getAllMarketsInfo()
-        #self.recordDataDB()
+        self.allStocks = self.markets.getAllMarketsInfo()
+        self.recordDataDB()
 
         #stocks = self.getDipStocksWithLowPE()
 
@@ -194,11 +194,11 @@ class StockResearch:
             data = self.stock.getStockStats (self.allStocks[i][self.indexStockId])
             self.insertDataIntoStockStats(self.allStocks[i][self.indexStockId], data)
 
-            data = self.stock.getStockPriceHistory (self.allStocks[i][self.indexStockId])
-            self.insertDataIntoStockPriceHistory(self.allStocks[i][self.indexStockId], data)
+            #data = self.stock.getStockPriceHistory (self.allStocks[i][self.indexStockId])
+            #self.insertDataIntoStockPriceHistory(self.allStocks[i][self.indexStockId], data)
 
-            data = self.stock.getStockResearchData (self.allStocks[i][self.indexStockId])
-            self.insertDataIntoStockResearch(self.allStocks[i][self.indexStockId], data)
+            #data = self.stock.getStockResearchData (self.allStocks[i][self.indexStockId])
+            #self.insertDataIntoStockResearch(self.allStocks[i][self.indexStockId], data)
 
             data = self.stock.getStockDescription (self.allStocks[i][self.indexStockId])
             self.insertDataIntoStockDescription(self.allStocks[i][self.indexStockId], data)

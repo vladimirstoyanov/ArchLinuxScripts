@@ -13,7 +13,7 @@ from log import Log
 class SeleniumWrapper:
     def __init__(self, driver):
         self.driver = driver
-        self.log = Log("filed_selenum_requests.txt")
+        self.log = Log("failed_selenum_requests.txt")
 
     def clickElementByXpath (self,xpath, timeout):
         try:

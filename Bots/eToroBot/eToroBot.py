@@ -81,8 +81,13 @@ class EToroBot:
     def monitorStocks(self):
         config = Config()
         configData = config.configData
+        iteration=0
         while True:
             stocksInfo = self.driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
+
+            #iteration+=1
+            #if (iteration%10 == 0):
+            #    self.loadEToro()
 
             listResult = stocksInfo.text.split('\n')
             lPart = []
