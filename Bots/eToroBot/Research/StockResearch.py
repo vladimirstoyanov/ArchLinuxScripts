@@ -16,11 +16,6 @@ from log import Log
 from driver import Driver
 from sqliteData import SqliteDataEtoro
 
-
-#open link - https://www.etoro.com/discover/markets/stocks/exchange/nasdaq
-#check the lowest price and highest price of every stocks
-#get the P/E ration of a stocks
-#click > (next) button
 class StockResearch:
     def __init__(self):
         self.indexStockId = 0
