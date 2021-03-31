@@ -78,16 +78,56 @@ class EToroBot:
 
         self.loadEToro()
 
+    def setSellPrice (self, stockId, price):
+        self.log.write('Setting a sell price for ' + stockId)
+        self.driver.get('https://www.etoro.com/portfolio/' + stockId)
+        time.sleep(15)
+
+        self.log.write('Trying to click on update price button...')
+        #click button to update the price
+        self.seleniumWrapper.clickElementByCssSelector ('div.ui-table-row:nth-child(3) > ui-table-body-slot:nth-child(2) > ui-table-cell:nth-child(6) > span:nth-child(1)', 7)
+
+        linkString = self.seleniumWrapper.getTextByCSSSelector ('.link')
+        if (linkString == "Set TP"):
+            self.log.write('Trying to click \'set price\' link ')
+            #click on 'set price' link (it possible to can't find it, because it doesn't exist sometimes)
+            self.seleniumWrapper.clickElementByCssSelector ('.link', 4)
+
+        self.log.write('Trying to setting the price')
+        #set the sell price
+        self.seleniumWrapper.setTextFieldByCSSSelector('.stepper-value', price)
+
+
+        for i in range(5):
+                try:
+                    self.seleniumWrapper.clickElementByCssSelector ('.button-blue', 5)
+                    self.log.write('Clicking on Update button (set price widget)')
+                except:
+                    pass
+
+        self.loadEToro()
+
+    def getCash (self):
+        cash = 0
+        try:
+            cash = self.seleniumWrapper.getTextByCSSSelector ('div.footer-unit:nth-child(1) > span:nth-child(1)')
+            cash = cash.replace ('$', '')
+        except:
+            self.log.write("Can't get available cash!")
+        return float(cash)
+
     def monitorStocks(self):
         config = Config()
         configData = config.configData
         iteration=0
         while True:
-            stocksInfo = self.driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
+            cash = self.getCash()
+            self.log.write("Cash: " + str(cash))
+            if (cash < 0.99):
+                time.sleep(5)
+                continue
 
-            #iteration+=1
-            #if (iteration%10 == 0):
-            #    self.loadEToro()
+            stocksInfo = self.driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
 
             listResult = stocksInfo.text.split('\n')
             lPart = []
@@ -129,6 +169,7 @@ class EToroBot:
                                 self.log.write("Buying " + configData[j][0] + "================")
 
                                 self.buyStock(configData[j][3], stockCode)
+                                self.setSellPrice(stockCode, configData[j][4])
                                 configData.pop(j)
                                 break
                         else:
