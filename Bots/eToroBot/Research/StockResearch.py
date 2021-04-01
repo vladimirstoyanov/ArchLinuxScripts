@@ -31,12 +31,10 @@ class StockResearch:
         self.markets = Markets(self.driver)
         self.stock = Stock (self.driver)
 
-        #self.stock.getStockDescription('CRSP')
-        #self.stock.getStockPriceHistory('CRSP') #this one is not working
-        #self.stock.getStockResearchData('CRSP') #this one is not working
 
         self.allStocks = self.markets.getAllMarketsInfo()
-        self.recordDataDB()
+        self.getVolatileStocks ()
+        #self.recordDataDB()
 
         #stocks = self.getDipStocksWithLowPE()
 
@@ -79,6 +77,9 @@ class StockResearch:
             allStocksData[i][self.indexBuyPrice],
             allStocksData[i][self.indexMinPrice],
             allStocksData[i][self.indexMaxPrice])
+
+    def calculateDayRangePercentage (self, minDayPrice, maxDayPrice):
+        return ((maxDayPrice-minDayPrice)/maxDayPrice)*100
 
     def calculatePercentage (self, buyPrice, minPrice, maxPrice):
         tolMaxMin = maxPrice - minPrice
@@ -143,6 +144,26 @@ class StockResearch:
                 self.exportStock (self.allStocks[i], dipStocksFile)
 
         return dipStocks
+
+    def getVolatileStocks (self):
+        volatileStocks = 'volatileStocks.txt'
+        self.cleanFile(volatileStocks)
+        for i in range (len(self.allStocks)):
+            stats = self.stock.getStockStats (self.allStocks[i][0])
+            self.insertDataIntoStockStats(self.allStocks[i][0], stats)
+            dayRange = stats['Day\'s Range']
+            dayRange = dayRange.replace(' ','')
+            minMax = dayRange.split('-')
+            if (len(minMax)!=2):
+                continue
+            minDayPrice = float(minMax[0])
+            maxDayPrice = float(minMax[1])
+            dayRangePercentage = self.calculateDayRangePercentage(minDayPrice,maxDayPrice)
+            self.log.write("Min: " + str(minDayPrice) + ", Max: " + str(maxDayPrice) + ", Range: " + str(dayRangePercentage))
+            if (dayRangePercentage >= 5):
+                self.exportStockPlusStats([self.allStocks[i], stats], volatileStocks)
+
+
 
     def cleanFile (self, filename):
         f = open(filename, 'w')

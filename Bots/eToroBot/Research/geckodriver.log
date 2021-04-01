@@ -2960,3 +2960,264 @@ webdriverClickElement@chrome://marionette/content/interaction.js:179:31
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1617263350536	geckodriver	INFO	Listening on 127.0.0.1:60243
+1617263784349	geckodriver	INFO	Listening on 127.0.0.1:53761
+1617263819774	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehoiBU1"
+1617263824410	Marionette	INFO	Listening on port 45951
+1617263824464	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2344: Error: listener not re-registered
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2344: Error: listener not re-registered
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1617263849874	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1617263990270	Marionette	INFO	Stopped listening on port 45951
+1617263996632	geckodriver	INFO	Listening on 127.0.0.1:38417
+1617264026172	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6NqYBM"
+1617264030914	Marionette	INFO	Listening on port 40791
+1617264030958	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2344: Error: listener not re-registered
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1617264057160	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1617264239483	Marionette	INFO	Stopped listening on port 40791
+1617264247010	geckodriver	INFO	Listening on 127.0.0.1:33281
+1617264423915	geckodriver	INFO	Listening on 127.0.0.1:37731
+1617264453459	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelivGWG"
+1617264458302	Marionette	INFO	Listening on port 43525
+1617264458357	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1617264486806	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1617264764653	geckodriver	INFO	Listening on 127.0.0.1:39619
+1617264793864	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevqp85H"
+1617264798731	Marionette	INFO	Listening on port 33375
+1617264799035	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2344: Error: listener not re-registered
+JavaScript error: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/include.preload.js, line 275: TypeError: document.documentElement is null
+JavaScript error: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/polyfill.js, line 1: SyntaxError: redeclaration of let getUILanguage
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1617264881219	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1617264993133	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1617265740711	geckodriver	INFO	Listening on 127.0.0.1:60667
+1617265913298	geckodriver	INFO	Listening on 127.0.0.1:34633
+1617265942784	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUzlhwP"
+1617265947692	Marionette	INFO	Listening on port 46733
+1617265947756	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1617265992165	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1617266110353	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1617266340929	Marionette	INFO	Stopped listening on port 46733
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1617266344348	geckodriver	INFO	Listening on 127.0.0.1:36367
+1617266374812	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile47KZ7z"
+1617266379838	Marionette	INFO	Listening on port 43319
+1617266379922	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2344: Error: listener not re-registered
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1617266892002	geckodriver	INFO	Listening on 127.0.0.1:56271
+1617267091597	geckodriver	INFO	Listening on 127.0.0.1:58043
+1617267120804	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqDsI35"
+1617267125803	Marionette	INFO	Listening on port 40077
+1617267125873	Marionette	WARN	TLS certificate errors will be ignored for this session
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1617267170451	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1617267301969	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1617272117198	Marionette	INFO	Stopped listening on port 40077
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

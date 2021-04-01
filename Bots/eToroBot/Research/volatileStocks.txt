@@ -1,0 +1,152 @@
+=========================
+Stock index: AMBUB.CO
+Stock name: Ambu A/S
+Stock exchange: Copenhagen exchange
+Sell price: 297.83
+Buy price: 298.57
+Min price: 157.66
+Max price: 336.40
+Prev Close: 298.15
+Day's Range: 278.45 - 298.33
+52 Week Range: 159.26 - 336.40
+Average Volume (3m): 863.04K
+1-Year Return: 82.83%
+Beta: 1.1002
+Market Cap: 75.37B
+P/E Ratio: 253.68
+Revenue: 3.82B
+EPS: 1.1743
+Dividend (Yield): 0.13
+=========================
+Stock index: VWS.CO
+Stock name: Vestas Wind Systems A/S
+Stock exchange: Copenhagen exchange
+Sell price: 1301.83
+Buy price: 1305.17
+Min price: 540.51
+Max price: 1603.06
+Prev Close: 1299.00
+Day's Range: 1240.38 - 1305.82
+52 Week Range: 542.51 - 1603.06
+Average Volume (3m): 796.79K
+1-Year Return: 138.73%
+Beta: 1.2204
+Market Cap: 261.54B
+P/E Ratio: 44.86
+Revenue: 110.42B
+EPS: 29.0262
+Dividend (Yield): 0.65
+=========================
+Stock index: HDD.DE
+Stock name: Heidelberger Druckmaschinen AG
+Stock exchange: Frankfurt exchage
+Sell price: 1.2768
+Buy price: 1.2832
+Min price: 0.48
+Max price: 1.54
+Prev Close: 1.1450
+Day's Range: 1.2089 - 1.2848
+52 Week Range: 0.4754 - 1.5436
+Average Volume (3m): 1.84M
+1-Year Return: 124.65%
+Beta: -0.1296
+Market Cap: 349.38M
+P/E Ratio: 12.95
+Revenue: 1.95B
+EPS: -1.0817
+Dividend (Yield): 0
+=========================
+Stock index: AGL.MI
+Stock name: Autogrill
+Stock exchange: Milano exchage
+Sell price: 6.91
+Buy price: 6.94
+Min price: 3.04
+Max price: 7.35
+Prev Close: 7.09
+Day's Range: 6.73 - 7.15
+52 Week Range: 3.04 - 7.35
+Average Volume (3m): 2.26M
+1-Year Return: 62.75%
+Beta: 0.0538
+Market Cap: 1.77B
+P/E Ratio: 4.99
+Revenue: 4.13B
+EPS: -0.7182
+Dividend (Yield): 2.84
+=========================
+Stock index: NAS.OL
+Stock name: Norwegian Air Shuttle
+Stock exchange: Oslo exchage
+Sell price: 65.74
+Buy price: 66.50
+Min price: 29.97
+Max price: 910.20
+Prev Close: 66.60
+Day's Range: 60.21 - 70.24
+52 Week Range: 29.97 - 910.20
+Average Volume (3m): 872.09K
+1-Year Return: -92.59%
+Beta: 0.3677
+Market Cap: 2.68B
+P/E Ratio: 12.54
+Revenue: 7.99B
+EPS: -1641.666
+Dividend (Yield): 0
+=========================
+Stock index: NEL.OL
+Stock name: NEL ASA
+Stock exchange: Oslo exchage
+Sell price: 25.10
+Buy price: 25.17
+Min price: 9.77
+Max price: 35.09
+Prev Close: 25.21
+Day's Range: 23.71 - 25.20
+52 Week Range: 9.77 - 35.09
+Average Volume (3m): 16.55M
+1-Year Return: 151.00%
+Beta: -0.1525
+Market Cap: 36.71B
+P/E Ratio: 28.13
+Revenue: 578.33M
+EPS: 0.8954
+Dividend (Yield): 0
+=========================
+Stock index: ATO.PA
+Stock name: Atos SE
+Stock exchange: Paris exchage
+Sell price: 57.95
+Buy price: 58.11
+Min price: 51.97
+Max price: 79.05
+Prev Close: 66.64
+Day's Range: 51.97 - 58.13
+52 Week Range: 51.97 - 79.05
+Average Volume (3m): 717.44K
+1-Year Return: -5.68%
+Beta: 0.1198
+Market Cap: 7.31B
+P/E Ratio: 13.18
+Revenue: 11.18B
+EPS: 5.0457
+Dividend (Yield): 1.35
+=========================
+Stock index: CLA.PA
+Stock name: Claranova SADIR
+Stock exchange: Paris exchage
+Sell price: 7.58
+Buy price: 7.64
+Min price: 6.24
+Max price: 7.74
+Prev Close: 6.97
+Day's Range: 7.22 - 7.94
+52 Week Range: 6.24 - 7.94
+Average Volume (3m): 289.19K
+1-Year Return: 5.33%
+Beta: -0.1812
+Market Cap: 276.01M
+P/E Ratio: 550.39
+Revenue: 409.1M
+EPS: 0.0127
+Dividend (Yield): 0
