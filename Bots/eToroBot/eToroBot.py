@@ -13,6 +13,7 @@ from driver import Driver
 from log import Log
 from seleniumWrapper import SeleniumWrapper
 
+
 class Config ():
     def __init__ (self):
         self.configData = []
@@ -34,6 +35,10 @@ class EToroBot:
         self.seleniumWrapper = SeleniumWrapper(self.driver)
         self.loadEToro()
         self.monitorStocks()
+
+    def __del__ (self):
+        self.log.write("Closing the driver...")
+        self.driver.close()
 
     def loadEToro(self):
         self.driver.get('https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b')
@@ -96,7 +101,6 @@ class EToroBot:
         self.log.write('Trying to setting the price')
         #set the sell price
         self.seleniumWrapper.setTextFieldByCSSSelector('.stepper-value', price)
-
 
         for i in range(5):
                 try:
