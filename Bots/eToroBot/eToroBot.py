@@ -20,12 +20,14 @@ class Config ():
         self.readConfig()
 
     def readConfig (self):
+        self.configData = []
         f = open ('config', 'r')
         for row in f.readlines():
             lData = row.split(';')
             lData[len(lData)-1] = lData[len(lData)-1].replace('\n','')
             lData[len(lData)-1] = lData[len(lData)-1].replace('\r','')
             self.configData.append(lData)
+        f.close()
 
 class EToroBot:
     def __init__ (self):
@@ -38,7 +40,7 @@ class EToroBot:
 
     def __del__ (self):
         self.log.write("Closing the driver...")
-        self.driver.close()
+        self.driver.quit()
 
     def loadEToro(self):
         self.driver.get('https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b')
@@ -121,8 +123,7 @@ class EToroBot:
         return float(cash)
 
     def monitorStocks(self):
-        config = Config()
-        configData = config.configData
+        self.config = Config()
         iteration=0
         while True:
             cash = self.getCash()
@@ -130,6 +131,9 @@ class EToroBot:
             if (cash < 0.99):
                 time.sleep(5)
                 continue
+
+            self.config.readConfig()
+            configData = self.config.configData
 
             stocksInfo = self.driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
 
