@@ -1,18 +1,17 @@
 import pickle
 import sys
 import time
+import atexit
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
-from selenium.webdriver.support import expected_conditions as EC ##wait function: wait to load  web page
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.webdriver import FirefoxProfile
 from datetime import datetime
 from driver import Driver
 from log import Log
 from seleniumWrapper import SeleniumWrapper
-
 
 class Config ():
     def __init__ (self):
@@ -31,15 +30,19 @@ class Config ():
 
 class EToroBot:
     def __init__ (self):
+        atexit.register(self.quitDriver)
+        self.log = Log('eToroLog.log')
         driverObj = Driver("/home/scitickart/.mozilla/firefox/w05kja2g.default")
         self.driver = driverObj.getDriver()
-        self.log = Log('eToroLog.log')
         self.seleniumWrapper = SeleniumWrapper(self.driver)
         self.loadEToro()
         self.monitorStocks()
 
     def __del__ (self):
-        self.log.write("Closing the driver...")
+        pass
+
+    def quitDriver (self):
+        self.log.write("Quiting the driver...")
         self.driver.quit()
 
     def loadEToro(self):
