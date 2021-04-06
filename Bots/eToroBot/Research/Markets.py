@@ -42,8 +42,10 @@ class Markets:
 
     def getMarketInfo (self, marketName, dictMarkets):
         print ("Tyring to load: " + marketName + ": " + dictMarkets[marketName])
-        self.driver.get(dictMarkets[marketName])
-        time.sleep(15)
+
+        self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+                    dictMarkets[marketName],
+                    '.market-list')
         stocks = []
         while (True):
             #.market-list

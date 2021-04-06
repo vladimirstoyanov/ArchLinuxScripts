@@ -65,8 +65,10 @@ class Stock:
         url += stockId
         url += '/stats'
         print ("Trying to download " + url)
-        self.driver.get(url)
-        time.sleep(9)
+        self.seleniumWrapper.getRequestWaitUntilLocatedElementByXpath(
+                        url,
+                        '/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[3]/et-market-stats/et-market-stats-overview/et-card/section/et-card-content/div[1]')
+
         stockStatsRaw = ""
         try:
             #ToDo: change to get text by class name or id
@@ -77,10 +79,12 @@ class Stock:
 
     def getStockPriceHistory (self, stockId):
         print ("getStockPriceHistory")
-        self.driver.get('https://www.google.bg/search?q=' + stockId + '+stock')
-        time.sleep(10)
+        self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+                            'https://www.google.bg/search?q=' + stockId + '+stock',
+                            '.uch-psvg')
+
         self.seleniumWrapper.clickElementByCssSelector('div.dQlDUb:nth-child(8) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)',4)
-        
+
         text = self.seleniumWrapper.getTextByCSSSelector('.uch-psvg')
         print (text)
 
@@ -92,8 +96,9 @@ class Stock:
 
     def getStockResearchData (self, stockId):
         print ("getStockResearchData")
-        self.driver.get("https://www.etoro.com/markets/" + stockId + '/research')
-        time.sleep(15)
+        self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+                            "https://www.etoro.com/markets/" + stockId + "/research",
+                            '.ew-content')
         ##apt-graph-box > div:nth-child(2)
         #"//form[input/@name ='search']"
         #"//*[div/@class='search']"
@@ -110,8 +115,9 @@ class Stock:
 
     def getStockDescription (self, stockId):
         print ("getStockDescription")
-        self.driver.get("https://www.etoro.com/markets/" + stockId)
-        time.sleep(10)
+        self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+                                "https://www.etoro.com/markets/" + stockId,
+                                'et-showhide.ng-star-inserted:nth-child(2) > span:nth-child(1) > span:nth-child(3)')
 
         self.seleniumWrapper.clickElementByCssSelector('et-showhide.ng-star-inserted:nth-child(2) > span:nth-child(1) > span:nth-child(3)',4)
         description = self.seleniumWrapper.getTextByCSSSelector('et-showhide.ng-star-inserted:nth-child(2) > span:nth-child(1) > span:nth-child(1)')

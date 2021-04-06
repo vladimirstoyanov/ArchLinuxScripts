@@ -1,3 +1,1 @@
-[- move get request to seleniumWrapper - 1000pt]
-[- create a close method in seleniumWrappare that will clean resources and quit the driver server;]
 - optimize get requests. Remove time.sleep (15) -2000pt
