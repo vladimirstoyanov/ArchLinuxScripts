@@ -1,5 +1,3 @@
-import os
-import sys
 import pickle
 import sys
 import time
@@ -40,19 +38,11 @@ class EToroBot:
         self.loadEToro()
         self.monitorStocks()
 
-    def removeTemporaryFiles (self):
-        os.system('rm -rf /tmp/Temp-*')
-        os.system('rm -rf /tmp/rust_mozprofile*')
-        os.system('rm -rf /tmp/dbus-*')
-
     def handleExit (self):
-        self.log.write("Quiting the driver...")
-        self.driver.quit()
-        self.removeTemporaryFiles()
+        self.seleniumWrapper.close ()
 
     def loadEToro(self):
-        self.driver.get('https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b')
-        time.sleep(15)
+        self.seleniumWrapper.getRequest ('https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b')
 
     def loadStockPage (self, stockIndex):
         self.driver.get('https://www.etoro.com/markets/' + stockIndex + '/chart')
@@ -97,6 +87,7 @@ class EToroBot:
         self.log.write('Setting a sell price for ' + stockId)
         self.driver.get('https://www.etoro.com/portfolio/' + stockId)
         time.sleep(15)
+
 
         self.log.write('Trying to click on update price button...')
         #click button to update the price

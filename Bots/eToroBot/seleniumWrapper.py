@@ -1,3 +1,5 @@
+import os
+import sys
 import pickle
 import sys
 import time
@@ -14,6 +16,16 @@ class SeleniumWrapper:
     def __init__(self, driver):
         self.driver = driver
         self.log = Log("failed_selenum_requests.log")
+
+    def getRequest (self, url):
+        self.driver.get(url)
+        time.sleep (15)
+
+    def close (self):
+        self.driver.quit()
+        os.system('rm -rf /tmp/Temp-*')
+        os.system('rm -rf /tmp/rust_mozprofile*')
+        os.system('rm -rf /tmp/dbus-*')
 
     def clickElementByXpath (self,xpath, timeout):
         try:
