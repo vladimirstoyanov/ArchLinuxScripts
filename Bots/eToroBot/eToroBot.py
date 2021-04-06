@@ -1,3 +1,5 @@
+import os
+import sys
 import pickle
 import sys
 import time
@@ -30,7 +32,7 @@ class Config ():
 
 class EToroBot:
     def __init__ (self):
-        atexit.register(self.quitDriver)
+        atexit.register(self.handleExit)
         self.log = Log('eToroLog.log')
         driverObj = Driver("/home/scitickart/.mozilla/firefox/w05kja2g.default")
         self.driver = driverObj.getDriver()
@@ -38,12 +40,15 @@ class EToroBot:
         self.loadEToro()
         self.monitorStocks()
 
-    def __del__ (self):
-        pass
+    def removeTemporaryFiles (self):
+        os.system('rm -rf /tmp/Temp-*')
+        os.system('rm -rf /tmp/rust_mozprofile*')
+        os.system('rm -rf /tmp/dbus-*')
 
-    def quitDriver (self):
+    def handleExit (self):
         self.log.write("Quiting the driver...")
         self.driver.quit()
+        self.removeTemporaryFiles()
 
     def loadEToro(self):
         self.driver.get('https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b')
@@ -116,7 +121,7 @@ class EToroBot:
 
         self.loadEToro()
 
-    def getCash (self):
+    def getAvailableCash (self):
         cash = 0
         try:
             cash = self.seleniumWrapper.getTextByCSSSelector ('div.footer-unit:nth-child(1) > span:nth-child(1)')
@@ -129,7 +134,7 @@ class EToroBot:
         self.config = Config()
         iteration=0
         while True:
-            cash = self.getCash()
+            cash = self.getAvailableCash()
             self.log.write("Cash: " + str(cash))
             if (cash < 0.99):
                 time.sleep(5)
