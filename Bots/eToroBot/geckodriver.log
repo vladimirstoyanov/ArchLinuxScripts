@@ -358,3 +358,9 @@ run@resource://gre/modules/ConduitsChild.jsm:175:30
 receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
 receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
 ]]
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1617741955086	geckodriver	INFO	Listening on 127.0.0.1:56291
+1617748234112	geckodriver	INFO	Listening on 127.0.0.1:48953

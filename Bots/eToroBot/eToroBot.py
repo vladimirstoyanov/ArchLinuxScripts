@@ -91,8 +91,6 @@ class EToroBot:
         self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
                         'https://www.etoro.com/portfolio/' + stockId,
                         'div.ui-table-row:nth-child(3) > ui-table-body-slot:nth-child(2) > ui-table-cell:nth-child(6) > span:nth-child(1)')
-        self.driver.get('https://www.etoro.com/portfolio/' + stockId)
-        time.sleep(15)
 
 
         self.log.write('Trying to click on update price button...')

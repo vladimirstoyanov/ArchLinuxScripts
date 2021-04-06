@@ -1,3 +1,4 @@
+import atexit
 import pickle
 import time
 from selenium import webdriver
@@ -23,6 +24,7 @@ from sqliteData import SqliteDataEtoro
 #click > (next) button
 class EtfResearch:
     def __init__(self):
+        atexit.register(self.handleExit)
         self.indexStockId = 0
         self.indexStockName = 1
         self.indexSellPrice = 6
@@ -39,6 +41,8 @@ class EtfResearch:
         self.allEtfs = self.markets.getAllEtfsInfo()
         self.recordDataDB()
 
+    def handleExit (self):
+        self.seleniumWrapper.close()
 
     def insertDataIntoStockDescription (self, stockId, descriptionData):
         self.sqliteData.insertDataIntoStockDescription (stockId, descriptionData[0], descriptionData[1])

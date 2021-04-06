@@ -1,3 +1,4 @@
+import atexit
 import pickle
 import time
 from selenium import webdriver
@@ -18,12 +19,15 @@ from sqliteData import SqliteDataEtoro
 
 class StockResearch:
     def __init__(self):
+
+        atexit.register(self.handleExit)
         self.indexStockId = 0
         self.indexStockName = 1
         self.indexSellPrice = 6
         self.indexBuyPrice = 7
         self.indexMinPrice = 8
         self.indexMaxPrice = 9
+        self.indexStats = 11
         self.sqliteData = SqliteDataEtoro ('stocks.db')
         self.log = Log('stock_research.log')
         driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default")
@@ -31,16 +35,17 @@ class StockResearch:
         self.markets = Markets(self.driver)
         self.stock = Stock (self.driver)
 
-
         self.allStocks = self.markets.getAllMarketsInfo()
+        self.setAllStats ()
         self.getVolatileStocks ()
+        stocks = self.getDipStocksWithLowPE()
+        data=self.getDipStocks()
+        dividends = self.getStocksWithDividends ()
+
         #self.recordDataDB()
 
-        #stocks = self.getDipStocksWithLowPE()
-
-
-        #data=self.getDipStocks()
-        #dividends = self.getStocksWithDividends ()
+    def handleExit (self):
+        self.seleniumWrapper.close()
 
     def insertDataIntoStockDescription (self, stockId, descriptionData):
         self.sqliteData.insertDataIntoStockDescription (stockId, descriptionData[0], descriptionData[1])
@@ -120,7 +125,7 @@ class StockResearch:
         print (dipStocks)
         result = []
         for i in range (len(dipStocks)):
-            stats = self.stock.getStockStats (dipStocks[i][0])
+            stats = dipStocks[i][self.indexStats]
             if (self.isStockWithLowPE(stats)):
                 result.append([dipStocks[i], stats])
                 self.exportStockPlusStats([dipStocks[i], stats], dipStocksWithLowerPE)
@@ -145,11 +150,16 @@ class StockResearch:
 
         return dipStocks
 
+    def setAllStats (self):
+        for i in range (len(self.allStocks)):
+            stats = self.stock.getStockStats (self.allStocks[i][0])
+            self.allStocks[i].append(stats)
+
     def getVolatileStocks (self):
         volatileStocks = 'volatileStocks.txt'
         self.cleanFile(volatileStocks)
         for i in range (len(self.allStocks)):
-            stats = self.stock.getStockStats (self.allStocks[i][0])
+            stats = self.allStocks[i][self.indexStats]
             self.insertDataIntoStockStats(self.allStocks[i][0], stats)
             dayRange = stats['Day\'s Range']
             dayRange = dayRange.replace(' ','')
@@ -207,6 +217,7 @@ class StockResearch:
     def recordDataDB (self):
         self.insertDataIntoAllStocks (self.allStocks)
         for i in range (len(self.allStocks)):
+
             data = self.stock.getStockStats (self.allStocks[i][self.indexStockId])
             self.insertDataIntoStockStats(self.allStocks[i][self.indexStockId], data)
 
@@ -226,7 +237,7 @@ class StockResearch:
         self.cleanFile(allStocksFile)
         dividendStocks = []
         for i in range (len(self.allStocks)):
-            stats = self.stock.getStockStats (self.allStocks[i][self.indexStockId])
+            stats = self.allStocks[i][self.indexStats]
             self.insertDataIntoStockStats(self.allStocks[i][self.indexStockId], stats)
             self.exportStockPlusStats([self.allStocks[i], stats], allStocksFile)
             print ("Dividend: " + stats['Dividend (Yield)'])
