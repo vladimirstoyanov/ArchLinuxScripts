@@ -33,3 +33,8 @@ Time: 07-Apr-2021 (13:53:45.320107): Can't create 'stock_stats'. Table exist.
 Time: 07-Apr-2021 (13:53:45.320193): Can't create 'stock_price_history'. Table exist.
 Time: 07-Apr-2021 (13:53:45.320273): Can't create 'stock_research'. Table exist.
 Time: 07-Apr-2021 (13:53:45.320352): Can't create 'all_stocks'. Table exist.
+Time: 07-Apr-2021 (14:10:23.701452): Can't create 'stock_description'. Table exist.
+Time: 07-Apr-2021 (14:10:23.701631): Can't create 'stock_stats'. Table exist.
+Time: 07-Apr-2021 (14:10:23.701740): Can't create 'stock_price_history'. Table exist.
+Time: 07-Apr-2021 (14:10:23.701842): Can't create 'stock_research'. Table exist.
+Time: 07-Apr-2021 (14:10:23.701941): Can't create 'all_stocks'. Table exist.

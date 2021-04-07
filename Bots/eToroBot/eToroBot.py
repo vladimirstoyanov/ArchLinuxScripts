@@ -42,14 +42,16 @@ class EToroBot:
         self.seleniumWrapper.close()
 
     def loadEToro(self):
-        self.seleniumWrapper.getRequestWaitUntilLocatedElementByXpath (
-            'https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b',
-            '/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
+        #self.seleniumWrapper.getRequestWaitUntilLocatedElementByXpath (
+        #    'https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b',
+        #    '/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
+        self.seleniumWrapper.getRequest('https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b')
 
     def loadStockPage (self, stockIndex):
-        self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
-                    'https://www.etoro.com/markets/' + stockIndex + '/chart',
-                    '.i-stock-chart-info')
+        #self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+        #            'https://www.etoro.com/markets/' + stockIndex + '/chart',
+        #            '.i-stock-chart-info')
+        self.seleniumWrapper.getRequest('https://www.etoro.com/markets/' + stockIndex + '/chart')
 
     def buyStock (self, price, stockIndex):
         self.loadStockPage(stockIndex)
@@ -88,10 +90,10 @@ class EToroBot:
 
     def setSellPrice (self, stockId, price):
         self.log.write('Setting a sell price for ' + stockId)
-        self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
-                        'https://www.etoro.com/portfolio/' + stockId,
-                        'div.ui-table-row:nth-child(3) > ui-table-body-slot:nth-child(2) > ui-table-cell:nth-child(6) > span:nth-child(1)')
-
+        #self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+        #                'https://www.etoro.com/portfolio/' + stockId,
+        #                'div.ui-table-row:nth-child(3) > ui-table-body-slot:nth-child(2) > ui-table-cell:nth-child(6) > span:nth-child(1)')
+        self.seleniumWrapper.getRequest('https://www.etoro.com/portfolio/' + stockId)
 
         self.log.write('Trying to click on update price button...')
         #click button to update the price
