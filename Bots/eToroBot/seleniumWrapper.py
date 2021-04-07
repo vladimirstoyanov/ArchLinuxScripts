@@ -18,25 +18,25 @@ class SeleniumWrapper:
         self.log = Log("failed_selenum_requests.log")
 
     def getRequestWaitUntilLocatedElementById (self, url, id):
-        self.driver.get(url)
         try:
+            self.driver.get(url)
             element = WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.ID, id)))
         except:
-            pass
+            self.log.write ("Filed to load url: " + url)
 
     def getRequestWaitUntilLocatedElementByXpath (self, url, xpath):
-        self.driver.get(url)
         try:
+            self.driver.get(url)
             element = WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.XPATH, xpath)))
         except:
-            pass
+            self.log.write ("Filed to load url: " + url)
 
     def getRequestWaitUntilLocatedElementByCssSelector (self, url, cssSelector):
-        self.driver.get(url)
         try:
+            self.driver.get(url)
             element = WebDriverWait(self.driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, cssSelector)))
         except:
-            pass
+            self.log.write ("Filed to load url: " + url)
 
 
     def getRequest (self, url):
