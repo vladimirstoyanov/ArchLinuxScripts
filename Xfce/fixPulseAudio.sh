@@ -1,6 +1,6 @@
-sudo pacman -S pulsemixer
-sudo pacman -S pavucontrol
-sudo pacman -S pulseaudio
-sudo pacman -S pulseaudio-alsa
-sudo pacman -S pulsemixer
+sudo pacman --noconfirm -S pulsemixer
+sudo pacman --noconfirm -S pavucontrol
+sudo pacman --noconfirm -S pulseaudio
+sudo pacman --noconfirm -S pulseaudio-alsa
+sudo pacman --noconfirm -S pulsemixer
 sudo reboot  

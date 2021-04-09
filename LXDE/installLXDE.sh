@@ -1,4 +1,4 @@
-pacman -S lxde-common
-pacman -S lxsession
-pacman -S lxdm
-pacman -S lxde
+sudo pacman --noconfirm -S lxde-common
+sudo pacman --noconfirm -S lxsession
+sudo pacman --noconfirm -S lxdm
+sudo pacman --noconfirm -S lxde
