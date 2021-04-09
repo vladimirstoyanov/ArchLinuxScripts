@@ -7,6 +7,7 @@ then
   exit 1
 fi
 
+mkdir /home/$1
 useradd -m /home/$1
 passwd $1
 

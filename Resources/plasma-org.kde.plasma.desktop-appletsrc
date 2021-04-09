@@ -27,7 +27,7 @@ positions=6,12,desktop:/org.kde.konsole.desktop,0,11,desktop:/trash.desktop,5,11
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=/home/gitHub/ArchLinuxScripts/Resources/scitickart.png
+Image=/home/ArchLinuxScripts/Resources/scitickart.png
 
 [Containments][2]
 activityId=
