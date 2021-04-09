@@ -20,3 +20,11 @@ Time: 07-Apr-2021 (16:55:14.895571): Failed to execute find_element_by_css_selec
 Time: 07-Apr-2021 (16:55:30.730070): Filed to load url: https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b
 Time: 07-Apr-2021 (16:55:46.726707): Filed to load url: https://www.etoro.com/portfolio/APHA
 Time: 07-Apr-2021 (16:55:46.740083): Failed to execute find_element_by_css_selector(div.ui-table-row:nth-child(3) > ui-table-body-slot:nth-child(2) > ui-table-cell:nth-child(6) > span:nth-child(1))
+Time: 08-Apr-2021 (18:40:18.894651): Failed to execute find_element_by_css_selector(.head-instrument-action > trade-button:nth-child(2))
+Time: 08-Apr-2021 (18:40:18.904266): Failed to execute find_element_by_css_selector(.stepper-value)
+Time: 08-Apr-2021 (18:40:22.920603): Failed to execute find_element_by_css_selector(.execution-button)
+Time: 08-Apr-2021 (18:40:22.932119): Failed to execute find_element_by_css_selector(.execution-button)
+Time: 08-Apr-2021 (18:40:22.944248): Failed to execute find_element_by_css_selector(.execution-button)
+Time: 08-Apr-2021 (18:40:22.951283): Failed to execute find_element_by_css_selector(.execution-button)
+Time: 08-Apr-2021 (18:40:22.958200): Failed to execute find_element_by_css_selector(.execution-button)
+Time: 08-Apr-2021 (18:40:53.385032): Failed to execute find_element_by_css_selector(div.ui-table-row:nth-child(3) > ui-table-body-slot:nth-child(2) > ui-table-cell:nth-child(6) > span:nth-child(1))
