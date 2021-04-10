@@ -15,6 +15,9 @@ echo 'Installing openssh...'
 sleep 1
 sudo pacman -S openssh
 
+echo 'Enabling sshd..."
+sudo systemctl enable sshd
+
 echo 'Starting OpenSSH server...'
 sleep 1
 sudo systemctl start sshd
