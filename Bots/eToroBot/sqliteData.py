@@ -81,7 +81,20 @@ class SqliteDataEtoro:
         else:
             self.sqliteWrapper.insertData (tableName, [(stock_id, exchange, description)])
 
-    def insertDataIntoStockStats (self, stock_id, prev_close, market_cap, days_range, week_range_52, average_volume, year_return_1, beta, p_e_ratio, revenue, EPS, dividend):
+    def insertDataIntoStockStats (self,
+                                stock_id,
+                                prev_close,
+                                market_cap,
+                                days_range,
+                                week_range_52,
+                                average_volume,
+                                year_return_1,
+                                beta,
+                                p_e_ratio,
+                                revenue,
+                                EPS,
+                                dividend,
+                                ex_dividend_date=''):
         tableName = 'stock_stats'
         if (self.sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
                     data = 'prev_close = "'
@@ -170,6 +183,9 @@ class SqliteDataEtoro:
         else:
             self.sqliteWrapper.insertData (tableName, [(stock_id, stock_name, sell_price, buy_price, min_price, max_price)])
 
+    def readData (self, table_name):
+        data = self.sqliteWrapper.readData('all_stocks')
+        return data
 """
 sqliteDataEtoro = SqliteDataEtoro ()
 sqliteDataEtoro.insertDataIntoStockDescription('NNDM', 'nasdaq', 'stupid company')
