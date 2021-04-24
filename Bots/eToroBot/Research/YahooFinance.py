@@ -1,8 +1,4 @@
-#1. get all stocks from stocks.db
-#2. get sumary data
-#https://finance.yahoo.com/quote/NNDM?p=NNDM
-#3. get profile data
-#https://finance.yahoo.com/quote/NNDM/profile?p=NNDM
+#ToDo: get profile data: https://finance.yahoo.com/quote/NNDM/profile?p=NNDM
 import time
 import os, sys
 import atexit
@@ -32,12 +28,15 @@ class YahooFinance:
         driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default")
         self.driver = driverObj.getDriver()
         self.seleniumWrapper  = SeleniumWrapper(self.driver)
+        self.updatedStockStats = 0
         self.scrappingStockData ()
 
     def handleExit (self):
             self.seleniumWrapper.close()
 
     def downloadStockData (self, stockId):
+            print ("==============================================")
+            print ("Updated stocks: " + str(self.updatedStockStats))
             print ("Trying to download stats for stock id: " + stockId)
             url = "https://finance.yahoo.com/quote/" + stockId + "?p=" + stockId
             self.seleniumWrapper.getRequest  (url)
@@ -46,6 +45,10 @@ class YahooFinance:
                 stockData = self.seleniumWrapper.getTextByCSSSelector('#quote-summary')
             except:
                 pass
+
+            if (stockData!=""):
+                self.updatedStockStats+=1
+
             return stockData
 
     def scrappingStockData (self):
