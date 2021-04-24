@@ -43,9 +43,10 @@ class Markets:
     def getMarketInfo (self, marketName, dictMarkets):
         print ("Tyring to load: " + marketName + ": " + dictMarkets[marketName])
 
-        self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
-                    dictMarkets[marketName],
-                    '.market-list')
+        #self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+        #            dictMarkets[marketName],
+        #            '.market-list')
+        self.seleniumWrapper.getRequest(dictMarkets[marketName])
         stocks = []
         while (True):
             #.market-list
