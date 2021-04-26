@@ -48,8 +48,7 @@ class YahooFinanceWebScraper:
         for i in range (len (self.stocksData)):
             stockData = self.__downloadStockData (self.stocksData[i][self.stockIdIndex])
             self.__recordStatsData(self.stocksData[i][self.stockIdIndex], stockData)
-
-    def __recordStatsData (self, stockId, parsedData):
+    def __generateStockDataDictionary (self, parsedData):
         dict = {
                 'Previous Close': '',
                 'Open': '',
@@ -79,7 +78,10 @@ class YahooFinanceWebScraper:
                     dict[key] = result[1]
                     break
         print (dict)
+        return dict
 
+    def __recordStatsData (self, stockId, parsedData):
+        dict = self.__generateStockDataDictionary(parsedData)
         self.stocksDataBase.insertDataIntoStockStats (stockId,
                                   dict['Previous Close'],
                                   dict['Market Cap'],
