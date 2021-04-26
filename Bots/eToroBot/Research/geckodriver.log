@@ -1198,3 +1198,308 @@ JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //
 1619277197714	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 1619277578173	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 1619278153874	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619281857720	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619282493700	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://s0.2mdn.net/sadbundle/7976700501350203833/index.html, line 19: SyntaxError: illegal character U+200B
+JavaScript error: https://s0.2mdn.net/sadbundle/3976247033850514309/index.html, line 19: SyntaxError: illegal character U+200B
+JavaScript error: https://s0.2mdn.net/sadbundle/3976247033850514309/index.html, line 19: SyntaxError: illegal character U+200B
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1619284770672	geckodriver	INFO	Listening on 127.0.0.1:34099
+1619285167517	geckodriver	INFO	Listening on 127.0.0.1:38501
+1619285200806	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJnmlkp"
+1619285201836	Marionette	INFO	Marionette enabled
+1619285205951	Marionette	INFO	Listening on port 33327
+1619285206009	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 17ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/r20210422/r20190131/show_ads_impl_with_ama_fy2019.js?client=ca-pub-7382640443023261&plah=web-oao.ssp.yahoo.com&amaexp=1, line 253: Error: XHR error: https://partner.googleadservices.com/gampad/cookie.js?domain=web-oao.ssp.yahoo.com&client=ca-pub-7382640443023261
+JavaScript error: https://s.yimg.com/uc/finance/dd-site/js/QuotePage.92a97bc65940712181a8.modern.js, line 1: TypeError: p.currentQuarterEstimate is undefined
+1619292516166	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619293303594	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/r20210422/r20190131/show_ads_impl_with_ama_fy2019.js?client=ca-pub-7382640443023261&plah=web-oao.ssp.yahoo.com&amaexp=1, line 253: Error: XHR error: https://partner.googleadservices.com/gampad/cookie.js?domain=web-oao.ssp.yahoo.com&client=ca-pub-7382640443023261&cookie=undefined
+1619294514040	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/r20210422/r20190131/show_ads_impl_with_ama_fy2019.js?client=ca-pub-7382640443023261&plah=web-oao.ssp.yahoo.com&amaexp=1, line 253: Error: XHR error: https://partner.googleadservices.com/gampad/cookie.js?domain=web-oao.ssp.yahoo.com&client=ca-pub-7382640443023261&cookie=undefined
+1619297053162	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619297108361	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619297613711	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619297725503	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619297855087	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619298119111	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619298137941	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619298481524	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619298900303	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619298960273	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619299383355	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619299593868	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=11050731805900300154&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=13669757186091722529&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+1619299790789	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/r20210422/r20190131/show_ads_impl_with_ama_fy2019.js?client=ca-pub-7382640443023261&plah=web-oao.ssp.yahoo.com&amaexp=1, line 253: Error: XHR error: https://partner.googleadservices.com/gampad/cookie.js?domain=web-oao.ssp.yahoo.com&client=ca-pub-7382640443023261&cookie=undefined
+1619301364700	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619302134074	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619302332080	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619302426616	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619302503343	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=18207568958963141075&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+1619303864263	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619304034749	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619304380205	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619304398945	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619306128922	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/r20210422/r20190131/show_ads_impl_with_ama_fy2019.js?client=ca-pub-7382640443023261&plah=web-oao.ssp.yahoo.com&amaexp=1, line 253: Error: XHR error: https://partner.googleadservices.com/gampad/cookie.js?domain=web-oao.ssp.yahoo.com&client=ca-pub-7382640443023261&cookie=undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=5513300169916518695&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+1619319519878	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://s0.2mdn.net/sadbundle/7976700501350203833/index.html, line 19: SyntaxError: illegal character U+200B
+1619320731211	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619322712992	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+1619325063315	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619326327502	Marionette	INFO	Stopped listening on port 33327
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20210422/r20110914/client/qs_click_protection_fy2019.js, line 15: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619420349317	geckodriver	INFO	Listening on 127.0.0.1:34953
+1619420692525	geckodriver	INFO	Listening on 127.0.0.1:57065
+1619420726124	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileezcG3m"
+1619420727376	Marionette	INFO	Marionette enabled
+1619420731216	Marionette	INFO	Listening on port 34627
+1619420731301	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1619420839231	geckodriver	INFO	Listening on 127.0.0.1:50801
+1619420870147	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4FN2Mg"
+1619420871017	Marionette	INFO	Marionette enabled
+1619420874530	Marionette	INFO	Listening on port 41777
+1619420874793	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2345: Error: listener not re-registered
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1619420896043	Marionette	INFO	Stopped listening on port 41777
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619420929099	geckodriver	INFO	Listening on 127.0.0.1:55013
+1619420959826	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOMMnGO"
+1619420960678	Marionette	INFO	Marionette enabled
+1619420964327	Marionette	INFO	Listening on port 40097
+1619420964410	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1619420986449	Marionette	INFO	Stopped listening on port 40097
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619421019507	geckodriver	INFO	Listening on 127.0.0.1:36261
+1619421050139	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTOWmaJ"
+1619421050978	Marionette	INFO	Marionette enabled
+1619421054526	Marionette	INFO	Listening on port 41309
+1619421054807	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2345: Error: listener not re-registered
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1619421302140	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619421512005	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/r20210422/r20190131/show_ads_impl_with_ama_fy2019.js?client=ca-pub-7382640443023261&plah=web-oao.ssp.yahoo.com&amaexp=1, line 253: Error: XHR error: https://partner.googleadservices.com/gampad/cookie.js?domain=web-oao.ssp.yahoo.com&client=ca-pub-7382640443023261
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=9679705291751515453&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+1619422161213	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/25 for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/0f for shader cache (No such file or directory)---disabling.
+Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cache/a2 for shader cache (No such file or directory)---disabling.
+1619423030013	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=7518591784722603706&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+1619425606268	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619426044521	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
