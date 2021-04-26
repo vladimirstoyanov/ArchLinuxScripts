@@ -1503,3 +1503,7 @@ Failed to create /tmp/Temp-a917bf2e-2240-4a93-b6f1-b9731b73e90f/mesa_shader_cach
 JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=7518591784722603706&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
 1619425606268	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 1619426044521	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619427403196	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619427639475	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619429423755	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619429645377	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
