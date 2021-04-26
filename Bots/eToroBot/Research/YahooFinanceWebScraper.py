@@ -48,6 +48,7 @@ class YahooFinanceWebScraper:
         for i in range (len (self.stocksData)):
             stockData = self.__downloadStockData (self.stocksData[i][self.stockIdIndex])
             self.__recordStatsData(self.stocksData[i][self.stockIdIndex], stockData)
+            
     def __generateStockDataDictionary (self, parsedData):
         dict = {
                 'Previous Close': '',
@@ -95,6 +96,7 @@ class YahooFinanceWebScraper:
                                   dict['EPS (TTM)'],
                                   dict['Forward Dividend & Yield'],
                                   dict['Ex-Dividend Date'])
+
     def __downloadData (self, url, cssSelector):
         data = ""
         try:
