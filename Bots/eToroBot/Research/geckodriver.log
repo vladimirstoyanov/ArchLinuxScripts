@@ -1511,3 +1511,180 @@ JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/119704
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1619436355390	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/r20210422/r20190131/show_ads_impl_with_ama_fy2019.js?client=ca-pub-7382640443023261&plah=web-oao.ssp.yahoo.com&amaexp=1, line 253: Error: XHR error: https://partner.googleadservices.com/gampad/cookie.js?domain=web-oao.ssp.yahoo.com&client=ca-pub-7382640443023261&cookie=undefined
+1619437342972	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619437432767	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619437523993	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/4256693641201539569/index.html#t=8029399164061538887&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/4256693641201539569/index.html#t=8029399164061538887&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1619442127261	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619443263525	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619443301106	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12102125826665285476/index.html#t=13406732842736780964&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12102125826665285476/index.html#t=13406732842736780964&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=12797220878472201009&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.g is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=12797220878472201009&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=12797220878472201009&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.g is null
+1619444734340	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/4256693641201539569/index.html#t=2747298356684086595&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/4256693641201539569/index.html#t=2747298356684086595&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/4256693641201539569/index.html#t=14870954320101638951&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/4256693641201539569/index.html#t=14870954320101638951&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12102125826665285476/index.html#t=11040218203932567140&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12102125826665285476/index.html#t=11040218203932567140&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1619446178636	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619446567204	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619446567395	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619446586696	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619447716112	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12102125826665285476/index.html#t=7452449069673202090&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 131: TypeError: a.a is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/12102125826665285476/index.html#t=7452449069673202090&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 146: TypeError: this.a is null
+1619448107538	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=1724584307026827609&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+1619448580317	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/r20210422/r20190131/show_ads_impl_with_ama_fy2019.js?client=ca-pub-7382640443023261&plah=web-oao.ssp.yahoo.com&amaexp=1, line 253: Error: XHR error: https://partner.googleadservices.com/gampad/cookie.js?domain=web-oao.ssp.yahoo.com&client=ca-pub-7382640443023261&cookie=undefined
+1619449107795	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619449143115	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=17364001663157688531&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+1619449231936	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619449680649	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=15022218372658135895&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=15053785742013761907&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+1619449953690	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619450904329	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619451296785	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619451489838	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619451794898	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619452336074	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619452752097	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619452859073	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619453143101	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=10045154595384796634&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11970458130017556382/index.html#t=8491941230573779293&p=https%3A%2F%2Fgoogleads.g.doubleclick.net, line 296: TypeError: studio.Enabler is undefined
+1619454092660	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619454165128	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619454182616	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619454329382	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619454365181	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619455822015	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/r20210422/r20190131/show_ads_impl_with_ama_fy2019.js?client=ca-pub-7382640443023261&plah=web-oao.ssp.yahoo.com&amaexp=1, line 253: Error: XHR error: https://partner.googleadservices.com/gampad/cookie.js?domain=web-oao.ssp.yahoo.com&client=ca-pub-7382640443023261&cookie=undefined
+1619456198505	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619456361243	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619456610440	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619456916499	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619456934281	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619457255352	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619457293198	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619457528307	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619457764230	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619457999427	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619458035340	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619458398801	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619458581347	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619458798696	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619458888988	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619459285991	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619459339504	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619459376913	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619460139328	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1619460771365	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/r20210422/r20190131/show_ads_impl_with_ama_fy2019.js?client=ca-pub-7382640443023261&plah=web-oao.ssp.yahoo.com&amaexp=1, line 253: Error: XHR error: https://partner.googleadservices.com/gampad/cookie.js?domain=web-oao.ssp.yahoo.com&client=ca-pub-7382640443023261&cookie=undefined
+1619461724943	Marionette	INFO	Stopped listening on port 41309
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1619562803425	geckodriver	INFO	Listening on 127.0.0.1:48479
+1619562844135	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledk8NK5"
+1619562845870	Marionette	INFO	Marionette enabled
+1619562851956	Marionette	INFO	Listening on port 34085
+1619562852025	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1619562893410	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1619563030085	Marionette	INFO	Stopped listening on port 34085
+1619563038199	geckodriver	INFO	Listening on 127.0.0.1:35609
+1619563209657	geckodriver	INFO	Listening on 127.0.0.1:35235
+1619563240698	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJ4nFeP"
+1619563241912	Marionette	INFO	Marionette enabled
+1619563245703	Marionette	INFO	Listening on port 37105
+1619563245918	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2345: Error: listener not re-registered
+JavaScript warning: moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/background.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript error: undefined, line 0: Error: frame.state is undefined
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+Extension error: Error: Type error for parameter tabId (Integer -1 is too small (must be at least 0)) for tabs.get. moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js 143
+[[Exception stack
+updatePageFrameStructure@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:143:20
+@moz-extension://f22c9c5b-cd47-4a2c-8dfd-31a47bccccf7/ext/background.js:246:29
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:622:13
+fire@resource://gre/modules/ExtensionChild.jsm:806:37
+recvRunListener@resource://gre/modules/ExtensionChild.jsm:810:13
+_recv@resource://gre/modules/ConduitsChild.jsm:78:20
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:184:20
+run@resource://gre/modules/ConduitsChild.jsm:175:30
+receiveMessage/<@resource://gre/modules/ConduitsChild.jsm:176:46
+receiveMessage@resource://gre/modules/ConduitsChild.jsm:176:31
+]]
+JavaScript warning: https://zamunda.net/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1619563271542	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1619563285734	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:237:19
+TimedPromise@chrome://marionette/content/sync.js:222:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:431:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1619563583579	geckodriver	INFO	Listening on 127.0.0.1:43985
+1619566130062	Marionette	INFO	Stopped listening on port 37105

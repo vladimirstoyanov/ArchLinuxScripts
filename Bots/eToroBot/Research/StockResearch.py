@@ -19,8 +19,7 @@ from sqliteData import SqliteDataEtoro
 
 class StockResearch:
     def __init__(self):
-
-        atexit.register(self.handleExit)
+        atexit.register(self.__handleExit)
         self.indexStockId = 0
         self.indexStockName = 1
         self.indexSellPrice = 6
@@ -35,44 +34,17 @@ class StockResearch:
         self.markets = Markets(self.driver)
         self.stock = Stock (self.driver)
 
-        self.allStocks = self.markets.getAllMarketsInfo()
-        self.setAllStats ()
+        allStocks = self.markets.getAllMarketsInfo()
+        self.insertDataIntoAllStocks(allStocks)
+        print ("getVolatileStocks")
         self.getVolatileStocks ()
-        stocks = self.getDipStocksWithLowPE()
-        data=self.getDipStocks()
-        dividends = self.getStocksWithDividends ()
+        print ("getDipStocksWithLowPE")
+        self.getDipStocksWithLowPE()
+        print ("getStocksWithDividends")
+        self.getStocksWithDividends ()
 
-        #self.recordDataDB()
-
-    def handleExit (self):
+    def __handleExit (self):
         self.seleniumWrapper.close()
-
-    def insertDataIntoStockDescription (self, stockId, descriptionData):
-        self.sqliteData.insertDataIntoStockDescription (stockId, descriptionData[0], descriptionData[1])
-
-    def insertDataIntoStockPriceHistory (self, stockId, historyData):
-        for i in range (len (historyData)):
-            self.sqliteData.insertDataIntoStockPriceHistory (stockId, historyData[i][0], historyData[i][1])
-
-    def insertDataIntoStockResearch (self,stockId,researchData):
-        self.sqliteData.insertDataIntoStockResearch (stock_id,
-         researchData[0],
-         researchData[1],
-         researchData[2])
-
-    def insertDataIntoStockStats (self,stockId, stockStats):
-        self.sqliteData.insertDataIntoStockStats (stockId,
-             stockStats['Prev Close'],
-             stockStats['Market Cap'],
-             stockStats['Day\'s Range'],
-             stockStats['52 Week Range'],
-             stockStats['Average Volume (3m)'],
-             stockStats['1-Year Return'],
-             stockStats['Beta'],
-             stockStats['P/E Ratio'],
-             stockStats['Revenue'],
-             stockStats['EPS'],
-             stockStats['Dividend (Yield)'])
 
     def insertDataIntoAllStocks (self, allStocksData):
         for i in range(len(allStocksData)):
@@ -99,152 +71,96 @@ class StockResearch:
             return 1
         return 0
 
-    def isStockWithLowPE (self, stats):
-        peRatio = stats['P/E Ratio']
-        if (peRatio == ''): #it ignores stocks with missing P/E ratio
+    def isStockWithLowPE (self, peRatio):
+        if (peRatio == '' or peRatio == 'N/A'): #it ignores stocks with missing P/E ratio
             return 0
         peRatio = float(peRatio)
         if (peRatio<26):
             return 1
         return 0
 
-    def getDipStocksWithLowPE(self):
-        dipStocksWithLowerPE = "dipStocksWithLowerPE.txt"
-        self.cleanFile(dipStocksWithLowerPE)
-        dipStocks = []
-        for i in range (len(self.allStocks)):
-            buyPrice = float(self.allStocks[i][self.indexBuyPrice])
-            minPrice = float(self.allStocks[i][self.indexMinPrice])
-            maxPrice = float(self.allStocks[i][self.indexMaxPrice])
-            print ("buy price:" + str(buyPrice))
-            print ("min price:" + str(minPrice))
-            print ("max price:" + str(maxPrice))
-            if (self.isStockWithDipPrice(buyPrice, minPrice, maxPrice)):
-                dipStocks.append(self.allStocks[i])
+    def getDipStocksWithLowPE (self):
+        filename = 'dipStocksWithLowPE.txt'
+        stockStats = self.sqliteData.readData('stock_stats')
+        allStocks = self.sqliteData.readData('all_stocks')
+        self.cleanFile(filename)
+        f = open (filename)
+        for i in range (len(allStocks)):
+            if (self.isStockWithDipPrice(float(allStocks[i][3]), float(allStocks[i][4]), float(allStocks[i][5]))):
+                for j in range (len (stockStats)):
+                    if (allStocks[i][0] == stockStats[j][0]):
+                        if (self.isStockWithLowPE (stockStats[j][8])):
+                            self.exportStockPlusStats(allStocks[i], stockStats[j], filename)
+        f.close()
 
-        print (dipStocks)
-        result = []
-        for i in range (len(dipStocks)):
-            stats = dipStocks[i][self.indexStats]
-            if (self.isStockWithLowPE(stats)):
-                result.append([dipStocks[i], stats])
-                self.exportStockPlusStats([dipStocks[i], stats], dipStocksWithLowerPE)
+    def exportStock (self, stock, fileDescriptor):
+        fileDescriptor.write("=============\n")
+        fileDescriptor.write("Stock id: " + stock[0] +"\n")
+        fileDescriptor.write("Stock name: " +stock[1] + "\n")
+        fileDescriptor.write("Sell price: " + stock[2] + "\n")
+        fileDescriptor.write("Buy price: " + stock[3] + "\n")
+        fileDescriptor.write("Min prie: " + stock[4] + "\n")
+        fileDescriptor.write("Max price: " + stock[5] + "\n")
 
-        return result
+    def exportStats (self, stats, fileDescriptor):
+        fileDescriptor.write("Stock ID: " + stats[0] + "\n")
+        fileDescriptor.write("Previous close: " + stats[1]+ "\n")
+        fileDescriptor.write("Market cap: " + stats[2]+ "\n")
+        fileDescriptor.write("Days range: " + stats[3]+ "\n")
+        fileDescriptor.write("52 week range: " + stats[4]+ "\n")
+        fileDescriptor.write("Average volume: " + stats[5]+ "\n")
+        fileDescriptor.write("1 year return: " + stats[6]+ "\n")
+        fileDescriptor.write("Beta: " + stats[7]+ "\n")
+        fileDescriptor.write("P/E ratio: " + stats[8]+ "\n")
+        fileDescriptor.write("Revenue: " + stats[9]+ "\n")
+        fileDescriptor.write("EPS: " + stats[10]+ "\n")
+        fileDescriptor.write("Dividend: " + stats[11]+ "\n")
 
-    def getDipStocks (self):
-        dipStocksFile = 'dipStocks.txt'
-        self.cleanFile(dipStocksFile)
-        dipStocks = []
-        for i in range (len(self.allStocks)):
-            buyPrice = float(self.allStocks[i][self.indexBuyPrice])
-            minPrice = float(self.allStocks[i][self.indexMinPrice])
-            maxPrice = float(self.allStocks[i][self.indexMaxPrice])
-            print ("buy price:" + str(buyPrice))
-            print ("min price:" + str(minPrice))
-            print ("max price:" + str(maxPrice))
-            percentage = self.calculatePercentage(buyPrice, minPrice, maxPrice)
-            if (percentage < 5.5):
-                dipStocks.append (self.allStocks[i])
-                self.exportStock (self.allStocks[i], dipStocksFile)
-
-        return dipStocks
-
-    def setAllStats (self):
-        for i in range (len(self.allStocks)):
-            stats = self.stock.getStockStats (self.allStocks[i][0])
-            self.allStocks[i].append(stats)
+    def exportStockPlusStats (self, stocks, stats, filename):
+        f = open(filename, 'a')
+        self.exportStock (stocks, f)
+        self.exportStats (stats, f)
+        f.close()
 
     def getVolatileStocks (self):
         volatileStocks = 'volatileStocks.txt'
+        stats = self.sqliteData.readData('stock_stats')
+        allStocks = self.sqliteData.readData('all_stocks')
         self.cleanFile(volatileStocks)
-        for i in range (len(self.allStocks)):
-            stats = self.allStocks[i][self.indexStats]
-            self.insertDataIntoStockStats(self.allStocks[i][0], stats)
-            dayRange = stats['Day\'s Range']
-            dayRange = dayRange.replace(' ','')
-            minMax = dayRange.split('-')
-            if (len(minMax)!=2):
-                continue
-            minDayPrice = float(minMax[0])
-            maxDayPrice = float(minMax[1])
-            dayRangePercentage = self.calculateDayRangePercentage(minDayPrice,maxDayPrice)
-            self.log.write("Min: " + str(minDayPrice) + ", Max: " + str(maxDayPrice) + ", Range: " + str(dayRangePercentage))
-            if (dayRangePercentage >= 5):
-                self.exportStockPlusStats([self.allStocks[i], stats], volatileStocks)
-
-
+        for i in range (len(allStocks)):
+            for j in range (len(stats)):
+                if (allStocks[i][0]==stats[j][0]):
+                    dayRange = stats[j][3]
+                    dayRange = dayRange.replace(' ','')
+                    minMax = dayRange.split('-')
+                    if (len(minMax)!=2):
+                        continue
+                    if (minMax[0]=='N/A' or minMax[1] == 'N/A'):
+                        continue
+                    minMax[0] = minMax[0].replace(',','')
+                    minMax[1] = minMax[1].replace(',','')
+                    minDayPrice = float(minMax[0])
+                    maxDayPrice = float(minMax[1])
+                    dayRangePercentage = self.calculateDayRangePercentage(minDayPrice,maxDayPrice)
+                    self.log.write("Min: " + str(minDayPrice) + ", Max: " + str(maxDayPrice) + ", Range: " + str(dayRangePercentage))
+                    if (dayRangePercentage >= 5):
+                        self.exportStockPlusStats(allStocks[i], stats[j], volatileStocks)
+                    break
 
     def cleanFile (self, filename):
         f = open(filename, 'w')
         f.close()
 
-    def exportStock (self, data, filename):
-            f = open (filename, 'a')
-            f.write("=========================\n")
-            f.write("Stock index: " + data[0] + '\n')
-            f.write("Stock name: " + data[1] + '\n')
-            f.write("Stock exchange: " + data[11] + '\n')
-            f.write("Sell price: " + data[5] + '\n')
-            f.write("Buy price: " + data[self.indexBuyPrice] + '\n')
-            f.write("Min price: " + data[self.indexMinPrice] + '\n')
-            f.write("Max price: " + data[self.indexMaxPrice] + '\n')
-            f.close()
-
-    def exportStockPlusStats (self, data, filename):
-            f = open (filename, 'a')
-            f.write("=========================\n")
-            f.write("Stock index: " + data[0][0] + '\n')
-            f.write("Stock name: " + data[0][1] + '\n')
-            f.write("Stock exchange: " + data[0][11] + '\n')
-            f.write("Sell price: " + data[0][5] + '\n')
-            f.write("Buy price: " + data[0][self.indexBuyPrice] + '\n')
-            f.write("Min price: " + data[0][self.indexMinPrice] + '\n')
-            f.write("Max price: " + data[0][self.indexMaxPrice] + '\n')
-            f.write('Prev Close: ' + data[1]['Prev Close'] + '\n')
-            f.write('Day\'s Range: '+ data[1]['Day\'s Range'] + '\n')
-            f.write('52 Week Range: '+ data[1]['52 Week Range'] + '\n')
-            f.write('Average Volume (3m): '+ data[1]['Average Volume (3m)'] + '\n')
-            f.write('1-Year Return: '+ data[1]['1-Year Return'] + '\n')
-            f.write('Beta: '+ data[1]['Beta'] + '\n')
-            f.write('Market Cap: '+ data[1]['Market Cap'] + '\n')
-            f.write('P/E Ratio: '+ data[1]['P/E Ratio'] + '\n')
-            f.write('Revenue: '+ data[1]['Revenue'] + '\n')
-            f.write('EPS: '+ data[1]['EPS'] + '\n')
-            f.write('Dividend (Yield): '+ data[1]['Dividend (Yield)'] + '\n')
-            f.close()
-
-    def recordDataDB (self):
-        self.insertDataIntoAllStocks (self.allStocks)
-        for i in range (len(self.allStocks)):
-
-            data = self.stock.getStockStats (self.allStocks[i][self.indexStockId])
-            self.insertDataIntoStockStats(self.allStocks[i][self.indexStockId], data)
-
-            #data = self.stock.getStockPriceHistory (self.allStocks[i][self.indexStockId])
-            #self.insertDataIntoStockPriceHistory(self.allStocks[i][self.indexStockId], data)
-
-            #data = self.stock.getStockResearchData (self.allStocks[i][self.indexStockId])
-            #self.insertDataIntoStockResearch(self.allStocks[i][self.indexStockId], data)
-
-            data = self.stock.getStockDescription (self.allStocks[i][self.indexStockId])
-            self.insertDataIntoStockDescription(self.allStocks[i][self.indexStockId], data)
-
     def getStocksWithDividends (self):
         dividendsFile = 'dividendStocks.txt'
-        allStocksFile = 'allStocksAndStats.txt'
         self.cleanFile(dividendsFile)
-        self.cleanFile(allStocksFile)
-        dividendStocks = []
-        for i in range (len(self.allStocks)):
-            stats = self.allStocks[i][self.indexStats]
-            self.insertDataIntoStockStats(self.allStocks[i][self.indexStockId], stats)
-            self.exportStockPlusStats([self.allStocks[i], stats], allStocksFile)
-            print ("Dividend: " + stats['Dividend (Yield)'])
-            if (stats['Dividend (Yield)']!='0' and stats['Dividend (Yield)']!=''):
-                print ("Added.")
-                dividendStocks.append([self.allStocks[i], stats])
-                self.exportStockPlusStats([self.allStocks[i], stats], dividendsFile)
-        return dividendStocks
+        stats = self.sqliteData.readData('stock_stats')
+        allStocks = self.sqliteData.readData('all_stocks')
+        for i in range (len(allStocks)):
+            for j in range (len(stats)):
+                if (allStocks[i][0] == stats[j][0]):
+                    if (stats[j][11]!='0' and stats[j][11]!='' and stats[j][11]!='N/A (N/A)'):
+                        print ("Export sDividend: " + stats[j][11])
+                        self.exportStockPlusStats(allStocks[i], stats[j], dividendsFile)
 
 stockResearch = StockResearch()

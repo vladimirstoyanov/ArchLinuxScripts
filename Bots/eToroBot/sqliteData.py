@@ -183,8 +183,8 @@ class SqliteDataEtoro:
         else:
             self.sqliteWrapper.insertData (tableName, [(stock_id, stock_name, sell_price, buy_price, min_price, max_price)])
 
-    def readData (self, table_name):
-        data = self.sqliteWrapper.readData('all_stocks')
+    def readData (self, tableName):
+        data = self.sqliteWrapper.readData(tableName)
         return data
 """
 sqliteDataEtoro = SqliteDataEtoro ()
