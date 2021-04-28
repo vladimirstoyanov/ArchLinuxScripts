@@ -29,7 +29,8 @@ class StockResearch:
         self.indexStats = 11
         self.sqliteData = SqliteDataEtoro ('stocks.db')
         self.log = Log('stock_research.log')
-        driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default")
+        driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default"
+                            , "Mozilla/5.0 (X11; Linux i686; rv:88.0) Gecko/20100101 Firefox/88.0")
         self.driver = driverObj.getDriver()
         self.markets = Markets(self.driver)
         self.stock = Stock (self.driver)

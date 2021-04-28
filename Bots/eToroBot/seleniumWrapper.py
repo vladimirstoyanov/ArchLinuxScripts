@@ -16,6 +16,9 @@ class SeleniumWrapper:
     def __init__(self, driver):
         self.driver = driver
         self.log = Log("failed_selenum_requests.log")
+        
+    def changeUserAgent (self, profile, userAgentString):
+        profile.set_preference("general.useragent.override", "whatever you want")
 
     def getRequestWaitUntilLocatedElementById (self, url, id):
         try:

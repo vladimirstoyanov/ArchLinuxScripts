@@ -12,5 +12,13 @@ class Driver:
         self.driver = webdriver.Firefox(self.profile)
         self.driver.maximize_window()
         wait = WebDriverWait(self.driver, 10)
+
+    def __init__ (self, profile, userAgent):
+            self.profile = FirefoxProfile(profile)
+            self.profile.set_preference("general.useragent.override", userAgent)
+            self.driver = webdriver.Firefox(self.profile)
+            self.driver.maximize_window()
+            wait = WebDriverWait(self.driver, 10)
+
     def getDriver (self):
         return self.driver
