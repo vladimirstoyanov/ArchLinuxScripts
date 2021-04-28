@@ -38,7 +38,8 @@ class SqliteDataEtoro:
             'p_e_ratio varchar',
             'revenue varchar',
             'EPS varchar',
-            'dividend varchar'
+            'dividend varchar',
+            'ex_dividend_date'
             ]
         self.__createTable('stock_stats', data)
 
@@ -94,7 +95,7 @@ class SqliteDataEtoro:
                                 revenue,
                                 EPS,
                                 dividend,
-                                ex_dividend_date=''):
+                                ex_dividend_date):
         tableName = 'stock_stats'
         if (self.sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
                     data = 'prev_close = "'
@@ -130,11 +131,15 @@ class SqliteDataEtoro:
                     data +=', dividend = "'
                     data +=dividend
                     data +='"'
+                    data +=', ex_dividend_date = "'
+                    data +=ex_dividend_date
+                    data +='"'
+
                     condition = 'stock_id = "' + stock_id
                     condition +='"'
                     self.sqliteWrapper.updateData (tableName, data, condition)
         else:
-                    self.sqliteWrapper.insertData (tableName, [(stock_id, prev_close, market_cap, days_range, week_range_52, average_volume, year_return_1, beta, p_e_ratio, revenue, EPS, dividend)])
+                    self.sqliteWrapper.insertData (tableName, [(stock_id, prev_close, market_cap, days_range, week_range_52, average_volume, year_return_1, beta, p_e_ratio, revenue, EPS, dividend, ex_dividend_date)])
 
 
     def insertDataIntoStockPriceHistory (self, stock_id, value, date):

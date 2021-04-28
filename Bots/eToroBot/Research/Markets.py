@@ -10,23 +10,23 @@ class Markets:
     def __init__(self, driver):
         self.seleniumWrapper = SeleniumWrapper(driver)
         self.stockMarkets = {
-            #'Amsterdam exchange' : 'https://www.etoro.com/discover/markets/stocks/exchange/amsterdam',
-            #'Brussles exchange' : 'https://www.etoro.com/discover/markets/stocks/exchange/brussels',
-            #'Copenhagen exchange' :'https://www.etoro.com/discover/markets/stocks/exchange/copenhagen',
+            'Amsterdam exchange' : 'https://www.etoro.com/discover/markets/stocks/exchange/amsterdam',
+            'Brussles exchange' : 'https://www.etoro.com/discover/markets/stocks/exchange/brussels',
+            'Copenhagen exchange' :'https://www.etoro.com/discover/markets/stocks/exchange/copenhagen',
             'Frankfurt exchage':'https://www.etoro.com/discover/markets/stocks/exchange/frankfurt',
-            #'Helsinki exchage':'https://www.etoro.com/discover/markets/stocks/exchange/helsinki',
-            #'Hongkong exchange':'https://www.etoro.com/discover/markets/stocks/exchange/hongkong',
-            #'Lisabon exchange':'https://www.etoro.com/discover/markets/stocks/exchange/lisbon',
-            #'London exchange':'https://www.etoro.com/discover/markets/stocks/exchange/london',
-            #'Madrid exchage':'https://www.etoro.com/discover/markets/stocks/exchange/bolsademadrid',
-            #'Milano exchage':'https://www.etoro.com/discover/markets/stocks/exchange/borsaitaliana',
-            #'NASDAQ':'https://www.etoro.com/discover/markets/stocks/exchange/nasdaq',
-            #'NYSE':'https://www.etoro.com/discover/markets/stocks/exchange/nyse',
-            #'Oslo exchage':'https://www.etoro.com/discover/markets/stocks/exchange/oslo',
-            #'Paris exchage':'https://www.etoro.com/discover/markets/stocks/exchange/paris',
-            #'Saudi arabia exchange':'https://www.etoro.com/discover/markets/stocks/exchange/tadawul',
-            #'Stockholm exchage':'https://www.etoro.com/discover/markets/stocks/exchange/stockholm',
-            #'Zurich exchange':'https://www.etoro.com/discover/markets/stocks/exchange/zurich'
+            'Helsinki exchage':'https://www.etoro.com/discover/markets/stocks/exchange/helsinki',
+            'Hongkong exchange':'https://www.etoro.com/discover/markets/stocks/exchange/hongkong',
+            'Lisabon exchange':'https://www.etoro.com/discover/markets/stocks/exchange/lisbon',
+            'London exchange':'https://www.etoro.com/discover/markets/stocks/exchange/london',
+            'Madrid exchage':'https://www.etoro.com/discover/markets/stocks/exchange/bolsademadrid',
+            'Milano exchage':'https://www.etoro.com/discover/markets/stocks/exchange/borsaitaliana',
+            'NASDAQ':'https://www.etoro.com/discover/markets/stocks/exchange/nasdaq',
+            'NYSE':'https://www.etoro.com/discover/markets/stocks/exchange/nyse',
+            'Oslo exchage':'https://www.etoro.com/discover/markets/stocks/exchange/oslo',
+            'Paris exchage':'https://www.etoro.com/discover/markets/stocks/exchange/paris',
+            'Saudi arabia exchange':'https://www.etoro.com/discover/markets/stocks/exchange/tadawul',
+            'Stockholm exchage':'https://www.etoro.com/discover/markets/stocks/exchange/stockholm',
+            'Zurich exchange':'https://www.etoro.com/discover/markets/stocks/exchange/zurich'
         }
         self.etfMarkets = {
             'ETF': 'https://www.etoro.com/discover/markets/etf'
