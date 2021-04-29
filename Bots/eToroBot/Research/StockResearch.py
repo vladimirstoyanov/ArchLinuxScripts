@@ -16,6 +16,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from log import Log
 from driver import Driver
 from sqliteData import SqliteDataEtoro
+from seleniumWrapper import SeleniumWrapper
 
 class StockResearch:
     def __init__(self):
@@ -32,6 +33,7 @@ class StockResearch:
         driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default"
                             , "Mozilla/5.0 (X11; Linux i686; rv:88.0) Gecko/20100101 Firefox/88.0")
         self.driver = driverObj.getDriver()
+        self.seleniumWrapper  = SeleniumWrapper(self.driver)
         self.markets = Markets(self.driver)
         self.stock = Stock (self.driver)
 
@@ -43,7 +45,7 @@ class StockResearch:
         self.getDipStocksWithLowPE()
         print ("getStocksWithDividends")
         self.getStocksWithDividends ()
-
+        
     def __handleExit (self):
         self.seleniumWrapper.close()
 

@@ -34,21 +34,21 @@ class YahooFinanceWebScraper:
 
     def __downloadStockData (self, stockId):
             print ("Trying to download stats for stock id: " + stockId)
-            return return self.__downloadData ("https://finance.yahoo.com/quote/" + stockId + "?p=" + stockId,
+            return self.__downloadData ("https://finance.yahoo.com/quote/" + stockId + "?p=" + stockId,
                                                 '#quote-summary')
     #scrapping stock stats, stock description
     def scrappingData (self):
         for i in range (len (self.stocksData)):
-            stockData = self.downloadStockData (self.stocksData[i][self.stockIdIndex])
-            self.recordStatsData(self.stocksData[i][self.stockIdIndex], stockData)
-            descriptionData = self.downloadDescriptionData (self.stocksData[i][self.stockIdIndex])
-            self.recordDescriptionData(self.stocksData[i][self.stockIdIndex], descriptionData)
+            stockData = self.__downloadStockData (self.stocksData[i][self.stockIdIndex])
+            self.__recordStatsData(self.stocksData[i][self.stockIdIndex], stockData)
+            descriptionData = self.__downloadDescriptionData (self.stocksData[i][self.stockIdIndex])
+            self.__recordDescriptionData(self.stocksData[i][self.stockIdIndex], descriptionData)
 
     def scrappingStockData (self):
         for i in range (len (self.stocksData)):
             stockData = self.__downloadStockData (self.stocksData[i][self.stockIdIndex])
             self.__recordStatsData(self.stocksData[i][self.stockIdIndex], stockData)
-            
+
     def __generateStockDataDictionary (self, parsedData):
         dict = {
                 'Previous Close': '',
@@ -101,7 +101,7 @@ class YahooFinanceWebScraper:
         data = ""
         try:
             self.seleniumWrapper.getRequest  (url)
-            descriptionData = self.seleniumWrapper.getTextByCSSSelector(cssSelector)
+            data = self.seleniumWrapper.getTextByCSSSelector(cssSelector)
         except:
             pass
 
@@ -118,7 +118,7 @@ class YahooFinanceWebScraper:
             self.__recordDescriptionData(self.stocksData[i][self.stockIdIndex], descriptionData)
 
     def __recordDescriptionData (self, stockId, description):
-        print (description)
+        print ("Description: " + description)
         self.stocksDataBase.insertDataIntoStockDescription (stockId, "", description)
 
 if __name__ == "__main__":

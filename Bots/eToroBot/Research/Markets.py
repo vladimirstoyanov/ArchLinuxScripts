@@ -70,10 +70,12 @@ class Markets:
 
             try:
                 #click on the next page button
-                self.seleniumWrapper.clickElementByCssSelector('.nav-button-right', 4)
+                element = self.driver.find_element_by_css_selector('.nav-button-right')
             except:
                 print ("End")
                 break
+
+            self.seleniumWrapper.clickElementByCssSelector('.nav-button-right', 4)
 
         return stocks
 
