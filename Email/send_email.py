@@ -60,9 +60,16 @@ class SendEmail:
         msgImage.add_header('Content-ID', '<image1>')
         msgRoot.attach(msgImage)
 
-        context = ssl.create_default_context()
+        server = None
+
         print("Trying to connect to server: " + self.smtpServer)
-        server = smtplib.SMTP_SSL(self.smtpServer, self.port, context )
+        print ("Port: " + str(self.port))
+        if (self.port!=587):
+            context = ssl.create_default_context()
+            server = smtplib.SMTP_SSL(self.smtpServer, self.port, context )
+        if (self.port == 587):
+            server = smtplib.SMTP(self.smtpServer, self.port)
+            server.starttls()
         print("Trying to login with id: " + self.senderEmail)
         server.login(self.senderEmail, self.password)
         server.sendmail(self.senderEmail, self.receiverEmail, msgRoot.as_string())
