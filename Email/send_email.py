@@ -2,27 +2,31 @@ import smtplib, ssl
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.header import Header
 
 class SendEmail:
-    def __init__ (self, port, smtpServer, senderEmail, receiverEmail, password):
+    def __init__ (self, port, smtpServer, senderEmail, receiverEmail, password, name):
         self.port = port
         self.smtpServer = smtpServer
         self.senderEmail = senderEmail
         self.receiverEmail = receiverEmail
         self.password = password
+        self.name = name
 
     def sendEmail (self, subject, bodyText):
         body = bodyText
-        password = self.password
         message = MIMEMultipart()
-        message["From"] = self.senderEmail
+        message["From"] = str(Header(self.name + '<' + self.senderEmail + '>'))
         message["To"] = self.receiverEmail
         message["Subject"] = subject
         message["Bcc"] = self.receiverEmail
         message.attach(MIMEText(body, 'plain'))
 
         context = ssl.create_default_context()
-        server = smtplib.SMTP_SSL(smtp_server, self.port, context )
+        print("Trying to connect to server: " + self.smtpServer)
+        server = smtplib.SMTP_SSL(self.smtpServer, self.port, context )
+        print("Trying to login with id: " + self.senderEmail)
         server.login(self.senderEmail, self.password)
-        server.sendmail(self.SendEmail, self.receiverEmail, message.as_string())
+        server.sendmail(self.senderEmail, self.receiverEmail, message.as_string())
+        print("Email has been sent.")
         server.quit()
