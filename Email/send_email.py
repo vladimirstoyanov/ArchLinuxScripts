@@ -15,6 +15,23 @@ class SendEmail:
         self.password = password
         self.name = name
 
+    def __sendEmail (self, msgRoot):
+        server = None
+        print("Trying to connect to server: " + self.smtpServer)
+        print ("Port: " + str(self.port))
+        if (self.port!=587):
+                context = ssl.create_default_context()
+                server = smtplib.SMTP_SSL(self.smtpServer, self.port, context )
+        if (self.port == 587):
+                print ("Starting ttls...")
+                server = smtplib.SMTP(self.smtpServer, self.port)
+                server.starttls()
+        print("Trying to login with id: " + self.senderEmail)
+        server.login(self.senderEmail, self.password)
+        server.sendmail(self.senderEmail, self.receiverEmail, msgRoot.as_string())
+        print("Email has been sent.")
+        server.quit()
+
     def sendEmail (self, subject, bodyText):
         body = bodyText
         message = MIMEMultipart()
@@ -24,14 +41,7 @@ class SendEmail:
         message["Bcc"] = self.receiverEmail
         message.attach(MIMEText(body, 'plain'))
 
-        context = ssl.create_default_context()
-        print("Trying to connect to server: " + self.smtpServer)
-        server = smtplib.SMTP_SSL(self.smtpServer, self.port, context )
-        print("Trying to login with id: " + self.senderEmail)
-        server.login(self.senderEmail, self.password)
-        server.sendmail(self.senderEmail, self.receiverEmail, message.as_string())
-        print("Email has been sent.")
-        server.quit()
+        self.__sendEmail(message)
 
     def sendEmailWithAttachment (self, subject, bodyText, attachment):
         strFrom = self.senderEmail
@@ -60,18 +70,4 @@ class SendEmail:
         msgImage.add_header('Content-ID', '<image1>')
         msgRoot.attach(msgImage)
 
-        server = None
-
-        print("Trying to connect to server: " + self.smtpServer)
-        print ("Port: " + str(self.port))
-        if (self.port!=587):
-            context = ssl.create_default_context()
-            server = smtplib.SMTP_SSL(self.smtpServer, self.port, context )
-        if (self.port == 587):
-            server = smtplib.SMTP(self.smtpServer, self.port)
-            server.starttls()
-        print("Trying to login with id: " + self.senderEmail)
-        server.login(self.senderEmail, self.password)
-        server.sendmail(self.senderEmail, self.receiverEmail, msgRoot.as_string())
-        print("Email has been sent.")
-        server.quit()
+        self.__sendEmail(msgRoot)
