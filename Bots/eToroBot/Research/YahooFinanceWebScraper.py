@@ -21,16 +21,16 @@ from seleniumWrapper import SeleniumWrapper
 class YahooFinanceWebScraper:
     def __init__ (self):
         atexit.register(self.__handleExit)
-        self.stocksDataBase = SqliteDataEtoro ('stocks.db')
-        self.stocksData = self.stocksDataBase.readData ('all_stocks')
-        self.stockIdIndex = 0
-        self.log = Log('stock_research.log')
+        self.__stocksDataBase = SqliteDataEtoro ('stocks.db')
+        self.__stocksData = self.__stocksDataBase.readData ('all_stocks')
+        self.__stockIdIndex = 0
+        self.__log = Log('stock_research.log')
         driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default")
-        self.driver = driverObj.getDriver()
-        self.seleniumWrapper  = SeleniumWrapper(self.driver)
+        self.__driver = driverObj.getDriver()
+        self.__seleniumWrapper  = SeleniumWrapper(self.__driver)
 
     def __handleExit (self):
-            self.seleniumWrapper.close()
+            self.__seleniumWrapper.close()
 
     def __downloadStockData (self, stockId):
             print ("Trying to download stats for stock id: " + stockId)
@@ -38,16 +38,16 @@ class YahooFinanceWebScraper:
                                                 '#quote-summary')
     #scrapping stock stats, stock description
     def scrappingData (self):
-        for i in range (len (self.stocksData)):
-            stockData = self.__downloadStockData (self.stocksData[i][self.stockIdIndex])
-            self.__recordStatsData(self.stocksData[i][self.stockIdIndex], stockData)
-            descriptionData = self.__downloadDescriptionData (self.stocksData[i][self.stockIdIndex])
-            self.__recordDescriptionData(self.stocksData[i][self.stockIdIndex], descriptionData)
+        for i in range (len (self.__stocksData)):
+            stockData = self.__downloadStockData (self.__stocksData[i][self.__stockIdIndex])
+            self.__recordStatsData(self.__stocksData[i][self.__stockIdIndex], stockData)
+            descriptionData = self.__downloadDescriptionData (self.__stocksData[i][self.__stockIdIndex])
+            self.__recordDescriptionData(self.__stocksData[i][self.__stockIdIndex], descriptionData)
 
     def scrappingStockData (self):
-        for i in range (len (self.stocksData)):
-            stockData = self.__downloadStockData (self.stocksData[i][self.stockIdIndex])
-            self.__recordStatsData(self.stocksData[i][self.stockIdIndex], stockData)
+        for i in range (len (self.__stocksData)):
+            stockData = self.__downloadStockData (self.__stocksData[i][self.__stockIdIndex])
+            self.__recordStatsData(self.__stocksData[i][self.__stockIdIndex], stockData)
 
     def __generateStockDataDictionary (self, parsedData):
         dict = {
@@ -83,7 +83,7 @@ class YahooFinanceWebScraper:
 
     def __recordStatsData (self, stockId, parsedData):
         dict = self.__generateStockDataDictionary(parsedData)
-        self.stocksDataBase.insertDataIntoStockStats (stockId,
+        self.__stocksDataBase.insertDataIntoStockStats (stockId,
                                   dict['Previous Close'],
                                   dict['Market Cap'],
                                   dict['Day\'s Range'],
@@ -100,8 +100,8 @@ class YahooFinanceWebScraper:
     def __downloadData (self, url, cssSelector):
         data = ""
         try:
-            self.seleniumWrapper.getRequest  (url)
-            data = self.seleniumWrapper.getTextByCSSSelector(cssSelector)
+            self.__seleniumWrapper.getRequest  (url)
+            data = self.__seleniumWrapper.getTextByCSSSelector(cssSelector)
         except:
             pass
 
@@ -113,13 +113,13 @@ class YahooFinanceWebScraper:
                                     'p.Mt\(15px\)')
 
     def scrappingDescriptionData (self):
-        for i in range (len (self.stocksData)):
-            descriptionData = self.__downloadDescriptionData (self.stocksData[i][self.stockIdIndex])
-            self.__recordDescriptionData(self.stocksData[i][self.stockIdIndex], descriptionData)
+        for i in range (len (self.__stocksData)):
+            descriptionData = self.__downloadDescriptionData (self.__stocksData[i][self.__stockIdIndex])
+            self.__recordDescriptionData(self.__stocksData[i][self.__stockIdIndex], descriptionData)
 
     def __recordDescriptionData (self, stockId, description):
         print ("Description: " + description)
-        self.stocksDataBase.insertDataIntoStockDescription (stockId, "", description)
+        self.__stocksDataBase.insertDataIntoStockDescription (stockId, "", description)
 
 if __name__ == "__main__":
     yahooFinance = YahooFinanceWebScraper ()

@@ -7,10 +7,10 @@ import time
 
 class WordsFile:
     def __init__ (self, filename):
-        self.filename = filename
+        self.__filename = filename
 
     def readWords(self):
-            f = codecs.open(self.filename, encoding ='utf-8', mode = 'r')
+            f = codecs.open(self.__filename, encoding ='utf-8', mode = 'r')
             listWords = []
             for line in f.readlines ():
                 englishBulgarianWords = line.split (' - ')

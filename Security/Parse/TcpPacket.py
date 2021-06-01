@@ -7,75 +7,75 @@ class ParseTCP:
             packet = packet[0]
 
             #take first 20 characters for the ip header
-            self.ip_header = packet[0:20]
+            self.__ip_header = packet[0:20]
 
-            iph = unpack('!BBHHHBBH4s4s' , self.ip_header)
+            iph = unpack('!BBHHHBBH4s4s' , self.__ip_header)
 
-            self.version_ihl = iph[0]
-            self.version = self.version_ihl >> 4
-            self.ihl = self.version_ihl & 0xF
+            self.__version_ihl = iph[0]
+            self.__version = self.__version_ihl >> 4
+            self.__ihl = self.__version_ihl & 0xF
 
-            self.iph_length = self.ihl * 4
+            self.__iph_length = self.__ihl * 4
 
-            self.ttl = iph[5]
-            self.protocol = iph[6]
-            self.s_addr = socket.inet_ntoa(iph[8]);
-            self.d_addr = socket.inet_ntoa(iph[9]);
+            self.__ttl = iph[5]
+            self.__protocol  = iph[6]
+            self.__s_addr = socket.inet_ntoa(iph[8]);
+            self.__d_addr = socket.inet_ntoa(iph[9]);
 
-            self.tcp_header = packet[self.iph_length:self.iph_length+20]
+            self.__tcp_header = packet[self.__iph_length:self.__iph_length+20]
 
-            tcph = unpack('!HHLLBBHHH' , self.tcp_header)
+            tcph = unpack('!HHLLBBHHH' , self.__tcp_header)
 
-            self.source_port = tcph[0]
-            self.dest_port = tcph[1]
-            self.sequence = tcph[2]
-            self.acknowledgement = tcph[3]
-            self.doff_reserved = tcph[4]
-            self.tcph_length = self.doff_reserved >> 4
+            self.__source_port = tcph[0]
+            self.__dest_port = tcph[1]
+            self.__sequence = tcph[2]
+            self.__acknowledgement = tcph[3]
+            self.__doff_reserved = tcph[4]
+            self.__tcph_length = self.__doff_reserved >> 4
 
-            self.h_size = self.iph_length + self.tcph_length * 4
-            self.data_size = len(packet) - self.h_size
+            self.__h_size= self.__iph_length + self.__tcph_length * 4
+            self.__data_size = len(packet) - self.__h_size
 
-            self.data = packet[self.h_size:]
+            self.__data = packet[self.__h_size:]
 
     def getIpHeader(self):
-        return str(self.ip_header)
+        return str(self.__ip_header)
 
     def getVersion(self):
-        return str(self.version)
+        return str(self.__version)
 
     def getIhl (self): #ToDo: write the full name of Ihl. Check what is getIhl
         return str(self.getIhl)
 
     def getTtl (self):
-        return str(self.ttl)
+        return str(self.__ttl)
 
     def getProtocol (self):
-        return str(self.protocol)
+        return str(self.__protocol )
 
     def getSourceAddress (self):
-        return str(self.s_addr)
+        return str(self.__s_addr)
 
     def getDestinationAddress (self):
-        return str(self.d_addr)
+        return str(self.__d_addr)
 
     def getSourcePort (self):
-        return str(self.source_port)
+        return str(self.__source_port)
 
     def getDestinationPort (self):
-        return str(self.dest_port)
+        return str(self.__dest_port)
 
     def getSequenceNumber (self):
-        return str(self.sequence)
+        return str(self.__sequence)
 
     def getAcknowkedgement (self):
-        return str(self.acknowledgement)
+        return str(self.__acknowledgement)
 
     def getTcpHeaderLength (self):
         return str(self.tcph_length)
 
     def getData(self):
-        return str(self.data)
+        return str(self.__data)
 
     def getHexData(self):
-        return str(self.data).encode('hex')
+        return str(self.__data).encode('hex')

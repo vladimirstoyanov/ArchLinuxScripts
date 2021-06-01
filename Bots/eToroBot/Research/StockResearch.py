@@ -21,23 +21,23 @@ from seleniumWrapper import SeleniumWrapper
 class StockResearch:
     def __init__(self):
         atexit.register(self.__handleExit)
-        self.indexStockId = 0
-        self.indexStockName = 1
-        self.indexSellPrice = 6
-        self.indexBuyPrice = 7
-        self.indexMinPrice = 8
-        self.indexMaxPrice = 9
-        self.indexStats = 11
-        self.sqliteData = SqliteDataEtoro ('stocks.db')
-        self.log = Log('stock_research.log')
+        self.__indexStockId = 0
+        self.__indexStockName = 1
+        self.__indexSellPrice = 6
+        self.__indexBuyPrice = 7
+        self.__indexMinPrice = 8
+        self.__indexMaxPrice = 9
+        self.__indexStats = 11
+        self.__sqliteData = SqliteDataEtoro ('stocks.db')
+        self.__log = Log('stock_research.log')
         driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default"
                             , "Mozilla/5.0 (X11; Linux i686; rv:88.0) Gecko/20100101 Firefox/88.0")
-        self.driver = driverObj.getDriver()
-        self.seleniumWrapper  = SeleniumWrapper(self.driver)
-        self.markets = Markets(self.driver)
-        self.stock = Stock (self.driver)
+        self.__driver = driverObj.getDriver()
+        self.__seleniumWrapper  = SeleniumWrapper(self.__driver)
+        self.__markets = Markets(self.__driver)
+        self.__stock = Stock (self.__driver)
 
-        allStocks = self.markets.getAllMarketsInfo()
+        allStocks = self.__markets.getAllMarketsInfo()
         self.insertDataIntoAllStocks(allStocks)
         print ("getVolatileStocks")
         self.getVolatileStocks ()
@@ -45,18 +45,18 @@ class StockResearch:
         self.getDipStocksWithLowPE()
         print ("getStocksWithDividends")
         self.getStocksWithDividends ()
-        
+
     def __handleExit (self):
-        self.seleniumWrapper.close()
+        self.__seleniumWrapper.close()
 
     def insertDataIntoAllStocks (self, allStocksData):
         for i in range(len(allStocksData)):
-            self.sqliteData.insertDataIntoAllStocks (allStocksData[i][self.indexStockId],
-            allStocksData[i][self.indexStockName],
-            allStocksData[i][self.indexSellPrice],
-            allStocksData[i][self.indexBuyPrice],
-            allStocksData[i][self.indexMinPrice],
-            allStocksData[i][self.indexMaxPrice])
+            self.__sqliteData.insertDataIntoAllStocks (allStocksData[i][self.__indexStockId],
+            allStocksData[i][self.__indexStockName],
+            allStocksData[i][self.__indexSellPrice],
+            allStocksData[i][self.__indexBuyPrice],
+            allStocksData[i][self.__indexMinPrice],
+            allStocksData[i][self.__indexMaxPrice])
 
     def calculateDayRangePercentage (self, minDayPrice, maxDayPrice):
         return ((maxDayPrice-minDayPrice)/maxDayPrice)*100
@@ -84,8 +84,8 @@ class StockResearch:
 
     def getDipStocksWithLowPE (self):
         filename = 'dipStocksWithLowPE.txt'
-        stockStats = self.sqliteData.readData('stock_stats')
-        allStocks = self.sqliteData.readData('all_stocks')
+        stockStats = self.__sqliteData.readData('stock_stats')
+        allStocks = self.__sqliteData.readData('all_stocks')
         self.cleanFile(filename)
         f = open (filename)
         for i in range (len(allStocks)):
@@ -127,8 +127,8 @@ class StockResearch:
 
     def getVolatileStocks (self):
         volatileStocks = 'volatileStocks.txt'
-        stats = self.sqliteData.readData('stock_stats')
-        allStocks = self.sqliteData.readData('all_stocks')
+        stats = self.__sqliteData.readData('stock_stats')
+        allStocks = self.__sqliteData.readData('all_stocks')
         self.cleanFile(volatileStocks)
         for i in range (len(allStocks)):
             for j in range (len(stats)):
@@ -145,7 +145,7 @@ class StockResearch:
                     minDayPrice = float(minMax[0])
                     maxDayPrice = float(minMax[1])
                     dayRangePercentage = self.calculateDayRangePercentage(minDayPrice,maxDayPrice)
-                    self.log.write("Min: " + str(minDayPrice) + ", Max: " + str(maxDayPrice) + ", Range: " + str(dayRangePercentage))
+                    self.__log.write("Min: " + str(minDayPrice) + ", Max: " + str(maxDayPrice) + ", Range: " + str(dayRangePercentage))
                     if (dayRangePercentage >= 5):
                         self.exportStockPlusStats(allStocks[i], stats[j], volatileStocks)
                     break
@@ -157,8 +157,8 @@ class StockResearch:
     def getStocksWithDividends (self):
         dividendsFile = 'dividendStocks.txt'
         self.cleanFile(dividendsFile)
-        stats = self.sqliteData.readData('stock_stats')
-        allStocks = self.sqliteData.readData('all_stocks')
+        stats = self.__sqliteData.readData('stock_stats')
+        allStocks = self.__sqliteData.readData('all_stocks')
         for i in range (len(allStocks)):
             for j in range (len(stats)):
                 if (allStocks[i][0] == stats[j][0]):

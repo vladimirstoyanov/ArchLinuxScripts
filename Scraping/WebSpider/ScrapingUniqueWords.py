@@ -4,11 +4,11 @@ from StorageUniqueData import UniqueData
 
 class StorageData:
     def __init__ (self):
-        self.name = "UniqueWords"
-        self.uniqueData = UniqueData(self.name)
+        self.__name = "UniqueWords"
+        self.__uniqueData = UniqueData(self.__name)
 
     def saveData (self, data):
-        self.uniqueData.saveData(data)
+        self.__uniqueData.saveData(data)
 
 storageData = StorageData ()
 spider = Spider ("https://en.wikipedia.org/wiki/Main_Page", "(\w+)", storageData)

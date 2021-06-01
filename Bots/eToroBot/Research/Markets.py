@@ -8,8 +8,8 @@ from seleniumWrapper import SeleniumWrapper
 
 class Markets:
     def __init__(self, driver):
-        self.seleniumWrapper = SeleniumWrapper(driver)
-        self.stockMarkets = {
+        self.__seleniumWrapper = SeleniumWrapper(driver)
+        self.__stockMarkets = {
             'Amsterdam exchange' : 'https://www.etoro.com/discover/markets/stocks/exchange/amsterdam',
             'Brussles exchange' : 'https://www.etoro.com/discover/markets/stocks/exchange/brussels',
             'Copenhagen exchange' :'https://www.etoro.com/discover/markets/stocks/exchange/copenhagen',
@@ -28,37 +28,37 @@ class Markets:
             'Stockholm exchage':'https://www.etoro.com/discover/markets/stocks/exchange/stockholm',
             'Zurich exchange':'https://www.etoro.com/discover/markets/stocks/exchange/zurich'
         }
-        self.etfMarkets = {
+        self.__etfMarkets = {
             'ETF': 'https://www.etoro.com/discover/markets/etf'
         }
 
-        self.driver = driver
+        self.__driver = driver
 
     def getETFMarkets (self):
-        return self.etfMarkets
+        return self.__etfMarkets
 
     def getStockMarkets (self):
-        return self.stockMarkets
+        return self.__stockMarkets
 
     def getMarketInfo (self, marketName, dictMarkets):
         print ("Tyring to load: " + marketName + ": " + dictMarkets[marketName])
 
-        #self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+        #self.__seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
         #            dictMarkets[marketName],
         #            '.market-list')
-        self.seleniumWrapper.getRequest(dictMarkets[marketName])
+        self.__seleniumWrapper.getRequest(dictMarkets[marketName])
         stocks = []
         while (True):
             #.market-list
-            stocksInfo = self.seleniumWrapper.getTextByCSSSelector('.market-list')
-            #stocksInfo = self.driver.find_element_by_xpath("/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/div")
+            stocksInfo = self.__seleniumWrapper.getTextByCSSSelector('.market-list')
+            #stocksInfo = self.__driver.find_element_by_xpath("/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/div")
             parser = Parser ()
             currentStocks = parser.parseStocksInfo(stocksInfo, marketName)
             for i in range (len(currentStocks)):
                 stocks.append(currentStocks[i])
             try:
-                currentStockCount = self.seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/et-discovery-markets-results-header/div/div[2]/div/div[1]/span[2]/span[1]')
-                maxStockCount = self.seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/et-discovery-markets-results-header/div/div[2]/div/div[1]/span[2]/span[3]')
+                currentStockCount = self.__seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/et-discovery-markets-results-header/div/div[2]/div/div[1]/span[2]/span[1]')
+                maxStockCount = self.__seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/et-discovery-markets-results-header/div/div[2]/div/div[1]/span[2]/span[3]')
                 #check if it is the last page
                 splited = currentStockCount.split('-')
                 if (splited[1] == maxStockCount):
@@ -70,27 +70,27 @@ class Markets:
 
             try:
                 #click on the next page button
-                element = self.driver.find_element_by_css_selector('.nav-button-right')
+                element = self.__driver.find_element_by_css_selector('.nav-button-right')
             except:
                 print ("End")
                 break
 
-            self.seleniumWrapper.clickElementByCssSelector('.nav-button-right', 4)
+            self.__seleniumWrapper.clickElementByCssSelector('.nav-button-right', 4)
 
         return stocks
 
     def getAllMarketsInfo (self):
         stocks = []
-        for key,vlaue in  self.stockMarkets.items():
-            currentStocks = self.getMarketInfo(key, self.stockMarkets)
+        for key,vlaue in  self.__stockMarkets.items():
+            currentStocks = self.getMarketInfo(key, self.__stockMarkets)
             for j in range(len(currentStocks)):
                 stocks.append(currentStocks[j])
         return stocks
 
     def getAllEtfsInfo (self):
         etfs = []
-        for key,vlaue in  self.etfMarkets.items():
-            currentEtfs = self.getMarketInfo(key, self.etfMarkets)
+        for key,vlaue in  self.__etfMarkets.items():
+            currentEtfs = self.getMarketInfo(key, self.__etfMarkets)
             for j in range(len(currentEtfs)):
                 etfs.append(currentEtfs[j])
         return etfs

@@ -8,9 +8,9 @@ from seleniumWrapper import SeleniumWrapper
 
 class Stock:
     def __init__(self, driver):
-        self.log = Log('Stocks.log')
-        self.driver = driver
-        self.seleniumWrapper  = SeleniumWrapper(self.driver)
+        self.__log = Log('Stocks.log')
+        self.__driver = driver
+        self.__seleniumWrapper  = SeleniumWrapper(self.__driver)
 
     def dividendPercentage (self, dividendString):
         fromIndex = dividendString.find ('(')
@@ -65,27 +65,27 @@ class Stock:
         url += stockId
         url += '/stats'
         print ("Trying to download " + url)
-        #self.seleniumWrapper.getRequestWaitUntilLocatedElementByXpath(
+        #self.__seleniumWrapper.getRequestWaitUntilLocatedElementByXpath(
         #                url,
         #                '/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[3]/et-market-stats/et-market-stats-overview/et-card/section/et-card-content/div[1]')
-        self.seleniumWrapper.getRequest(url)
+        self.__seleniumWrapper.getRequest(url)
         stockStatsRaw = ""
         try:
             #ToDo: change to get text by class name or id
-            stockStatsRaw = self.seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[3]/et-market-stats/et-market-stats-overview/et-card/section/et-card-content/div[1]')
+            stockStatsRaw = self.__seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-market/div/div/div/div[3]/et-market-stats/et-market-stats-overview/et-card/section/et-card-content/div[1]')
         except:
-            self.log.write("Can get stats of " + url)
+            self.__log.write("Can get stats of " + url)
         return self.__makeDictionaryByStockStatsRaw(stockStatsRaw)
 
     def getStockPriceHistory (self, stockId):
         print ("getStockPriceHistory")
-        #self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+        #self.__seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
         #                    'https://www.google.bg/search?q=' + stockId + '+stock',
         #                    '.uch-psvg')
-        self.seleniumWrapper.getRequest('https://www.google.bg/search?q=' + stockId + '+stock')
-        self.seleniumWrapper.clickElementByCssSelector('div.dQlDUb:nth-child(8) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)',4)
+        self.__seleniumWrapper.getRequest('https://www.google.bg/search?q=' + stockId + '+stock')
+        self.__seleniumWrapper.clickElementByCssSelector('div.dQlDUb:nth-child(8) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)',4)
 
-        text = self.seleniumWrapper.getTextByCSSSelector('.uch-psvg')
+        text = self.__seleniumWrapper.getTextByCSSSelector('.uch-psvg')
         print (text)
 
         data = []
@@ -96,16 +96,16 @@ class Stock:
 
     def getStockResearchData (self, stockId):
         print ("getStockResearchData")
-        #self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+        #self.__seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
         #                    "https://www.etoro.com/markets/" + stockId + "/research",
         #                    '.ew-content')
-        self.seleniumWrapper.getRequest ( "https://www.etoro.com/markets/" + stockId + "/research")
+        self.__seleniumWrapper.getRequest ( "https://www.etoro.com/markets/" + stockId + "/research")
         ##apt-graph-box > div:nth-child(2)
         #"//form[input/@name ='search']"
         #"//*[div/@class='search']"
-        lowEstimate = self.seleniumWrapper.getTextByCSSSelector('.ew-content')
-        #middleEstimate = self.seleniumWrapper.getTextByClassName('fb-price mb5')
-        #highEstimate = self.seleniumWrapper.getTextByClassName('fb-price mb5 green')
+        lowEstimate = self.__seleniumWrapper.getTextByCSSSelector('.ew-content')
+        #middleEstimate = self.__seleniumWrapper.getTextByClassName('fb-price mb5')
+        #highEstimate = self.__seleniumWrapper.getTextByClassName('fb-price mb5 green')
         print (lowEstimate)
         data = []
         #data.append(lowEstimate)
@@ -116,15 +116,15 @@ class Stock:
 
     def getStockDescription (self, stockId):
         print ("getStockDescription")
-        #self.seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
+        #self.__seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
         #                        "https://www.etoro.com/markets/" + stockId,
         #                        'et-showhide.ng-star-inserted:nth-child(2) > span:nth-child(1) > span:nth-child(3)')
-        self.seleniumWrapper.getRequest ("https://www.etoro.com/markets/" + stockId)
-        self.seleniumWrapper.clickElementByCssSelector('et-showhide.ng-star-inserted:nth-child(2) > span:nth-child(1) > span:nth-child(3)',4)
-        description = self.seleniumWrapper.getTextByCSSSelector('et-showhide.ng-star-inserted:nth-child(2) > span:nth-child(1) > span:nth-child(1)')
+        self.__seleniumWrapper.getRequest ("https://www.etoro.com/markets/" + stockId)
+        self.__seleniumWrapper.clickElementByCssSelector('et-showhide.ng-star-inserted:nth-child(2) > span:nth-child(1) > span:nth-child(3)',4)
+        description = self.__seleniumWrapper.getTextByCSSSelector('et-showhide.ng-star-inserted:nth-child(2) > span:nth-child(1) > span:nth-child(1)')
         print (description)
         print ("=============")
-        exchange = self.seleniumWrapper.getTextByCSSSelector('a.widget-tag:nth-child(1)')
+        exchange = self.__seleniumWrapper.getTextByCSSSelector('a.widget-tag:nth-child(1)')
         print (exchange)
         data = []
         data.append(exchange)

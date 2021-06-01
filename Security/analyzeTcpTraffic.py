@@ -12,9 +12,27 @@ from Parse import TcpPacket
 
 class ConnectionData:
 	def __init__(self):
-		self.ip=""
-		self.port =""
-		self.process_name=""
+		self.__ip=""
+		self.__port =""
+		self.__process_name=""
+
+	def setIp (self, ip):
+		self.__ip = ip
+
+	def setPort (self, port):
+		self.__port = port
+
+	def processName (self, process_name):
+		self.__process_name = process_name
+
+	def getIp (self):
+		return self.__ip
+
+	def getPort (self):
+		return self.__port
+
+	def getProcessName (self):
+		return self.__process_name
 
 def getNetstatCommandOutput():
 		p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -49,9 +67,9 @@ def getDataByIp(ip_address):
 			continue
 
 		connection_data = ConnectionData()
-		connection_data.ip = ip[0]
-		connection_data.port = ip[1]
-		connection_data.process_name = data[6]
+		connection_data.setIp(ip[0])
+		connection_data.setPort(ip[1])
+		connection_data.setProcessName (data[6])
 		return connection_data
 
 	return connection_data
@@ -73,9 +91,9 @@ def getConnectionDataList ():
 		if (ip<2):
 			continue
 		connection_data = ConnectionData()
-		connection_data.ip = ip[0]
-		connection_data.port = ip[1]
-		connection_data.process_name = data[6]
+		connection_data.setIp(ip[0])
+		connection_data.setPort(ip[1])
+		connection_data.setProcessName (data[6])
 		list_ip.append(connection_data)
 
 	return list_ip
@@ -119,28 +137,28 @@ while(True):
 	tcpPacket = TcpPacket.ParseTCP(packet)
 	connection_data = getDataByIp(tcpPacket.getSourceAddress())
 
-	if (connection_data.ip==""):
+	if (connection_data.getIp()==""):
 		continue
 
 	time_ = strftime("Time: %Y-%m-%d %H:%M:%S", gmtime())
 
 	connectionDB_.insertNetworkPackageData(
 		time_,
-		connection_data.ip,
-		connection_data.port,
-		connection_data.process_name,
+		connection_data.getIp(),
+		connection_data.getPort(),
+		connection_data.getProcessName(),
 		tcpPacket.getHexData()
 	)
-	if (connection_data.ip in ip_addresses):
+	if (connection_data.getIp() in ip_addresses):
 		continue
-	ip_addresses.add(connection_data.ip)
-	netName, city, country = getCountryCityOrgName(connection_data.ip)
+	ip_addresses.add(connection_data.getIp())
+	netName, city, country = getCountryCityOrgName(connection_data.getIp())
 
 	print "========================="
 	print time_
-	print "Process: " + connection_data.process_name
-	print "IP, port: " + connection_data.ip + ":" + connection_data.port
+	print "Process: " + connection_data.getProcessName()
+	print "IP, port: " + connection_data.getIp() + ":" + connection_data.getPort()
 	print netName
 	print city
 	print country
-	connectionDB_.insertIPInfo(connection_data.ip, netName, city, country)
+	connectionDB_.insertIPInfo(connection_data.getIp(), netName, city, country)

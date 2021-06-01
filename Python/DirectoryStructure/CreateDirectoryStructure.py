@@ -19,37 +19,37 @@ class CommandLineInput:
 
 class DirectoryStructure:
     def __init__ (self, direcotryName):
-        self.spaceOffset = 5
-        self.directoryName = direcotryName
-        self.directoryStructure = ""
-        self.fileManager = FileManager.FileManager()
-        self.listFiles = self.fileManager.getAllFiles(directoryName, 'py')
-        self.rootDirectory = self.fileManager.getParentDirectory(self.directoryName)
+        self.__spaceOffset = 5
+        self.__directoryName = direcotryName
+        self.__directoryStructure = ""
+        self.__fileManager = FileManager.FileManager()
+        self.__listFiles = self.__fileManager.getAllFiles(directoryName, 'py')
+        self.__rootDirectory = self.__fileManager.getParentDirectory(self.__directoryName)
 
     def __prepare (self):
-        for i in range (len(self.listFiles)):
-                self.listFiles[i].shortDirectoryName = self.rootDirectory + self.fileManager.returnPathAfterDirectory(
-                            self.listFiles[i].fullpath,
-                            self.directoryName)
+        for i in range (len(self.__listFiles)):
+                self.__listFiles[i].shortDirectoryName = self.__rootDirectory + self.__fileManager.returnPathAfterDirectory(
+                            self.__listFiles[i].fullpath,
+                            self.__directoryName)
 
     def __getFullPath (self, listFullPath, index):
-        fullPath = self.directoryName
+        fullPath = self.__directoryName
         for i  in range (1,index+1, 1):
             fullPath += listFullPath[i]
             fullPath += '/'
         return fullPath
 
     def __buildStructure(self, listFullPath, indexFullPath, currentDirectory):
-        if (self.directoryStructure == ""):
-            self.directoryStructure = Directory.Directory()
-            self.directoryStructure.dirname = listFullPath[indexFullPath]
-            self.directoryStructure.fullpath = self.__getFullPath(listFullPath, indexFullPath)
+        if (self.__directoryStructure == ""):
+            self.__directoryStructure = Directory.Directory()
+            self.__directoryStructure.dirname = listFullPath[indexFullPath]
+            self.__directoryStructure.fullpath = self.__getFullPath(listFullPath, indexFullPath)
 
-            self.__buildStructure(listFullPath, indexFullPath+1, self.directoryStructure)
+            self.__buildStructure(listFullPath, indexFullPath+1, self.__directoryStructure)
             return
 
         if (indexFullPath == 0):
-            self.__buildStructure(listFullPath, indexFullPath+1, self.directoryStructure)
+            self.__buildStructure(listFullPath, indexFullPath+1, self.__directoryStructure)
             return
 
         if (indexFullPath == (len(listFullPath) - 1)):
@@ -76,14 +76,14 @@ class DirectoryStructure:
         f.write(spaceOffset + currentDirectory.dirname + '/\n')
         spaceOffset += (' ' * offsetLevel)
         if (spaceOffset == ''):
-            spaceOffset = ' ' * self.spaceOffset
+            spaceOffset = ' ' * self.__spaceOffset
 
         currentDirectory.listFiles.sort()
         for i in range (len(currentDirectory.listFiles)):
             f.write(spaceOffset + currentDirectory.listFiles[i] + '\n')
 
         for i in range (len(currentDirectory.listDirectories)):
-            self.__generateStructureFile(currentDirectory.listDirectories[i], offsetLevel+self.spaceOffset, f)
+            self.__generateStructureFile(currentDirectory.listDirectories[i], offsetLevel+self.__spaceOffset, f)
 
         if (offsetLevel!=0):
             f.write(spaceOffset + '...\n')
@@ -99,24 +99,24 @@ class DirectoryStructure:
 
         #create an empty __init__.py
         if (found==0):
-            self.fileManager.createEmptyFile(currentDirectory.fullpath + initFileName)
+            self.__fileManager.createEmptyFile(currentDirectory.fullpath + initFileName)
             currentDirectory.listFiles.append(initFileName)
 
         for i in range (len(currentDirectory.listDirectories)):
             self.__createInitFiles(currentDirectory.listDirectories[i])
 
     def __createDirectoryStructure (self):
-        f = open(self.directoryName + '__init__.py', 'w')
-        self.__generateStructureFile(self.directoryStructure, 0, f)
+        f = open(self.__directoryName + '__init__.py', 'w')
+        self.__generateStructureFile(self.__directoryStructure, 0, f)
         f.close()
 
     def generate (self):
         self.__prepare()
-        for i in range (len(self.listFiles)):
-                splitedPath = self.fileManager.splitPath(self.listFiles[i].shortDirectoryName)
-                self.__buildStructure(splitedPath, 0, self.directoryStructure)
+        for i in range (len(self.__listFiles)):
+                splitedPath = self.__fileManager.splitPath(self.__listFiles[i].shortDirectoryName)
+                self.__buildStructure(splitedPath, 0, self.__directoryStructure)
 
-        self.__createInitFiles(self.directoryStructure)
+        self.__createInitFiles(self.__directoryStructure)
         self.__createDirectoryStructure ()
 
 

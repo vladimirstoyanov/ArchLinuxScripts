@@ -2,29 +2,29 @@ from os import path
 
 class Data:
     def __init__ (self, outputFilename):
-        self.outputFilename = "output" + outputFilename
-        self.data = []
+        self.__outputFilename = "output" + outputFilename
+        self.__data = []
         self.loadData()
 
     def loadData (self):
-        if (path.exists(self.outputFilename) == 0):
+        if (path.exists(self.__outputFilename) == 0):
             return
 
-        f = open (self.outputFilename, 'r')
+        f = open (self.__outputFilename, 'r')
 
         for string in f.readlines():
             string = string.replace('\n', '')
             string = string.replace('\r', '')
-            self.data.append (string)
+            self.__data.append (string)
 
 
     def saveData (self, data):
-            f = open (self.outputFilename, 'a')
+            f = open (self.__outputFilename, 'a')
 
             for i in range (len (data)):
                 f.write(data[i] + '\n')
-                self.data.append(data[i])
+                self.__data.append(data[i])
             f.close()
 
     def getData (self):
-            return self.data
+            return self.__data

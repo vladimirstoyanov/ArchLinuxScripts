@@ -27,11 +27,11 @@ class ShellCommand:
 
 class ConnectedIPAddresses:
     def __init__ (self, processName):
-        self.processName = processName
-        self.shellCommand = ShellCommand ()
+        self.__processName = processName
+        self.__shellCommand = ShellCommand ()
 
     def __getPIDByProcessName (self):
-        commandOutput = self.shellCommand.getOutputOfCommand ('ps -aux | grep ' + self.processName)
+        commandOutput = self.__shellCommand.getOutputOfCommand ('ps -aux | grep ' + self.__processName)
         return self.__getListOfCommand(commandOutput, 1)
 
     def __getListOfCommand (self, commandOutput, index):
@@ -50,7 +50,7 @@ class ConnectedIPAddresses:
         result = []
         processPIDs = self.__getPIDByProcessName ()
         for i in range (len(processPIDs)):
-            commandOutput = self.shellCommand.getOutputOfCommand('netstat -tnp | grep ' + processPIDs[i])
+            commandOutput = self.__shellCommand.getOutputOfCommand('netstat -tnp | grep ' + processPIDs[i])
             ipAddresses = self.__getListOfCommand (commandOutput, 4)
             for j in range (len (ipAddresses)):
                 result.append(ipAddresses[j])
@@ -64,27 +64,27 @@ class ConnectedIPAddresses:
 
 class Wireshark:
     def __init__ (self, ipAddresses, networkInterface):
-        self.ipAddresses = ipAddresses
-        self.shellCommand = ShellCommand ()
-        self.networkInterface = networkInterface
+        self.__ipAddresses = ipAddresses
+        self.__shellCommand = ShellCommand ()
+        self.__networkInterface = networkInterface
 
     def __getFilter (self):
         filter = "("
-        for i in range (len(self.ipAddresses)):
+        for i in range (len(self.__ipAddresses)):
             if (i==0):
-                filter += "ip.dst==" + self.ipAddresses[i]
+                filter += "ip.dst==" + self.__ipAddresses[i]
             else:
-                filter += " or ip.dst==" + self.ipAddresses[i]
+                filter += " or ip.dst==" + self.__ipAddresses[i]
         filter +=')'
         return filter
 
     def open (self):
-        if (len(self.ipAddresses) == 0):
+        if (len(self.__ipAddresses) == 0):
                 print ("The process is not connected to any IP address.")
                 return
         filter = self.__getFilter ()
         print ("Use this filter: " + filter)
-        os.system ('sudo wireshark -i ' +self.networkInterface + ' -k')
+        os.system ('sudo wireshark -i ' +self.__networkInterface + ' -k')
 
 commandLineInput = CommandLineInput ()
 commandLineInput.checkInput()

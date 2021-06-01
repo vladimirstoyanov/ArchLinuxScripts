@@ -21,11 +21,11 @@ class Web:
 
 class StorageURLs:
     def __init__ (self, name):
-        self.urlStorageFilename = "urls" + name
-        self.unusedUrlsFilename = "unused_urls" + name
+        self.__urlStorageFilename = "urls" + name
+        self.__unusedUrlsFilename = "unused_urls" + name
 
     def addUnusedUls (self, unusedUrls):
-        f = open (self.unusedUrlsFilename, 'w')
+        f = open (self.__unusedUrlsFilename, 'w')
 
         for i in range (len(unusedUrls)):
             f.write (unusedUrls[i] + '\n')
@@ -33,15 +33,15 @@ class StorageURLs:
         f.close()
 
     def add (self, url):
-        f = open (self.urlStorageFilename, 'a')
+        f = open (self.__urlStorageFilename, 'a')
         f.write (url + '\n')
         f.close()
 
     def loadUsedURLs (self):
-        if (path.exists(self.urlStorageFilename) == 0):
+        if (path.exists(self.__urlStorageFilename) == 0):
             return set() #return an empty Set object
 
-        f = open (self.urlStorageFilename, 'r')
+        f = open (self.__urlStorageFilename, 'r')
         setStructure = set()
         for string in f.readlines ():
             string = string.replace('\n','')
@@ -51,10 +51,10 @@ class StorageURLs:
         return setStructure
 
     def loadUnusedURLs (self):
-        if (path.exists(self.unusedUrlsFilename) == 0):
+        if (path.exists(self.__unusedUrlsFilename) == 0):
             return [] #return an empty Set object
 
-        f = open (self.unusedUrlsFilename, 'r')
+        f = open (self.__unusedUrlsFilename, 'r')
 
         unused = []
         for string in f.readlines ():
@@ -67,44 +67,44 @@ class StorageURLs:
 
 class Storage:
     def __init__ (self, subscriberClass):
-        self.storageURLsObj = StorageURLs (subscriberClass.name)
-        self.ramURLs = self.storageURLsObj.loadUsedURLs()
-        self.ramQueue = self.storageURLsObj.loadUnusedURLs ()
-        self.subscribedClass = subscriberClass
+        self.__storageURLsObj = StorageURLs (subscriberClass.name)
+        self.__ramURLs = self.__storageURLsObj.loadUsedURLs()
+        self.__ramQueue = self.__storageURLsObj.loadUnusedURLs ()
+        self.__subscribedClass = subscriberClass
 
     def addList (self, listElements):
         for i in range (len(listElements)):
             self.add(listElements[i])
-        self.storageURLsObj.addUnusedUls (self.ramQueue)
+        self.__storageURLsObj.addUnusedUls (self.__ramQueue)
 
     def add (self, element):
         if (element == ""):
             return
 
-        if element in self.ramURLs:
+        if element in self.__ramURLs:
             return
 
-        self.ramURLs.add (element)
-        self.ramQueue.append(element)
-        self.storageURLsObj.add (element)
+        self.__ramURLs.add (element)
+        self.__ramQueue.append(element)
+        self.__storageURLsObj.add (element)
 
     def nextURL (self):
         if (self.isEmpty ()):
             return ""
-        return self.ramQueue.pop(0)
+        return self.__ramQueue.pop(0)
 
     def isEmpty (self):
-        return len(self.ramQueue) == 0
+        return len(self.__ramQueue) == 0
 
     def saveData (self, data):
-        self.subscribedClass.saveData(data)
+        self.__subscribedClass.saveData(data)
 
 class Parser:
     def __init__ (self, pattern):
-        self.pattern = pattern
+        self.__pattern = pattern
 
     def parse (self, htmlSource):
-        return re.findall(self.pattern, htmlSource)
+        return re.findall(self.__pattern, htmlSource)
 
     def getURLs (self, url, htmlSource):
         soup = BeautifulSoup(htmlSource)
@@ -123,18 +123,18 @@ class Parser:
 
 class Spider:
     def __init__ (self, url, pattern, subscriberClass):
-        self.url = url
-        self.storage = Storage(subscriberClass)
-        self.storage.add (url)
-        self.web = Web()
-        self.parser = Parser (pattern)
+        self.__url = url
+        self.__storage = Storage(subscriberClass)
+        self.__storage.add (url)
+        self.__web = Web()
+        self.__parser = Parser (pattern)
 
     def runSpider (self):
-        while (self.storage.isEmpty() == False):
-            url = self.storage.nextURL ()
+        while (self.__storage.isEmpty() == False):
+            url = self.__storage.nextURL ()
             print ("===Trying to download: " + url)
-            htmlSource = self.web.download(url)
-            parsedData = self.parser.parse(htmlSource)
-            self.storage.saveData(parsedData)
-            listUrls = self.parser.getURLs (url, htmlSource)
-            self.storage.addList(listUrls)
+            htmlSource = self.__web.download(url)
+            parsedData = self.__parser.parse(htmlSource)
+            self.__storage.saveData(parsedData)
+            listUrls = self.__parser.getURLs (url, htmlSource)
+            self.__storage.addList(listUrls)

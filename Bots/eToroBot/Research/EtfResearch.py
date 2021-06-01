@@ -25,40 +25,40 @@ from sqliteData import SqliteDataEtoro
 class EtfResearch:
     def __init__(self):
         atexit.register(self.handleExit)
-        self.indexStockId = 0
-        self.indexStockName = 1
-        self.indexSellPrice = 6
-        self.indexBuyPrice = 7
-        self.indexMinPrice = 8
-        self.indexMaxPrice = 9
-        self.sqliteData = SqliteDataEtoro ('etfs.db')
-        self.log = Log('etf_research.log')
+        self.__indexStockId = 0
+        self.__indexStockName = 1
+        self.__indexSellPrice = 6
+        self.__indexBuyPrice = 7
+        self.__indexMinPrice = 8
+        self.__indexMaxPrice = 9
+        self.__sqliteData = SqliteDataEtoro ('etfs.db')
+        self.__log = Log('etf_research.log')
         driverObj = Driver ("/home/scitickart/.mozilla/firefox/w05kja2g.default")
-        self.driver = driverObj.getDriver()
-        self.markets = Markets(self.driver)
-        self.stock = Stock (self.driver)
+        self.__driver = driverObj.getDriver()
+        self.__markets = Markets(self.__driver)
+        self.__stock = Stock (self.__driver)
 
-        self.allEtfs = self.markets.getAllEtfsInfo()
+        self.__allEtfs = self.__markets.getAllEtfsInfo()
         self.recordDataDB()
 
     def handleExit (self):
-        self.seleniumWrapper.close()
+        self.__seleniumWrapper.close()
 
     def insertDataIntoStockDescription (self, stockId, descriptionData):
-        self.sqliteData.insertDataIntoStockDescription (stockId, descriptionData[0], descriptionData[1])
+        self.__sqliteData.insertDataIntoStockDescription (stockId, descriptionData[0], descriptionData[1])
 
     def insertDataIntoStockPriceHistory (self, stockId, historyData):
         for i in range (len (historyData)):
-            self.sqliteData.insertDataIntoStockPriceHistory (stockId, historyData[i][0], historyData[i][1])
+            self.__sqliteData.insertDataIntoStockPriceHistory (stockId, historyData[i][0], historyData[i][1])
 
     def insertDataIntoStockResearch (self,stockId,researchData):
-        self.sqliteData.insertDataIntoStockResearch (stock_id,
+        self.__sqliteData.insertDataIntoStockResearch (stock_id,
          researchData[0],
          researchData[1],
          researchData[2])
 
     def insertDataIntoStockStats (self,stockId, stockStats):
-        self.sqliteData.insertDataIntoStockStats (stockId,
+        self.__sqliteData.insertDataIntoStockStats (stockId,
              stockStats['Prev Close'],
              stockStats['Market Cap'],
              stockStats['Day\'s Range'],
@@ -73,18 +73,18 @@ class EtfResearch:
 
     def insertDataIntoAllStocks (self, allStocksData):
         for i in range(len(allStocksData)):
-            self.sqliteData.insertDataIntoAllStocks (allStocksData[i][self.indexStockId],
-            allStocksData[i][self.indexStockName],
-            allStocksData[i][self.indexSellPrice],
-            allStocksData[i][self.indexBuyPrice],
-            allStocksData[i][self.indexMinPrice],
-            allStocksData[i][self.indexMaxPrice])
+            self.__sqliteData.insertDataIntoAllStocks (allStocksData[i][self.__indexStockId],
+            allStocksData[i][self.__indexStockName],
+            allStocksData[i][self.__indexSellPrice],
+            allStocksData[i][self.__indexBuyPrice],
+            allStocksData[i][self.__indexMinPrice],
+            allStocksData[i][self.__indexMaxPrice])
 
     def recordDataDB (self):
-        self.insertDataIntoAllStocks (self.allEtfs)
-        for i in range (len(self.allEtfs)):
-            data = self.stock.getStockDescription (self.allEtfs[i][self.indexStockId])
-            self.insertDataIntoStockDescription(self.allEtfs[i][self.indexStockId], data)
+        self.insertDataIntoAllStocks (self.__allEtfs)
+        for i in range (len(self.__allEtfs)):
+            data = self.__stock.getStockDescription (self.__allEtfs[i][self.__indexStockId])
+            self.insertDataIntoStockDescription(self.__allEtfs[i][self.__indexStockId], data)
 
 
 etfResearch = EtfResearch()

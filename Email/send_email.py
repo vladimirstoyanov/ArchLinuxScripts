@@ -8,48 +8,48 @@ from email.mime.image import MIMEImage
 
 class SendEmail:
     def __init__ (self, port, smtpServer, senderEmail, receiverEmail, password, name):
-        self.port = port
-        self.smtpServer = smtpServer
-        self.senderEmail = senderEmail
-        self.receiverEmail = receiverEmail
-        self.password = password
-        self.name = name
+        self.__port = port
+        self.__smtpServer = smtpServer
+        self.__senderEmail = senderEmail
+        self.__receiverEmail = receiverEmail
+        self.__password = password
+        self.__name = name
 
     def __sendEmail (self, msgRoot):
         server = None
-        print("Trying to connect to server: " + self.smtpServer)
-        print ("Port: " + str(self.port))
-        if (self.port!=587):
+        print("Trying to connect to server: " + self.__smtpServer)
+        print ("Port: " + str(self.__port))
+        if (self.__port!=587):
                 context = ssl.create_default_context()
-                server = smtplib.SMTP_SSL(self.smtpServer, self.port, context )
-        if (self.port == 587):
+                server = smtplib.SMTP_SSL(self.__smtpServer, self.__port, context )
+        if (self.__port == 587):
                 print ("Starting ttls...")
-                server = smtplib.SMTP(self.smtpServer, self.port)
+                server = smtplib.SMTP(self.__smtpServer, self.__port)
                 server.starttls()
-        print("Trying to login with id: " + self.senderEmail)
-        server.login(self.senderEmail, self.password)
-        server.sendmail(self.senderEmail, self.receiverEmail, msgRoot.as_string())
+        print("Trying to login with id: " + self.__senderEmail)
+        server.login(self.__senderEmail, self.__password)
+        server.sendmail(self.__senderEmail, self.__receiverEmail, msgRoot.as_string())
         print("Email has been sent.")
         server.quit()
 
     def sendEmail (self, subject, bodyText):
         body = bodyText
         message = MIMEMultipart()
-        message["From"] = str(Header(self.name + '<' + self.senderEmail + '>'))
-        message["To"] = self.receiverEmail
+        message["From"] = str(Header(self.__name + '<' + self.__senderEmail + '>'))
+        message["To"] = self.__receiverEmail
         message["Subject"] = subject
-        message["Bcc"] = self.receiverEmail
+        message["Bcc"] = self.__receiverEmail
         message.attach(MIMEText(body, 'plain'))
 
         self.__sendEmail(message)
 
     def sendEmailWithAttachment (self, subject, bodyText, attachment):
-        strFrom = self.senderEmail
-        strTo = self.receiverEmail
+        strFrom = self.__senderEmail
+        strTo = self.__receiverEmail
 
         msgRoot = MIMEMultipart('related')
         msgRoot['Subject'] = subject
-        msgRoot['From'] = str(Header(self.name + '<' + self.senderEmail + '>'))
+        msgRoot['From'] = str(Header(self.__name + '<' + self.__senderEmail + '>'))
         msgRoot['To'] = strTo
 
         msgRoot.preamble = '====================================================='

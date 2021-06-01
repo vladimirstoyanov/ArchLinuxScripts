@@ -8,15 +8,15 @@ from sqliteWrapper import SQLiteWrapper
 
 class SqliteDataEtoro:
     def __init__ (self, dbName):
-        self.sqliteWrapper = SQLiteWrapper (dbName)
-        self.log = Log ('sqlite.log')
+        self.__sqliteWrapper = SQLiteWrapper (dbName)
+        self.__log = Log ('sqlite.log')
         self.createTables()
 
     def __createTable (self, tableName, data):
         try:
-            self.sqliteWrapper.createTable (tableName, data)
+            self.__sqliteWrapper.createTable (tableName, data)
         except:
-            self.log.write("Can\'t create \'" + tableName +"\'. Table exist.")
+            self.__log.write("Can\'t create \'" + tableName +"\'. Table exist.")
 
     def createTables (self):
         data = [
@@ -70,7 +70,7 @@ class SqliteDataEtoro:
 
     def insertDataIntoStockDescription (self, stock_id, exchange, description):
         tableName = 'stock_description'
-        if (self.sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
+        if (self.__sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
             data = 'exchange = "' + exchange
             data += '"'
             data +=', description = "'
@@ -78,9 +78,9 @@ class SqliteDataEtoro:
             data +='"'
             condition = 'stock_id = "' + stock_id
             condition +='"'
-            self.sqliteWrapper.updateData (tableName, data, condition)
+            self.__sqliteWrapper.updateData (tableName, data, condition)
         else:
-            self.sqliteWrapper.insertData (tableName, [(stock_id, exchange, description)])
+            self.__sqliteWrapper.insertData (tableName, [(stock_id, exchange, description)])
 
     def insertDataIntoStockStats (self,
                                 stock_id,
@@ -97,7 +97,7 @@ class SqliteDataEtoro:
                                 dividend,
                                 ex_dividend_date):
         tableName = 'stock_stats'
-        if (self.sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
+        if (self.__sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
                     data = 'prev_close = "'
                     data +=prev_close
                     data +='"'
@@ -137,18 +137,18 @@ class SqliteDataEtoro:
 
                     condition = 'stock_id = "' + stock_id
                     condition +='"'
-                    self.sqliteWrapper.updateData (tableName, data, condition)
+                    self.__sqliteWrapper.updateData (tableName, data, condition)
         else:
-                    self.sqliteWrapper.insertData (tableName, [(stock_id, prev_close, market_cap, days_range, week_range_52, average_volume, year_return_1, beta, p_e_ratio, revenue, EPS, dividend, ex_dividend_date)])
+                    self.__sqliteWrapper.insertData (tableName, [(stock_id, prev_close, market_cap, days_range, week_range_52, average_volume, year_return_1, beta, p_e_ratio, revenue, EPS, dividend, ex_dividend_date)])
 
 
     def insertDataIntoStockPriceHistory (self, stock_id, value, date):
         tableName = 'stock_price_history'
-        self.sqliteWrapper.insertData (tableName, [(stock_id, value, date)])
+        self.__sqliteWrapper.insertData (tableName, [(stock_id, value, date)])
 
     def insertDataIntoStockResearch (self, stock_id, low_estimate, average_price_target, high_estimate):
         tableName = 'stock_research'
-        if (self.sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
+        if (self.__sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
             data ='low_estimate = "'
             data +=low_estimate
             data +='"'
@@ -160,13 +160,13 @@ class SqliteDataEtoro:
             data +='"'
             condition = 'stock_id = "' + stock_id
             condition +='"'
-            self.sqliteWrapper.updateData (tableName, data, condition)
+            self.__sqliteWrapper.updateData (tableName, data, condition)
         else:
-            self.sqliteWrapper.insertData (tableName, [(stock_id, low_estimate, average_price_target, high_estimate)])
+            self.__sqliteWrapper.insertData (tableName, [(stock_id, low_estimate, average_price_target, high_estimate)])
 
     def insertDataIntoAllStocks (self, stock_id, stock_name, sell_price, buy_price, min_price, max_price):
         tableName = 'all_stocks'
-        if (self.sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
+        if (self.__sqliteWrapper.isDataExist(tableName, 'stock_id', stock_id)):
             data ='stock_name = "'
             data +=stock_name
             data +='"'
@@ -184,12 +184,12 @@ class SqliteDataEtoro:
             data +='"'
             condition = 'stock_id = "' + stock_id
             condition +='"'
-            self.sqliteWrapper.updateData (tableName, data, condition)
+            self.__sqliteWrapper.updateData (tableName, data, condition)
         else:
-            self.sqliteWrapper.insertData (tableName, [(stock_id, stock_name, sell_price, buy_price, min_price, max_price)])
+            self.__sqliteWrapper.insertData (tableName, [(stock_id, stock_name, sell_price, buy_price, min_price, max_price)])
 
     def readData (self, tableName):
-        data = self.sqliteWrapper.readData(tableName)
+        data = self.__sqliteWrapper.readData(tableName)
         return data
 """
 sqliteDataEtoro = SqliteDataEtoro ()
