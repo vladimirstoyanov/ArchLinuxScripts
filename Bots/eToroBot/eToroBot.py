@@ -28,6 +28,9 @@ class Config ():
             self.__configData.append(lData)
         f.close()
 
+    def getConfigData (self):
+        return self.__configData
+
 class EToroBot:
     def __init__ (self):
         atexit.register(self.__handleExit)
@@ -38,7 +41,7 @@ class EToroBot:
         self.loadEToro()
         self.monitorStocks()
 
-    def handleExit (self):
+    def __handleExit (self):
         self.__seleniumWrapper.close()
 
     def loadEToro(self):
@@ -139,7 +142,7 @@ class EToroBot:
                 continue
 
             self.__config.readConfig()
-            configData = self.__config.configData
+            configData = self.__config.getConfigData()
 
             stocksInfo = self.__driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
 

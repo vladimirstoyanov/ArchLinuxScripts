@@ -16,7 +16,6 @@ class CommandLineInput:
             print ("1 arg: directory name")
             sys.exit()
 
-
 class DirectoryStructure:
     def __init__ (self, direcotryName):
         self.__spaceOffset = 5
