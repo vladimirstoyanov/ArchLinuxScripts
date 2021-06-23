@@ -4940,3 +4940,4 @@ JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 718: Typ
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 1622634963497	geckodriver	INFO	Listening on 127.0.0.1:37023
+1623155771339	geckodriver	INFO	Listening on 127.0.0.1:43347
