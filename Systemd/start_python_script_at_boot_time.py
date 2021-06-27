@@ -2,9 +2,6 @@ import os
 import sys
 import time
 
-#1 - name
-#2 - full path to the binary
-#3 - description
 path_to_service_files = '/usr/lib/systemd/system/'
 def check_input ():
     if (len (sys.argv)!=4):
@@ -18,9 +15,9 @@ def generate_service_file ():
     f = open (sys.argv[1] + '.service', 'w')
     f.write('[Unit]\n')
     f.write('Description=' + sys.argv[3] + '\n')
-    f.write('After=network.target\n\n')
+    f.write('After=multi-user.target\n\n')
     f.write('[Service]\n')
-    f.write('Type=simple\n')
+    f.write('Type=idle\n')
     f.write ('ExecStart=/usr/bin/python '+sys.argv[2] + '\n\n')
     f.write ('[Install]\n')
     f.write('WantedBy=multi-user.target\n')

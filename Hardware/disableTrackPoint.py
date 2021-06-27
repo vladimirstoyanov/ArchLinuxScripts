@@ -1,8 +1,10 @@
 import os
 
-os.system("xinput list > list.txt")
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
-f = open ("list.txt", "r")
+os.system("xinput list > " + dir_path + "/list.txt")
+
+f = open (dir_path + "/list.txt", "r")
 
 for str1 in f.readlines():
 	if (-1 != str1.find('TrackPoint')):
@@ -13,4 +15,4 @@ for str1 in f.readlines():
 		os.system ('xinput --disable ' + l_split_id[1])
 f.close()
 
-os.system('rm list.txt')
+#os.system('rm ' + dir_path + '/list.txt')
