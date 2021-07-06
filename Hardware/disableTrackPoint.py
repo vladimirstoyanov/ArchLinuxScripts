@@ -15,4 +15,4 @@ for str1 in f.readlines():
 		os.system ('xinput --disable ' + l_split_id[1])
 f.close()
 
-#os.system('rm ' + dir_path + '/list.txt')
+os.system('rm ' + dir_path + '/list.txt')

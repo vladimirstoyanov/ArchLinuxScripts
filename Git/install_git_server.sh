@@ -15,21 +15,21 @@ echo 'Installing openssh...'
 sleep 1
 sudo pacman -S openssh
 
-echo 'Enabling sshd..."
+echo "Enabling sshd..."
 sudo systemctl enable sshd
 
-echo 'Starting OpenSSH server...'
+echo "Starting OpenSSH server..."
 sleep 1
 sudo systemctl start sshd
 
-echo 'Checking whether OpenSSH server is running...'
+echo "Checking whether OpenSSH server is running..."
 sleep 1
 sudo systemctl status sshd
 
-echo 'Seting-up a password-less ssh login...'
+echo "Seting-up a password-less ssh login..."
 sleep 1
 ssh-keygen -t rsa
 
-echo 'Coping keys to the server...'
+echo "Coping keys to the server..."
 sleep 1
 cat ~/.ssh/id_rsa.pub | ssh $1@127.0.0.1 "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
