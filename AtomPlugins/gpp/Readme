@@ -1,0 +1,10 @@
+- Added .C file extensions:
+  if (fileExt !== '.cc' && fileExt !== '.cpp' && fileExt !== '.cc') {
+    atom.notifications.addError('Wrong extension ' + fileExt + '<br> Only .cc, .cpp, and .C file extensions are allowed');
+    return 0;
+  }
+- Added '--hold' argument to not close Konsole after execution:
+      case 'Konsole':
+        terminalCommand = 'konsole';
+        args = ['--hold', '-e'];
+        break;
