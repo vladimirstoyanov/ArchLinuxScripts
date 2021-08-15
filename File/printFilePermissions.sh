@@ -6,5 +6,4 @@ then
   exit 1
 fi
 
-pacman -Qi $1 | grep "Depends on"
-pacman -Qi $1 | grep "Required By"
+stat --format '%a' $1
