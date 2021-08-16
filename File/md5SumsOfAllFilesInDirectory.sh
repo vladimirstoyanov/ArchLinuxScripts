@@ -1,9 +1,11 @@
 #!/bin/sh
+
 if [ $# -ne 1 ]
 then
   echo "Wrong input! please use the following input: "
-	echo "1 arg - package name"
+        echo "arg1 - path to directory"
   exit 1
 fi
 
-stat --format '%a' $1
+cd $1
+find -type f -exec md5sum '{}' \; > md5sum.txt
