@@ -64,4 +64,9 @@ sleep 1
 #sh Plasma/install_widget.sh Plasma/PlasmaWidgets/curriences_rates/
 #sleep 1
 
+echo "Adding the arch linux scripts path as global variable..."
+ALS_PATH='ARCH_LINUX_SCRIPTS_PATH'=$(pwd)
+sudo $ALS_PATH>>/etc/environment
+
+
 sudo systemctl reboot
