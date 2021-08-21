@@ -45,3 +45,4 @@ cmake
 time
 trace_cmd
 strace
+kernelshark
