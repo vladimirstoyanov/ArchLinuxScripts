@@ -8,4 +8,4 @@ then
 fi
 
 
-strace -p $1
+strace -r -p $1

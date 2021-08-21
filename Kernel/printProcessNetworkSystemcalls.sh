@@ -8,4 +8,4 @@ then
 fi
 
 
-strace -e trace=network,read,write -p $1
+strace -r -e trace=network,read,write -p $1
