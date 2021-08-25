@@ -5,5 +5,5 @@ cd build
 cmake ..             # Generate native build scripts for GoogleTest.
 make
 sudo make install
-cd ../,,/
+cd ../../
 rm -rf googletest
