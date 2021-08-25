@@ -6,7 +6,7 @@ tui enable #
 
 start #start debugging
 
-layout asm #you can see asm code
+layout asm #you can see an asm source code
 
-layout src #tou can see the source code (for example c++ source code)
+layout src #you can see the source code of the binay (for example c++ source code)
 
