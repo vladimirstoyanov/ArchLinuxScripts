@@ -1,0 +1,1737 @@
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+File /tmp/currencies.txt cannot be oppened.
+[0, 0, 0, 0], status: error
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+File /tmp/currencies.txt cannot be oppened.
+[0, 0, 0, 0], status: error
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 0.0 result: error
+TRY: 0.0 result: error
+GBP: 0.0 result: error
+EUR: 0.0 result: error
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[0.0, 0.0, 0.0, 0.0], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+File /tmp/currencies.txt cannot be oppened.
+[0, 0, 0, 0], status: error
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 0.0 result: error
+TRY: 0.0 result: error
+GBP: 0.0 result: error
+EUR: 0.0 result: error
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[0.0, 0.0, 0.0, 0.0], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+File /tmp/currencies.txt cannot be oppened.
+[0, 0, 0, 0], status: error
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 0.0 result: error
+TRY: 0.0 result: error
+GBP: 0.0 result: error
+EUR: 0.0 result: error
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[0.0, 0.0, 0.0, 0.0], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok
+/home/scitickart/gitHub/ArchLinuxScripts
+/home/scitickart/gitHub/ArchLinuxScripts/Plasma/PlasmaWidgets/curriences_rates
+[1.6452, 0.19239, 2.2446, 1.949], status: ok
+USD: 1.6452 result: ok
+TRY: 0.19239 result: ok
+GBP: 2.2446 result: ok
+EUR: 1.949 result: ok

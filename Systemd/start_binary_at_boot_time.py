@@ -18,7 +18,7 @@ def generate_service_file ():
     f = open (sys.argv[1] + '.service', 'w')
     f.write('[Unit]\n')
     f.write('Description=' + sys.argv[3] + '\n')
-    f.write('After=network.target\n\n')
+    f.write('After=multi-user.target\n\n')
     f.write('[Service]\n')
     f.write('Type=simple\n')
     f.write ('ExecStart='+sys.argv[2] + '\n\n')

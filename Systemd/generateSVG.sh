@@ -8,3 +8,4 @@ fi
 
 
 systemd-analyze plot > $1
+chromium $1
