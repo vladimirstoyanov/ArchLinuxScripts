@@ -29,7 +29,7 @@ class DownloadFiles:
             line = line.replace('\n', ' ')
             line = line.replace('\r', ' ')
             os.system ("adb pull " + line + " " + sys.argv[2])
-            os.system ("adb shell rm " + line) #remove all pictures
+            #os.system ("adb shell rm " + line) #remove the file after download it
             os.system ("adb shell sync")
 
         f.close()
