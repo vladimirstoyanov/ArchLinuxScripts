@@ -1,1 +1,2 @@
 - Enable USB debugging option to see your device with "adb devices" command;
+- /storage/sdcard0/DCIM/Camera path to pictures
