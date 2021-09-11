@@ -8,9 +8,9 @@ filename = '/tmp/currencies.txt'
 port = 465  # For SSL
 smtp_server = "smtp.abv.bg"
 sender_email = "vlado_stoianov1988@abv.bg"  # Enter your address
-receiver_email = "firojjsci@gmail.com"  # Enter receiver address
+receiver_email = "vlado_stoyanovi@yahoo.com"  # Enter receiver address
 password = ""
-password_path = '/home/scitickart/abv_pass'
+password_path = '/home/vladimir/abv_pass'
 
 sell_if_usd=1.95
 sell_if_eur=2.2
@@ -24,14 +24,14 @@ def set_the_password ():
     result = result.replace ('\r','')
     f.close()
     return result
-        
+
 def send_an_email (body_text):
     body = body_text
     password = set_the_password()
     message = MIMEMultipart()
     message["From"] = sender_email
     message["To"] = receiver_email
-    message["Subject"] = "The currency has changed: " 
+    message["Subject"] = "The currency has changed: "
     message["Bcc"] = receiver_email
     message.attach(MIMEText(body, 'plain'))
 
@@ -57,20 +57,20 @@ def read_previous_results ():
            l_result.append(float(l1[1]))
     f.close()
     return l_result, "ok"
-            
-    
+
+
 def download_web_page ():
     #get the information from https://www.ccbank.bg/bg/valutni-kursove
     return urllib2.urlopen("https://www.ccbank.bg/bg/valutni-kursove").read()
 
 #code - USD for example. Check all codes here: https://www.ccbank.bg/bg/valutni-kursove; content - the source code of https://www.ccbank.bg/bg/valutni-kursove
 def get_currency_by_code (code, content):
-    #search for first <td>USD</td> <td>USD</td> <td>1.00</td> <td>1.7902</td> #serch for third <td> after <td>USD</td> 
-    
+    #search for first <td>USD</td> <td>USD</td> <td>1.00</td> <td>1.7902</td> #serch for third <td> after <td>USD</td>
+
     index = content.find ('<td>' + code + '</td>')
     if (index == -1):
         return 0.0, "error"
-    
+
     index+=len('<td>' + code + '</td>')
     #find next third <td>
     for i in range(2):
@@ -78,30 +78,30 @@ def get_currency_by_code (code, content):
         if (index_tmp == -1):
             return 0.0, "error"
         index= index_tmp + len('<td>')
-    
+
     end_index = content.find('</td>', index, len(content))
     if (end_index == -1):
         return 0.0, "error"
-    
+
     amount = content[index:end_index]
-    
+
     for i in range(2):
         index_tmp = content.find('<td>', index, len(content))
         if (index_tmp == -1):
             return 0.0, "error"
         index= index_tmp + len('<td>')
-    
+
     end_index = content.find('</td>', index, len(content))
     if (end_index == -1):
         return 0.0, "error"
-    
+
     currency_value = content[index:end_index]
     result = 0
     try:
        result = float(currency_value)/float(amount)
     except:
         return 0.0, "error"
-    
+
     return result, "ok"
 
 content = download_web_page()
@@ -112,7 +112,7 @@ gbp, result_gbp = get_currency_by_code('GBP', content)
 eur, result_eur = get_currency_by_code('EUR', content)
 
 l_previous_results, status = read_previous_results ()
-print str(l_previous_results) + ", status: " + status 
+print str(l_previous_results) + ", status: " + status
 
 f = open('/tmp/currencies.txt', 'w')
 f.write ('USD: ' + str(usd) + ' result: ' + result_usd + '\n')
