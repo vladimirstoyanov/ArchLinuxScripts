@@ -9,3 +9,4 @@ fi
 
 useradd -m $1
 passwd $1
+chmod 755 /home/$1

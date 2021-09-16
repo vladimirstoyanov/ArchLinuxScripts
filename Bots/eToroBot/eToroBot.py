@@ -35,7 +35,7 @@ class EToroBot:
     def __init__ (self):
         atexit.register(self.__handleExit)
         self.__log = Log('eToroLog.log')
-        driverObj = Driver("/home/vladimir/.mozilla/firefox/w05kja2g.default")
+        driverObj = Driver("/home/vladimir/.mozilla/firefox/w05kja2g.default", "Mozilla/5.0 (platform; rv:92.0) Gecko/geckotrail Firefox/92.0")
         self.__driver = driverObj.getDriver()
         self.__seleniumWrapper = SeleniumWrapper(self.__driver)
         self.loadEToro()
@@ -45,15 +45,9 @@ class EToroBot:
         self.__seleniumWrapper.close()
 
     def loadEToro(self):
-        #self.__seleniumWrapper.getRequestWaitUntilLocatedElementByXpath (
-        #    'https://www.etoro.com/watchlists/4e42a954-1ce2-4938-87b3-4c9adad0608b',
-        #    '/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
         self.__seleniumWrapper.getRequest('https://www.etoro.com')
 
     def loadStockPage (self, stockIndex):
-        #self.__seleniumWrapper.getRequestWaitUntilLocatedElementByCssSelector (
-        #            'https://www.etoro.com/markets/' + stockIndex + '/chart',
-        #            '.i-stock-chart-info')
         self.__seleniumWrapper.getRequest('https://www.etoro.com/markets/' + stockIndex + '/chart')
 
     def buyStock (self, price, stockIndex):
