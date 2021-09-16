@@ -11,7 +11,7 @@ then
   exit 1
 fi
 
-cd $2
+sh removeLogs.sh
 
 echo "git add --all"
 git add --all
