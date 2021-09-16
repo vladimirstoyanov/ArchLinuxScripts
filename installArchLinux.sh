@@ -29,12 +29,13 @@ mkinitcpio -P
 echo "Enter root password"
 passwd
 
+cd /home
+git clone https://github.com/vladimirstoyanov/ArchLinuxScripts.git
+cd ArchLinuxScripts
+
 echo "Creating a user $3"
 sh ./Users/add_sudo_user.sh $3
 
 sh install.sh
 sh config.sh
-
-echo "System will reboot after 5 seconds"
-sleep 5
-sudo systemctl reboot
+exit
