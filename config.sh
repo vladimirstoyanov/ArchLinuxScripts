@@ -28,23 +28,20 @@ sleep 1
 #sudo cp Resources/logo250x250.svg /usr/share/icons/breeze/preferences/32/plasma.svg
 #sleep 1
 
-echo "Changing the keyboard layout and global shortcuts..."
-sudo cp ~/.config/kglobalshortcutsrc ~/.config/kglobalshortcutsrc_back
-sudo cp ~/.config/kxkbrc ~/.config/kxkbrc_back
-sudo cp Resources/kglobalshortcutsrc ~/.config/
-sudo cp Resources/kxkbrc ~/.config/
-sleep 1
+#echo "Changing the keyboard layout and global shortcuts..."
+#sudo cp ~/.config/kglobalshortcutsrc ~/.config/kglobalshortcutsrc_back
+#sudo cp ~/.config/kxkbrc ~/.config/kxkbrc_back
+#sudo cp Resources/kglobalshortcutsrc ~/.config/
+#sudo cp Resources/kxkbrc ~/.config/
+#sleep 1
 
 #echo "Configuring iptables..."
 #sudo sh Firewall/iptables.sh
 #sudo systemctl enable iptables.service
 #sleep 1
 
-sh ./Plasma/PlasmaWidgets/InstallWidgets.sh
+#sh ./Plasma/PlasmaWidgets/InstallWidgets.sh
 
 echo "Adding the arch linux scripts path as a global variable..."
 ALS_PATH='ARCH_LINUX_SCRIPTS_PATH'=$(pwd)
-sudo $ALS_PATH>>/etc/environment
-
-
-sudo systemctl reboot
+sudo echo "$ALS_PATH">>/etc/environment

@@ -15,5 +15,3 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
     echo "Installing: $line"
     pip install $line
 done < "Package/pip_packages"
-
-sh config.sh

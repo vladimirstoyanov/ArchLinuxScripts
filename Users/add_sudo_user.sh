@@ -8,6 +8,7 @@ then
 fi
 
 mkdir /home/$1
+chmod 755 /home/$1
 useradd -m /home/$1
 passwd $1
 
@@ -15,6 +16,6 @@ passwd $1
 pacman -S sudo
 
 echo 'Adding $1 ALL=(ALL) ALL in /etc/sudoers'
-sed '/root ALL=(ALL) ALL/a $1 ALL=(ALL) ALL' /etc/sudoers 
+sed '/root ALL=(ALL) ALL/a $1 ALL=(ALL) ALL' /etc/sudoers
 
 echo '$1 ALL=(ALL) ALL'
