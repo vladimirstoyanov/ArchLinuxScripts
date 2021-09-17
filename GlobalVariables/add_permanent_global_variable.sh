@@ -7,4 +7,4 @@ then
   exit 1
 fi
 
-pwd >> /etc/environment
+echo "$1" >> /etc/environment
