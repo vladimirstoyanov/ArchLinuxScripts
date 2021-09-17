@@ -29,6 +29,8 @@ mkinitcpio -P
 echo "Enter root password"
 passwd
 
+pacman -S --noconfirm git
+
 cd /home
 git clone https://github.com/vladimirstoyanov/ArchLinuxScripts.git
 cd ArchLinuxScripts
