@@ -15,7 +15,10 @@ passwd $1
 #ToDo check if sudo package is installed
 pacman -S sudo
 
-echo 'Adding $1 ALL=(ALL) ALL in /etc/sudoers'
-sed '/root ALL=(ALL) ALL/a $1 ALL=(ALL) ALL' /etc/sudoers
-
-echo '$1 ALL=(ALL) ALL'
+echo "Adding $1 ALL=(ALL) ALL in /etc/sudoers"
+chmod +w /etc/sudoers
+VAR='/root ALL=(ALL) ALL/a '
+VAR2="$1 ALL=(ALL) ALL"
+sed -i "$VAR$VAR2" /etc/sudoers
+chmod -w /etc/sudoers
+echo "$1 ALL=(ALL) ALL"
