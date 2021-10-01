@@ -1,0 +1,26 @@
+<item>
+<question>What is shared_lock?</question>
+<answer>2</answer>
+<option1>It's like a plain mutex</option1>
+<option2>Allows for shared ownership of mutexes. Several threads can hold std::shared_locks on a std::shared_mutex.</option2>
+<option3>It's the same like lock_guard.</option3>
+<option4>It dosn't share the ownership of mutex</option4>
+</item>
+
+<item>
+<question>What the difference between lock_guard and unique_lock?</question>
+<answer>4</answer>
+<option1>They are the same.</option1>
+<option2>unique_lock will be locked only once on construction and unlocked on destruction.</option2>
+<option3>std::lock_guard will have lock, unlock mechanism</option3>
+<option4>You can lock and unlock a std::unique_lock. std::lock_guard will be locked only once on construction and unlocked on destruction.</option4>
+</item>
+
+<item>
+<question>What is std::try_lock?</question>
+<answer>3</answer>
+<option1>It locks the resource</option1>
+<option2>It try to lock the resouce</option2>
+<option3>It returns true if lock the resource, otherwise it returns false</option3>
+<option4>It notify the owner that is trying to lock the resource</option4>
+</item>
