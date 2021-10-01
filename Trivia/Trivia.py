@@ -30,7 +30,6 @@ class Trivia:
         self.total = len(self.listItems)
 
     def parseItem (self, item):
-        #remove item tag
         question = re.search(r'<question>(.*?)<\/question>', item).group(1)
         answer = re.search(r'<answer>(.*?)<\/answer>', item).group(1)
         option1 = re.search(r'<option1>(.*?)<\/option1>', item).group(1)
@@ -52,6 +51,7 @@ class Trivia:
                 self.parseItem (item_tag)
                 item_tag = ""
                 continue
+
             if (line.find ('<item>')!=-1):
                 begin_item = True
 
@@ -80,4 +80,4 @@ listRandomIndexes = random.sample(range(0,triva.total), triva.total)
 for i in range (len(listRandomIndexes)):
     triva.askQuestion(listRandomIndexes[i])
 
-print ("Your score: " + str((triva.correct_answers/triva.total*100.0) + "%"))
+print ("Your score: " + str((triva.correct_answers/triva.total*100.0)) + "%")
