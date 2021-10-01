@@ -38,12 +38,6 @@ class Trivia:
         option3 = re.search(r'<option3>(.*?)<\/option3>', item).group(1)
         option4 = re.search(r'<option4>(.*?)<\/option4>', item).group(1)
 
-        #print ("Question:" + question)
-        #print ("answer:" + answer)
-        #print ("option1:" + option1)
-        #print ("option2:" + option2)
-        #print ("option3:" + option3)
-        #print ("option4:" + option4)
         item = Item(question, answer, option1, option2, option3, option4)
         self.listItems.append(item)
 
