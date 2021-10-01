@@ -1,12 +1,12 @@
 """
-Fomrat:
+Format:
 <item>
 <question>a question</question>
-<answer>the answer</answer>
-<option1> option 1 </option1>
-<option2> option 2 </option2>
-<option3> option 3 </option3>
-<option4> option 4 </option4>
+<answer>the answer of the question</answer>
+<option1> a possible answer </option1>
+<option2> a possible answer </option2>
+<option3> a possible answer </option3>
+<option4> a possible answer </option4>
 </item>
 """
 import random
