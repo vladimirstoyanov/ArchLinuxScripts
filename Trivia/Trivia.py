@@ -27,6 +27,7 @@ class Trivia:
         self.listItems = []
         self.correct_answers = 0
         self.readQuestions()
+        self.current_question = 1
         self.total = len(self.listItems)
 
     def parseItem (self, item):
@@ -59,7 +60,7 @@ class Trivia:
                 item_tag+=line
 
     def askQuestion (self, index):
-        print (self.listItems[index].question)
+        print (str(self.current_question) + ". " + self.listItems[index].question)
         print ("1) " + self.listItems[index].option1)
         print ("2) " + self.listItems[index].option2)
         print ("3) " + self.listItems[index].option3)
@@ -71,11 +72,13 @@ class Trivia:
             self.correct_answers+=1
         else:
             print ("Not correct! The correct answer is " + self.listItems[index].answer)
+        self.current_question+=1
 
 
 triva = Trivia ()
 
 listRandomIndexes = random.sample(range(0,triva.total), triva.total)
+print ("Total questions: " + str(len(listRandomIndexes)))
 
 for i in range (len(listRandomIndexes)):
     triva.askQuestion(listRandomIndexes[i])
