@@ -5,21 +5,18 @@ Format:
 <answer>the answer of the question</answer>
 <option1> a possible answer </option1>
 <option2> a possible answer </option2>
-<option3> a possible answer </option3>
-<option4> a possible answer </option4>
+....
+<optionN> a possible answer </optionN>
 </item>
 """
 import random
 import re
 
 class Item:
-    def __init__ (self, question, answer, option1, option2, option3, option4):
+    def __init__ (self, question, answer, possibleAnswers):
         self.question = question
         self.answer = answer
-        self.option1 = option1
-        self.option2 = option2
-        self.option3 = option3
-        self.option4 = option4
+        self.possibleAnswers = possibleAnswers
 
 
 class Trivia:
@@ -33,12 +30,17 @@ class Trivia:
     def parseItem (self, item):
         question = re.search(r'<question>(.*?)<\/question>', item).group(1)
         answer = re.search(r'<answer>(.*?)<\/answer>', item).group(1)
-        option1 = re.search(r'<option1>(.*?)<\/option1>', item).group(1)
-        option2 = re.search(r'<option2>(.*?)<\/option2>', item).group(1)
-        option3 = re.search(r'<option3>(.*?)<\/option3>', item).group(1)
-        option4 = re.search(r'<option4>(.*?)<\/option4>', item).group(1)
+        possibleAnswersCount = 1
+        possibleAnswers = []
+        while (True):
+            try:
+                possibleAnswer = re.search(r'<option' + str(possibleAnswersCount) + '>(.*?)<\/option' +str(possibleAnswersCount) + '>', item).group(1)
+                possibleAnswersCount+=1
+                possibleAnswers.append(possibleAnswer)
+            except:
+                break
 
-        item = Item(question, answer, option1, option2, option3, option4)
+        item = Item(question, answer, possibleAnswers)
         self.listItems.append(item)
 
     def readQuestions (self):
@@ -61,10 +63,9 @@ class Trivia:
 
     def askQuestion (self, index):
         print (str(self.current_question) + ". " + self.listItems[index].question)
-        print ("1) " + self.listItems[index].option1)
-        print ("2) " + self.listItems[index].option2)
-        print ("3) " + self.listItems[index].option3)
-        print ("4) " + self.listItems[index].option4)
+
+        for i in range (len(self.listItems[index].possibleAnswers)):
+            print (str((i+1)) + ") " + self.listItems[index].possibleAnswers[i])
 
         val = input("Your answer: ")
         if (val == self.listItems[index].answer):
