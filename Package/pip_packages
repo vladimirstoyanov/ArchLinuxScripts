@@ -11,3 +11,4 @@ selenium
 SpeechRecognition
 pyaudio
 bs4
+pynput
