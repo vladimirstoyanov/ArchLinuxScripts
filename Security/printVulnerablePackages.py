@@ -1,12 +1,15 @@
 #ToDo: add history of vulnerable packages and all installed packages
 from Package import package
+import warnings
+
+warnings.filterwarnings("ignore")
 
 package_ = package.Package()
 list_vulnerable_packages = package_.getVulnerablePackagesList()
 list_local_packages = package_.getLocalPackagesList()
 
 f = open('/tmp/vulnerablePackages.txt', 'w')
-print_string = 'vulnerable packages:' 
+print_string = 'vulnerable packages:'
 f.write(print_string + '\n')
 print (print_string)
 
