@@ -5,29 +5,31 @@ import time
 class CurrenyPrice:
     def __init__ (self):
         self.dates = []
-        self.readDates('dates.txt')
+        self.__readDates('dates.txt')
 
+    def exportPrices (self):
+        print (len(self.dates))
         for i in range (len (self.dates)):
             day = self.dates[i][0]
             month = self.dates[i][1]
             year =  self.dates[i][2]
             url = 'https://www.bnb.bg/Statistics/StExternalSector/StExchangeRates/StERForeignCurrencies/index.htm?downloadOper=&group1=first&firstDays=' + day + '&firstMonths=' + month + '&firstYear=' + year + '&search=true&showChart=false&showChartButton=false'
-            source = self.downloadWebPage (url)
-            price = self.getPrice ('USD', source)
-            self.exportPrice(day,month,year, price)
+            source = self.__downloadWebPage (url)
+            price = self.__getPrice ('USD', source)
+            self.__exportPrice(day,month,year, price)
             time.sleep(2)
 
 
-    def downloadWebPage (self, url):
+    def __downloadWebPage (self, url):
         return urllib2.urlopen(url).read()
 
-    def exportPrice (self, day, month, year, price):
+    def __exportPrice (self, day, month, year, price):
         fileExport = open ('result.txt', 'a')
         print ("Exporting: " + str(day) + '.' + str(month) + '.' + str(year) + '\t' + str(price) + '\n')
         fileExport.write (str(day) + '.' + str(month) + '.' + str(year) + '\t' + str(price) + '\n')
         fileExport.close()
 
-    def getPrice (self, currency, httpData):
+    def __getPrice (self, currency, httpData):
         splitString = '<td class="center">' + currency + '</td>'
 
         splited = httpData.split(splitString)
@@ -40,7 +42,7 @@ class CurrenyPrice:
         return splited[1][:index]
 
 
-    def readDates (self, filename):
+    def __readDates (self, filename):
         fileDates = open (filename, 'r')
         for line in fileDates.readlines():
             line = line.replace ('\n', '')
@@ -53,10 +55,7 @@ class CurrenyPrice:
         fileDates.close()
 
 
-currencyPrice = CurrenyPrice ()
-
-#day =0
-#month = 0
-#year = 0
-#currency = "USD"
-#link = 'https://www.bnb.bg/Statistics/StExternalSector/StExchangeRates/StERForeignCurrencies/index.htm?downloadOper=&group1=first&firstDays=' + day + '&firstMonths=' + month + '&firstYear=' + year + '&search=true&showChart=false&showChartButton=false'
+if __name__ == "__main__":
+    print ("main")
+    currencyPrice = CurrenyPrice ()
+    currencyPrice.exportPrices ()
