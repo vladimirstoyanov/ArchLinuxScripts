@@ -1,5 +1,6 @@
 from pynput.keyboard import Key, Controller
 import time
+
 keyboard = Controller()
 keys = ['a', 'w', 's', 'd']
 i = 0
