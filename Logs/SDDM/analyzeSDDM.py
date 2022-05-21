@@ -1,1 +1,1 @@
-#SDDM log: ~/.local/share/sddm/xorg-session.log
+nano  ~/.local/share/sddm/xorg-session.log

@@ -42,6 +42,6 @@ sleep 1
 
 #sh ./Plasma/PlasmaWidgets/InstallWidgets.sh
 
-echo "Adding the arch linux scripts path as a global variable..."
-ALS_PATH='ARCH_LINUX_SCRIPTS_PATH'=$(pwd)
-sudo echo "$ALS_PATH">>/etc/environment
+#echo "Adding the arch linux scripts path as a global variable..."
+#ALS_PATH='ARCH_LINUX_SCRIPTS_PATH'=$(pwd)
+#sudo echo "$ALS_PATH">>/etc/environment
