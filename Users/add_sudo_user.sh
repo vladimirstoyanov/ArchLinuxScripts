@@ -9,7 +9,7 @@ fi
 
 mkdir /home/$1
 chmod 755 /home/$1
-useradd -m /home/$1
+useradd -m $1x
 passwd $1
 
 #ToDo check if sudo package is installed
