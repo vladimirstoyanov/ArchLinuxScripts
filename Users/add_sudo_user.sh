@@ -9,8 +9,9 @@ fi
 
 mkdir /home/$1
 chmod 755 /home/$1
-useradd -m $1x
+useradd -m $1
 passwd $1
+chown $1 /home/$1
 
 #ToDo check if sudo package is installed
 pacman -S sudo
