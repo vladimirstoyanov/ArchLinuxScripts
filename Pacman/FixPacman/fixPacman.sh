@@ -7,4 +7,5 @@ sudo pacman-key --refresh-keys
 sudo pacman -Sc
 
 rm -R /var/lib/pacman/sync
-pacman -Syu
+sudo pacman -Syy archlinux-keyring
+sudo pacman -Syyu
