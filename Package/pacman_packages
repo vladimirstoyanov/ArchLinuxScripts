@@ -47,3 +47,4 @@ trace_cmd
 strace
 kernelshark
 asp
+nano
