@@ -36,7 +36,7 @@ class MountPartitionFstab:
             sys.exit()
         print ("UUID: " + uuid)
 
-        fstabString = "UUID=" + uuid + '\t' + self.mountDirectory + "\t\text4\t\trw,realtime\t0 0"
+        fstabString = "UUID=" + uuid + '\t' + self.mountDirectory + "\t\text4\t\trw,relatime\t0 2"
 
         print ("Adding " + fstabString)
         os.system ("echo \"" + fstabString + "\" >> /etc/fstab")
