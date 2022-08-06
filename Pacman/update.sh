@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #update the system
-sudo pacman -Suy
+sudo pacman -Suy >> output.txt
 
 #print vulnerable packages
 echo "Vulnerable packages: "

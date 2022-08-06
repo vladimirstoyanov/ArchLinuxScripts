@@ -16,9 +16,11 @@ class DownloadFiles:
     def __init__ (self):
         commandLineInput = CommandLineInput()
         self.createListOfFiles()
+        print ("Files has been created...")
         self.downloadFiles()
 
     def createListOfFiles (self):
+	#/storage/self/primary/DCIM/Camera
         os.system ("sudo adb shell find ./storage/self/primary/ -iname '*." + sys.argv[1] +"' > files.txt")
 
 
@@ -28,6 +30,7 @@ class DownloadFiles:
         for line in f.readlines():
             line = line.replace('\n', ' ')
             line = line.replace('\r', ' ')
+            print ("Trying to download " + line)
             os.system ("adb pull " + line + " " + sys.argv[2])
             #os.system ("adb shell rm " + line) #remove the file after download it
             os.system ("adb shell sync")
