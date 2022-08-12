@@ -9,8 +9,8 @@ path_to_service_files = '/usr/lib/systemd/system/'
 def check_input ():
     if (len (sys.argv)!=4):
         print ("Wrong input:")
-        print ("1 arg: name")
-        print ("2 arg: full path to the binary")
+        print ("1 arg: name of the systemd service (e.g. someservice)")
+        print ("2 arg: full path to the binary (e.g. /home/user/someexe.exe)")
         print ("3 arg: description")
         sys.exit()
 
