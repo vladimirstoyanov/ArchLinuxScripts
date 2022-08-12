@@ -22,7 +22,7 @@ def generate_service_file ():
     f.write('[Service]\n')
     f.write('User=root\n')
     f.write('Group=root\n')
-    f.write('Type=simple\n')
+    f.write('Type=forking\n')
     f.write ('ExecStart='+sys.argv[2] + '\n\n')
     f.write ('[Install]\n')
     f.write('WantedBy=multi-user.target\n')
