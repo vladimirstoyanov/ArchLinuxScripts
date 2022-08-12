@@ -8,3 +8,9 @@ rm Bots/eToroBot/Research/geckodriver.log
 rm Bots/eToroBot/Research/sqlite.log
 rm Bots/eToroBot/Research/stock_research.log
 rm Bots/eToroBot/Research/Stocks.log
+
+#remove systemd *.svg files 
+cd Systemd/
+rm *.svg
+cd ..
+
