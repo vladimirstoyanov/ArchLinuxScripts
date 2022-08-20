@@ -13,7 +13,7 @@
 int main(void)
 {
 
-        /* Our process ID and Session ID */
+        /* Our process and Session ID */
         pid_t pid, sid;
 
         /* Fork off the parent process */
