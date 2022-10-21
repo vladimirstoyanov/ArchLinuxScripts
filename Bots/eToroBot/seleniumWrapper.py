@@ -54,64 +54,64 @@ class SeleniumWrapper:
 
     def clickElementByXpath (self,xpath, timeout):
         try:
-            stockElement = self.__driver.find_element_by_xpath(xpath)
+            stockElement = self.__driver.find_element("xpath", xpath)
             stockElement.click()
             time.sleep(timeout)
         except:
-            self.__log.write("Failed to execute find_element_by_xpath(" + xpath + ")")
+            self.__log.write("Failed to execute find_element('xpath', " + xpath + ")")
 
     def clickElementById (self, id, timeout):
         try:
-            element = self.__driver.find_element_by_id(id)
+            element = self.__driver.find_element("id",id)
             element.click()
             time.sleep(timeout)
         except:
-            self.__log.write("Failed to execute find_element_by_id(" + id + ")")
+            self.__log.write("Failed to execute find_element('id', " + id + ")")
 
     def clickElementByCssSelector (self, cssSelector, timeout):
         try:
-            element = self.__driver.find_element_by_css_selector(cssSelector)
+            element = self.__driver.find_element("css selector", cssSelector)
             element.click()
             time.sleep(timeout)
         except:
-            self.__log.write("Failed to execute find_element_by_css_selector(" + cssSelector + ")")
+            self.__log.write("Failed to execute find_element('css selector', " + cssSelector + ")")
 
 
     def clickElementByClassName (self, className, timeout):
         try:
-            element = self.__driver.find_element_by_class_name(className)
+            element = self.__driver.find_element("class name", className)
             element.click()
             time.sleep(timeout)
         except:
-            self.__log.write("Failed to execute find_element_by_class_name(" + className + ")")
+            self.__log.write("Failed to execute find_element('class name', " + className + ")")
 
 
     def getTextByXpath (self, xpath):
-        element = self.__driver.find_element_by_xpath(xpath)
+        element = self.__driver.find_element(xpath)
         return element.text
 
     def getTextByCSSSelector (self, cssSelector):
-        element = self.__driver.find_element_by_css_selector(cssSelector)
+        element = self.__driver.find_element("css selector",cssSelector)
         return element.text
 
     def getTextByClassName (self, className):
-        element = self.__driver.find_element_by_class_name(className)
+        element = self.__driver.find_element("class name", className)
         return element.text
 
     def setTextFieldByXpath(self, xpath, value):
         try:
-            stockElement = self.__driver.find_element_by_xpath(xpath)
+            stockElement = self.__driver.find_element("xpath", xpath)
             stockElement.send_keys(Keys.CONTROL + "a");
             stockElement.send_keys(Keys.DELETE);
             stockElement.send_keys(value)
         except:
-            self.__log.write("Failed to execute find_element_by_xpath(" + xpath + ")")
+            self.__log.write("Failed to execute find_element('xpath', " + xpath + ")")
 
     def setTextFieldByCSSSelector(self, cssSelector, value):
         try:
-            stockElement = self.__driver.find_element_by_css_selector(cssSelector)
+            stockElement = self.__driver.find_element("css selector",cssSelector)
             stockElement.send_keys(Keys.CONTROL + "a");
             stockElement.send_keys(Keys.DELETE);
             stockElement.send_keys(value)
         except:
-            self.__log.write("Failed to execute find_element_by_css_selector(" + cssSelector + ")")
+            self.__log.write("Failed to execute find_element('css selector', " + cssSelector + ")")
