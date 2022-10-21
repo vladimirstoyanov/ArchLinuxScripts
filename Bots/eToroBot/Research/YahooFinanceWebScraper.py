@@ -14,7 +14,7 @@ from selenium.webdriver.firefox.webdriver import FirefoxProfile
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from log import Log
-from driver import Driver
+from driverFirefox import Driver
 from sqliteData import SqliteDataEtoro
 from seleniumWrapper import SeleniumWrapper
 

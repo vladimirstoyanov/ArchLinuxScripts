@@ -10,7 +10,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.webdriver import FirefoxProfile
 from datetime import datetime
 sys.path.insert(1, '../../Selenium/')
-from driver import Driver
+from driverFirefox import Driver
 from log import Log
 from seleniumWrapper import SeleniumWrapper
 

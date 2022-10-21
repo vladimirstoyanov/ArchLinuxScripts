@@ -5,7 +5,7 @@ from parserEtoro import Parser
 sys.path.insert(1, '../../../Selenium/')
 from seleniumWrapper import SeleniumWrapper
 from log import Log
-from driver import Driver
+from driverFirefox import Driver
 
 class Markets:
     def __init__(self, driver):
