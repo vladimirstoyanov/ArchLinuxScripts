@@ -1,9 +1,11 @@
 import os
 import sys
-from log import Log
+
 
 sys.path.insert(1, '../../../Security/DB/')
+sys.path.insert(1, '../../Selenium/')
 from sqliteWrapper import SQLiteWrapper
+from log import Log
 
 
 class SqliteDataEtoro:

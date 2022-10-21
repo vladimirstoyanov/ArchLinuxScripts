@@ -1,9 +1,10 @@
 import os, sys
 import time
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from parserEtoro import Parser
+sys.path.insert(1, '../../../Selenium/')
 from log import Log
 from driver import Driver
-from parserEtoro import Parser
 from seleniumWrapper import SeleniumWrapper
 
 class Stock:

@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from selenium.webdriver.firefox.webdriver import FirefoxProfile
 from datetime import datetime
+sys.path.insert(1, '../../Selenium/')
 from driver import Driver
 from log import Log
 from seleniumWrapper import SeleniumWrapper
@@ -35,7 +36,7 @@ class EToroBot:
     def __init__ (self):
         atexit.register(self.__handleExit)
         self.__log = Log('eToroLog.log')
-        driverObj = Driver("/home/vladimir/.mozilla/firefox/w05kja2g.default", "Mozilla/5.0 (platform; rv:92.0) Gecko/geckotrail Firefox/92.0")
+        driverObj = Driver("/home/vladimir/.mozilla/firefox/q54e1nbe.default-release", "Mozilla/5.0 (platform; rv:92.0) Gecko/geckotrail Firefox/92.0")
         self.__driver = driverObj.getDriver()
         self.__seleniumWrapper = SeleniumWrapper(self.__driver)
         self.loadEToro()

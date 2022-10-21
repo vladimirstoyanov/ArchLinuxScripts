@@ -13,9 +13,10 @@ import os, sys
 from Markets import Markets
 from Stock import Stock
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from sqliteData import SqliteDataEtoro
+sys.path.insert(1, '../../../../Selenium/')
 from log import Log
 from driver import Driver
-from sqliteData import SqliteDataEtoro
 
 
 #open link - https://www.etoro.com/discover/markets/stocks/exchange/nasdaq
