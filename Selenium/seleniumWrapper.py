@@ -98,6 +98,18 @@ class SeleniumWrapper:
         element = self.__driver.find_element("class name", className)
         return element.text
 
+    def getInnerHtmlByXpath (self, xpath):
+        element = self.__driver.find_element("xpath", xpath)
+        return element.get_attribute('innerHTML')
+
+    def getInnerHtmlByCSSSelector (self, cssSelector):
+        element = self.__driver.find_element("css selector",cssSelector)
+        return element.get_attribute('innerHTML')
+
+    def getInnerHtmlByClassName (self, className):
+        element = self.__driver.find_element("class name", className)
+        return element.get_attribute('innerHTML')
+
     def setTextFieldByXpath(self, xpath, value):
         try:
             stockElement = self.__driver.find_element("xpath", xpath)
