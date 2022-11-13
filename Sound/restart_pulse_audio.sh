@@ -1,0 +1,2 @@
+pulseaudio -k
+pulseaudio --start
