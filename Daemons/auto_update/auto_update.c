@@ -8,7 +8,7 @@
 #include <syslog.h>
 #include <string.h>
 
-#define TIME_TO_UPDATE_IN_HOURS 24
+#define TIME_TO_UPDATE_IN_HOURS 2
 
 int main(void)
 {
