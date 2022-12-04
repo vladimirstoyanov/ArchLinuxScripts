@@ -10,9 +10,10 @@ then
   exit 1
 fi
 
-
 touch /etc/openvpn/credentials
-printf '%s\n' '$1' '$2' > /etc/openvpn/credentials
-cp $3 /etc/openvpn/$4
+echo "$1" > /etc/openvpn/credentials
+echo "$2" >> /etc/openvpn/credentials
+
+cp $3 /etc/openvpn/
 sed -i 's/auth-user-pass/auth-user-pass \/etc\/openvpn\/credentials/g' /etc/openvpn/$4
-nohup openvpn --config /etc/openvpn/$4 &
+openvpn --config /etc/openvpn/$4

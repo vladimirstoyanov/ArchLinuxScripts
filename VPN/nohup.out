@@ -1,0 +1,50 @@
+Options error: In [CMD-LINE]:1: Error opening configuration file: /etc/openvpn/ams-002.ovpn
+Use --help for more information.
+2022-12-04 10:05:46 WARNING: file '/etc/openvpn/credentials' is group or others accessible
+2022-12-04 10:05:46 OpenVPN 2.5.8 [git:makepkg/0357ceb877687faa+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Nov  1 2022
+2022-12-04 10:05:46 library versions: OpenSSL 3.0.7 1 Nov 2022, LZO 2.10
+2022-12-04 10:05:46 TCP/UDP: Preserving recently used remote address: [AF_INET]91.148.224.20:1194
+2022-12-04 10:05:46 Socket Buffers: R=[212992->212992] S=[212992->212992]
+2022-12-04 10:05:46 UDP link local: (not bound)
+2022-12-04 10:05:46 UDP link remote: [AF_INET]91.148.224.20:1194
+2022-12-04 10:05:46 TLS: Initial packet from [AF_INET]91.148.224.20:1194, sid=dc116193 9fef7a56
+2022-12-04 10:05:46 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+2022-12-04 10:05:46 VERIFY OK: depth=1, CN=Privado
+2022-12-04 10:05:46 VERIFY KU OK
+2022-12-04 10:05:46 Validating certificate extended key usage
+2022-12-04 10:05:46 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2022-12-04 10:05:46 VERIFY EKU OK
+2022-12-04 10:05:46 VERIFY X509NAME OK: CN=ams-002.vpn.privado.io
+2022-12-04 10:05:46 VERIFY OK: depth=0, CN=ams-002.vpn.privado.io
+2022-12-04 10:05:47 Control Channel: TLSv1.2, cipher SSLv3 DHE-RSA-AES256-SHA, peer certificate: 4096 bit RSA, signature: RSA-SHA512
+2022-12-04 10:05:47 [ams-002.vpn.privado.io] Peer Connection Initiated with [AF_INET]91.148.224.20:1194
+2022-12-04 10:05:49 SENT CONTROL [ams-002.vpn.privado.io]: 'PUSH_REQUEST' (status=1)
+2022-12-04 10:05:49 AUTH: Received control message: AUTH_FAILED
+2022-12-04 10:05:49 SIGTERM[soft,auth-failure] received, process exiting
+2022-12-04 10:07:56 WARNING: file '/etc/openvpn/credentials' is group or others accessible
+2022-12-04 10:07:56 OpenVPN 2.5.8 [git:makepkg/0357ceb877687faa+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Nov  1 2022
+2022-12-04 10:07:56 library versions: OpenSSL 3.0.7 1 Nov 2022, LZO 2.10
+Failed to query password: Timer expired
+2022-12-04 10:09:26 ERROR: Failed retrieving username or password
+2022-12-04 10:09:26 Exiting due to fatal error
+2022-12-04 10:10:59 WARNING: file '/etc/openvpn/credentials' is group or others accessible
+2022-12-04 10:10:59 OpenVPN 2.5.8 [git:makepkg/0357ceb877687faa+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Nov  1 2022
+2022-12-04 10:10:59 library versions: OpenSSL 3.0.7 1 Nov 2022, LZO 2.10
+2022-12-04 10:10:59 TCP/UDP: Preserving recently used remote address: [AF_INET]91.148.224.20:1194
+2022-12-04 10:10:59 Socket Buffers: R=[212992->212992] S=[212992->212992]
+2022-12-04 10:10:59 UDP link local: (not bound)
+2022-12-04 10:10:59 UDP link remote: [AF_INET]91.148.224.20:1194
+2022-12-04 10:10:59 TLS: Initial packet from [AF_INET]91.148.224.20:1194, sid=faf8eaee adc281fc
+2022-12-04 10:10:59 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+2022-12-04 10:10:59 VERIFY OK: depth=1, CN=Privado
+2022-12-04 10:10:59 VERIFY KU OK
+2022-12-04 10:10:59 Validating certificate extended key usage
+2022-12-04 10:10:59 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2022-12-04 10:10:59 VERIFY EKU OK
+2022-12-04 10:10:59 VERIFY X509NAME OK: CN=ams-002.vpn.privado.io
+2022-12-04 10:10:59 VERIFY OK: depth=0, CN=ams-002.vpn.privado.io
+2022-12-04 10:11:00 Control Channel: TLSv1.2, cipher SSLv3 DHE-RSA-AES256-SHA, peer certificate: 4096 bit RSA, signature: RSA-SHA512
+2022-12-04 10:11:00 [ams-002.vpn.privado.io] Peer Connection Initiated with [AF_INET]91.148.224.20:1194
+2022-12-04 10:11:01 SENT CONTROL [ams-002.vpn.privado.io]: 'PUSH_REQUEST' (status=1)
+2022-12-04 10:11:01 AUTH: Received control message: AUTH_FAILED
+2022-12-04 10:11:01 SIGTERM[soft,auth-failure] received, process exiting
