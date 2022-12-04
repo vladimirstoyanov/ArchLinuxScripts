@@ -1,0 +1,10 @@
+list_vpns = ['free-nl.hideservers.net',
+			'free-ca.hideservers.net',
+			'free-fr.hideservers.net',
+			'free-de.hideservers.net',
+			'sg-free.hideservers.net',
+			'free-es.hideservers.net',
+			'free-uk.hideservers.net',
+			'free-us.hideservers.net',
+			'free-us-east.hideservers.net',
+			'free-us-west.hideservers.net']
