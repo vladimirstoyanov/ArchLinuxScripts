@@ -1,93 +1,85 @@
-import sys
-import locale
-import io
 import codecs
-import time
+import io
+import locale
 import random
+import sys
+import time
 
-def read_file ():
-    f = codecs.open('words', encoding ='utf-8', mode = 'r')
+class WordsFile:
+    def __init__ (self, filename):
+        self.__filename = filename
 
-    l_words = []
-    for str1 in f.readlines ():
-        l1 = str1.split (' - ')
-        if (len(l1) <2):
-                continue
+    def readWords(self):
+            f = codecs.open(self.__filename, encoding ='utf-8', mode = 'r')
+            listWords = []
+            for line in f.readlines ():
+                englishBulgarianWords = line.split (' - ')
+                if (len(englishBulgarianWords) < 2):
+                        continue
+                bulgarianWords = englishBulgarianWords[1].split (', ')
+                englishBulgarianWords[0] = u''.join(englishBulgarianWords[0]).encode('utf-8').strip()
+                listBulgarianWords = []
+                for i in range (len(bulgarianWords)):
+                    bulgarianWords[i] = bulgarianWords[i].replace('\n','')
+                    bulgarianWords[i] = bulgarianWords[i].replace('\r','')
+                listWords.append([[englishBulgarianWords[0]], bulgarianWords])
+            f.close()
+            return listWords
 
-        l2 = l1[1].split (', ')
-        l21 = []
-        for i in range (len(l2)):
-            l2[i] = l2[i].replace('\n','')
-            l2[i] = l2[i].replace('\r','')
-            l21.append(l2[i])
+class LearnEnglishWords:
+    def __init__ (self, filename, listWords):
+        self.correctAnswers = 0
+        self.listWords = listWords
+        self.total = len (self.listWords)
+        self.allQuestions = self.total * 2
+        self.listRandomIndexes = random.sample(xrange(self.total), self.total)
+        self.indexEnglishWords = 0
+        self.indexBulgarianWords = 1
+        self.currentWord = 0
 
-        l3 = []
-        l3.append(str(l1[0]))
-        l3.append(l21)
-        l_words.append(l3)
-
-    f.close()
-    return l_words
-
-def input_unicode ():
-    text= input()
-    return text
-
-
-l_words = read_file ()
-
-total = len (l_words)
-print (total)
-all_questions = total * 2
-i = 0
-correct_answers = 0
-my_randoms = random.sample(range(total), total)
-
-
-for i in range (len(my_randoms)):
-        word = ""
-        print (l_words[my_randoms[i]][0])
-        print ("Your answer: ")
-        input_string = input_unicode ()
-
-        answered = 0
-        for j in range (len(l_words[my_randoms[i]][1])):
-                word = l_words[my_randoms[i]][1][j]
-                if (input_string == word):
-                        print ("=====That's right!")
-                        correct_answers+=1
-                        answered = 1
-                        break
-        if (answered == 0):
-                print ("=====Wrong answer! The correct one is: " + str(word))
-
-        current_percentage = (correct_answers/((i+1)*1.0)) *100
-        print ("Question " + str (i+1) + "/" + str(all_questions) + ", current score: " + str(round(current_percentage,2)) + "%")
-
-
-
-for i in range (len(my_randoms)):
-        word = ""
-        for j in range (len(l_words[my_randoms[i]][1])):
-                word = l_words[my_randoms[i]][1][j]
+    def __ask(self, words):
+        for i in range (len(words)):
+                word = u''.join(words[i]).encode('utf-8').strip()
                 print (word)
         print ("Your answer: ")
-        input_string = input_unicode ()
-        #compare
-        if (input_string == l_words[my_randoms[i]][0]):
-            print ("=====That's right!")
-            correct_answers+=1
+        userAnswer = raw_input()
+        return userAnswer
+
+    def __calculatePercentage (self, total):
+            return ((self.correctAnswers/((total)*1.0)) *100)
+
+    def __checkAnswer (self, answer, words):
+        word = ""
+        for i in range (len(words)):
+                word = u''.join(words[i]).encode('utf-8').strip()
+                if (answer == word):
+                            print ("=====That's right!")
+                            self.correctAnswers+=1
+                            return
+        print ("=====Wrong answer! The correct one is: " + word)
+
+    def guessWords (self, indexAsk, indexAnswer):
+        for i in range (len(self.listRandomIndexes)):
+            userAnswer = self.__ask(self.listWords[self.listRandomIndexes[i]][indexAsk])
+            self.__checkAnswer(userAnswer, self.listWords[self.listRandomIndexes[i]][indexAnswer])
+            self.currentWord+=1
+            print ("Question " + str (self.currentWord) + "/" + str(self.allQuestions) +
+                ", current score: " + str(round(self.__calculatePercentage(self.currentWord),2)) + "%")
+
+    def finalResult (self):
+        percentage = self.__calculatePercentage(self.allQuestions)
+        print ("====The test has finsihsed. Result:")
+        print (str(percentage) + '%')
+        if(percentage < 95 ):
+            print ("The test hasn't been passed")
         else:
-            print ("=====Wrong answer! The correct one is: " + l_words[my_randoms[i]][0])
+            print ("Congratulations!")
 
-        current_percentage = (correct_answers/((total + i+1)*1.0)) *100
-        print ("Question " + str (total + i+1) + "/" + str(all_questions) + ", current score: " + str(round(current_percentage,2)) + "%")
-
-print ("====Test finsihsed. Result:")
-total*=2
-percentage = (correct_answers/(total*1.0)) * 100
-print (str(percentage) + '%')
-if(percentage < 95 ):
-    print ("Didn't pass")
-else:
-    print ("Pass")
+if __name__ == "__main__":
+    filename = 'words'
+    file = WordsFile (filename)
+    listWords = file.readWords ()
+    learnEnglishWords = LearnEnglishWords (filename, listWords)
+    learnEnglishWords.guessWords(learnEnglishWords.indexEnglishWords, learnEnglishWords.indexBulgarianWords)
+    learnEnglishWords.guessWords(learnEnglishWords.indexBulgarianWords, learnEnglishWords.indexEnglishWords)
+    learnEnglishWords.finalResult ()
