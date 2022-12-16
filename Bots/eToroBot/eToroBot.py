@@ -129,17 +129,17 @@ class EToroBot:
         self.__config = Config()
         iteration=0
         while True:
-            cash = self.getAvailableCash()
-            self.__log.write("Cash: " + str(cash))
+            #cash = self.getAvailableCash()
+            #self.__log.write("Cash: " + str(cash))
 
-            if (cash < 0.99):
-                time.sleep(5)
-                continue
+            #if (cash < 0.99):
+            #    time.sleep(5)
+            #    continue
 
             self.__config.readConfig()
             configData = self.__config.getConfigData()
 
-            stocksInfo = self.__driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
+            stocksInfo = self.__seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
 
             listResult = stocksInfo.text.split('\n')
             lPart = []
