@@ -36,7 +36,7 @@ class EToroBot:
     def __init__ (self):
         atexit.register(self.__handleExit)
         self.__log = Log('eToroLog.log')
-        driverObj = Driver("/home/vladimir/.mozilla/firefox/q54e1nbe.default-release", "Mozilla/5.0 (platform; rv:92.0) Gecko/geckotrail Firefox/92.0")
+        driverObj = Driver("/home/vladimir/.mozilla/firefox/q54e1nbe.default-release")
         self.__driver = driverObj.getDriver()
         self.__seleniumWrapper = SeleniumWrapper(self.__driver)
         self.loadEToro()
@@ -143,7 +143,7 @@ class EToroBot:
             #//*[@id="watchlist-instruments"]
             stocksInfo = self.__seleniumWrapper.getTextByXpath('//*[@id="watchlist-instruments"]')
 
-            listResult = stocksInfo.text.split('\n')
+            listResult = stocksInfo.split('\n')
             lPart = []
             lResult = []
             index = 0
@@ -191,6 +191,5 @@ class EToroBot:
                         continue
             self.__log.write("==============")
             time.sleep(1)
-            
 
 etoro = EToroBot ()
