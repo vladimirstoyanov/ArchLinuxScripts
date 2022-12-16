@@ -46,7 +46,7 @@ class EToroBot:
         self.__seleniumWrapper.close()
 
     def loadEToro(self):
-        self.__seleniumWrapper.getRequest('https://www.etoro.com')
+        self.__seleniumWrapper.getRequest('https://www.etoro.com/watchlists')
 
     def loadStockPage (self, stockIndex):
         self.__seleniumWrapper.getRequest('https://www.etoro.com/markets/' + stockIndex + '/chart')
@@ -139,7 +139,9 @@ class EToroBot:
             self.__config.readConfig()
             configData = self.__config.getConfigData()
 
-            stocksInfo = self.__seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
+
+            #//*[@id="watchlist-instruments"]
+            stocksInfo = self.__seleniumWrapper.getTextByXpath('//*[@id="watchlist-instruments"]')
 
             listResult = stocksInfo.text.split('\n')
             lPart = []
@@ -189,5 +191,6 @@ class EToroBot:
                         continue
             self.__log.write("==============")
             time.sleep(1)
+            
 
 etoro = EToroBot ()
