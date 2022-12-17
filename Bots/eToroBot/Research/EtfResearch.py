@@ -34,7 +34,7 @@ class EtfResearch:
         self.__indexMaxPrice = 9
         self.__sqliteData = SqliteDataEtoro ('etfs.db')
         self.__log = Log('etf_research.log')
-        driverObj = Driver ("/home/vladimir/.mozilla/firefox/w05kja2g.default")
+        driverObj = Driver ("/home/vladimir/.mozilla/firefox/q54e1nbe.default-release")
         self.__driver = driverObj.getDriver()
         self.__markets = Markets(self.__driver)
         self.__stock = Stock (self.__driver)

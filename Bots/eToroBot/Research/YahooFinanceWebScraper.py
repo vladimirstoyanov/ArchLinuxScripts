@@ -25,7 +25,7 @@ class YahooFinanceWebScraper:
         self.__stocksData = self.__stocksDataBase.readData ('all_stocks')
         self.__stockIdIndex = 0
         self.__log = Log('stock_research.log')
-        driverObj = Driver ("/home/vladimir/.mozilla/firefox/w05kja2g.default")
+        driverObj = Driver ("/home/vladimir/.mozilla/firefox/q54e1nbe.default-release")
         self.__driver = driverObj.getDriver()
         self.__seleniumWrapper  = SeleniumWrapper(self.__driver)
 
