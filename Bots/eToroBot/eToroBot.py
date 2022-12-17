@@ -2,12 +2,6 @@ import pickle
 import sys
 import time
 import atexit
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium import webdriver
-from selenium.webdriver.firefox.webdriver import FirefoxProfile
 from datetime import datetime
 sys.path.insert(1, '../../Selenium/')
 from driverFirefox import Driver
