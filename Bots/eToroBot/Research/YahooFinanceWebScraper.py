@@ -5,10 +5,11 @@ import atexit
 import pickle
 import time
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from sqliteData import SqliteDataEtoro
+sys.path.insert(1, '../../../Selenium/')
+from seleniumWrapper import SeleniumWrapper
 from log import Log
 from driverFirefox import Driver
-from sqliteData import SqliteDataEtoro
-from seleniumWrapper import SeleniumWrapper
 
 class YahooFinanceWebScraper:
     def __init__ (self):
