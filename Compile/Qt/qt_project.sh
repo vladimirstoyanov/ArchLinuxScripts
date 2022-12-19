@@ -9,5 +9,8 @@ then
 fi
 
 cd $1
-qmake -o Makefile $2
+mkdir build
+cd build
+
+qmake -o Makefile ../$2
 make 
