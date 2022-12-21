@@ -2,7 +2,7 @@
 Stock id: 1COV.DE
 Stock name: Covestro
 Sell price: B
-Buy price: 36.06
+Buy price: 36.67
 Min prie: 27.63
 Max price: 57.95
 Stock ID: 1COV.DE
@@ -686,9 +686,9 @@ Dividend: 2.40 (4.64%)
 Stock id: HEN3.DE
 Stock name: Henkel AG & Co. KGaA
 Sell price: B
-Buy price: 96.15
-Min prie: 74.91
-Max price: 99.41
+Buy price: 66.78
+Min prie: 56.41
+Max price: 83.32
 Stock ID: HEN3.DE
 Previous close: 65.38
 Market cap: 27.33B
