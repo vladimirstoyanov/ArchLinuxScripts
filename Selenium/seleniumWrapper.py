@@ -87,6 +87,7 @@ class SeleniumWrapper:
 
 
     def getTextByXpath (self, xpath):
+        time.sleep (5)
         element = self.__driver.find_element("xpath", xpath)
         return element.text
 
