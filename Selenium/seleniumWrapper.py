@@ -92,6 +92,7 @@ class SeleniumWrapper:
         return element.text
 
     def getTextByCSSSelector (self, cssSelector):
+        time.sleep(5)
         element = self.__driver.find_element("css selector",cssSelector)
         return element.text
 

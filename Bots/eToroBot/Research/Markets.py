@@ -58,9 +58,12 @@ class Markets:
             for i in range (len(currentStocks)):
                 stocks.append(currentStocks[i])
             try:
-                currentStockCount = self.__seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/et-discovery-markets-results-header/div/div[2]/div/div[1]/span[2]/span[1]')
-                maxStockCount = self.__seleniumWrapper.getTextByXpath('/html/body/ui-layout/div/div/div[2]/et-discovery-markets-results/div/et-discovery-markets-results-header/div/div[2]/div/div[1]/span[2]/span[3]')
+                currentStockCount = self.__seleniumWrapper.getTextByXpath('/html/body/app-root/et-layout-main/div/div[2]/div[2]/div[3]/div/ui-layout/ng-view/et-discovery-markets-results/div/et-discovery-markets-results-header/div/div[2]/div/div[1]/span[2]/span[1]')
+                print ("currentStockCount: " + str(currentStockCount))
+                maxStockCount = self.__seleniumWrapper.getTextByXpath('/html/body/app-root/et-layout-main/div/div[2]/div[2]/div[3]/div/ui-layout/ng-view/et-discovery-markets-results/div/et-discovery-markets-results-header/div/div[2]/div/div[1]/span[2]/span[3]')
+                print ("maxStockCount: " + str(maxStockCount))
                 #check if it is the last page
+
                 splited = currentStockCount.split('-')
                 if (splited[1] == maxStockCount):
                     print ("It is the last page.")
@@ -71,9 +74,10 @@ class Markets:
 
             try:
                 #click on the next page button
-                element = self.__driver.find_element_by_css_selector('.nav-button-right')
+                element = self.__seleniumWrapper.getTextByCSSSelector('.nav-button-right')
             except:
-                print ("End")
+                print ("Can't find the next button")
+                time.sleep(10)
                 break
 
             self.__seleniumWrapper.clickElementByCssSelector('.nav-button-right', 4)

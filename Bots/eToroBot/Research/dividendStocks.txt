@@ -1,0 +1,703 @@
+=============
+Stock id: 1COV.DE
+Stock name: Covestro
+Sell price: B
+Buy price: 36.06
+Min prie: 27.63
+Max price: 57.95
+Stock ID: 1COV.DE
+Previous close: 35.80
+Market cap: 6.967B
+Days range: 35.31 - 36.14
+52 week range: 27.69 - 58.00
+Average volume: 1,409,347
+1 year return: 
+Beta: 1.34
+P/E ratio: 7.35
+Revenue: 
+EPS: 4.85
+Dividend: 3.40 (9.53%)
+=============
+Stock id: ADS.DE
+Stock name: Adidas AG
+Sell price: B
+Buy price: 261.89
+Min prie: 189.18
+Max price: 306.32
+Stock ID: ADS.DE
+Previous close: 118.56
+Market cap: 22.104B
+Days range: 116.66 - 122.52
+52 week range: 93.40 - 263.75
+Average volume: 919,589
+1 year return: 
+Beta: 1.00
+P/E ratio: 18.86
+Revenue: 
+EPS: 6.42
+Dividend: 3.30 (2.78%)
+=============
+Stock id: AFX.DE
+Stock name: Carl Zeiss Meditec AG
+Sell price: B
+Buy price: 145.43
+Min prie: 79.88
+Max price: 149.47
+Stock ID: AFX.DE
+Previous close: 120.20
+Market cap: 10.46B
+Days range: 116.85 - 120.50
+52 week range: 101.75 - 187.00
+Average volume: 102,600
+1 year return: 
+Beta: 0.77
+P/E ratio: 43.80
+Revenue: 
+EPS: 2.67
+Dividend: 0.90 (0.77%)
+=============
+Stock id: AIXA.DE
+Stock name: AIXTRON
+Sell price: B
+Buy price: 18.71
+Min prie: 8.22
+Max price: 20.32
+Stock ID: AIXA.DE
+Previous close: 30.42
+Market cap: 3.294B
+Days range: 29.04 - 30.60
+52 week range: 15.20 - 32.21
+Average volume: 592,909
+1 year return: 
+Beta: 0.54
+P/E ratio: 32.25
+Revenue: 
+EPS: 0.91
+Dividend: 0.30 (0.99%)
+=============
+Stock id: ALV.DE
+Stock name: Allianz SE
+Sell price: B
+Buy price: 219.10
+Min prie: 139.61
+Max price: 220.90
+Stock ID: ALV.DE
+Previous close: 198.86
+Market cap: 79.8B
+Days range: 197.30 - 199.78
+52 week range: 156.22 - 232.50
+Average volume: 984,600
+1 year return: 
+Beta: 1.15
+P/E ratio: 11.82
+Revenue: 
+EPS: 16.74
+Dividend: 10.80 (5.46%)
+=============
+Stock id: AT1.DE
+Stock name: Aroundtown SA
+Sell price: B
+Buy price: 6.54
+Min prie: 3.78
+Max price: 6.54
+Stock ID: AT1.DE
+Previous close: 2.5960
+Market cap: 3.44B
+Days range: 2.2710 - 2.6240
+52 week range: 1.7315 - 5.7260
+Average volume: 8,227,339
+1 year return: 
+Beta: 1.44
+P/E ratio: 4.86
+Revenue: 
+EPS: 0.4900
+Dividend: 0.23 (9.66%)
+=============
+Stock id: BAS.DE
+Stock name: BASF SE
+Sell price: B
+Buy price: 71.29
+Min prie: 41.09
+Max price: 72.80
+Stock ID: BAS.DE
+Previous close: 45.81
+Market cap: 42.057B
+Days range: 45.33 - 46.08
+52 week range: 37.90 - 69.15
+Average volume: 2,783,878
+1 year return: 
+Beta: 1.30
+P/E ratio: 8.13
+Revenue: 
+EPS: 5.63
+Dividend: 3.40 (7.43%)
+=============
+Stock id: BAYN.DE
+Stock name: Bayer AG
+Sell price: B
+Buy price: 52.95
+Min prie: 39.81
+Max price: 73.55
+Stock ID: BAYN.DE
+Previous close: 50.48
+Market cap: 47.707B
+Days range: 48.44 - 50.38
+52 week range: 44.60 - 67.99
+Average volume: 2,473,153
+1 year return: 
+Beta: 1.10
+P/E ratio: 11.24
+Revenue: 
+EPS: 4.32
+Dividend: 2.00 (4.12%)
+=============
+Stock id: BC8.DE
+Stock name: Bechtle AG
+Sell price: B
+Buy price: 169.85
+Min prie: 124.46
+Max price: 190.43
+Stock ID: BC8.DE
+Previous close: 34.43
+Market cap: 4.211B
+Days range: 33.42 - 34.41
+52 week range: 32.57 - 63.84
+Average volume: 300,328
+1 year return: 
+Beta: 0.90
+P/E ratio: 16.96
+Revenue: 
+EPS: 1.97
+Dividend: 0.55 (1.65%)
+=============
+Stock id: BEI.DE
+Stock name: Beiersdorf AG
+Sell price: B
+Buy price: 93.94
+Min prie: 81.31
+Max price: 104.01
+Stock ID: BEI.DE
+Previous close: 106.15
+Market cap: 24.19B
+Days range: 105.30 - 106.95
+52 week range: 79.00 - 108.85
+Average volume: 291,133
+1 year return: 
+Beta: 0.22
+P/E ratio: 32.82
+Revenue: 
+EPS: 3.25
+Dividend: 0.70 (0.66%)
+=============
+Stock id: BMW.DE
+Stock name: Bayerische Motoren Werke Aktiengesellschaft
+Sell price: B
+Buy price: 86.40
+Min prie: 45.26
+Max price: 90.59
+Stock ID: BMW.DE
+Previous close: 82.80
+Market cap: 54.427B
+Days range: 82.16 - 83.50
+52 week range: 67.58 - 100.42
+Average volume: 1,251,085
+1 year return: 
+Beta: 1.13
+P/E ratio: 3.03
+Revenue: 
+EPS: 27.27
+Dividend: 5.80 (7.02%)
+=============
+Stock id: BNR.DE
+Stock name: Brenntag
+Sell price: B
+Buy price: 75.45
+Min prie: 39.06
+Max price: 76.99
+Stock ID: BNR.DE
+Previous close: 56.58
+Market cap: 8.701B
+Days range: 54.94 - 56.70
+52 week range: 53.58 - 81.76
+Average volume: 449,685
+1 year return: 
+Beta: 1.01
+P/E ratio: 10.33
+Revenue: 
+EPS: 5.45
+Dividend: 1.45 (2.57%)
+=============
+Stock id: BOSS.DE
+Stock name: HUGO BOSS
+Sell price: B
+Buy price: 38.23
+Min prie: 19.38
+Max price: 38.67
+Stock ID: BOSS.DE
+Previous close: 52.26
+Market cap: 3.589B
+Days range: 51.84 - 52.18
+52 week range: 42.05 - 59.12
+Average volume: 512,217
+1 year return: 
+Beta: 1.36
+P/E ratio: 17.11
+Revenue: 
+EPS: 3.04
+Dividend: 0.70 (1.35%)
+=============
+Stock id: CEC.DE
+Stock name: Ceconomy St
+Sell price: B
+Buy price: 4.902
+Min prie: 1.89
+Max price: 6.01
+Stock ID: CEC.DE
+Previous close: 1.7670
+Market cap: 828.757M
+Days range: 1.6520 - 1.7460
+52 week range: 1.1000 - 4.1900
+Average volume: 795,974
+1 year return: 
+Beta: N/A
+P/E ratio: 12.20
+Revenue: 
+EPS: 0.1400
+Dividend: 0.17 (9.62%)
+=============
+Stock id: CON.DE
+Stock name: Continental AG
+Sell price: B
+Buy price: 118.31
+Min prie: 68.72
+Max price: 130.58
+Stock ID: CON.DE
+Previous close: 57.40
+Market cap: 11.296B
+Days range: 56.00 - 58.08
+52 week range: 44.31 - 99.80
+Average volume: 542,770
+1 year return: 
+Beta: 1.54
+P/E ratio: 28.53
+Revenue: 
+EPS: 1.98
+Dividend: 2.20 (3.90%)
+=============
+Stock id: COP.DE
+Stock name: CompuGroup Medical SE
+Sell price: B
+Buy price: 76.52
+Min prie: 62.59
+Max price: 85.22
+Stock ID: COP.DE
+Previous close: 37.92
+Market cap: 1.907B
+Days range: 36.20 - 38.18
+52 week range: 30.56 - 73.15
+Average volume: 89,405
+1 year return: 
+Beta: 0.97
+P/E ratio: 26.50
+Revenue: 
+EPS: 1.37
+Dividend: 0.50 (1.38%)
+=============
+Stock id: DB1.DE
+Stock name: Deutsche Boerse AG
+Sell price: B
+Buy price: 142.68
+Min prie: 123.54
+Max price: 170.00
+Stock ID: DB1.DE
+Previous close: 166.55
+Market cap: 30.454B
+Days range: 165.15 - 167.35
+52 week range: 135.80 - 180.00
+Average volume: 374,396
+1 year return: 
+Beta: 0.48
+P/E ratio: 21.54
+Revenue: 
+EPS: 7.70
+Dividend: 3.20 (1.93%)
+=============
+Stock id: DEQ.DE
+Stock name: Deutsche Euroshop
+Sell price: B
+Buy price: 18.85
+Min prie: 9.22
+Max price: 19.53
+Stock ID: DEQ.DE
+Previous close: 22.16
+Market cap: 1.328B
+Days range: 21.10 - 23.12
+52 week range: 13.26 - 26.80
+Average volume: 14,266
+1 year return: 
+Beta: 1.37
+P/E ratio: 19.20
+Revenue: 
+EPS: 1.12
+Dividend: 1.00 (4.65%)
+=============
+Stock id: DPW.DE
+Stock name: Deutsche Post AG
+Sell price: B
+Buy price: 48.77
+Min prie: 25.48
+Max price: 49.68
+Stock ID: DPW.DE
+Previous close: 36.08
+Market cap: 43.858B
+Days range: 35.72 - 36.45
+52 week range: 29.67 - 57.79
+Average volume: 2,830,330
+1 year return: 
+Beta: 1.10
+P/E ratio: 8.13
+Revenue: 
+EPS: 4.43
+Dividend: 1.80 (5.00%)
+=============
+Stock id: DTE.DE
+Stock name: Deutsche Telekom AG
+Sell price: B
+Buy price: 16.06
+Min prie: 12.57
+Max price: 17.34
+Stock ID: DTE.DE
+Previous close: 18.90
+Market cap: 93.721B
+Days range: 18.70 - 18.90
+52 week range: 14.47 - 19.86
+Average volume: 7,369,295
+1 year return: 
+Beta: 0.55
+P/E ratio: 20.94
+Revenue: 
+EPS: 0.90
+Dividend: 0.64 (3.40%)
+=============
+Stock id: DUE.DE
+Stock name: Duerr AG
+Sell price: B
+Buy price: 37.23
+Min prie: 16.33
+Max price: 37.75
+Stock ID: DUE.DE
+Previous close: 32.92
+Market cap: 2.205B
+Days range: 31.86 - 32.86
+52 week range: 19.74 - 42.60
+Average volume: 147,806
+1 year return: 
+Beta: 1.73
+P/E ratio: 19.91
+Revenue: 
+EPS: 1.60
+Dividend: 0.50 (1.57%)
+=============
+Stock id: DWNI.DE
+Stock name: Deutsche Wohnen
+Sell price: B
+Buy price: 45.34
+Min prie: 36.08
+Max price: 46.91
+Stock ID: DWNI.DE
+Previous close: 20.74
+Market cap: 7.927B
+Days range: 19.40 - 20.68
+52 week range: 16.88 - 38.48
+Average volume: 124,670
+1 year return: 
+Beta: 0.42
+P/E ratio: 4.96
+Revenue: 
+EPS: 4.03
+Dividend: 0.04 (0.20%)
+=============
+Stock id: DWS.DE
+Stock name: DWS Group GmbH & Co KGaA
+Sell price: B
+Buy price: 36.81
+Min prie: 24.48
+Max price: 38.75
+Stock ID: DWS.DE
+Previous close: 29.68
+Market cap: 5.876B
+Days range: 29.02 - 29.68
+52 week range: 23.16 - 39.48
+Average volume: 79,439
+1 year return: 
+Beta: 1.34
+P/E ratio: 7.88
+Revenue: 
+EPS: 3.73
+Dividend: 2.00 (6.74%)
+=============
+Stock id: EOAN.DE
+Stock name: E.ON SE
+Sell price: B
+Buy price: 10.00
+Min prie: 8.22
+Max price: 10.80
+Stock ID: EOAN.DE
+Previous close: 9.07
+Market cap: 23.293B
+Days range: 8.89 - 9.08
+52 week range: 7.28 - 12.54
+Average volume: 5,366,887
+1 year return: 
+Beta: 0.58
+P/E ratio: 5.28
+Revenue: 
+EPS: 1.69
+Dividend: 0.49 (5.49%)
+=============
+Stock id: EVK.DE
+Stock name: Evonik
+Sell price: B
+Buy price: 30.07
+Min prie: 19.90
+Max price: 30.96
+Stock ID: EVK.DE
+Previous close: 17.77
+Market cap: 8.262B
+Days range: 17.57 - 17.96
+52 week range: 16.51 - 29.73
+Average volume: 860,437
+1 year return: 
+Beta: 1.18
+P/E ratio: 8.78
+Revenue: 
+EPS: 2.02
+Dividend: 1.17 (6.60%)
+=============
+Stock id: FIE.DE
+Stock name: Fielmann AG
+Sell price: B
+Buy price: 66.91
+Min prie: 57.35
+Max price: 72.38
+Stock ID: FIE.DE
+Previous close: 33.96
+Market cap: 2.838B
+Days range: 33.58 - 34.06
+52 week range: 27.56 - 59.70
+Average volume: 56,006
+1 year return: 
+Beta: 0.47
+P/E ratio: 25.21
+Revenue: 
+EPS: 1.34
+Dividend: 1.50 (4.42%)
+=============
+Stock id: FME.DE
+Stock name: Fresenius Medical Care AG & Co. KGAA
+Sell price: B
+Buy price: 65.24
+Min prie: 55.15
+Max price: 79.87
+Stock ID: FME.DE
+Previous close: 30.02
+Market cap: 8.618B
+Days range: 29.09 - 30.00
+52 week range: 25.95 - 63.60
+Average volume: 831,730
+1 year return: 
+Beta: 0.88
+P/E ratio: 11.56
+Revenue: 
+EPS: 2.54
+Dividend: 1.35 (4.60%)
+=============
+Stock id: FNTN.DE
+Stock name: freenet
+Sell price: B
+Buy price: 20.37
+Min prie: 13.56
+Max price: 20.72
+Stock ID: FNTN.DE
+Previous close: 19.86
+Market cap: 2.142B
+Days range: 19.36 - 19.88
+52 week range: 18.62 - 26.86
+Average volume: 364,347
+1 year return: 
+Beta: 0.81
+P/E ratio: 14.37
+Revenue: 
+EPS: 1.35
+Dividend: 1.57 (8.09%)
+=============
+Stock id: FRE.DE
+Stock name: Fresenius SE & Co KGaA
+Sell price: B
+Buy price: 39.76
+Min prie: 30.98
+Max price: 46.44
+Stock ID: FRE.DE
+Previous close: 25.79
+Market cap: 14.408B
+Days range: 25.47 - 25.93
+52 week range: 19.69 - 38.10
+Average volume: 1,706,114
+1 year return: 
+Beta: 1.14
+P/E ratio: 8.88
+Revenue: 
+EPS: 2.88
+Dividend: 0.92 (3.57%)
+=============
+Stock id: G1A.DE
+Stock name: GEA
+Sell price: B
+Buy price: 37.03
+Min prie: 19.36
+Max price: 37.03
+Stock ID: G1A.DE
+Previous close: 38.93
+Market cap: 6.838B
+Days range: 38.40 - 39.07
+52 week range: 31.18 - 48.55
+Average volume: 369,698
+1 year return: 
+Beta: 1.00
+P/E ratio: 21.66
+Revenue: 
+EPS: 1.78
+Dividend: 0.90 (2.33%)
+=============
+Stock id: G24.DE
+Stock name: Scout24 AG
+Sell price: B
+Buy price: 70.60
+Min prie: 58.50
+Max price: 79.68
+Stock ID: G24.DE
+Previous close: 49.62
+Market cap: 3.774B
+Days range: 48.93 - 49.81
+52 week range: 46.90 - 63.20
+Average volume: 209,212
+1 year return: 
+Beta: 0.49
+P/E ratio: 44.25
+Revenue: 
+EPS: 1.12
+Dividend: 0.85 (1.72%)
+=============
+Stock id: GBF.DE
+Stock name: Bilfinger
+Sell price: B
+Buy price: 31.17
+Min prie: 12.94
+Max price: 33.15
+Stock ID: GBF.DE
+Previous close: 27.02
+Market cap: 1.097B
+Days range: 26.84 - 27.14
+52 week range: 24.62 - 39.44
+Average volume: 90,099
+1 year return: 
+Beta: 1.53
+P/E ratio: 11.46
+Revenue: 
+EPS: 2.35
+Dividend: 1.00 (3.71%)
+=============
+Stock id: GLJ.DE
+Stock name: GRENKE AG
+Sell price: B
+Buy price: 35.20
+Min prie: 24.08
+Max price: 81.58
+Stock ID: GLJ.DE
+Previous close: 19.41
+Market cap: 893.18M
+Days range: 19.16 - 19.63
+52 week range: 17.99 - 33.32
+Average volume: 35,122
+1 year return: 
+Beta: 1.41
+P/E ratio: 9.06
+Revenue: 
+EPS: 2.12
+Dividend: 0.51 (2.65%)
+=============
+Stock id: GXI.DE
+Stock name: Gerresheimer
+Sell price: B
+Buy price: 89.08
+Min prie: 68.74
+Max price: 103.61
+Stock ID: GXI.DE
+Previous close: 62.80
+Market cap: 1.995B
+Days range: 62.50 - 64.05
+52 week range: 46.66 - 87.25
+Average volume: 110,682
+1 year return: 
+Beta: 1.04
+P/E ratio: 22.07
+Revenue: 
+EPS: 2.88
+Dividend: 1.25 (1.97%)
+=============
+Stock id: GYC.DE
+Stock name: Grand City Properties
+Sell price: B
+Buy price: 22.58
+Min prie: 18.37
+Max price: 22.94
+Stock ID: GYC.DE
+Previous close: 9.44
+Market cap: 1.527B
+Days range: 8.82 - 9.46
+52 week range: 8.62 - 21.26
+Average volume: 207,199
+1 year return: 
+Beta: 0.58
+P/E ratio: 3.17
+Revenue: 
+EPS: 2.92
+Dividend: 0.83 (9.01%)
+=============
+Stock id: HEI.DE
+Stock name: HeidelbergCement AG
+Sell price: B
+Buy price: 77.23
+Min prie: 38.79
+Max price: 80.95
+Stock ID: HEI.DE
+Previous close: 51.60
+Market cap: 9.987B
+Days range: 50.88 - 51.94
+52 week range: 38.73 - 68.08
+Average volume: 529,524
+1 year return: 
+Beta: 1.35
+P/E ratio: 6.38
+Revenue: 
+EPS: 8.11
+Dividend: 2.40 (4.64%)
+=============
+Stock id: HEN3.DE
+Stock name: Henkel AG & Co. KGaA
+Sell price: B
+Buy price: 96.15
+Min prie: 74.91
+Max price: 99.41
+Stock ID: HEN3.DE
+Previous close: 65.38
+Market cap: 27.33B
+Days range: 64.98 - 65.66
+52 week range: 56.56 - 83.40
+Average volume: 506,776
+1 year return: 
+Beta: 0.57
+P/E ratio: 24.97
+Revenue: 
+EPS: 2.63
+Dividend: 1.85 (2.82%)
