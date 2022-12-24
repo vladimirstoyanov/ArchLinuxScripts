@@ -65,6 +65,7 @@ class Markets:
                 self.__seleniumWrapper.clickElementByCssSelector('.nav-button-right', 4)
             else:
                 break
+
         return stocks
 
     def getAllMarketsInfo (self):
