@@ -6,4 +6,4 @@ then
   exit 1
 fi
 
-sudo smartctl -d ata -H $1
+sudo smartctl -a $1
