@@ -14,9 +14,9 @@ cd usb2can
 
 make
 
+cd ..
+dkms add -m usb2can -v 1.0 --verbose
+dkms build -m usb2can -v 1.0 --verbose
+dkms install -m usb2can -v 1.0 --verbose
 
-#dkms add -m usb2can -v 1.0 --verbose
-#dkms build -m usb2can -v 1.0 --verbose
-#dkms install -m usb2can -v 1.0 --verbose
-
-insmod usb_8dev.ko
+sh setup_interface.sh
