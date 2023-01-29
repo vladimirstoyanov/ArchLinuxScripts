@@ -54,3 +54,6 @@ wavemon
 system-config-printer
 cups
 okteta
+openvpn
+linux-headers
+dkms

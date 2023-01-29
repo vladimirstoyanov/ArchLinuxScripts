@@ -46,6 +46,11 @@ class SeleniumWrapper:
         self.__driver.get(url)
         time.sleep (15)
 
+    def getRequestWithTime (self, url, timeout):
+      time.sleep (timeout)
+      self.__driver.get(url)
+      time.sleep (15) #load until load a page
+
     def close (self):
         self.__driver.quit()
         os.system('rm -rf /tmp/Temp-*')
@@ -87,10 +92,12 @@ class SeleniumWrapper:
 
 
     def getTextByXpath (self, xpath):
+        time.sleep (5)
         element = self.__driver.find_element("xpath", xpath)
         return element.text
 
     def getTextByCSSSelector (self, cssSelector):
+        time.sleep(5)
         element = self.__driver.find_element("css selector",cssSelector)
         return element.text
 

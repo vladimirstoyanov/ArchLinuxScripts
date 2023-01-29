@@ -2,12 +2,6 @@ import pickle
 import sys
 import time
 import atexit
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium import webdriver
-from selenium.webdriver.firefox.webdriver import FirefoxProfile
 from datetime import datetime
 sys.path.insert(1, '../../Selenium/')
 from driverFirefox import Driver
@@ -36,7 +30,7 @@ class EToroBot:
     def __init__ (self):
         atexit.register(self.__handleExit)
         self.__log = Log('eToroLog.log')
-        driverObj = Driver("/home/vladimir/.mozilla/firefox/q54e1nbe.default-release", "Mozilla/5.0 (platform; rv:92.0) Gecko/geckotrail Firefox/92.0")
+        driverObj = Driver("/home/vladimir/.mozilla/firefox/q54e1nbe.default-release")
         self.__driver = driverObj.getDriver()
         self.__seleniumWrapper = SeleniumWrapper(self.__driver)
         self.loadEToro()
@@ -46,7 +40,7 @@ class EToroBot:
         self.__seleniumWrapper.close()
 
     def loadEToro(self):
-        self.__seleniumWrapper.getRequest('https://www.etoro.com')
+        self.__seleniumWrapper.getRequest('https://www.etoro.com/watchlists')
 
     def loadStockPage (self, stockIndex):
         self.__seleniumWrapper.getRequest('https://www.etoro.com/markets/' + stockIndex + '/chart')
@@ -129,19 +123,21 @@ class EToroBot:
         self.__config = Config()
         iteration=0
         while True:
-            cash = self.getAvailableCash()
-            self.__log.write("Cash: " + str(cash))
+            #cash = self.getAvailableCash()
+            #self.__log.write("Cash: " + str(cash))
 
-            if (cash < 0.99):
-                time.sleep(5)
-                continue
+            #if (cash < 0.99):
+            #    time.sleep(5)
+            #    continue
 
             self.__config.readConfig()
             configData = self.__config.getConfigData()
 
-            stocksInfo = self.__driver.find_element_by_xpath('/html/body/ui-layout/div/div/div[2]/et-watchlist/div[2]/div/et-watchlist-list/section/section[1]')
 
-            listResult = stocksInfo.text.split('\n')
+            #//*[@id="watchlist-instruments"]
+            stocksInfo = self.__seleniumWrapper.getTextByXpath('//*[@id="watchlist-instruments"]')
+
+            listResult = stocksInfo.split('\n')
             lPart = []
             lResult = []
             index = 0

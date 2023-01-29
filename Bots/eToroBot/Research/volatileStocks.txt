@@ -1,0 +1,190 @@
+=============
+Stock id: ADJ.DE
+Stock name: ADO Properties SA
+Sell price: B
+Buy price: 24.30
+Min prie: 20.08
+Max price: 29.67
+Stock ID: ADJ.DE
+Previous close: 1.3600
+Market cap: 199.718M
+Days range: 1.3000 - 1.4070
+52 week range: 1.2530 - 14.1700
+Average volume: 371,831
+1 year return: 
+Beta: 1.27
+P/E ratio: N/A
+Revenue: 
+EPS: -10.7580
+Dividend: N/A (N/A)
+=============
+Stock id: AIXA.DE
+Stock name: AIXTRON
+Sell price: B
+Buy price: 18.71
+Min prie: 8.22
+Max price: 20.32
+Stock ID: AIXA.DE
+Previous close: 30.42
+Market cap: 3.294B
+Days range: 29.04 - 30.60
+52 week range: 15.20 - 32.21
+Average volume: 592,909
+1 year return: 
+Beta: 0.54
+P/E ratio: 32.25
+Revenue: 
+EPS: 0.91
+Dividend: 0.30 (0.99%)
+=============
+Stock id: AT1.DE
+Stock name: Aroundtown SA
+Sell price: B
+Buy price: 6.54
+Min prie: 3.78
+Max price: 6.54
+Stock ID: AT1.DE
+Previous close: 2.5960
+Market cap: 3.44B
+Days range: 2.2710 - 2.6240
+52 week range: 1.7315 - 5.7260
+Average volume: 8,227,339
+1 year return: 
+Beta: 1.44
+P/E ratio: 4.86
+Revenue: 
+EPS: 0.4900
+Dividend: 0.23 (9.66%)
+=============
+Stock id: CBK.DE
+Stock name: Commerzbank AG
+Sell price: B
+Buy price: 5.32
+Min prie: 2.81
+Max price: 5.95
+Stock ID: CBK.DE
+Previous close: 7.70
+Market cap: 10.2B
+Days range: 7.69 - 8.18
+52 week range: 5.17 - 9.51
+Average volume: 5,801,071
+1 year return: 
+Beta: 1.36
+P/E ratio: 8.06
+Revenue: 
+EPS: 1.01
+Dividend: N/A (N/A)
+=============
+Stock id: CEC.DE
+Stock name: Ceconomy St
+Sell price: B
+Buy price: 4.902
+Min prie: 1.89
+Max price: 6.01
+Stock ID: CEC.DE
+Previous close: 1.7670
+Market cap: 828.757M
+Days range: 1.6520 - 1.7460
+52 week range: 1.1000 - 4.1900
+Average volume: 795,974
+1 year return: 
+Beta: N/A
+P/E ratio: 12.20
+Revenue: 
+EPS: 0.1400
+Dividend: 0.17 (9.62%)
+=============
+Stock id: COP.DE
+Stock name: CompuGroup Medical SE
+Sell price: B
+Buy price: 76.52
+Min prie: 62.59
+Max price: 85.22
+Stock ID: COP.DE
+Previous close: 37.92
+Market cap: 1.907B
+Days range: 36.20 - 38.18
+52 week range: 30.56 - 73.15
+Average volume: 89,405
+1 year return: 
+Beta: 0.97
+P/E ratio: 26.50
+Revenue: 
+EPS: 1.37
+Dividend: 0.50 (1.38%)
+=============
+Stock id: DEQ.DE
+Stock name: Deutsche Euroshop
+Sell price: B
+Buy price: 18.85
+Min prie: 9.22
+Max price: 19.53
+Stock ID: DEQ.DE
+Previous close: 22.16
+Market cap: 1.328B
+Days range: 21.10 - 23.12
+52 week range: 13.26 - 26.80
+Average volume: 14,266
+1 year return: 
+Beta: 1.37
+P/E ratio: 19.20
+Revenue: 
+EPS: 1.12
+Dividend: 1.00 (4.65%)
+=============
+Stock id: DWNI.DE
+Stock name: Deutsche Wohnen
+Sell price: B
+Buy price: 45.34
+Min prie: 36.08
+Max price: 46.91
+Stock ID: DWNI.DE
+Previous close: 20.74
+Market cap: 7.927B
+Days range: 19.40 - 20.68
+52 week range: 16.88 - 38.48
+Average volume: 124,670
+1 year return: 
+Beta: 0.42
+P/E ratio: 4.96
+Revenue: 
+EPS: 4.03
+Dividend: 0.04 (0.20%)
+=============
+Stock id: FRA.DE
+Stock name: Fraport AG Frankfurt Airport S
+Sell price: B
+Buy price: 54.01
+Min prie: 30.13
+Max price: 56.80
+Stock ID: FRA.DE
+Previous close: 39.83
+Market cap: 3.527B
+Days range: 38.06 - 40.13
+52 week range: 35.56 - 68.40
+Average volume: 161,829
+1 year return: 
+Beta: 1.72
+P/E ratio: 72.04
+Revenue: 
+EPS: 0.53
+Dividend: N/A (N/A)
+=============
+Stock id: GYC.DE
+Stock name: Grand City Properties
+Sell price: B
+Buy price: 22.58
+Min prie: 18.37
+Max price: 22.94
+Stock ID: GYC.DE
+Previous close: 9.44
+Market cap: 1.527B
+Days range: 8.82 - 9.46
+52 week range: 8.62 - 21.26
+Average volume: 207,199
+1 year return: 
+Beta: 0.58
+P/E ratio: 3.17
+Revenue: 
+EPS: 2.92
+Dividend: 0.83 (9.01%)

@@ -1,9 +1,8 @@
 import os
 import sys
 
-
 sys.path.insert(1, '../../../Security/DB/')
-sys.path.insert(1, '../../Selenium/')
+sys.path.insert(1, '../../../Selenium/')
 from sqliteWrapper import SQLiteWrapper
 from log import Log
 

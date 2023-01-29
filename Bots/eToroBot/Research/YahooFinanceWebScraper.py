@@ -4,19 +4,12 @@ import os, sys
 import atexit
 import pickle
 import time
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.firefox.webdriver import FirefoxProfile
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from sqliteData import SqliteDataEtoro
+sys.path.insert(1, '../../../Selenium/')
+from seleniumWrapper import SeleniumWrapper
 from log import Log
 from driverFirefox import Driver
-from sqliteData import SqliteDataEtoro
-from seleniumWrapper import SeleniumWrapper
 
 class YahooFinanceWebScraper:
     def __init__ (self):
@@ -25,7 +18,7 @@ class YahooFinanceWebScraper:
         self.__stocksData = self.__stocksDataBase.readData ('all_stocks')
         self.__stockIdIndex = 0
         self.__log = Log('stock_research.log')
-        driverObj = Driver ("/home/vladimir/.mozilla/firefox/w05kja2g.default")
+        driverObj = Driver ("/home/vladimir/.mozilla/firefox/q54e1nbe.default-release")
         self.__driver = driverObj.getDriver()
         self.__seleniumWrapper  = SeleniumWrapper(self.__driver)
 

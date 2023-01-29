@@ -26,3 +26,12 @@ class Driver:
 
     def getDriver (self):
         return self.__driver
+
+    def open (self):
+        self.__driver = webdriver.Firefox(self.__profile)
+        self.__driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        self.__driver.maximize_window()
+        wait = WebDriverWait(self.__driver, 10)
+
+    def quit (self):
+        self.__driver.quit()

@@ -17,7 +17,7 @@ class WordsFile:
                 if (len(englishBulgarianWords) < 2):
                         continue
                 bulgarianWords = englishBulgarianWords[1].split (', ')
-                englishBulgarianWords[0] = u''.join(englishBulgarianWords[0]).encode('utf-8').strip()
+                englishBulgarianWords[0] = englishBulgarianWords[0]
                 listBulgarianWords = []
                 for i in range (len(bulgarianWords)):
                     bulgarianWords[i] = bulgarianWords[i].replace('\n','')
@@ -32,17 +32,17 @@ class LearnEnglishWords:
         self.listWords = listWords
         self.total = len (self.listWords)
         self.allQuestions = self.total * 2
-        self.listRandomIndexes = random.sample(xrange(self.total), self.total)
+        self.listRandomIndexes = random.sample(range(self.total), self.total)
         self.indexEnglishWords = 0
         self.indexBulgarianWords = 1
         self.currentWord = 0
 
     def __ask(self, words):
         for i in range (len(words)):
-                word = u''.join(words[i]).encode('utf-8').strip()
+                word = words[i]
                 print (word)
         print ("Your answer: ")
-        userAnswer = raw_input()
+        userAnswer = input()
         return userAnswer
 
     def __calculatePercentage (self, total):
@@ -51,7 +51,7 @@ class LearnEnglishWords:
     def __checkAnswer (self, answer, words):
         word = ""
         for i in range (len(words)):
-                word = u''.join(words[i]).encode('utf-8').strip()
+                word = words[i]
                 if (answer == word):
                             print ("=====That's right!")
                             self.correctAnswers+=1

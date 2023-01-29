@@ -1,14 +1,6 @@
 import atexit
 import pickle
 import time
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.firefox.webdriver import FirefoxProfile
-from datetime import datetime
 import os, sys
 from Markets import Markets
 from Stock import Stock
@@ -34,7 +26,7 @@ class EtfResearch:
         self.__indexMaxPrice = 9
         self.__sqliteData = SqliteDataEtoro ('etfs.db')
         self.__log = Log('etf_research.log')
-        driverObj = Driver ("/home/vladimir/.mozilla/firefox/w05kja2g.default")
+        driverObj = Driver ("/home/vladimir/.mozilla/firefox/q54e1nbe.default-release")
         self.__driver = driverObj.getDriver()
         self.__markets = Markets(self.__driver)
         self.__stock = Stock (self.__driver)
