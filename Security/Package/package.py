@@ -9,10 +9,16 @@ class Package:
         self.__index = 0
         self.__page_source = "" #ToDo: change this name
         self.__source_length = "" #ToDo: change this name
-        
-        
+
+
     def compareVersions(self, version1, version2):
-        return parse_version(version1) >= parse_version(version2)
+         result = True
+         try:
+             result = parse_version(version1) >= parse_version(version2)
+         except:
+             pass
+
+         return result
 
     def __getPackageName(self):
         package_name = ""
@@ -40,7 +46,7 @@ class Package:
             package_version+=self.__page_source[self.__index]
             self.__index+=1
         return package_version
-    
+
     def __getPackageSeverity(self):
         package_severity = ""
         self.__index = self.__page_source.find("<span", self.__index, self.__source_length)
@@ -60,7 +66,7 @@ class Package:
         package_name =""
         package_version =""
         package_severity =""
-        
+
         self.__index = self.__page_source.find("<tr>", self.__index, self.__source_length)
         if (self.__index == -1):
             return package_name, package_version, package_severity
@@ -78,48 +84,48 @@ class Package:
                 print ("Tried to get package name: <td> not found.")
                 return package_name, package_version, package_severity
         self.__index+=len("<td ")
-            
+
         #get package name
         package_name = self.__getPackageName()
         if (self.__index == -1):
             return package_name, package_version, package_severity
-        
+
         #get version
         package_version = self.__getPackageVersion()
         if (self.__index == -1):
             return package_name, package_version, package_severity
-        
+
         #get severity
         package_severity = self.__getPackageSeverity()
         if (self.__index == -1):
             return package_name, package_version, package_severity
-        
+
         return package_name, package_version, package_severity
-        
-        
+
+
     def getVulnerablePackagesList(self):
         list_packages =[]
         response = urlopen('https://security.archlinux.org/')
         self.__page_source = response.read()
         self.__page_source = self.__page_source.decode("utf-8", "strict")
         self.__source_length = len(self.__page_source)
-        
+
         self.__index = 0
         self.__index = self.__page_source.find("<tbody>", self.__index, self.__source_length)
         if (self.__index == -1):
             print ("Cannot find <tbody> tag")
             return list_packages
         self.__index+=len("<tbody>")
-        
+
         while (self.__index!=-1 and self.__index<len(self.__page_source)):
             package_name, package_version, package_severity = self.__getPackageData()
             if (self.__index == -1):
                 return list_packages
             list_package_data = [package_name, package_version, package_severity]
             list_packages.append(list_package_data)
-            
+
         return list_packages
-        
+
     def getLocalPackagesList(self):
         list_local_packages = []
         os.system("pacman -Q > /tmp/local_packages.txt")
@@ -130,8 +136,7 @@ class Package:
                 continue
             l_package[1] = l_package[1].replace('\n','')
             l_package[1] = l_package[1].replace('\r','')
-            
+
             list_local_packages.append(l_package)
         f.close()
         return list_local_packages
-
