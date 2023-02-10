@@ -12,7 +12,7 @@ class ConnectionDB:
             self.__sqlite.createTable("network_package_data", ["time text", "ip_address text", "port text", "process text", "data text"])
 
 
-    def insertIPInfo (self, ip_address, net_name, city, country):
+    def insertIpInfo (self, ip_address, net_name, city, country):
         self.__sqlite.insertData("ip_info", [(str(ip_address), str(net_name), str(city), str(country))])
 
     def insertNetworkPackageData(self, time, ip_address, port, process, data):

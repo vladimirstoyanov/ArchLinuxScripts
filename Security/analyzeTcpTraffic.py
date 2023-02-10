@@ -1,7 +1,5 @@
 import os
 import sys
-
-#from sets import Set
 import socket
 import subprocess
 import time
@@ -40,132 +38,124 @@ class ConnectionData:
 	def setProcessName (self, process_name):
 		self.__process_name =process_name
 
-def getNetstatCommandOutput():
-		p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+class Netstat:
+	def __init__ (self):
+			pass
+	def __getNetstatCommandOutput(self):
+			p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+			out, err = p.communicate()
+			out = out.decode ('ascii')
+			return out.split('\n')
+
+	def __checkNetstatRow(self, data):
+		sizeOfNetstatRow = 7
+		indexOfState = 5
+		if (len(data)<sizeOfNetstatRow):
+			return False
+		if (data[indexOfState] == 'TIME_WAIT'):
+			return False
+		return True
+
+	def getDataByIp(self, ip_address):
+		rows = self.__getNetstatCommandOutput()
+		connection_data = ConnectionData()
+		list_ip=[]
+
+		for i in range(2,len(rows),1):
+			data=rows[i].split(' ')
+			data = list(filter(None, data))
+
+			if (self.__checkNetstatRow(data) == False):
+				continue
+
+			ip = data[4].split(':')
+			listSplitSize = 2
+			ipIndex = 0
+			portIndex = 1
+			processIndex = 6
+			if (len(ip)<listSplitSize):
+				continue
+			if (ip[ipIndex] != ip_address):
+				continue
+
+			connection_data = ConnectionData()
+			connection_data.setIp(ip[ipIndex])
+			connection_data.setPort(ip[portIndex])
+			connection_data.setProcessName (data[processIndex])
+			return connection_data
+
+		return connection_data
+
+class WhoIs:
+	def __init__(self):
+			pass
+
+	def __getWhoisCommandOutput(self, ip_address):
+		p = subprocess.Popen(['whois', ip_address], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		out, err = p.communicate()
 		out = out.decode ('ascii')
 		return out.split('\n')
 
-def checkNetstatRow(data):
-	if (len(data)<7):
-		return False
-	if (data[5] == 'TIME_WAIT'):
-		return False
-	return True
+	def getCountryCityOrgName (self, ip_address):
+		rows = self.__getWhoisCommandOutput(ip_address)
 
-def getDataByIp(ip_address):
-	rows = getNetstatCommandOutput()
-	connection_data = ConnectionData()
-	list_ip=[]
-	for i in range(len(rows)):
-		if (i<2): #skip some shit rows
-			continue
-		data=rows[i].split(' ')
-		data = list(filter(None, data)) #remove empty strings
+		netName=""
+		city=""
+		country=""
+		for i in range (len(rows)):
+			if (rows[i].find('NetName:')!=-1 or rows[i].find('netname')!=-1):
+				netName = rows[i]
+				continue
+			if (rows[i].find('City:')!=-1 or rows[i].find('city:')!=-1):
+				city = rows[i]
+				continue
+			if (rows[i].find('Country:')!=-1 or rows[i].find('country:')!=-1):
+				country=rows[i]
+				continue
+		return netName, city, country
 
-		if (checkNetstatRow(data) == False):
-			continue
 
-		ip = data[4].split(':')
-		if (len(ip)<2):
-			continue
-		if (ip[0] != ip_address):
-			continue
 
-		connection_data = ConnectionData()
-		connection_data.setIp(ip[0])
-		connection_data.setPort(ip[1])
-		connection_data.setProcessName (data[6])
-		return connection_data
+if __name__ == "__main__":
+	try:
+	    s = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_TCP)#ToDo: use GGP (socket.getprotobyname('ggp')) instead socket.IPPROTO_TCP
+	except Exception as msg:
+	    print ('Socket could not be created. Message: ' + str(msg))
+	    sys.exit()
 
-	return connection_data
+	ip_addresses = set()
+	connectionDB_ = connectionDB.ConnectionDB("/root/ipData.sqlite")
+	netstat = Netstat()
+	whois = WhoIs()
 
-def getConnectionDataList ():
-	rows = getNetstatCommandOutput()
+	while(True):
+		#ToDo: handle send packages as well
+		packet = s.recvfrom(65565)
+		tcpPacket = TcpPacket.ParseTCP(packet)
+		connection_data = netstat.getDataByIp(tcpPacket.getSourceAddress())
 
-	list_ip=[]
-	for i in range(len(rows)):
-		if (i<2): #skip some shit rows
-			continue
-		data=rows[i].split(' ')
-		data = filter(None, data) #remove empty strings
-
-		if (checkNetstatRow(data) == False):
+		if ("" == connection_data.getIp()):
 			continue
 
-		ip = data[4].split(':')
-		if (ip<2):
+		time_ = strftime("Time: %Y-%m-%d %H:%M:%S", gmtime())
+
+		connectionDB_.insertNetworkPackageData(
+			time_,
+			connection_data.getIp(),
+			connection_data.getPort(),
+			connection_data.getProcessName(),
+			tcpPacket.getHexData()
+		)
+		if (connection_data.getIp() in ip_addresses):
 			continue
-		connection_data = ConnectionData()
-		connection_data.setIp(ip[0])
-		connection_data.setPort(ip[1])
-		connection_data.setProcessName (data[6])
-		list_ip.append(connection_data)
+		ip_addresses.add(connection_data.getIp())
+		netName, city, country = whois.getCountryCityOrgName(connection_data.getIp())
 
-	return list_ip
-
-def getWhoisCommandOutput(ip_address):
-	p = subprocess.Popen(['whois', ip_address], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-	out, err = p.communicate()
-	out = out.decode ('ascii')
-	return out.split('\n')
-
-def getCountryCityOrgName (ip_address):
-	rows = getWhoisCommandOutput(ip_address)
-
-	netName=""
-	city=""
-	country=""
-	for i in range (len(rows)):
-		if (rows[i].find('NetName:')!=-1 or rows[i].find('netname')!=-1):
-			netName = rows[i]
-			continue
-		if (rows[i].find('City:')!=-1 or rows[i].find('city:')!=-1):
-			city = rows[i]
-			continue
-		if (rows[i].find('Country:')!=-1 or rows[i].find('country:')!=-1):
-			country=rows[i]
-			continue
-	return netName, city, country
-
-try:
-    s = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_TCP)#ToDo: use GGP (socket.getprotobyname('ggp')) instead socket.IPPROTO_TCP
-except Exception as msg:
-    print ('Socket could not be created. Message: ' + str(msg))
-    sys.exit()
-
-ip_addresses = set()#ToDo: remove IP addresses and use sqlite DB to check the IP
-connectionDB_ = connectionDB.ConnectionDB("/root/ipData.sqlite")
-
-while(True):
-	#ToDo: handle send packages as well
-	packet = s.recvfrom(65565)
-	#print (packet)
-	tcpPacket = TcpPacket.ParseTCP(packet)
-	connection_data = getDataByIp(tcpPacket.getSourceAddress())
-
-	if (connection_data.getIp()==""):
-		continue
-
-	time_ = strftime("Time: %Y-%m-%d %H:%M:%S", gmtime())
-
-	connectionDB_.insertNetworkPackageData(
-		time_,
-		connection_data.getIp(),
-		connection_data.getPort(),
-		connection_data.getProcessName(),
-		tcpPacket.getHexData()
-	)
-	if (connection_data.getIp() in ip_addresses):
-		continue
-	ip_addresses.add(connection_data.getIp())
-	netName, city, country = getCountryCityOrgName(connection_data.getIp())
-
-	print ("=========================")
-	print (time_)
-	print ("Process: " + connection_data.getProcessName())
-	print ("IP, port: " + connection_data.getIp() + ":" + connection_data.getPort())
-	print (netName)
-	print (city)
-	print (country)
-	connectionDB_.insertIPInfo(connection_data.getIp(), netName, city, country)
+		print ("=========================")
+		print (time_)
+		print ("Process: " + connection_data.getProcessName())
+		print ("IP, port: " + connection_data.getIp() + ":" + connection_data.getPort())
+		print (netName)
+		print (city)
+		print (country)
+		connectionDB_.insertIpInfo(connection_data.getIp(), netName, city, country)
