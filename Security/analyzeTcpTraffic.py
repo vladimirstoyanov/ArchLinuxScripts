@@ -1,14 +1,17 @@
 import os
 import sys
 
-from sets import Set
+#from sets import Set
 import socket
 import subprocess
 import time
 from time import gmtime, strftime
 
-from DB import connectionDB
-from Parse import TcpPacket
+sys.path.insert(1, 'DB/')
+import connectionDB
+
+sys.path.insert(1, 'Parse/')
+import TcpPacket
 
 class ConnectionData:
 	def __init__(self):
@@ -34,9 +37,13 @@ class ConnectionData:
 	def getProcessName (self):
 		return self.__process_name
 
+	def setProcessName (self, process_name):
+		self.__process_name =process_name
+
 def getNetstatCommandOutput():
 		p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		out, err = p.communicate()
+		out = out.decode ('ascii')
 		return out.split('\n')
 
 def checkNetstatRow(data):
@@ -48,20 +55,19 @@ def checkNetstatRow(data):
 
 def getDataByIp(ip_address):
 	rows = getNetstatCommandOutput()
-
 	connection_data = ConnectionData()
 	list_ip=[]
 	for i in range(len(rows)):
 		if (i<2): #skip some shit rows
 			continue
 		data=rows[i].split(' ')
-		data = filter(None, data) #remove empty strings
+		data = list(filter(None, data)) #remove empty strings
 
 		if (checkNetstatRow(data) == False):
 			continue
 
 		ip = data[4].split(':')
-		if (ip<2):
+		if (len(ip)<2):
 			continue
 		if (ip[0] != ip_address):
 			continue
@@ -101,7 +107,7 @@ def getConnectionDataList ():
 def getWhoisCommandOutput(ip_address):
 	p = subprocess.Popen(['whois', ip_address], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	out, err = p.communicate()
-
+	out = out.decode ('ascii')
 	return out.split('\n')
 
 def getCountryCityOrgName (ip_address):
@@ -124,16 +130,17 @@ def getCountryCityOrgName (ip_address):
 
 try:
     s = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_TCP)#ToDo: use GGP (socket.getprotobyname('ggp')) instead socket.IPPROTO_TCP
-except socket.error , msg:
-    print 'Socket could not be created. Error Code : ' + str(msg[0]) + ' Message ' + msg[1]
+except Exception as msg:
+    print ('Socket could not be created. Message: ' + str(msg))
     sys.exit()
 
-ip_addresses = Set()#ToDo: remove IP addresses and use sqlite DB to check the IP
+ip_addresses = set()#ToDo: remove IP addresses and use sqlite DB to check the IP
 connectionDB_ = connectionDB.ConnectionDB("/root/ipData.sqlite")
 
 while(True):
 	#ToDo: handle send packages as well
 	packet = s.recvfrom(65565)
+	#print (packet)
 	tcpPacket = TcpPacket.ParseTCP(packet)
 	connection_data = getDataByIp(tcpPacket.getSourceAddress())
 
@@ -154,11 +161,11 @@ while(True):
 	ip_addresses.add(connection_data.getIp())
 	netName, city, country = getCountryCityOrgName(connection_data.getIp())
 
-	print "========================="
-	print time_
-	print "Process: " + connection_data.getProcessName()
-	print "IP, port: " + connection_data.getIp() + ":" + connection_data.getPort()
-	print netName
-	print city
-	print country
+	print ("=========================")
+	print (time_)
+	print ("Process: " + connection_data.getProcessName())
+	print ("IP, port: " + connection_data.getIp() + ":" + connection_data.getPort())
+	print (netName)
+	print (city)
+	print (country)
 	connectionDB_.insertIPInfo(connection_data.getIp(), netName, city, country)

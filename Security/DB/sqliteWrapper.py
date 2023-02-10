@@ -30,7 +30,7 @@ class SQLiteWrapper:
 			if (i<(length-1)):
 				query_string += ","
 		query_string+=")"
-		print("Query string: " + query_string)
+		#print("Query string: " + query_string)
 		c.executemany(query_string, data)
 		self.__connect.commit()
 
@@ -68,7 +68,7 @@ class SQLiteWrapper:
 		query_string+=" WHERE "
 		query_string+=condition
 
-		print ("query: " + query_string)
+		#print ("query: " + query_string)
 		c.execute(query_string)
 		self.__connect.commit()
 
@@ -85,7 +85,7 @@ class SQLiteWrapper:
 		query_string += "'"
 		c.execute(query_string)
 		rows = c.fetchall()
-		print ("rows: " + str(rows[0][0]))
+		#print ("rows: " + str(rows[0][0]))
 		if (rows[0][0] == 0):
 			return False
 		return True
