@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $# -ne 2 ]
+if [ $# -ne 3 ]
 then
   echo "Wrong input! please use the following input: "
         echo "1 arg - root partition (e.g. sda1)"
