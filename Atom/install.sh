@@ -7,9 +7,9 @@ then
   exit 1
 fi
 
+
 cd $1
-wget https://github.com/atom/atom/releases/tag/v1.63.1/atom-amd64.tar.gz
-
-cd atom-1.63.1-amd64
-
+wget https://github.com/atom/atom/releases/download/v1.60.0/atom-amd64.tar.gz
+tar -xvf *.tar.gz
+cd atom-1.60.0-amd64
 sudo ln -sf ${pwd}/atom /usr/bin/
