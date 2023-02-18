@@ -1,30 +1,40 @@
 #!/bin/sh
 
-if [ $# -ne 1 ]
+if [ $# -ne 3 ]
 then
   echo "Wrong input! please use the following input: "
-        echo "1 arg - username"
+        echo "1 arg - root partition (e.g. sda1)"
+        echo "2 arg - home partition (e.g. sda2)"
+        echo "3 arg - swap partition (e.g. sda3)"
+        echo "Make sure that you have configured the parition table (e.g. with cfisk command)"
   exit 1
 fi
 
-hwclock --systohc
-locale-gen
-echo "127.0.0.1	localhost\n">> /etc/hostname
-echo "::1		localhost" >>/etc/hostname
-mkinitcpio -P
+echo "If you don't know the iso version, then cat version file in the root directory."
 
-echo "Enter root password"
-passwd
+echo "=====Verifing signatures..."
+gpg --keyserver-options auto-key-retrieve --verify archlinux-2023.02.01-x86_64.iso.sig
+pacman-key -v archlinux-2023.02.01-x86_64.iso.sig
 
-pacman --noconfirm -S git
+echo "=====Time: Setting NTP to true"
+timedatectl set-ntp true
 
-cd /home
-git clone https://github.com/vladimirstoyanov/ArchLinuxScripts.git
-cd ArchLinuxScripts
+echo "=====Formating partitions..."
+mkfs.ext4 /dev/$1
+mkswap /dev/$3
+mount /dev/$1 /mnt
+swapon /dev/$3
 
-echo "Creating a user $1"
-sh ./Users/add_sudo_user.sh $1
+echo "=====Installing basic packages, linux kernel, and linux-firmware...."
+pacstrap /mnt base linux linux-firmware
 
-sh install.sh
-sh config.sh
-exit
+echo "=====Formating the home partition..."
+mkdir /mnt/home
+mkfs.ext4 /dev/$2
+mount /dev/$2 /mnt/home
+
+echo "=====Generating fstab file with the partitions..."
+genfstab -U /mnt >> /mnt/etc/fstab
+
+echo "=====Trying to boot the installed arch..."
+arch-chroot /mnt
