@@ -12,8 +12,8 @@ fi
 
 echo "If you don't know the iso version, then cat version file in the root directory."
 
-gpg --keyserver-options auto-key-retrieve --verify archlinux-x86_64.iso.sig
-pacman-key -v archlinux-x86_64.iso.sig
+gpg --keyserver-options auto-key-retrieve --verify archlinux-2023.02.01-x86_64.iso.sig
+pacman-key -v archlinux-2023.02.01-x86_64.iso.sig
 timedatectl set-ntp true
 mkfs.ext4 /dev/$1
 mkswap /dev/$3
