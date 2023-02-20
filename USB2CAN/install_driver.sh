@@ -1,22 +1,16 @@
 #!/bin/sh
 
-if [ $# -ne 1 ]
-then
-  echo "Wrong input! please use the following input: "
-        echo "1 arg - usb2can directory"
-  exit 1
-fi
+cd /usr/src
+sudo git clone https://github.com/krumboeck/usb2can.git
 
-#$1 usb2can directory
-cd $1
-git clone https://github.com/krumboeck/usb2can.git
+mv usb2can/ usb2can-1.0/
 cd usb2can
 
-make
+sudo make
 
 cd ..
-dkms add -m usb2can -v 1.0 --verbose
-dkms build -m usb2can -v 1.0 --verbose
-dkms install -m usb2can -v 1.0 --verbose
+sudo dkms add -m usb2can -v 1.0 --verbose
+sudo dkms build -m usb2can -v 1.0 --verbose
+sudo dkms install -m usb2can -v 1.0 --verbose
 
-sh setup_interface.sh
+sudo sh setup_interface.sh
