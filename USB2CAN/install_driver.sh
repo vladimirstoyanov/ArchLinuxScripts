@@ -13,4 +13,5 @@ sudo dkms add -m usb2can -v 1.0 --verbose
 sudo dkms build -m usb2can -v 1.0 --verbose
 sudo dkms install -m usb2can -v 1.0 --verbose
 
+cd usb2can-1.0/
 sudo sh setup_interface.sh
