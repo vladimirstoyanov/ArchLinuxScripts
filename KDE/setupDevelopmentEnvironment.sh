@@ -14,7 +14,7 @@ fi
 #$2 - email git
 
 echo "=======Installing basic packages"
-sudo pacman sudo pacman -S git cmake dialog
+sudo pacman --noconfirm -S git cmake dialog
 
 echo "=======Configuring git"
 git config --global user.name $1

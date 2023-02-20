@@ -46,7 +46,7 @@ first_three_numbers_of_ip = splitted_network_address[0] + '.' + splitted_network
 
 #installing dhcp server
 print ("installing dhcp...")
-os.system("echo y | pacman -S dhcp")
+os.system("pacman --noconfirm -S dhcp")
 
 print ("enabling ipv4 package forward...")
 #enabling ipv4 package forward

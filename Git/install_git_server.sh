@@ -13,7 +13,7 @@ sudo pacman -Sy
 
 echo 'Installing openssh...'
 sleep 1
-sudo pacman -S openssh
+sudo pacman --noconfirm -S openssh
 
 echo "Enabling sshd..."
 sudo systemctl enable sshd

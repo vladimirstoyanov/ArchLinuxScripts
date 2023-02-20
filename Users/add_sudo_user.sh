@@ -14,7 +14,7 @@ passwd $1
 chown $1 /home/$1
 
 #ToDo check if sudo package is installed
-pacman -S sudo
+pacman --noconfirm -S sudo
 
 echo "Adding $1 ALL=(ALL) ALL in /etc/sudoers"
 chmod +w /etc/sudoers

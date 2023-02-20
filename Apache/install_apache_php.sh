@@ -1,9 +1,9 @@
 echo "Installing apache package..."
-pacman -S apache
+pacman --noconfirm -S apache
 sleep 1
 
 echo "Installing php..."
-pacman -S php php-apache
+pacman --noconfirm -S php php-apache
 sleep 1
 
 cp httpd.conf /etc/httpd/conf/

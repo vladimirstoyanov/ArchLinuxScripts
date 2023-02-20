@@ -6,4 +6,4 @@ then
 	exit 1
 fi
 
-pacman -S $1
+pacman --noconfirm -S $1
