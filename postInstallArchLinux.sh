@@ -9,8 +9,8 @@ fi
 
 hwclock --systohc
 locale-gen
-echo "127.0.0.1	localhost">> /etc/hostname
-echo "::1		localhost" >>/etc/hostname
+echo -e "127.0.0.1  localhost\n">> /etc/hostname
+echo "::1 localhost" >>/etc/hostname
 mkinitcpio -P
 
 echo "Enter root password"
