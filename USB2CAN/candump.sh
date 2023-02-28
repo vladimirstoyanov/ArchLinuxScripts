@@ -1,0 +1,9 @@
+#!/bin/sh
+if [ $# -ne 1 ]
+then
+  echo "Wrong input! please use the following input: "
+        echo "1 arg  - interface (e.g. can0)"
+  exit 1
+fi
+
+candump $1
