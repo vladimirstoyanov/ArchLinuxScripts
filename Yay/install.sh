@@ -9,5 +9,5 @@ fi
 
 cd $1
 git clone https://aur.archlinux.org/pacaur.git
-cd yay
+cd pacaur
 makepkg -si
