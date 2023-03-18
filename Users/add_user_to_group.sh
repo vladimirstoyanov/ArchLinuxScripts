@@ -7,4 +7,4 @@ then
   exit 1
 fi
 
-gpasswd -a $1 $2
+sudo usermod -a -G $2 $1
