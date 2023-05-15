@@ -7,9 +7,9 @@ then
   exit 1
 fi
 
-sudo pacman -S meson --noconfirm
-sudo pacman -S fakechroot --noconfirm
-sudo pacman -S gtest --noconfirm
+sudo pacman --noconfirm -S meson
+sudo pacman --noconfirm -S fakechroot
+sudo pacman --noconfirm -S gtest
 
 cd $1
 wget https://aur.archlinux.org/cgit/aur.git/snapshot/auracle-git.tar.gz
