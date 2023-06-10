@@ -1,4 +1,3 @@
-  GNU nano 7.2                     export_path_to_compiler.sh                               
 #!/bin/sh
 
 if [ $# -ne 1 ]
@@ -15,6 +14,8 @@ export PATH=$(pwd)/gcc-linaro-4.9-2015.02-3-x86_64_arm-linux-gnueabihf/bin:$PATH
 
 cp a13_linux_defconfig  $1/linux_sunxi/arch/arm/configs/
 cd $1/linux_sunxi
+
+git checkout e37d760b363888f3a65cd6455c99a75cac70a7b8
 
 make ARCH=arm a13_linux_defconfig
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 uImage
