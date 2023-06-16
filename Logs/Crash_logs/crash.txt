@@ -1,0 +1,5 @@
+Jun 14 08:29:01 127.0.0.1localhost konsole[1983]: kf.xmlgui: Shortcut for action  "" "Show Quick Commands" set with QAction::setShortcut()! Use KActionCollection::setDefaultShortcut(s) instead.
+Jun 14 08:29:01 127.0.0.1localhost konsole[1983]: kf.xmlgui: Shortcut for action  "" "Show SSH Manager" set with QAction::setShortcut()! Use KActionCollection::setDefaultShortcut(s) instead.
+Jun 16 22:38:10 127.0.0.1localhost kwin_wayland[499]: kwin_libinput: Libinput: event12 - SynPS/2 Synaptics TouchPad: kernel bug: Touch jump detected and discarded.
+                                                      See https://wayland.freedesktop.org/libinput/doc/1.23.0/touchpad-jumping-cursors.html for details
+Jun 16 22:59:14 127.0.0.1localhost kwin_wayland[499]: kwin_libinput: Libinput: event0  - Lid Switch: client bug: event processing lagging behind by 883ms, your system is too slow
