@@ -6,7 +6,9 @@ then
   exit 1
 fi
 
+echo $1
+
 while true; do
-    netstat -tunep | grep $1
+    netstat -tunep | grep -F '$1'
     sleep 1
 done
