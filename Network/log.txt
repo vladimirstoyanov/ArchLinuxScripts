@@ -1,0 +1,763 @@
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+tcp        0     88 192.168.50.78:46392     95.216.195.133:80       ESTABLISHED 0          23768810   362/NetworkManager  
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+udp        0      0 192.168.50.78:68        192.168.50.1:67         ESTABLISHED 0          23624842   362/NetworkManager  
