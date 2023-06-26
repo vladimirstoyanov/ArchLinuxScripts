@@ -7,6 +7,6 @@ then
 fi
 
 while true; do
-    netstat -tulnep | grep $1
+    netstat -tunep | grep $1
     sleep 1
 done
