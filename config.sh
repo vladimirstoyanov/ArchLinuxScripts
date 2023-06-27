@@ -35,9 +35,9 @@ sleep 1
 #sudo cp Resources/kxkbrc ~/.config/
 #sleep 1
 
-#echo "Configuring iptables..."
+echo "Enabling iptables..."
 #sudo sh Firewall/iptables.sh
-#sudo systemctl enable iptables.service
+sudo systemctl enable iptables.service
 #sleep 1
 
 #sh ./Plasma/PlasmaWidgets/InstallWidgets.sh
