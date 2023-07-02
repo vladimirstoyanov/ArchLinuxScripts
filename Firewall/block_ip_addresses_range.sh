@@ -8,4 +8,4 @@ then
   exit 1
 fi
 
-iptables -A INPUT -m iprange –src-range [START]-[END] -j DROP
+iptables -A INPUT -m iprange –src-range [$1]-[$2] -j DROP
