@@ -34,7 +34,7 @@ iptables -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
 
 #prevent syn/syn-flood attacks
 echo 'iptables -N SYN_FLOOD'
-iptables -N SYN_FLOOD 
+iptables -N SYN_FLOOD
 echo 'iptables -A SYN_FLOOD -j DROP'
 iptables -A INPUT -p tcp ! --syn -m conntrack --ctstate NEW -j DROP
 iptables -A SYN_FLOOD -j DROP
@@ -49,6 +49,6 @@ iptables -A INPUT -p tcp --tcp-flags ALL ALL -j DROP
 echo 'iptables -A OUTPUT -p icmp -j DROP'
 iptables -A OUTPUT -p icmp -j DROP
 echo 'iptables -A INPUT -p icmp -j DROP'
-iptables -A INPUT -p icmp -j DROP 
+iptables -A INPUT -p icmp -j DROP
 
 iptables-save > /etc/iptables/iptables.rules

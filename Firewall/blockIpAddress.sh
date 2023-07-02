@@ -11,4 +11,6 @@ sudo iptables -A INPUT -s $1 -j DROP
 sudo iptables -A OUTPUT -s $1 -j DROP
 sudo iptables -A FORWARD -s $1 -j DROP
 
+iptables -I INPUT 1 -s $1 -j DROP
+
 iptables-save > /etc/iptables/iptables.rules
