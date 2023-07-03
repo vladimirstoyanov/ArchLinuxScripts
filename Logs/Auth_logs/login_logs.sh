@@ -1,2 +1,2 @@
 #!/bin/sh
-journalctl SYSLOG_IDENTIFIER=login
+journalctl -n 100 SYSLOG_IDENTIFIER=login
