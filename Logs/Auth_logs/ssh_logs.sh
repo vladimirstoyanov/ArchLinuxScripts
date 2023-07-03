@@ -1,2 +1,2 @@
 #!/bin/sh
-journalctl --unit sshd
+journalctl -n 100 --unit sshd
