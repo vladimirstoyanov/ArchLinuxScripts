@@ -8,4 +8,4 @@ then
   exit 1
 fi
 
-AllowUsers $1@$2
+echo 'AllowUsers $1@$2' >> /etc/ssh/sshd_config
