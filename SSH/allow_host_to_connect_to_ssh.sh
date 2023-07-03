@@ -8,4 +8,5 @@ then
   exit 1
 fi
 
-echo 'AllowUsers $1@$2' >> /etc/ssh/sshd_config
+echo "AllowUsers $1@$2" >> /etc/ssh/sshd_config
+sudo systemctl restart sshd
