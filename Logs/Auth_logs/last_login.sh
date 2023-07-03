@@ -1,1 +1,1 @@
-last | more
+last -a
