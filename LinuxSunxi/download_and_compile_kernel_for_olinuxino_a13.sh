@@ -9,20 +9,22 @@ fi
 
 CURRENT_DIRECTORY=$(pwd)
 
-echo "=======Downloading the compiler..."  
+cd $1
+
+echo "=======Downloading the compiler..."
 wget https://releases.linaro.org/archive/15.02/components/toolchain/binaries/arm-linux-gnueabihf/gcc-linaro-4.9-2015.02-3-x86_64_arm-linux-gnueabihf.tar.xz
 
 echo "======Extracting the compiler..."
 tar -xvf gcc-linaro-4.9-2015.02-3-x86_64_arm-linux-gnueabihf.tar.xz
 
-cd $1
+
 
 echo "======Clonign linux-sunxi directory..."
 git clone https://github.com/linux-sunxi/linux-sunxi
 export PATH=$(pwd)/gcc-linaro-4.9-2015.02-3-x86_64_arm-linux-gnueabihf/bin:$PATH
 
 echo "$CURRENT_DIRECTORY"
-cp $CURRENT_DIRECTORY/a13_linux_defconfig  $1/linux-sunxi/arch/arm/configs/
+cp $CURRENT_DIRECTORY/a13oLinuxino/a13_linux_defconfig  $1/linux-sunxi/arch/arm/configs/
 cd $1/linux-sunxi
 
 echo "======Checkout 3.4.90+ commit..."
