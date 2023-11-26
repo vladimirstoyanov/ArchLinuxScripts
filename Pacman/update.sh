@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #update the system
-sudo pacman -Suy
+sudo pacman -Suy --noconfirm
 
 #print vulnerable packages
 
