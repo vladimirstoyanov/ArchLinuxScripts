@@ -9,7 +9,7 @@ then
 fi
 
 echo 'Update the package repository cache...'
-sudo pacman -Sy
+sudo pacman -Sy --noconfirm
 
 echo 'Installing openssh...'
 sleep 1
