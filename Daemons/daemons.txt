@@ -1,0 +1,167 @@
+?              1 systemd
+?             [] 2 kthreadd - responsible for the threads
+?             []3 pool_workqueue_release - async work of the kernel
+?              4 kworker/R-rcu_g - mechanism for executing workqueue threads in a way that is safe for use with Read-Copy Update (RCU) data structures.
+                    processing network packets
+                    Handling filesystem operations
+                    Managing block device requests
+                    - Uses recursive RCU, which allows a thread to nest multiple calls to RCU functions.
+                    - Does not allow thread preemption
+
+?              5 kworker/R-rcu_p - a mechanism for executing workqueue threads in a way that is safe for use with Read-Copy Update (RCU) data structures.
+RCU is a synchronization mechanism that allows multiple threads to read and modify data structures concurrently without the need for explicit locking.
+                    - Uses preemption RCU, which allows a thread to preempt other threads that are also executing RCU code.
+                    - Allows thread preemption
+
+?              6 kworker/R-slub_
+                    - a mechanism for executing workqueue threads in a way that is safe for use with Slab Allocator. Slab Allocator is a memory management mechanism that is used to allocate and manage memory for objects of a similar size.
+                    Slab Allocator is a highly optimized memory allocator in Linux that allocates memory for objects of a similar size. It is designed to improve memory allocation performance and reduce memory fragmentation.
+
+?              7 kworker/R-netns - is responsible for executing workqueue threads in a way that is safe for use with network namespaces. Network namespaces are a feature of the Linux kernel that allow multiple isolated network environments to coexist on a single system.
+
+?              9 kworker/0:0H-events_highpri - a critical component of the Linux operating system, responsible for handling high-priority events and ensuring the system's responsiveness. It runs in the context of CPU 0 and is assigned a high priority to ensure that it gets preferential access to CPU resources.
+
+?             12 kworker/R-mm_pe -  is a crucial component of the Linux memory management system, responsible for handling memory management tasks related to page eviction (PE) and page faults. It operates within the context of CPU 0 and is assigned a high priority to ensure timely execution of its tasks.
+                - PE is a memory management technique used in operating systems to remove inactive or least recently used (LRU) pages from physical memory to make room for new data allocations.
+
+
+
+?             14 rcu_tasks_kthread -  is a kernel thread in the Linux operating system that is responsible for managing and executing RCU tasks. RCU (Read-Copy Update) is a synchronization mechanism that allows multiple threads to read and modify data structures concurrently without the need for explicit locking.
+
+?             15 rcu_tasks_rude_kthread - is responsible for handling high-priority RCU (Read-Copy Update) tasks. RCU is a synchronization mechanism that allows multiple threads to read and modify data structures concurrently without the need for explicit locking.
+
+?             16 rcu_tasks_trace_kthread - The rcu_tasks_trace_kthread daemon is a specialized kernel thread in the Linux operating system that is responsible for tracing and debugging the execution of RCU (Read-Copy Update) tasks.
+
+
+?             17 ksoftirqd/0  -responsible for handling low-priority software interrupts and ensuring efficient system operation. It runs in the context of CPU 0 and is assigned a low priority to ensure that it does not interfere with higher-priority tasks.
+
+?             18 rcu_preempt  - Read-Copy Update (RCU) synchronization mechanism used in the Linux kernel. It allows multiple threads to read and modify data structures concurrently without the need for explicit locking, while also allowing threads to preempt each other. This makes RCU-preempt more efficient than traditional RCU, which does not allow thread preemption.
+
+
+?             19 rcub/0 -  RCU is a synchronization mechanism that allows multiple threads to read and modify data structures concurrently without the need for explicit locking. Boosting-capable RCU tasks are tasks that can be executed in a more aggressive manner to improve performance.
+
+?             20 migration/0 - In Linux operating systems, migration/0 is a kernel thread responsible for managing the migration of processes between CPU cores. Process migration is the process of moving a running process from one CPU core to another. It is typically performed to improve load balancing, ensure efficient resource utilization, and optimize overall system performance.
+
+?             21 idle_inject/0 - is a kernel thread in Linux operating systems responsible for forcing CPUs into idle states for a specified fraction of time over a specified period. It is part of the kernel's CPU idle management mechanism and plays a crucial role in optimizing power consumption and system responsiveness.
+
+?             22 cpuhp/0 - In the Linux operating system, cpuhp/0 is a kernel thread responsible for handling CPU hotplug events, such as adding or removing CPU cores from the system. CPU hotplug is a feature that allows the dynamic addition and removal of CPU cores based on the system's workload and power requirements.
+
+?             23 cpuhp/1 - cpuhp/1 is a kernel thread in Linux operating systems that serves as a backup for the primary CPU hotplug thread, cpuhp/0. CPU hotplug is a feature that allows the dynamic addition and removal of CPU cores from the system based on the system's workload and power requirements.
+
+
+?             24 idle_inject/1 - Idle_inject/1 is a kernel thread in Linux operating systems responsible for forcing CPUs into idle states for a specified fraction of time over a specified period. It is part of the kernel's CPU idle management mechanism and plays a crucial role in optimizing power consumption and system responsiveness.
+
+
+?             25 migration/1 - is a kernel thread responsible for managing the migration of processes between CPU cores. Process migration is the process of moving a running process from one CPU core to another.
+
+?             26 ksoftirqd/1 - kernel thread responsible for handling low-priority software interrupts. Software interrupts are signals sent to the CPU by software indicating events that require attention. Ksoftirqd/1 handles these interrupts, ensuring that critical tasks are not delayed and that the system remains responsive.
+
+?             28 kworker/1:0H-kblockd -  kworker/1:0H-kblockd is a kernel thread responsible for handling block device requests in a more aggressive manner than traditional kworker threads. It is part of the kblockd subsystem and plays a crucial role in optimizing block device I/O performance.
+
+?             29 cpuhp/2 - 2 is a kernel thread responsible for handling CPU hotplug events, such as adding or removing CPU cores from the system. CPU hotplug is a feature that allows the dynamic addition and removal of CPU cores based on the system's workload and power requirements.
+
+?             30 idle_inject/2 - is responsible for forcing CPUs into idle states for a specified fraction of time over a specified period. It is part of the kernel's CPU idle management mechanism and plays a significant role in optimizing power consumption and system responsiveness.
+
+?             31 migration/2 - is a kernel thread responsible for managing the migration of processes between CPU cores. Process migration is the process of moving a running process from one CPU core to another. It is typically performed to improve load balancing, ensure efficient resource utilization, and optimize overall system performance.
+
+?             32 ksoftirqd/2 - is a kernel thread responsible for handling low-priority software interrupts. Software interrupts are signals sent to the CPU by software indicating events that require attention. Ksoftirqd/2 handles these interrupts, ensuring that critical tasks are not delayed and that the system remains responsive.
+
+?             34 kworker/2:0H-events_highpri - is a kernel thread responsible for handling high-priority events that cannot be handled by the default ksoftirqd thread. These events are typically associated with critical system operations or time-sensitive tasks that require immediate attention to maintain system responsiveness and stability.
+
+
+?             35 cpuhp/3 -  is a kernel thread responsible for handling CPU hotplug events, such as adding or removing CPU cores from the system. CPU hotplug is a feature that allows the dynamic addition and removal of CPU cores based on the system's workload and power requirements.
+
+?             36 idle_inject/3 -  is a kernel thread responsible for handling CPU hotplug events, such as adding or removing CPU cores from the system. CPU hotplug is a feature that allows the dynamic addition and removal of CPU cores based on the system's workload and power requirements.
+
+?             37 migration/3 - is a kernel thread responsible for managing the migration of processes between CPU cores. Process migration is the process of moving a running process from one CPU core to another. It is typically performed to improve load balancing, ensure efficient resource utilization, and optimize overall system performance.
+
+?             38 ksoftirqd/3 - is a kernel thread responsible for handling low-priority software interrupts. Software interrupts are signals sent to the CPU by software indicating events that require attention, such as network packet arrivals, I/O completion, and timer expirations. Ksoftirqd/3 handles these interrupts, ensuring that critical tasks are not delayed and that the system remains responsive.
+
+?             40 kworker/3:0H-events_highpri - s a kernel thread responsible for handling high-priority events that cannot be handled by the default ksoftirqd thread. These events are typically associated with critical system operations or time-sensitive tasks that require immediate attention to maintain system responsiveness and stability.
+
+?             41 kdevtmpfs - Kdevtmpfs (Kernel Device Temporary File System) is a special temporary file system used by the Linux kernel to manage device nodes for character devices. It provides a fast and efficient way to create and manage device nodes without the need for persisting data to disk.
+
+?             42 kworker/R-inet_ -  is a kernel thread responsible for handling network-related tasks that require immediate attention to maintain system responsiveness and network performance. These tasks typically involve processing high-priority network packets, handling network device events, and performing critical network operations.
+
+?             43 kauditd - is a kernel thread in Linux operating systems responsible for auditing events and generating audit records. Auditing is a security mechanism that tracks and records system events, providing a valuable source of information for security analysis, troubleshooting, and compliance audits.
+
+?             45 khungtaskd
+?             46 oom_reaper
+?             48 kworker/R-write
+?             49 kcompactd0
+
+?             50 ksmd
+?             51 khugepaged
+?             52 kworker/R-kinte
+?             53 kworker/R-kbloc
+?             54 kworker/R-blkcg
+?             57 kworker/R-tpm_d
+?             58 kworker/R-ata_s
+?             59 kworker/R-edac-
+?             60 kworker/R-devfr
+?             61 watchdogd
+?             62 kworker/0:1H-events_highpri
+?             63 kswapd0
+?             64 kworker/R-kthro
+?             65 kworker/R-acpi_
+?             67 hwrng
+?             68 scsi_eh_0
+?             69 kworker/R-scsi_
+?             70 scsi_eh_1
+?             71 kworker/R-scsi_
+?             72 kworker/R-mld
+?             73 kworker/R-ipv6_
+?             74 kworker/2:1H-kblockd
+?             82 kworker/R-kstrp
+?             83 kworker/R-zswap
+?             85 kworker/R-charg
+?             86 kworker/1:1H-kblockd
+?            107 kworker/3:1H-kblockd
+?            133 kworker/R-ttm
+?            134 card1-crtc0
+?            135 card1-crtc1
+?            136 card1-crtc2
+?            153 jbd2/sda1-8
+?            154 kworker/R-ext4-
+?            191 systemd-journal
+?            197 kworker/R-iprt-
+?            198 iprt-VBoxTscThread
+?            235 systemd-udevd
+?            236 psimon
+?            338 irq/129-mei_me
+?            341 kworker/R-cfg80
+?            343 kworker/R-ktpac
+?            355 irq/130-iwlwifi
+?            360 kworker/R-crypt
+?            373 jbd2/sda2-8
+?            374 kworker/R-ext4-
+?            422 systemd-logind
+?            427 wpa_supplicant
+?            442 NetworkManager
+?            453 cupsd
+?            459 sddm
+?            470 auto_update
+?            501 psimon
+?            538 sddm-helper
+?            600 udisksd
+?            641 upowerd
+?          25590 kworker/1:0-events
+?          27830 kworker/u8:2-events_unbound
+?          28533 kworker/u8:0-i915
+?          31396 kworker/3:2-i915-unordered
+?          31567 kworker/2:0-events
+?          31654 kworker/u9:2-i915_flip
+?          32965 kworker/0:1-events
+?          33200 kworker/u8:1-events_unbound
+?          33251 kworker/u9:0-rb_allocator
+?          33427 kworker/u9:3-rb_allocator
+?          33449 kworker/1:2-rcu_gp
+?          33450 kworker/3:0-i915-unordered
+?          33453 kworker/2:1-events
+?          33454 kworker/0:2-inet_frag_wq
+?          33457 kworker/u8:3-flush-8:0
+?          34964 kworker/u9:1-i915_flip
+?          35573 kworker/3:1-i915-unordered
+?          35574 kworker/2:2-events
+?          35575 kworker/0:0-events
+?          35576 kworker/1:1-events
