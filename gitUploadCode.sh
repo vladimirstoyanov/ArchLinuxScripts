@@ -15,5 +15,9 @@ git add --all
 echo "git commit -m $1"
 git commit -m "$1"
 
+PASSWORD=$(cat /home/vladimir/gitHubToken.txt)
 echo "git push origin"
-git push origin
+git push originprogram << EOF
+vladimirstoyanov
+$PASSWORD
+EOF
