@@ -16,6 +16,7 @@ echo "git commit -m $1"
 git commit -m "$1"
 
 PASSWORD=$(cat /home/vladimir/gitHubToken.txt)
+echo $PASSWORD
 echo "git push origin"
 git push origin << EOF
 vladimirstoyanov
