@@ -27,6 +27,9 @@ class AuditLog:
     def getUsers (self):
         return self.__getProperty('AUID')
 
+    def getExecutables(self):
+        return self.__getProperty('exe')
+
 
 if __name__ == "__main__":
     auditLog = AuditLog ()
