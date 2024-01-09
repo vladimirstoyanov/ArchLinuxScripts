@@ -1,1 +1,1 @@
-ausearch --start today --end now
+ausearch -i --start today --end now
