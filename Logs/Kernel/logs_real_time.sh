@@ -1,1 +1,1 @@
-sudo dmesg -w
+sudo dmesg -T -w
