@@ -1,7 +1,7 @@
 local exclude_list = {
   {"203.0.113.0/24", "Google"},
   {"131.247.48.0/20", "Microsoft"},
-  {"192.168.1.0/24", "Facebook"}
+  {"157.240.221.0/24", "Facebook"}
 }
 
 function is_excluded(ip_addr)
