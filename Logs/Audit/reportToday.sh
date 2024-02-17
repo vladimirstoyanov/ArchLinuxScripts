@@ -1,1 +1,1 @@
-aureport --start today --end now
+aureport -i --start today --end now

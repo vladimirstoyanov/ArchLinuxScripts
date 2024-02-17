@@ -1,1 +1,1 @@
-ausearch -m SYSCALL --start today --end now
+ausearch -i -m SYSCALL --start today --end now

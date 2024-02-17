@@ -1,1 +1,1 @@
-ausearch -m USER_LOGIN --success no
+ausearch -i -m USER_LOGIN --success no

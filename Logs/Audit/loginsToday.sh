@@ -1,1 +1,1 @@
-ausearch -m LOGIN --start today --end now
+ausearch -i -m LOGIN --start today --end now

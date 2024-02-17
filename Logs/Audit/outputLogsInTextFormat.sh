@@ -1,1 +1,1 @@
-ausearch --start today --format text
+ausearch -i --start today --format text
