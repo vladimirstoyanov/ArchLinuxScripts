@@ -1,20 +1,39 @@
-Server = https://packages.oth-regensburg.de/archlinux/$repo/os/$arch
-Server = https://mirror.mirohost.net/archlinux/$repo/os/$arch
-Server = https://archlinux.uk.mirror.allworldit.com/archlinux/$repo/os/$arch
-Server = https://mirror.kumi.systems/archlinux/$repo/os/$arch
-Server = https://mirror.jordanrey.me/archlinux/$repo/os/$arch
-Server = https://mirror.ubrco.de/archlinux/$repo/os/$arch
-Server = https://ftp.fau.de/archlinux/$repo/os/$arch
-Server = https://mirror.23m.com/archlinux/$repo/os/$arch
-Server = https://mirror.mikrogravitation.org/archlinux/$repo/os/$arch
-Server = https://mirrors.xtom.de/archlinux/$repo/os/$arch
-Server = https://mirror.efect.ro/archlinux/$repo/os/$arch
-Server = https://mirror.alwyzon.net/archlinux/$repo/os/$arch
-Server = https://mirror.puzzle.ch/archlinux/$repo/os/$arch
-Server = https://mirror.init7.net/archlinux/$repo/os/$arch
-Server = https://mirror.xtom.com.hk/archlinux/$repo/os/$arch
-Server = https://mirror.fsmg.org.nz/archlinux/$repo/os/$arch
-Server = https://archlinux.za.mirror.allworldit.com/archlinux/$repo/os/$arch
-Server = https://seoul.mirror.pkgbuild.com/$repo/os/$arch
-Server = https://plug-mirror.rcac.purdue.edu/archlinux/$repo/os/$arch
-Server = https://mirror.ps.kz/archlinux/$repo/os/$arch
+https://packages.oth-regensburg.de/archlinux/$repo/os/$arch  194.95.104.0 - 194.95.109.255
+https://mirror.mirohost.net/archlinux/$repo/os/$arch  89.184.64.0 - 89.184.95.255
+https://archlinux.uk.mirror.allworldit.com/archlinux/$repo/os/$arch 51.77.103.0 - 51.77.103.63
+https://mirror.kumi.systems/archlinux/$repo/os/$arch 135.181.0.0 - 135.181.255.255
+https://mirror.jordanrey.me/archlinux/$repo/os/$arch 103.224.212.0 - 103.224.213.255
+https://mirror.ubrco.de/archlinux/$repo/os/$arch  94.130.180.0 - 94.130.183.255
+https://ftp.fau.de/archlinux/$repo/os/$arch 131.188.0.0 - 131.188.255.255
+https://mirror.23m.com/archlinux/$repo/os/$arch 212.83.32.0 - 212.83.63.255
+https://mirror.mikrogravitation.org/archlinux/$repo/os/$arch  45.14.232.0 - 45.14.235.255
+https://mirrors.xtom.de/archlinux/$repo/os/$arch  62.133.35.0 - 62.133.35.255
+https://mirror.efect.ro/archlinux/$repo/os/$arch  91.209.189.0 - 91.209.189.255
+https://mirror.alwyzon.net/archlinux/$repo/os/$arch 46.102.157.16 - 46.102.157.31
+https://mirror.puzzle.ch/archlinux/$repo/os/$arch 5.102.145.0 - 5.102.145.255
+https://mirror.init7.net/archlinux/$repo/os/$arch 109.202.202.0 - 109.202.202.255
+https://mirror.xtom.com.hk/archlinux/$repo/os/$arch 163.7.128.0 - 163.7.191.255
+https://mirror.fsmg.org.nz/archlinux/$repo/os/$arch  163.7.128.0 - 163.7.191.255
+https://archlinux.za.mirror.allworldit.com/archlinux/$repo/os/$arch 45.220.56.0 - 45.220.63.255
+https://seoul.mirror.pkgbuild.com/$repo/os/$arch  145.40.64.0 - 145.40.127.255
+https://plug-mirror.rcac.purdue.edu/archlinux/$repo/os/$arch 128.211.0.0 - 128.211.255.255
+https://mirror.ps.kz/archlinux/$repo/os/$arch  195.210.46.0 - 195.210.47.255
+
+!(ip.addr >= 194.95.104.0 && ip.addr <= 194.95.109.255) &&
+!(ip.addr >= 89.184.64.0 && ip.addr <= 89.184.95.255) &&
+!(ip.addr >= 51.77.103.0 && ip.addr <= 51.77.103.63) &&
+!(ip.addr >= 103.224.212.0 && ip.addr <= 103.224.213.255) &&
+!(ip.addr >= 94.130.180.0 && ip.addr <= 94.130.183.255) &&
+!(ip.addr >= 131.188.0.0 && ip.addr <= 131.188.255.255) &&
+!(ip.addr >= 212.83.32.0 && ip.addr <= 212.83.63.255) &&
+!(ip.addr >= 45.14.232.0 && ip.addr <= 45.14.235.255) &&
+!(ip.addr >= 62.133.35.0 && ip.addr <= 62.133.35.255) &&
+!(ip.addr >= 91.209.189.0 && ip.addr <= 91.209.189.255) &&
+!(ip.addr >= 46.102.157.16 && ip.addr <= 46.102.157.31) &&
+!(ip.addr >= 5.102.145.0 && ip.addr <= 5.102.145.255) &&
+!(ip.addr >= 109.202.202.0 && ip.addr <= 109.202.202.255) &&
+!(ip.addr >= 163.7.128.0 && ip.addr <= 163.7.191.255) &&
+!(ip.addr >= 45.220.56.0 && ip.addr <= 45.220.63.255) &&
+!(ip.addr >= 145.40.64.0 && ip.addr <= 145.40.127.255) &&
+!(ip.addr >= 128.211.0.0 && ip.addr <= 128.211.255.255) &&
+!(ip.addr >= 195.210.46.0 && ip.addr <= 195.210.47.255)
