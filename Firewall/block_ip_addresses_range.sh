@@ -1,11 +1,11 @@
 #!/bin/sh
 
-if [ $# -ne 2 ]
+if [ $# -ne 1 ]
 then
   echo "Wrong input! please use the following input: "
-        echo "1 arg - IP start range"
-        echo "1 arg - IP end range"
+        echo "1 arg - IP range (192.168.100.0/24)"
   exit 1
 fi
 
-iptables -A INPUT -m iprange –src-range [$1]-[$2] -j DROP
+sudo iptables -A INPUT -s $1 -j DROP
+iptables-save > /etc/iptables/iptables.rules

@@ -9,3 +9,4 @@ then
 fi
 
 iptables -i $1 -A INPUT -s $2 -j DROP
+iptables-save > /etc/iptables/iptables.rules
