@@ -1,4 +1,4 @@
 !(ip.addr == 104.96.94.79) && //etoro
 !(ip.addr == 104.18.36.64) && //slashdot
-!(ip.addr == 193.178.166.36) && //fibank
+!(ip.addr >= 193.178.166.0 && ip.addr <= 193.178.166.255) && //fibank
 !(ip.addr == 193.0.6.135) //whois
