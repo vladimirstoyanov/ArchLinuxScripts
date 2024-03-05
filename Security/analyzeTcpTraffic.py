@@ -42,7 +42,7 @@ class Netstat:
 	def __init__ (self):
 			pass
 	def __getNetstatCommandOutput(self):
-			p = subprocess.Popen(['netstat', '-apnt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+			p = subprocess.Popen(['netstat', '-apntu'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 			out, err = p.communicate()
 			out = out.decode ('ascii')
 			return out.split('\n')
