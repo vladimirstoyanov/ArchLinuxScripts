@@ -17,3 +17,5 @@
 104.85.52.0/22 //akamai
 
 95.216.195.133 //network manager related
+
+74.206.228.78 //ars technica
