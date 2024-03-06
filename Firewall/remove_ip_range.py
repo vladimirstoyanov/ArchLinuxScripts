@@ -12,9 +12,7 @@ checkArguments()
 
 ip_range = sys.argv[2]
 interface = sys.argv[1]
-rules = ['iptables -i ' + interface + ' -A INPUT -s ' + ip_range +' -j DROP',
-        'iptables -A OUTPUT -s ' + ip_range +' -j DROP',
-        'iptables -i ' + interface + ' -A FORWARD -s ' + ip_range + ' -j DROP']
+rules = ['iptables -A OUTPUT -s ' + ip_range +' -j DROP']
 
 
 for i in range (len(rules)):
