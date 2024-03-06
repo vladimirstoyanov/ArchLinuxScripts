@@ -17,6 +17,7 @@ rules = ['iptables -A OUTPUT -s ' + ip_range +' -j DROP']
 
 for i in range (len(rules)):
         rules[i] = rules[i].replace(' -A ', ' -D ')
+        rules[i] = rules[i].replace(' -I ', ' -D ')
         os.system (rules[i])
 
 #save changes

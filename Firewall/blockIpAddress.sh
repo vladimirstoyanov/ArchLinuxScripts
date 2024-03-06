@@ -7,7 +7,7 @@ then
   exit 1
 fi
 
-sudo iptables -A OUTPUT -s $1 -j DROP
+sudo iptables -I OUTPUT -d $1 -j DROP
 
 
 
