@@ -18,10 +18,6 @@ echo "o"
 echo "w"
 
 
-echo "=====Verifing signatures..."
-gpg --keyserver-options auto-key-retrieve --verify archlinux-2023.02.01-x86_64.iso.sig
-pacman-key -v archlinux-2023.02.01-x86_64.iso.sig
-
 echo "=====Time: Setting NTP to true"
 timedatectl set-ntp true
 
