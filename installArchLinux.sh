@@ -11,6 +11,12 @@ then
 fi
 
 echo "If you don't know the iso version, then cat version file in the root directory."
+echo "You can use cfdisk command to create paritions."
+echo "Make sure you will create bootable partition. If you can't create a bootable partition, probably partition table is GPT. Change the partition table to MBR:"
+echo "fdisk /dev/sda"
+echo "o"
+echo "w"
+
 
 echo "=====Verifing signatures..."
 gpg --keyserver-options auto-key-retrieve --verify archlinux-2023.02.01-x86_64.iso.sig
