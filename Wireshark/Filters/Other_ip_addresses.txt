@@ -17,3 +17,8 @@
 104.85.52.0/22 //akamai
 
 95.216.195.133 //network manager related
+
+74.206.228.78 //ars technica
+
+23.192.0.0/11 //etoro
+2.18.192.0/20
