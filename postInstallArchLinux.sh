@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $# -ne 2s ]
+if [ $# -ne 2 ]
 then
   echo "Wrong input! please use the following input: "
         echo "1 arg - username"
