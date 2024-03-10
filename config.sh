@@ -45,3 +45,7 @@ sudo systemctl enable iptables.service
 echo "Adding the arch linux scripts path as a global variable..."
 ALS_PATH='ARCH_LINUX_SCRIPTS_PATH'=$(pwd)
 sudo echo "$ALS_PATH">>/etc/environment
+
+#install and configure grub
+cd Grub/
+sh install.sh $1
