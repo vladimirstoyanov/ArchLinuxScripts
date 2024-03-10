@@ -13,3 +13,5 @@ pyaudio
 bs4
 pynput
 tbselenium
+transformers
+tokenizers
