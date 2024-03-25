@@ -1,0 +1,4 @@
+1. Right click on Cossacks 3 -> Properties
+2. Click on "Compatibility"
+3. Check the following: "Force the use of specific Steam compatibility tool"
+4. Choose "Proton experimental" or the latest version.
