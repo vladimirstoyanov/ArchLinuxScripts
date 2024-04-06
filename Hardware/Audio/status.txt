@@ -1,0 +1,43 @@
+● wireplumber.service - Multimedia Service Session Manager
+     Loaded: loaded (/usr/lib/systemd/user/wireplumber.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2024-04-06 13:51:37 EEST; 19min ago
+   Main PID: 2539 (wireplumber)
+      Tasks: 7 (limit: 8759)
+     Memory: 8.9M (peak: 9.5M)
+        CPU: 406ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/wireplumber.service
+             └─2539 /usr/bin/wireplumber
+
+Apr 06 13:51:37 127.0.0.1localhost systemd[522]: Started Multimedia Service Session Manager.
+Apr 06 13:51:37 127.0.0.1localhost wireplumber[2539]: 0x55d019c0d230: no modules loaded from context.modules
+Apr 06 13:51:37 127.0.0.1localhost wireplumber[2539]: GetManagedObjects() failed: org.freedesktop.DBus.Error.NameHasNoOwner
+Apr 06 13:51:37 127.0.0.1localhost wireplumber[2539]: [0:11:14.515594698] [2539] ERROR IPAModule ipa_module.cpp:172 Symbol ipaModuleInfo not found
+Apr 06 13:51:37 127.0.0.1localhost wireplumber[2539]: [0:11:14.515624514] [2539] ERROR IPAModule ipa_module.cpp:292 v4l2-compat.so: IPA module has no valid info
+Apr 06 13:51:37 127.0.0.1localhost wireplumber[2539]: [0:11:14.515680278] [2539]  INFO Camera camera_manager.cpp:284 libcamera v0.2.0
+
+● pipewire.service - PipeWire Multimedia Service
+     Loaded: loaded (/usr/lib/systemd/user/pipewire.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2024-04-06 13:51:37 EEST; 19min ago
+TriggeredBy: ● pipewire.socket
+   Main PID: 2538 (pipewire)
+      Tasks: 3 (limit: 8759)
+     Memory: 7.3M (peak: 7.8M)
+        CPU: 97ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/pipewire.service
+             └─2538 /usr/bin/pipewire
+
+Apr 06 13:51:37 127.0.0.1localhost systemd[522]: Started PipeWire Multimedia Service.
+
+● pipewire-pulse.service - PipeWire PulseAudio
+     Loaded: loaded (/usr/lib/systemd/user/pipewire-pulse.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2024-04-06 13:51:37 EEST; 19min ago
+TriggeredBy: ● pipewire-pulse.socket
+   Main PID: 2540 (pipewire-pulse)
+      Tasks: 3 (limit: 8759)
+     Memory: 3.3M (peak: 3.8M)
+        CPU: 82ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/pipewire-pulse.service
+             └─2540 /usr/bin/pipewire-pulse
+
+Apr 06 13:51:37 127.0.0.1localhost systemd[522]: Started PipeWire PulseAudio.
+Apr 06 14:01:29 127.0.0.1localhost pipewire-pulse[2540]: mod.protocol-pulse: client 0x560f75992ad0 [KWrite]: ERROR command:-1 (invalid) tag:4 error:25 (Input/output error)

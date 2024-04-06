@@ -1,0 +1,338 @@
+Apr 06 13:47:50 127.0.0.1localhost systemd-coredump[1851]: Process 737 (plasmashell) of user 1000 dumped core.
+                                                           
+                                                           Stack trace of thread 737:
+                                                           #0  0x000077dc30eab32c n/a (libc.so.6 + 0x8d32c)
+                                                           #1  0x000077dc30e5a6c8 raise (libc.so.6 + 0x3c6c8)
+                                                           #2  0x000077dc33bc643f _ZN6KCrash19defaultCrashHandlerEi (libKF6Crash.so.6 + 0x643f)
+                                                           #3  0x000077dc30e5a770 n/a (libc.so.6 + 0x3c770)
+                                                           #4  0x000077dc30eab32c n/a (libc.so.6 + 0x8d32c)
+                                                           #5  0x000077dc30e5a6c8 raise (libc.so.6 + 0x3c6c8)
+                                                           #6  0x000077dc30e424b8 abort (libc.so.6 + 0x244b8)
+                                                           #7  0x000077dc30e43395 n/a (libc.so.6 + 0x25395)
+                                                           #8  0x000077dc30eb52a7 n/a (libc.so.6 + 0x972a7)
+                                                           #9  0x000077dc30eb7799 n/a (libc.so.6 + 0x99799)
+                                                           #10 0x000077dc30eb9e93 __libc_free (libc.so.6 + 0x9be93)
+                                                           #11 0x000077dc0d49fa0f pw_stream_destroy (libpipewire-0.3.so.0 + 0x5fa0f)
+                                                           #12 0x000077dc0d517dcb _ZN20PipeWireSourceStreamD1Ev (libKPipeWire.so.6 + 0xbdcb)
+                                                           #13 0x000077dc0d520922 _ZN18PipeWireSourceItem7refreshEv (libKPipeWire.so.6 + 0x14922)
+                                                           #14 0x000077dc0d520e2f _ZN18PipeWireSourceItem9setNodeIdEj (libKPipeWire.so.6 + 0x14e2f)
+                                                           #15 0x000077dc32630138 n/a (libQt6Qml.so.6 + 0x230138)
+                                                           #16 0x000077dc326eb599 _ZN19QQmlPropertyPrivate5writeEP7QObjectRK16QQmlPropertyDataRK8QVariantRK14QQmlRefPointerI15QQmlContextDataE6QFlagsINS2_9WriteFlagEE (libQt6Qml.so.6 + 0x2eb599)
+                                                           #17 0x000077dc3263e5e8 _ZN11QQmlBinding9slowWriteERK16QQmlPropertyDataS2_RKN3QV45ValueEb6QFlagsINS0_9WriteFlagEE (libQt6Qml.so.6 + 0x23e5e8)
+                                                           #18 0x000077dc326429fd n/a (libQt6Qml.so.6 + 0x2429fd)
+                                                           #19 0x000077dc3264231a _ZN11QQmlBinding8doUpdateERKN24QQmlJavaScriptExpression13DeleteWatcherE6QFlagsIN16QQmlPropertyData9WriteFlagEERN3QV45ScopeE (libQt6Qml.so.6 + 0x24231a)
+                                                           #20 0x000077dc326418f4 _ZN11QQmlBinding6updateE6QFlagsIN16QQmlPropertyData9WriteFlagEE (libQt6Qml.so.6 + 0x2418f4)
+                                                           #21 0x000077dc326d21e7 _ZN12QQmlNotifier10emitNotifyEP20QQmlNotifierEndpointPPv (libQt6Qml.so.6 + 0x2d21e7)
+                                                           #22 0x000077dc315913ca n/a (libQt6Core.so.6 + 0x1913ca)
+                                                           #23 0x000077dc0de0ded4 n/a (libtaskmanagerplugin.so + 0x7ed4)
+                                                           #24 0x000077dc31591599 n/a (libQt6Core.so.6 + 0x191599)
+                                                           #25 0x000077dc319fc596 n/a (libffi.so.8 + 0x7596)
+                                                           #26 0x000077dc319f900e n/a (libffi.so.8 + 0x400e)
+                                                           #27 0x000077dc319fbbd3 ffi_call (libffi.so.8 + 0x6bd3)
+                                                           #28 0x000077dc33c53645 n/a (libwayland-client.so.0 + 0x7645)
+                                                           #29 0x000077dc33c53e73 n/a (libwayland-client.so.0 + 0x7e73)
+                                                           #30 0x000077dc33c5413c wl_display_dispatch_queue_pending (libwayland-client.so.0 + 0x813c)
+                                                           #31 0x000077dc3317e99e n/a (libQt6WaylandClient.so.6 + 0x6499e)
+                                                           #32 0x000077dc3159189b n/a (libQt6Core.so.6 + 0x19189b)
+                                                           #33 0x000077dc31773d1c _ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE (libQt6Core.so.6 + 0x373d1c)
+                                                           #34 0x000077dc315446ee _ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE (libQt6Core.so.6 + 0x1446ee)
+                                                           #35 0x000077dc3153cc38 _ZN16QCoreApplication4execEv (libQt6Core.so.6 + 0x13cc38)
+                                                           #36 0x000058bb1d501476 n/a (plasmashell + 0x27476)
+                                                           #37 0x000077dc30e43cd0 n/a (libc.so.6 + 0x25cd0)
+                                                           #38 0x000077dc30e43d8a __libc_start_main (libc.so.6 + 0x25d8a)
+                                                           #39 0x000058bb1d501c65 n/a (plasmashell + 0x27c65)
+                                                           
+                                                           Stack trace of thread 985:
+                                                           #0  0x000077dc30f190bf __poll (libc.so.6 + 0xfb0bf)
+                                                           #1  0x000077dc30126306 n/a (libglib-2.0.so.0 + 0xb9306)
+                                                           #2  0x000077dc300c6712 g_main_context_iteration (libglib-2.0.so.0 + 0x59712)
+                                                           #3  0x000077dc31773cd4 _ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE (libQt6Core.so.6 + 0x373cd4)
+                                                           #4  0x000077dc315446ee _ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE (libQt6Core.so.6 + 0x1446ee)
+                                                           #5  0x000077dc31621abf _ZN7QThread4execEv (libQt6Core.so.6 + 0x221abf)
+                                                           #6  0x000077dc32d0b333 n/a (libQt6Quick.so.6 + 0x30b333)
+                                                           #7  0x000077dc316a15d3 n/a (libQt6Core.so.6 + 0x2a15d3)
+                                                           #8  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #9  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1134:
+                                                           #0  0x000077dc30f26e66 epoll_wait (libc.so.6 + 0x108e66)
+                                                           #1  0x000077dc0d434cf9 n/a (libspa-support.so + 0x14cf9)
+                                                           #2  0x000077dc0d42658d n/a (libspa-support.so + 0x658d)
+                                                           #3  0x000077dc0d45be52 n/a (libpipewire-0.3.so.0 + 0x1be52)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1241:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1528:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 994:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1239:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1142:
+                                                           #0  0x000077dc30f190bf __poll (libc.so.6 + 0xfb0bf)
+                                                           #1  0x000077dc30126306 n/a (libglib-2.0.so.0 + 0xb9306)
+                                                           #2  0x000077dc300c6712 g_main_context_iteration (libglib-2.0.so.0 + 0x59712)
+                                                           #3  0x000077dc31773cd4 _ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE (libQt6Core.so.6 + 0x373cd4)
+                                                           #4  0x000077dc315446ee _ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE (libQt6Core.so.6 + 0x1446ee)
+                                                           #5  0x000077dc31621abf _ZN7QThread4execEv (libQt6Core.so.6 + 0x221abf)
+                                                           #6  0x000077dbf8da7e9e _ZN15KCupsConnection3runEv (libkcupslib.so.6.0.3 + 0x2ce9e)
+                                                           #7  0x000077dc316a15d3 n/a (libQt6Core.so.6 + 0x2a15d3)
+                                                           #8  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #9  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1530:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1695:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc316a4600 _ZN14QWaitCondition4waitEP6QMutex14QDeadlineTimer (libQt6Core.so.6 + 0x2a4600)
+                                                           #3  0x000077dc32dc1d8a n/a (libQt6Quick.so.6 + 0x3c1d8a)
+                                                           #4  0x000077dc316a15d3 n/a (libQt6Core.so.6 + 0x2a15d3)
+                                                           #5  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #6  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1697:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1526:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc316a4600 _ZN14QWaitCondition4waitEP6QMutex14QDeadlineTimer (libQt6Core.so.6 + 0x2a4600)
+                                                           #3  0x000077dc32dc1d8a n/a (libQt6Quick.so.6 + 0x3c1d8a)
+                                                           #4  0x000077dc316a15d3 n/a (libQt6Core.so.6 + 0x2a15d3)
+                                                           #5  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #6  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 761:
+                                                           #0  0x000077dc30f190bf __poll (libc.so.6 + 0xfb0bf)
+                                                           #1  0x000077dc30126306 n/a (libglib-2.0.so.0 + 0xb9306)
+                                                           #2  0x000077dc300c6712 g_main_context_iteration (libglib-2.0.so.0 + 0x59712)
+                                                           #3  0x000077dc31773cd4 _ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE (libQt6Core.so.6 + 0x373cd4)
+                                                           #4  0x000077dc315446ee _ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE (libQt6Core.so.6 + 0x1446ee)
+                                                           #5  0x000077dc31621abf _ZN7QThread4execEv (libQt6Core.so.6 + 0x221abf)
+                                                           #6  0x000077dc322b89df n/a (libQt6DBus.so.6 + 0x299df)
+                                                           #7  0x000077dc316a15d3 n/a (libQt6Core.so.6 + 0x2a15d3)
+                                                           #8  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #9  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 766:
+                                                           #0  0x000077dc30f190bf __poll (libc.so.6 + 0xfb0bf)
+                                                           #1  0x000077dc3317eb28 n/a (libQt6WaylandClient.so.6 + 0x64b28)
+                                                           #2  0x000077dc316a15d3 n/a (libQt6Core.so.6 + 0x2a15d3)
+                                                           #3  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #4  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 782:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 784:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 992:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc316a4600 _ZN14QWaitCondition4waitEP6QMutex14QDeadlineTimer (libQt6Core.so.6 + 0x2a4600)
+                                                           #3  0x000077dc32dc1d8a n/a (libQt6Quick.so.6 + 0x3c1d8a)
+                                                           #4  0x000077dc316a15d3 n/a (libQt6Core.so.6 + 0x2a15d3)
+                                                           #5  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #6  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 996:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 765:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc316a4600 _ZN14QWaitCondition4waitEP6QMutex14QDeadlineTimer (libQt6Core.so.6 + 0x2a4600)
+                                                           #3  0x000077dc3317eaa8 n/a (libQt6WaylandClient.so.6 + 0x64aa8)
+                                                           #4  0x000077dc316a15d3 n/a (libQt6Core.so.6 + 0x2a15d3)
+                                                           #5  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #6  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1696:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1698:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 993:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1238:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 783:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 774:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 995:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 775:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1527:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 781:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1158:
+                                                           #0  0x000077dc30f190bf __poll (libc.so.6 + 0xfb0bf)
+                                                           #1  0x000077dc04dde9b7 n/a (libpulse.so.0 + 0x339b7)
+                                                           #2  0x000077dc04dc845c pa_mainloop_poll (libpulse.so.0 + 0x1d45c)
+                                                           #3  0x000077dc04dd261c pa_mainloop_iterate (libpulse.so.0 + 0x2761c)
+                                                           #4  0x000077dc04dd26d1 pa_mainloop_run (libpulse.so.0 + 0x276d1)
+                                                           #5  0x000077dc04de2bf2 n/a (libpulse.so.0 + 0x37bf2)
+                                                           #6  0x000077dc04d802b7 n/a (libpulsecommon-17.0.so + 0x5c2b7)
+                                                           #7  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #8  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 829:
+                                                           #0  0x000077dc30f190bf __poll (libc.so.6 + 0xfb0bf)
+                                                           #1  0x000077dc30126306 n/a (libglib-2.0.so.0 + 0xb9306)
+                                                           #2  0x000077dc300c6712 g_main_context_iteration (libglib-2.0.so.0 + 0x59712)
+                                                           #3  0x000077dc31773cd4 _ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE (libQt6Core.so.6 + 0x373cd4)
+                                                           #4  0x000077dc315446ee _ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE (libQt6Core.so.6 + 0x1446ee)
+                                                           #5  0x000077dc31621bbf _ZN7QThread3runEv (libQt6Core.so.6 + 0x221bbf)
+                                                           #6  0x000077dc316a15d3 n/a (libQt6Core.so.6 + 0x2a15d3)
+                                                           #7  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #8  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1237:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc316a4600 _ZN14QWaitCondition4waitEP6QMutex14QDeadlineTimer (libQt6Core.so.6 + 0x2a4600)
+                                                           #3  0x000077dc32dc1d8a n/a (libQt6Quick.so.6 + 0x3c1d8a)
+                                                           #4  0x000077dc316a15d3 n/a (libQt6Core.so.6 + 0x2a15d3)
+                                                           #5  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #6  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1240:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1529:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           
+                                                           Stack trace of thread 1699:
+                                                           #0  0x000077dc30ea5ebe n/a (libc.so.6 + 0x87ebe)
+                                                           #1  0x000077dc30ea8750 pthread_cond_wait (libc.so.6 + 0x8a750)
+                                                           #2  0x000077dc21c863ec n/a (iris_dri.so + 0x863ec)
+                                                           #3  0x000077dc21c9e39c n/a (iris_dri.so + 0x9e39c)
+                                                           #4  0x000077dc30ea955a n/a (libc.so.6 + 0x8b55a)
+                                                           #5  0x000077dc30f26a3c n/a (libc.so.6 + 0x108a3c)
+                                                           ELF object binary architecture: AMD x86-64
