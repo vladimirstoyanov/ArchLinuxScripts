@@ -1,43 +1,52 @@
 ● wireplumber.service - Multimedia Service Session Manager
      Loaded: loaded (/usr/lib/systemd/user/wireplumber.service; enabled; preset: enabled)
-     Active: active (running) since Sat 2024-04-06 13:51:37 EEST; 19min ago
-   Main PID: 2539 (wireplumber)
+     Active: active (running) since Sat 2024-04-06 22:37:21 EEST; 45min ago
+   Main PID: 536 (wireplumber)
       Tasks: 7 (limit: 8759)
-     Memory: 8.9M (peak: 9.5M)
-        CPU: 406ms
+     Memory: 30.2M (peak: 32.2M)
+        CPU: 2.371s
      CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/wireplumber.service
-             └─2539 /usr/bin/wireplumber
+             └─536 /usr/bin/wireplumber
 
-Apr 06 13:51:37 127.0.0.1localhost systemd[522]: Started Multimedia Service Session Manager.
-Apr 06 13:51:37 127.0.0.1localhost wireplumber[2539]: 0x55d019c0d230: no modules loaded from context.modules
-Apr 06 13:51:37 127.0.0.1localhost wireplumber[2539]: GetManagedObjects() failed: org.freedesktop.DBus.Error.NameHasNoOwner
-Apr 06 13:51:37 127.0.0.1localhost wireplumber[2539]: [0:11:14.515594698] [2539] ERROR IPAModule ipa_module.cpp:172 Symbol ipaModuleInfo not found
-Apr 06 13:51:37 127.0.0.1localhost wireplumber[2539]: [0:11:14.515624514] [2539] ERROR IPAModule ipa_module.cpp:292 v4l2-compat.so: IPA module has no valid info
-Apr 06 13:51:37 127.0.0.1localhost wireplumber[2539]: [0:11:14.515680278] [2539]  INFO Camera camera_manager.cpp:284 libcamera v0.2.0
+Apr 06 22:37:21 127.0.0.1localhost systemd[521]: Started Multimedia Service Session Manager.
+Apr 06 22:37:22 127.0.0.1localhost wireplumber[536]: 0x5b8978f20c40: no modules loaded from context.modules
+Apr 06 22:37:22 127.0.0.1localhost wireplumber[536]: GetManagedObjects() failed: org.freedesktop.DBus.Error.NameHasNoOwner
+Apr 06 22:37:22 127.0.0.1localhost wireplumber[536]: [0:00:16.459094672] [536] ERROR IPAModule ipa_module.cpp:172 Symbol ipaModuleInfo not found
+Apr 06 22:37:22 127.0.0.1localhost wireplumber[536]: [0:00:16.459115255] [536] ERROR IPAModule ipa_module.cpp:292 v4l2-compat.so: IPA module has no valid info
+Apr 06 22:37:22 127.0.0.1localhost wireplumber[536]: [0:00:16.459169646] [536]  INFO Camera camera_manager.cpp:284 libcamera v0.2.0
+Apr 06 23:00:12 127.0.0.1localhost wireplumber[536]: <WpAsyncEventHook:0x5b89790178c0> failed: <WpSiStandardLink:0x5b89790d0d80> link failed: 1 of 1 PipeWire links failed to activate
+Apr 06 23:10:28 127.0.0.1localhost wireplumber[536]: <WpAsyncEventHook:0x5b8979010610> failed: failed to activate item: Object activation aborted: proxy destroyed
 
 ● pipewire.service - PipeWire Multimedia Service
      Loaded: loaded (/usr/lib/systemd/user/pipewire.service; enabled; preset: enabled)
-     Active: active (running) since Sat 2024-04-06 13:51:37 EEST; 19min ago
+     Active: active (running) since Sat 2024-04-06 22:37:21 EEST; 45min ago
 TriggeredBy: ● pipewire.socket
-   Main PID: 2538 (pipewire)
+   Main PID: 534 (pipewire)
       Tasks: 3 (limit: 8759)
-     Memory: 7.3M (peak: 7.8M)
-        CPU: 97ms
+     Memory: 9.3M (peak: 11.0M)
+        CPU: 636ms
      CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/pipewire.service
-             └─2538 /usr/bin/pipewire
+             └─534 /usr/bin/pipewire
 
-Apr 06 13:51:37 127.0.0.1localhost systemd[522]: Started PipeWire Multimedia Service.
+Apr 06 22:37:21 127.0.0.1localhost systemd[521]: Started PipeWire Multimedia Service.
+Apr 06 23:11:35 127.0.0.1localhost pipewire[534]: mod.client-node: 0x61afd42f88b0: unknown peer 0x61afd42f8fe0 fd:55
+Apr 06 23:12:21 127.0.0.1localhost pipewire[534]: mod.client-node: 0x61afd4515040: unknown peer 0x61afd44f6e10 fd:55
+Apr 06 23:21:46 127.0.0.1localhost pipewire[534]: mod.client-node: 0x61afd451d170: unknown peer 0x61afd44f8e40 fd:56
+Apr 06 23:21:51 127.0.0.1localhost pipewire[534]: mod.client-node: 0x61afd4517ec0: unknown peer 0x61afd44f8e40 fd:56
 
 ● pipewire-pulse.service - PipeWire PulseAudio
      Loaded: loaded (/usr/lib/systemd/user/pipewire-pulse.service; enabled; preset: enabled)
-     Active: active (running) since Sat 2024-04-06 13:51:37 EEST; 19min ago
+     Active: active (running) since Sat 2024-04-06 22:37:21 EEST; 45min ago
 TriggeredBy: ● pipewire-pulse.socket
-   Main PID: 2540 (pipewire-pulse)
+   Main PID: 537 (pipewire-pulse)
       Tasks: 3 (limit: 8759)
-     Memory: 3.3M (peak: 3.8M)
-        CPU: 82ms
+     Memory: 6.9M (peak: 7.5M)
+        CPU: 301ms
      CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/pipewire-pulse.service
-             └─2540 /usr/bin/pipewire-pulse
+             └─537 /usr/bin/pipewire-pulse
 
-Apr 06 13:51:37 127.0.0.1localhost systemd[522]: Started PipeWire PulseAudio.
-Apr 06 14:01:29 127.0.0.1localhost pipewire-pulse[2540]: mod.protocol-pulse: client 0x560f75992ad0 [KWrite]: ERROR command:-1 (invalid) tag:4 error:25 (Input/output error)
+Apr 06 22:37:21 127.0.0.1localhost systemd[521]: Started PipeWire PulseAudio.
+Apr 06 22:41:56 127.0.0.1localhost pipewire-pulse[537]: mod.protocol-pulse: client 0x573edeedcfa0 [Firefox]: ERROR command:-1 (invalid) tag:5 error:25 (Input/output error)
+Apr 06 22:42:00 127.0.0.1localhost pipewire-pulse[537]: mod.protocol-pulse: client 0x573edeedcfa0 [Firefox]: ERROR command:-1 (invalid) tag:6 error:25 (Input/output error)
+Apr 06 22:48:28 127.0.0.1localhost pipewire-pulse[537]: mod.protocol-pulse: client 0x573edef28110 [KDE Power Management System]: ERROR command:-1 (invalid) tag:4 error:25 (Input/output error)
+Apr 06 22:49:47 127.0.0.1localhost pipewire-pulse[537]: mod.protocol-pulse: client 0x573edef28110 [KDE Power Management System]: ERROR command:-1 (invalid) tag:6 error:25 (Input/output error)

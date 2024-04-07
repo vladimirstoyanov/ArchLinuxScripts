@@ -1,0 +1,1 @@
+wpctl status
