@@ -1,0 +1,1 @@
+pacman --noconfirm -S pulseaudio
