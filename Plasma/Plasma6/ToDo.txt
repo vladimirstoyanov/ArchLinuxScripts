@@ -1,0 +1,1 @@
+- add plasma6 scripts 
