@@ -5,13 +5,13 @@ then
   echo "Wrong input! please use the following input: "
         echo "1 arg - username"
         echo "2 arg - boot partition (e.g. /dev/sda)"
+        echo "3 arg - computer name"
   exit 1
 fi
 
 hwclock --systohc
 locale-gen
-echo -e "127.0.0.1  localhost\n">> /etc/hostname
-echo "::1 localhost" >>/etc/hostname
+echo $3 >> /etc/hostname
 mkinitcpio -P
 
 echo "Enter root password"
