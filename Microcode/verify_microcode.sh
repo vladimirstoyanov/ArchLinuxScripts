@@ -1,0 +1,1 @@
+journalctl -k --grep='microcode:'
