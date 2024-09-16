@@ -51,4 +51,18 @@ iptables -A OUTPUT -p icmp -j DROP
 echo 'iptables -A INPUT -p icmp -j DROP'
 iptables -A INPUT -p icmp -j DROP
 
+#drop some custom ip addresses
+sudo iptables  -I OUTPUT -d 217.10.240.0/22 -j DROP
+sudo iptables  -I OUTPUT -d 88.203.128.0/24 -j DROP
+sudo iptables  -I OUTPUT -d 87.227.139.160/27 -j DROP
+sudo iptables  -I OUTPUT -d 87.227.139.144/28 -j DROP
+sudo iptables  -I OUTPUT -d 87.227.139.140/30 -j DROP
+sudo iptables  -I OUTPUT -d 216.105.32.0/20 -j DROP
+sudo iptables  -I OUTPUT -d 87.230.98.64/28 -j DROP
+sudo iptables  -I OUTPUT -d 216.105.32.0/20 -j DROP
+sudo iptables  -I OUTPUT -d 82.118.229.0/24 -j DROP
+sudo iptables  -I OUTPUT -d 149.248.0.0/18 -j DROP
+sudo iptables  -I OUTPUT -d 37.19.203.0/24 -j DROP
+sudo iptables  -I OUTPUT -d 85.91.143.128/26 -j DROP
+
 iptables-save > /etc/iptables/iptables.rules
