@@ -9,7 +9,6 @@ wireless_tools
 networkmanager
 network-manager-applet
 gnome-keyring
-wireless_tools
 net-tools
 konsole
 firefox
@@ -65,3 +64,4 @@ github-cli
 htop
 intel-ucode
 iucode-tool
+wireshark-qt

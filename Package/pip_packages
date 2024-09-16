@@ -15,3 +15,5 @@ pynput
 tbselenium
 transformers
 tokenizers
+beautifulsoup4
+playsound

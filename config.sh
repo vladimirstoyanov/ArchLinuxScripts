@@ -49,3 +49,7 @@ sudo echo "$ALS_PATH">>/etc/environment
 #install and configure grub
 cd Grub/
 sh install.sh $1
+
+#remove not used packages
+pacman -R kget
+pacman -r ktorrent
