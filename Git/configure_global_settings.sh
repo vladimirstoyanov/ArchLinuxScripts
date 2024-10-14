@@ -11,6 +11,6 @@ fi
 git config --global user.email "$1"
 git config --global user.name "$2"
 
-git config --global pull.rebase true
+git config --global pull.rebase false
 git config --global fetch.prune true
 git config --global diff.colorMoved zebra
