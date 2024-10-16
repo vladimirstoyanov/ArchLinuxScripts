@@ -1,4 +1,4 @@
-VERSION="v0.32.0" #check for the latest version at https://github.com/mozilla/geckodriver/releases/
+VERSION="v0.35.0" #check for the latest version at https://github.com/mozilla/geckodriver/releases/
 
 echo "Downloading the driver..."
 wget https://github.com/mozilla/geckodriver/releases/download/$VERSION/geckodriver-$VERSION-linux64.tar.gz
