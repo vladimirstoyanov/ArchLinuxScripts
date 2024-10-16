@@ -30,7 +30,7 @@ class EToroBot:
     def __init__ (self):
         atexit.register(self.__handleExit)
         self.__log = Log('eToroLog.log')
-        driverObj = Driver("/home/vladimir/.mozilla/firefox/q54e1nbe.default-release")
+        driverObj = Driver("/home/vladimir/.mozilla/firefox/5mb3juuf.default-release")
         self.__driver = driverObj.getDriver()
         self.__seleniumWrapper = SeleniumWrapper(self.__driver)
         self.loadEToro()

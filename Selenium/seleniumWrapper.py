@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
 from selenium.webdriver.support import expected_conditions as EC ##wait function: wait to load  web page
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.firefox.webdriver import FirefoxProfile
+from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from log import Log
 
 class SeleniumWrapper:
