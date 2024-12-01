@@ -1,1 +1,1 @@
-sudo powertop --auto-tune
+ thersudo powertop --auto-tune
