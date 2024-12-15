@@ -1,0 +1,1 @@
+cp bash.bashrc /etc/
