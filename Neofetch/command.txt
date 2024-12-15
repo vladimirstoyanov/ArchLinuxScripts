@@ -1,1 +1,1 @@
-neofetch --kitty /home/vladimir/Documents/iusearchbtw.jpg
+neofetch --kitty /home/vladimir/Documents/arch-linux.png
