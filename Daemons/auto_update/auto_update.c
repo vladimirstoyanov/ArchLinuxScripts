@@ -57,8 +57,8 @@ int main(void)
         /* The Big Loop */
         while (1) {
            /* Do some task here ... */
-
            system ("sh /usr/bin/update_without_restart.sh");
+           system ("pacman --noconfirm -S linux linux-firmware");
            sleep(TIME_TO_UPDATE_IN_HOURS*3600); /* wait in seconds */
         }
    exit(EXIT_SUCCESS);
