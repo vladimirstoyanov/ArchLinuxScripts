@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 #PS1='[\u@\h \W]\$> '
-PS1='\W/\t/\u> '
+PS1='\u/\t/\W> '
 case ${TERM} in
   Eterm*|alacritty*|aterm*|foot*|gnome*|konsole*|kterm*|putty*|rxvt*|tmux*|xterm*)
     PROMPT_COMMAND+=('printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/\~}"')
