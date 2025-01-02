@@ -1,8 +1,7 @@
 #!/bin/sh
+script -q -c "pacman -Suy --noconfirm" /dev/null
 
-UPDATE_FILE=/tmp/updateLog.txt
+script -q -c "pacman --noconfirm --disable-hooks=90-mkinitcpio-install.hook -S linux linux-firmware linux-headers" /dev/null
 
-#update the system
-echo "==============Trying to update the system..." >> $UPDATE_FILE
-pacman -Suy --noconfirm >> $UPDATE_FILE
-echo "==============Update finished..." >>$UPDATE_FILE
+
+mkinitcpio -P
