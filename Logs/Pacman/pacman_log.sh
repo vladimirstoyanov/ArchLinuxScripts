@@ -1,2 +1,2 @@
 #!/bin/sh
-cat /var/log/pacman.log
+kwrite /var/log/pacman.log

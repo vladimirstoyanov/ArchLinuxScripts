@@ -58,7 +58,8 @@ int main(void)
         while (1) {
            /* Do some task here ... */
            system ("sh /usr/bin/update_without_restart.sh");
-           system ("pacman --noconfirm -S linux linux-firmware");
+           sleep (60);
+           system ("pacman --noconfirm -S linux linux-firmware linux-headers");
            sleep(TIME_TO_UPDATE_IN_HOURS*3600); /* wait in seconds */
         }
    exit(EXIT_SUCCESS);
