@@ -1,1 +1,1 @@
-neofetch --kitty /home/vladimir/Documents/arch-linux.png
+neofetch --kitty /home/vladimir/Documents/neofetch_logo_bg.jpg
