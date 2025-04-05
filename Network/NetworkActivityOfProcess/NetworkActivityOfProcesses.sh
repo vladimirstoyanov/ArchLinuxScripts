@@ -9,8 +9,10 @@ fi
 
 while true
 do
-	netstat -tunp
-	netstat -tunp >> log.txt
+	netstat -atunp
+	netstat -atunp >> log.txt
 	sleep $1
 	clear
 done
+
+x
