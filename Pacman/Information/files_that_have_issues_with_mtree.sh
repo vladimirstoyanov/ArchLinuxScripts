@@ -1,0 +1,1 @@
+pacman -Qkk | grep mtree
