@@ -1,1 +1,1 @@
-kwrite /var/log/lynis-report.dat
+sudo lynis audit system --developer
