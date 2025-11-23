@@ -1,0 +1,6 @@
+1. run setup_printer.sh
+5. run restart_printer_services.sh
+2. search printers function in kde menu
+3. clock on + icon
+4. You will see you printer. Click on it. Set driverless option
+5. Click add 
