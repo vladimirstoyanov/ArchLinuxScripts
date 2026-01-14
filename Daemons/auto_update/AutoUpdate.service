@@ -1,0 +1,11 @@
+[Unit]
+Description=AutoUpdate
+After=multi-user.target local-fs.target
+RequiresMountsFor=/boot
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/auto_update
+
+[Install]
+WantedBy=multi-user.target

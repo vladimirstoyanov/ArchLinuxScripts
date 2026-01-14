@@ -48,9 +48,9 @@ int main(void)
         }
 
         /* Close out the standard file descriptors */
-        close(STDIN_FILENO);
-        close(STDOUT_FILENO);
-        close(STDERR_FILENO);
+        //close(STDIN_FILENO);
+        //close(STDOUT_FILENO);
+        //close(STDERR_FILENO);
 
         /* Daemon-specific initialization goes here */
 
