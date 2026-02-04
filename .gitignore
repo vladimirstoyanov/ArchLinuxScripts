@@ -2,3 +2,4 @@
 *.log
 *.svg
 Network/NetworkActivityOfProcess/log.txt
+TTS/*.txt
