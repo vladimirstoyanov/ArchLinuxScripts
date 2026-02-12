@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $# -ne 2 ]
+if [ $# -ne 3 ]
 then
   echo "Wrong input! please use the following input: "
         echo "1 arg - username"
@@ -19,16 +19,27 @@ passwd
 
 pacman --noconfirm -S git
 
+echo "Creating a user $1"
+useradd -m $1
+passwd $1
+chmod 755 /home/$1
+
+echo "Changing the user to $1"
+su $1
+
 cd /home
 git clone https://github.com/vladimirstoyanov/ArchLinuxScripts.git
 cd ArchLinuxScripts
 
-pacman --noconfirm -S sudo
-echo "Creating a user $1"
-sh ./Users/add_user.sh $1
+su root
+cd /home/ArchLinuxScripts
 
+pacman --noconfirm -S sudo
 pacman --noconfirm -S python
 python ./Users/add_sudo_user.py
 
-sh install.sh
+sh install.sh $1
+
+su root
+
 sh config.sh $2

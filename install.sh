@@ -1,5 +1,12 @@
 #!/bin/sh
 
+if [ $# -ne 1 ]
+then
+  echo "Wrong input! please use the following input: "
+        echo "1 arg - username"
+  exit 1
+fi
+
 echo "Installing KDE..."
 sh KDE/installKDE.sh
 
@@ -18,6 +25,8 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
     sleep 1
 done < "Package/not_used_packages"
 
+echo "Changing to username: $1 (pip packages should be installed as a normal user)"
+su $1
 
 echo "Installing pip packages..."
 while IFS='' read -r line || [[ -n "$line" ]]; do
