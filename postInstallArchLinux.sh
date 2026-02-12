@@ -23,9 +23,12 @@ cd /home
 git clone https://github.com/vladimirstoyanov/ArchLinuxScripts.git
 cd ArchLinuxScripts
 
+pacman --noconfirm -S sudo
 echo "Creating a user $1"
-sh ./Users/add_sudo_user.sh $1
+sh ./Users/add_user.sh $1
+
+pacman --noconfirm -S python
+python ./Users/add_sudo_user.py
 
 sh install.sh
 sh config.sh $2
-exit

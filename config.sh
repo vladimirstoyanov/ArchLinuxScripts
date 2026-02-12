@@ -51,5 +51,5 @@ cd Grub/
 sh install.sh $1
 
 #remove not used packages
-pacman -R kget
+pacman -r kget
 pacman -r ktorrent
