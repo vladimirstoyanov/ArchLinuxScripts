@@ -3,3 +3,4 @@
 *.svg
 Network/NetworkActivityOfProcess/log.txt
 TTS/*.txt
+Daemons/auto_update/auto_update
