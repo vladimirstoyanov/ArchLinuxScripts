@@ -10,6 +10,6 @@ fi
 git checkout --orphan clean-branch
 git add .
 git commit -m "Initial clean commit"
-git branch -D main
-git branch -m main
-git push origin --force
+git branch -D master
+git branch -m master
+git push --force --set-upstream origin master
