@@ -7,7 +7,7 @@ from desktopFile import DesktopFile
 def help ():
     helpString = """
 Wrong input! please use the following input:
-    arg1 - path to the atom binary
+    arg1 - path to the pulsar binary
     arg2 - path to the icon or an icon name if it's part of installed icons"
 """
     print (helpString)
@@ -18,7 +18,7 @@ if (len (sys.argv)!=3):
 
 pathToBinary = sys.argv[1]
 pathToIcon = sys.argv[2]
-filename = 'atom1'
+filename = 'pulsar1'
 description = "A text editor"
 
 desktopFile = DesktopFile (filename, pathToBinary, pathToIcon, description)
