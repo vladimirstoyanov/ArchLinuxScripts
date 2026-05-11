@@ -1,0 +1,3 @@
+'atom-text-editor':
+  'ctrl-alt-up': 'editor:add-selection-above'
+  'ctrl-alt-down': 'editor:add-selection-below'

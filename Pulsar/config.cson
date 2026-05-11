@@ -1,0 +1,10 @@
+"*":
+  core:
+    disabledPackages: [
+      "bracket-matcher"
+    ]
+  "exception-reporting":
+    userId: "652fe285-e06b-48f4-b1f7-10551eeeeda0"
+  welcome:
+    lastViewedChangeLog: "1.131.3"
+    showOnStartup: false
