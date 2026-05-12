@@ -2,7 +2,7 @@
 if [ $# -ne 1 ]
 then
   echo "Wrong input! please use the following input: "
-        echo "1 arg - partition (e.g. /dev/sda)"
+        echo "1 arg - arduino ide directory (e.g. /home/user/arduino_ide)"
   exit 1
 fi
 
