@@ -66,3 +66,4 @@ intel-ucode
 iucode-tool
 wireshark-qt
 sysstat
+perf
