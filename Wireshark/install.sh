@@ -1,4 +1,4 @@
-pacman -S --noconfirm wireshark-qt
+sudo pacman -S --noconfirm wireshark-qt
 sudo usermod -aG wireshark $USER
 newgrp wireshark
 sudo chown root:wireshark /usr/bin/dumpcap
