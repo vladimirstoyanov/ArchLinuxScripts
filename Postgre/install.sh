@@ -7,6 +7,7 @@ then
 fi
 
 sudo pacman -S postgresql
+sudo pacman -S pgloader
 echo "1. Switch to the postgres user"
 sudo -i -u postgres
 
