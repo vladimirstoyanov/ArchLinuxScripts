@@ -1,0 +1,1 @@
+cp keymap.cson ~/.atom/
