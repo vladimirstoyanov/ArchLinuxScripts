@@ -67,4 +67,4 @@ iucode-tool
 wireshark-qt
 sysstat
 perf
-qlitebrowser
+sqlitebrowser
