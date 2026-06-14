@@ -1,0 +1,1 @@
+fwupdmgr verify
